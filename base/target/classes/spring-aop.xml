@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="service" name="service" class="edu.zjnu.spring.aop.impl.Service"/>
+    <bean id="advisor" name="advisor" class="edu.zjnu.spring.aop.advisor.Advisor"/>
+
+    <bean id="aop" name="aop" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!-- 被代理对象（必须为接口，JDK动态代理生成代理对象） -->
+        <property name="proxyInterfaces" value="edu.zjnu.aop.IService"/>
+        <!-- 通知器列表 -->
+        <property name="interceptorNames">
+            <list>
+                <value>advisor</value>
+            </list>
+        </property>
+        <!-- 设置切点 -->
+        <property name="target" ref="service"/>
+    </bean>
+
+</beans>

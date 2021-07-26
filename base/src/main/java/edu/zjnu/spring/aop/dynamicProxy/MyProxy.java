@@ -1,6 +1,6 @@
 package edu.zjnu.spring.aop.dynamicProxy;
 
-import edu.zjnu.SpringLoader;
+import edu.zjnu.spring.SpringLoader;
 import org.apache.log4j.Logger;
 
 import java.lang.reflect.InvocationHandler;

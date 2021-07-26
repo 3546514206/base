@@ -1,6 +1,6 @@
 package edu.zjnu.spring.aop.impl;
 
-import edu.zjnu.aop.IService;
+import edu.zjnu.spring.aop.IService;
 
 /**
  * @author 杨海波
