@@ -11,6 +11,7 @@
 
     <modules>
         <module>base</module>
+        <module>tomcat</module>
     </modules>
 
 
