@@ -39,8 +39,9 @@ public final class ExpressionBuilder implements NodeVisitor {
     private static final int CACHE_SIZE;
     private static final String CACHE_SIZE_PROP =
         "org.apache.el.ExpressionBuilder.CACHE_SIZE";
+    //初始化size的值是CACHE_SIZE，改成字面量5000
     private static final ConcurrentCache<String, Node> expressionCache =
-            new ConcurrentCache<>(CACHE_SIZE);
+            new ConcurrentCache<>(5000);
 
     static {
         if (System.getSecurityManager() == null) {
