@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/base/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tomcat/modules/jdbc-pool/src/main/java" charset="UTF-8" />
   </component>
 </project>

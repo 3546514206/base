@@ -12,6 +12,7 @@
     <modules>
         <module>base</module>
         <module>tomcat</module>
+        <module>mybatis</module>
     </modules>
 
 
