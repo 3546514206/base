@@ -35,8 +35,8 @@ public class SpringLoader {
      * 通过<aop:config/>标签
      */
     private static void aopConfig() {
-        ApplicationContext appCtx = new ClassPathXmlApplicationContext("spring-aop-aop-conf.xml");
-        Swimable duck = (Swimable) appCtx.getBean("duck");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-aop-aop-conf.xml");
+        Swimable duck = (Swimable) context.getBean("duck");
         duck.swim();
     }
 
@@ -51,10 +51,10 @@ public class SpringLoader {
      * 通过<bean/>标签配合ProxyFactoryBean的方式
      */
     private static void aopBean() {
-        ApplicationContext appCtx = new ClassPathXmlApplicationContext("spring-aop-bean-conf.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-aop-bean-conf.xml");
 
-        Sleepable me = (Sleepable) appCtx.getBean("me");
-        Sleepable meProxy = (Sleepable) appCtx.getBean("meProxy");
+        Sleepable me = (Sleepable) context.getBean("me");
+        Sleepable meProxy = (Sleepable) context.getBean("meProxy");
         System.out.println("没有代理时：");
         me.sleep();
 
