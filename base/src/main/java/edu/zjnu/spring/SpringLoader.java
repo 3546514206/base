@@ -23,6 +23,7 @@ public class SpringLoader {
     private static Logger log = Logger.getLogger(SpringLoader.class);
 
     public static void main(String[] args) {
+
         int[] var = new int[4];
 
         log.info(var instanceof Object);
