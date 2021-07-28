@@ -8,14 +8,14 @@
     <!-- 通过<aop:config/>标签 -->
 
     <!-- 定义通知内容，也就是切入点执行前后需要做的事情 -->
-    <bean name="sleepHelp" class="edu.zjnu.spring.aop.aopconfig.SleepHelper"/>
+    <bean name="swimHelper" class="edu.zjnu.spring.aop.aopconfig.SwimHelper"/>
     <!-- 定义被代理者 -->
-    <bean name="I" class="edu.zjnu.spring.aop.aopconfig.Me"/>
+    <bean name="duck" class="edu.zjnu.spring.aop.aopconfig.Duck"/>
 
     <aop:config>
-        <aop:aspect ref="sleepHelp">
-            <aop:before method="beforeSleep" pointcut="execution(* *.sleep(..))"/>
-            <aop:after method="afterSleep" pointcut="execution(* *.sleep(..))"/>
+        <aop:aspect ref="swimHelper">
+            <aop:before method="beforeSwim" pointcut="execution(* *.swim(..))"/>
+            <aop:after method="afterSwim" pointcut="execution(* *.swim(..))"/>
         </aop:aspect>
     </aop:config>
 

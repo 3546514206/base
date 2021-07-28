@@ -1,9 +1,7 @@
 package edu.zjnu.spring.aop.beanconfig;
 
-import edu.zjnu.spring.aop.Sleepable;
-
 /**
- * @description: 接口实现类，“Me”可以睡觉，“Me”就实现可以睡觉的接口。
+ * @description: 接口实现类，“Duck”可以睡觉，“Duck”就实现可以睡觉的接口。
  * @author: 杨海波
  * @date: 2021-07-28
  **/

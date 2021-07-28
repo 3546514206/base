@@ -1,7 +1,8 @@
 package edu.zjnu.spring;
 
 import edu.zjnu.spring.annotation.PersonConfig;
-import edu.zjnu.spring.aop.Sleepable;
+import edu.zjnu.spring.aop.aopconfig.Swimable;
+import edu.zjnu.spring.aop.beanconfig.Sleepable;
 import edu.zjnu.spring.ioc.Person;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.support.BeanDefinitionReader;
@@ -35,8 +36,8 @@ public class SpringLoader {
      */
     private static void aopConfig() {
         ApplicationContext appCtx = new ClassPathXmlApplicationContext("spring-aop-aop-conf.xml");
-        Sleepable i = (Sleepable) appCtx.getBean("I");
-        i.sleep();
+        Swimable duck = (Swimable) appCtx.getBean("duck");
+        duck.swim();
     }
 
     private static void iocV2() {

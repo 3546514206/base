@@ -28,7 +28,7 @@
         <!-- 使用切面 -->
         <property name="interceptorNames" value="sleepHelperAdvisor"/>
         <!-- 代理接口，睡觉接口 -->
-        <property name="proxyInterfaces" value="edu.zjnu.spring.aop.Sleepable"/>
+        <property name="proxyInterfaces" value="edu.zjnu.spring.aop.beanconfig.Sleepable"/>
     </bean>
 
 </beans>

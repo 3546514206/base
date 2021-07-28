@@ -22,6 +22,12 @@
           <file>file://$MODULE_DIR$/src/main/resources/spring-aop-conf.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring-ioc.xml</file>
         </fileset>
+        <fileset id="fileset3" name="Spring Aop Aop Conf" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/edu/zjnu/spring/annotation/PersonConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-aop-conf.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-bean-conf.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
