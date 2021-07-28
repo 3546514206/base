@@ -3,7 +3,7 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" name="person" class="edu.zjnu.spring.ioc.Person">
+    <bean name="person" class="edu.zjnu.spring.ioc.Person">
         <property name="name" value="杨海波"/>
         <property name="age" value="21"/>
     </bean>
