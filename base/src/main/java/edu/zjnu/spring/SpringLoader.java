@@ -1,7 +1,7 @@
 package edu.zjnu.spring;
 
 import edu.zjnu.spring.annotation.PersonConfig;
-import edu.zjnu.spring.aop.beanconfig.IService;
+import edu.zjnu.spring.aop.Sleepable;
 import edu.zjnu.spring.ioc.Person;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.support.BeanDefinitionReader;
@@ -23,16 +23,20 @@ public class SpringLoader {
     private static Logger log = Logger.getLogger(SpringLoader.class);
 
     public static void main(String[] args) {
-
-        int[] var = new int[4];
-
-        log.info(var instanceof Object);
-        log.info(var.getClass());
-
         // ioc();
         //  iocV2();
-        aopBean();
+        //aopBean();
+        aopConfig();
 //        annotation();
+    }
+
+    /**
+     * 通过<aop:config/>标签
+     */
+    private static void aopConfig() {
+        ApplicationContext appCtx = new ClassPathXmlApplicationContext("spring-aop-aop-conf.xml");
+        Sleepable i = (Sleepable) appCtx.getBean("I");
+        i.sleep();
     }
 
     private static void iocV2() {
@@ -43,29 +47,19 @@ public class SpringLoader {
     }
 
     /**
-     * AOP测试入口
+     * 通过<bean/>标签配合ProxyFactoryBean的方式
      */
     private static void aopBean() {
-        // 创建工厂
-        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
-        // 工厂的相关初始化
-        new XmlBeanDefinitionReader(factory).loadBeanDefinitions(new ClassPathResource("spring-aop-bean.xml"));
+        ApplicationContext appCtx = new ClassPathXmlApplicationContext("spring-aop-bean-conf.xml");
 
-        // proxyService就是代理对象
-        IService proxyService = (IService) factory.getBean("aop");
+        Sleepable me = (Sleepable) appCtx.getBean("me");
+        Sleepable meProxy = (Sleepable) appCtx.getBean("meProxy");
+        System.out.println("没有代理时：");
+        me.sleep();
 
-        // 执行代理对象的方法，不仅会执行被代理对象的方法，还会执行切面
-        proxyService.doSomeThing();
-
-        // 代理对象的类型
-        log.info(proxyService.getClass());
-        // 代理对象的父类
-        log.info(proxyService.getClass().getSuperclass());
-        // 代理对象实现的接口
-        for (Class<?> anInterface : proxyService.getClass().getInterfaces()) {
-            log.info(anInterface.toString());
-        }
-
+        System.out.println();
+        System.out.println("AOP代之后：");
+        meProxy.sleep();
     }
 
     /**

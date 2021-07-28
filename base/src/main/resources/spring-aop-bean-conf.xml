@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--通过<bean/>标签配合ProxyFactoryBean的方式 -->
+
+    <!-- 定义被代理者 -->
+    <bean name="me" class="edu.zjnu.spring.aop.beanconfig.Me"/>
+
+    <!-- 定义通知内容，也就是切入点执行前后需要做的事情 -->
+    <bean name="sleepHelper" class="edu.zjnu.spring.aop.beanconfig.SleepHelper"/>
+
+    <!-- 定义切入点位置 -->
+    <bean name="sleepPointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut">
+        <property name="pattern" value=".*sleep"/>
+    </bean>
+
+    <!-- 使切入点与通知相关联，完成切面配置 -->
+    <bean name="sleepHelperAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+        <property name="advice" ref="sleepHelper"/>
+        <property name="pointcut" ref="sleepPointcut"/>
+    </bean>
+
+    <!-- 设置代理 -->
+    <bean name="meProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!-- 代理的对象，有睡觉能力 -->
+        <property name="target" ref="me"/>
+        <!-- 使用切面 -->
+        <property name="interceptorNames" value="sleepHelperAdvisor"/>
+        <!-- 代理接口，睡觉接口 -->
+        <property name="proxyInterfaces" value="edu.zjnu.spring.aop.Sleepable"/>
+    </bean>
+
+</beans>
