@@ -1,4 +1,4 @@
-package edu.zjnu.spring.aop;
+package edu.zjnu.spring.aop.beanconfig;
 
 import org.apache.log4j.Logger;
 

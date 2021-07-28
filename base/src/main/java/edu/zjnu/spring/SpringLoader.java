@@ -1,7 +1,7 @@
 package edu.zjnu.spring;
 
 import edu.zjnu.spring.annotation.PersonConfig;
-import edu.zjnu.spring.aop.IService;
+import edu.zjnu.spring.aop.beanconfig.IService;
 import edu.zjnu.spring.ioc.Person;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.support.BeanDefinitionReader;
@@ -31,7 +31,7 @@ public class SpringLoader {
 
         // ioc();
         //  iocV2();
-        aop();
+        aopBean();
 //        annotation();
     }
 
@@ -45,11 +45,11 @@ public class SpringLoader {
     /**
      * AOP测试入口
      */
-    private static void aop() {
+    private static void aopBean() {
         // 创建工厂
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
         // 工厂的相关初始化
-        new XmlBeanDefinitionReader(factory).loadBeanDefinitions(new ClassPathResource("spring-aop.xml"));
+        new XmlBeanDefinitionReader(factory).loadBeanDefinitions(new ClassPathResource("spring-aop-bean.xml"));
 
         // proxyService就是代理对象
         IService proxyService = (IService) factory.getBean("aop");

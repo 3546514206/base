@@ -1,4 +1,4 @@
-package edu.zjnu.spring.aop.dynamicProxy;
+package edu.zjnu.spring.aop.beanconfig.dynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

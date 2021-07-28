@@ -1,4 +1,4 @@
-package edu.zjnu.spring.aop.dynamicProxy;
+package edu.zjnu.spring.aop.beanconfig.dynamicProxy;
 
 /**
  * @author 杨海波

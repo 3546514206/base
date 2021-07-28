@@ -1,4 +1,4 @@
-package edu.zjnu.spring.aop.advisor;
+package edu.zjnu.spring.aop.beanconfig.advisor;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
