@@ -15,7 +15,7 @@
     <bytecodeTargetLevel>
       <module name="base" target="8" />
       <module name="learning" target="1.5" />
-      <module name="mybatis" target="7" />
+      <module name="mybatis" target="8" />
       <module name="tomcat" target="1.8" />
       <module name="tomcat-jdbc" target="1.8" />
     </bytecodeTargetLevel>
