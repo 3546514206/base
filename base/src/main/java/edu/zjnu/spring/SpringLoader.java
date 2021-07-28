@@ -29,8 +29,8 @@ public class SpringLoader {
         log.info(var instanceof Object);
         log.info(var.getClass());
 
-//        ioc();
-//        iocV2();
+        // ioc();
+        //  iocV2();
         aop();
 //        annotation();
     }

@@ -8,7 +8,7 @@
 
     <bean id="aop" name="aop" class="org.springframework.aop.framework.ProxyFactoryBean">
         <!-- 被代理对象（必须为接口，JDK动态代理生成代理对象） -->
-        <property name="proxyInterfaces" value="edu.zjnu.aop.IService"/>
+        <property name="proxyInterfaces" value="edu.zjnu.spring.aop.IService"/>
         <!-- 通知器列表 -->
         <property name="interceptorNames">
             <list>
