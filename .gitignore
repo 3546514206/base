@@ -25,3 +25,4 @@ hs_err_pid*
 /tomcat/target/
 /mybatis/target/
 /logs/
+/.idea/libraries/
