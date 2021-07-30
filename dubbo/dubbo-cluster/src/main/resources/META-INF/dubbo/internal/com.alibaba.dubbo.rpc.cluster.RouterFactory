@@ -1,0 +1,2 @@
+file=com.alibaba.dubbo.rpc.cluster.router.file.FileRouterFactory
+condition=com.alibaba.dubbo.rpc.cluster.router.condition.ConditionRouterFactory

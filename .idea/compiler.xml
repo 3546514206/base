@@ -6,14 +6,134 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbo-config-spring" />
+        <module name="dubbo-registry-default" />
+        <module name="dubbo-container-log4j" />
+        <module name="dubbo-rpc-rest" />
+        <module name="dubbo-serialization-api" />
+        <module name="dubbo-cluster" />
+        <module name="dubbo-remoting-netty" />
+        <module name="dubbo-qos" />
+        <module name="dubbo-rpc-thrift" />
+        <module name="dubbo-monitor-default" />
+        <module name="dubbo-demo-provider" />
+        <module name="dubbo-monitor-api" />
+        <module name="dubbo-remoting-mina" />
+        <module name="dubbo-remoting-api" />
+        <module name="dubbo-registry-nacos" />
         <module name="tomcat" />
-        <module name="mybatis" />
-        <module name="base" />
+        <module name="dubbo-rpc-http" />
+        <module name="dubbo-demo-consumer" />
+        <module name="dubbo-serialization-jdk" />
+        <module name="dubbo-rpc-memcached" />
+        <module name="dubbo-remoting-http" />
+        <module name="dubbo-remoting-zookeeper" />
+        <module name="dubbo-test-benchmark" />
+        <module name="dubbo-container-logback" />
+        <module name="dubbo-registry-multicast" />
+        <module name="dubbo-test-spring3" />
+        <module name="dubbo-registry-redis" />
+        <module name="dubbo-serialization-kryo" />
+        <module name="dubbo-rpc-redis" />
+        <module name="dubbo-config-api" />
+        <module name="dubbo-remoting-grizzly" />
+        <module name="dubbo-rpc-api" />
+        <module name="dubbo-test-integration" />
         <module name="tomcat-jdbc" />
+        <module name="dubbo-container-api" />
+        <module name="dubbo-rpc-hessian" />
+        <module name="dubbo-remoting-netty4" />
+        <module name="base" />
+        <module name="dubbo-container-spring" />
+        <module name="dubbo-registry-api" />
+        <module name="mybatis" />
+        <module name="dubbo (1)" />
+        <module name="dubbo-filter-cache" />
+        <module name="dubbo-serialization-fastjson" />
+        <module name="dubbo-rpc-rmi" />
+        <module name="dubbo-registry-zookeeper" />
+        <module name="dubbo-remoting-p2p" />
+        <module name="dubbo-serialization-hessian2" />
+        <module name="dubbo-test-examples" />
+        <module name="dubbo-rpc-injvm" />
+        <module name="dubbo-filter-validation" />
+        <module name="dubbo-rpc-webservice" />
+        <module name="dubbo-rpc-dubbo" />
+        <module name="dubbo-demo-api" />
+        <module name="dubbo-serialization-fst" />
+        <module name="dubbo-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="8" />
+      <module name="dubbo" target="1.6" />
+      <module name="dubbo (1)" target="1.6" />
+      <module name="dubbo-bom" target="1.5" />
+      <module name="dubbo-cluster" target="1.6" />
+      <module name="dubbo-common" target="1.6" />
+      <module name="dubbo-config" target="1.6" />
+      <module name="dubbo-config-api" target="1.6" />
+      <module name="dubbo-config-spring" target="1.6" />
+      <module name="dubbo-container" target="1.6" />
+      <module name="dubbo-container-api" target="1.6" />
+      <module name="dubbo-container-log4j" target="1.6" />
+      <module name="dubbo-container-logback" target="1.6" />
+      <module name="dubbo-container-spring" target="1.6" />
+      <module name="dubbo-demo" target="1.6" />
+      <module name="dubbo-demo-api" target="1.6" />
+      <module name="dubbo-demo-consumer" target="1.6" />
+      <module name="dubbo-demo-provider" target="1.6" />
+      <module name="dubbo-dependencies-bom" target="1.5" />
+      <module name="dubbo-distribution" target="1.6" />
+      <module name="dubbo-filter" target="1.6" />
+      <module name="dubbo-filter-cache" target="1.6" />
+      <module name="dubbo-filter-validation" target="1.6" />
+      <module name="dubbo-monitor" target="1.6" />
+      <module name="dubbo-monitor-api" target="1.6" />
+      <module name="dubbo-monitor-default" target="1.6" />
+      <module name="dubbo-plugin" target="1.6" />
+      <module name="dubbo-qos" target="1.6" />
+      <module name="dubbo-registry" target="1.6" />
+      <module name="dubbo-registry-api" target="1.6" />
+      <module name="dubbo-registry-default" target="1.6" />
+      <module name="dubbo-registry-multicast" target="1.6" />
+      <module name="dubbo-registry-nacos" target="1.6" />
+      <module name="dubbo-registry-redis" target="1.6" />
+      <module name="dubbo-registry-zookeeper" target="1.6" />
+      <module name="dubbo-remoting" target="1.6" />
+      <module name="dubbo-remoting-api" target="1.6" />
+      <module name="dubbo-remoting-grizzly" target="1.6" />
+      <module name="dubbo-remoting-http" target="1.6" />
+      <module name="dubbo-remoting-mina" target="1.6" />
+      <module name="dubbo-remoting-netty" target="1.6" />
+      <module name="dubbo-remoting-netty4" target="1.6" />
+      <module name="dubbo-remoting-p2p" target="1.6" />
+      <module name="dubbo-remoting-zookeeper" target="1.6" />
+      <module name="dubbo-rpc" target="1.6" />
+      <module name="dubbo-rpc-api" target="1.6" />
+      <module name="dubbo-rpc-dubbo" target="1.6" />
+      <module name="dubbo-rpc-hessian" target="1.6" />
+      <module name="dubbo-rpc-http" target="1.6" />
+      <module name="dubbo-rpc-injvm" target="1.6" />
+      <module name="dubbo-rpc-memcached" target="1.6" />
+      <module name="dubbo-rpc-redis" target="1.6" />
+      <module name="dubbo-rpc-rest" target="1.6" />
+      <module name="dubbo-rpc-rmi" target="1.6" />
+      <module name="dubbo-rpc-thrift" target="1.6" />
+      <module name="dubbo-rpc-webservice" target="1.6" />
+      <module name="dubbo-serialization" target="1.6" />
+      <module name="dubbo-serialization-api" target="1.6" />
+      <module name="dubbo-serialization-fastjson" target="1.6" />
+      <module name="dubbo-serialization-fst" target="1.6" />
+      <module name="dubbo-serialization-hessian2" target="1.6" />
+      <module name="dubbo-serialization-jdk" target="1.6" />
+      <module name="dubbo-serialization-kryo" target="1.6" />
+      <module name="dubbo-test" target="1.6" />
+      <module name="dubbo-test-benchmark" target="1.6" />
+      <module name="dubbo-test-compatibility" target="1.6" />
+      <module name="dubbo-test-examples" target="1.6" />
+      <module name="dubbo-test-integration" target="1.6" />
+      <module name="dubbo-test-spring3" target="1.6" />
       <module name="learning" target="1.5" />
       <module name="mybatis" target="8" />
       <module name="tomcat" target="1.8" />

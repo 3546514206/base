@@ -13,6 +13,7 @@
         <module>base</module>
         <module>tomcat</module>
         <module>mybatis</module>
+        <module>dubbo</module>
     </modules>
 
 
