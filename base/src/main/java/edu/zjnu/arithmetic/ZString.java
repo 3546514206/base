@@ -1,5 +1,8 @@
 package edu.zjnu.arithmetic;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @description: 力扣题，Z字字符串
  * @author: 杨海波
@@ -17,20 +20,25 @@ public class ZString {
             return s;
         }
 
-        if (null == s || s.length() < 2) {
-            return s;
+        List<StringBuilder> builders = new ArrayList<>();
+        for (int i = 0; i < numRows; i++) {
+            builders.add(new StringBuilder());
         }
 
-        StringBuilder[] builders = new StringBuilder[numRows];
-
-        char[] chars = s.toCharArray();
-
-        for (int i = 0; i < chars.length; i++) {
-            for (int j = 0; j < builders.length; j++) {
-
+        int builderIndex = 0, flag = -1;
+        for (char c : s.toCharArray()) {
+            builders.get(builderIndex).append(c);
+            if (builderIndex == 0 || builderIndex == numRows - 1) {
+                flag = -flag;
             }
+            builderIndex += flag;
         }
 
-        return null;
+        StringBuilder res = new StringBuilder();
+        for (StringBuilder row : builders) {
+            res.append(row);
+        }
+
+        return res.toString();
     }
 }
