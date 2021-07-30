@@ -29,6 +29,12 @@
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-validation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-validation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-load" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-load/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-load/consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-load/consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-load/provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-load/provider/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-default/src/main/java" charset="UTF-8" />
