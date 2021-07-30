@@ -11,10 +11,15 @@
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-demo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-demo-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-demo-api/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-api/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </set>
     </option>

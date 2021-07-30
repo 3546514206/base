@@ -27,7 +27,6 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-cache/dubbo-filter-cache.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-cache/dubbo-filter-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-validation/dubbo-filter-validation.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-validation/dubbo-filter-validation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-load/dubbo-load.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-load.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-api/dubbo-monitor-api.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-api/dubbo-monitor-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-default/dubbo-monitor-default.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-default/dubbo-monitor-default.iml" />
