@@ -7,6 +7,10 @@
         <option value="$PROJECT_DIR$/tomcat/modules/jdbc-pool/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/dubbo-test/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-demo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-demo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-demo-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

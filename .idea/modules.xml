@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-load/api/api.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-load/api/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-load/consumer/consumer.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-load/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo.iml" filepath="$PROJECT_DIR$/dubbo/dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/all/dubbo (1).iml" filepath="$PROJECT_DIR$/dubbo/all/dubbo (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/bom/dubbo-bom.iml" filepath="$PROJECT_DIR$/dubbo/bom/dubbo-bom.iml" />
@@ -25,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-cache/dubbo-filter-cache.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-cache/dubbo-filter-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-validation/dubbo-filter-validation.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-filter/dubbo-filter-validation/dubbo-filter-validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-load/dubbo-load.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-load.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-api/dubbo-monitor-api.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-api/dubbo-monitor-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-default/dubbo-monitor-default.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-monitor/dubbo-monitor-default/dubbo-monitor-default.iml" />
@@ -73,6 +76,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-compatibility/dubbo-test-spring3/dubbo-test-spring3.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-compatibility/dubbo-test-spring3/dubbo-test-spring3.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning.iml" filepath="$PROJECT_DIR$/learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-load/provider/provider.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-load/provider/provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/tomcat/tomcat.iml" filepath="$PROJECT_DIR$/tomcat/tomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/tomcat/modules/jdbc-pool/tomcat-jdbc.iml" filepath="$PROJECT_DIR$/tomcat/modules/jdbc-pool/tomcat-jdbc.iml" />
     </modules>
