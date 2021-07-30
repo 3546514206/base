@@ -24,7 +24,7 @@ public class SpringLoader {
     private static Logger log = Logger.getLogger(SpringLoader.class);
 
     public static void main(String[] args) {
-        // ioc();
+         ioc();
         //  iocV2();
         //aopBean();
         aopConfig();
