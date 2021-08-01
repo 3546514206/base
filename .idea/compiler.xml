@@ -12,7 +12,6 @@
         <module name="dubbo-remoting-api" />
         <module name="dubbo-serialization-api" />
         <module name="dubbo-cluster" />
-        <module name="dubbo-serialization-kryo" />
         <module name="dubbo-rpc-redis" />
         <module name="dubbo-qos" />
         <module name="dubbo-rpc-thrift" />
@@ -21,11 +20,11 @@
         <module name="dubbo-monitor-api" />
         <module name="dubbo-remoting-mina" />
         <module name="consumer" />
+        <module name="boot" />
         <module name="dubbo-registry-nacos" />
         <module name="dubbo-rpc-http" />
         <module name="dubbo-demo-consumer" />
         <module name="dubbo-serialization-jdk" />
-        <module name="dubbo-common" />
         <module name="dubbo-rpc-memcached" />
         <module name="dubbo-remoting-netty" />
         <module name="dubbo-remoting-zookeeper" />
@@ -34,11 +33,11 @@
         <module name="dubbo-registry-multicast" />
         <module name="dubbo-rpc-api" />
         <module name="provider" />
-        <module name="dubbo-rpc-rest" />
+        <module name="dubbo-serialization-kryo" />
         <module name="dubbo-registry-redis" />
+        <module name="dubbo-test-examples" />
         <module name="dubbo-config-api" />
         <module name="dubbo-remoting-grizzly" />
-        <module name="dubbo-serialization-fst" />
         <module name="dubbo-test-integration" />
         <module name="tomcat-jdbc" />
         <module name="tomcat" />
@@ -50,6 +49,7 @@
         <module name="mybatis" />
         <module name="api" />
         <module name="dubbo (1)" />
+        <module name="dubbo-remoting-http" />
         <module name="dubbo-filter-cache" />
         <module name="dubbo-serialization-fastjson" />
         <module name="dubbo-rpc-injvm" />
@@ -57,19 +57,21 @@
         <module name="dubbo-remoting-p2p" />
         <module name="dubbo-serialization-hessian2" />
         <module name="dubbo-container-api" />
+        <module name="dubbo-rpc-rest" />
         <module name="dubbo-registry-api" />
         <module name="dubbo-filter-validation" />
         <module name="dubbo-rpc-rmi" />
         <module name="dubbo-rpc-webservice" />
         <module name="dubbo-rpc-dubbo" />
         <module name="dubbo-demo-api" />
-        <module name="dubbo-remoting-http" />
-        <module name="dubbo-test-examples" />
+        <module name="dubbo-serialization-fst" />
+        <module name="dubbo-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api" target="1.5" />
       <module name="base" target="8" />
+      <module name="boot" target="1.8" />
       <module name="consumer" target="1.5" />
       <module name="dubbo" target="1.6" />
       <module name="dubbo (1)" target="1.6" />
@@ -148,5 +150,10 @@
       <module name="tomcat" target="1.8" />
       <module name="tomcat-jdbc" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="boot" options="-parameters" />
+    </option>
   </component>
 </project>

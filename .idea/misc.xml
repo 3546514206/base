@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/api/pom.xml" />
+        <option value="$PROJECT_DIR$/boot/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
