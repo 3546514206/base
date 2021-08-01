@@ -41,4 +41,16 @@ public class ZString {
 
         return res.toString();
     }
+
+    /**
+     * 重写一遍
+     *
+     * @param s
+     * @param n
+     * @return
+     */
+    public String f(String s, int n) {
+
+        return null;
+    }
 }
