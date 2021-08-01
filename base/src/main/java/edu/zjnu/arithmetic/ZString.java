@@ -41,4 +41,27 @@ public class ZString {
 
         return res.toString();
     }
+
+    /**
+     * 重写一遍
+     *
+     * @param s
+     * @param n
+     * @return
+     */
+    public String f(String s, int n) {
+
+        //
+        if (n < 2) {
+            return s;
+        }
+
+        List<StringBuilder> builders = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            builders.add(new StringBuilder());
+        }
+
+
+        return null;
+    }
 }
