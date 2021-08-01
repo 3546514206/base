@@ -51,6 +51,17 @@ public class ZString {
      */
     public String f(String s, int n) {
 
+        //
+        if (n < 2) {
+            return s;
+        }
+
+        List<StringBuilder> builders = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            builders.add(new StringBuilder());
+        }
+
+
         return null;
     }
 }
