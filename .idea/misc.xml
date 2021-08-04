@@ -16,6 +16,12 @@
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/dubbo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/api/pom.xml" />
         <option value="$PROJECT_DIR$/boot/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/zookeeper-it/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-loggraph/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-fatjar/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-rest/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
