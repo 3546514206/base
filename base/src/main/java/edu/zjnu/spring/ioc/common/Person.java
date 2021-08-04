@@ -1,4 +1,4 @@
-package edu.zjnu.spring.ioc;
+package edu.zjnu.spring.ioc.common;
 
 /**
  * @author 杨海波
