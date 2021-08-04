@@ -107,5 +107,18 @@
     <file url="file://$PROJECT_DIR$/mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tomcat/modules/jdbc-pool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/conf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-fatjar/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-fatjar/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-loggraph/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-loggraph/src/main/resources/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-it/src" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-jute/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-metrics-providers/zookeeper-prometheus-metrics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-recipes/zookeeper-recipes-election/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-recipes/zookeeper-recipes-lock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-recipes/zookeeper-recipes-queue/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-server/src/main/java" charset="UTF-8" />
   </component>
 </project>
