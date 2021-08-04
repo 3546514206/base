@@ -3,9 +3,6 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="person" class="edu.zjnu.spring.ioc.Person">
-        <property name="name" value="杨海波"/>
-        <property name="age" value="21"/>
-    </bean>
+    <bean name="myTestBean" class="edu.zjnu.spring.ioc.xmlfactory.MyTestBean"/>
 
 </beans>

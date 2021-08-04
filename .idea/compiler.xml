@@ -12,7 +12,7 @@
         <module name="dubbo-remoting-api" />
         <module name="dubbo-serialization-api" />
         <module name="dubbo-cluster" />
-        <module name="dubbo-rpc-redis" />
+        <module name="dubbo-container-api" />
         <module name="dubbo-qos" />
         <module name="dubbo-rpc-thrift" />
         <module name="dubbo-monitor-default" />
@@ -20,13 +20,13 @@
         <module name="dubbo-monitor-api" />
         <module name="dubbo-remoting-mina" />
         <module name="consumer" />
-        <module name="boot" />
         <module name="dubbo-registry-nacos" />
         <module name="dubbo-rpc-http" />
         <module name="dubbo-demo-consumer" />
         <module name="dubbo-serialization-jdk" />
+        <module name="dubbo-common" />
         <module name="dubbo-rpc-memcached" />
-        <module name="dubbo-remoting-netty" />
+        <module name="dubbo-remoting-http" />
         <module name="dubbo-remoting-zookeeper" />
         <module name="dubbo-test-spring3" />
         <module name="dubbo-container-logback" />
@@ -34,10 +34,10 @@
         <module name="dubbo-rpc-api" />
         <module name="provider" />
         <module name="dubbo-serialization-kryo" />
-        <module name="dubbo-registry-redis" />
-        <module name="dubbo-test-examples" />
+        <module name="dubbo-rpc-redis" />
         <module name="dubbo-config-api" />
         <module name="dubbo-remoting-grizzly" />
+        <module name="dubbo-remoting-p2p" />
         <module name="dubbo-test-integration" />
         <module name="tomcat-jdbc" />
         <module name="tomcat" />
@@ -49,14 +49,14 @@
         <module name="mybatis" />
         <module name="api" />
         <module name="dubbo (1)" />
-        <module name="dubbo-remoting-http" />
+        <module name="boot" />
         <module name="dubbo-filter-cache" />
         <module name="dubbo-serialization-fastjson" />
         <module name="dubbo-rpc-injvm" />
         <module name="dubbo-registry-zookeeper" />
-        <module name="dubbo-remoting-p2p" />
+        <module name="dubbo-remoting-netty" />
         <module name="dubbo-serialization-hessian2" />
-        <module name="dubbo-container-api" />
+        <module name="dubbo-test-examples" />
         <module name="dubbo-rpc-rest" />
         <module name="dubbo-registry-api" />
         <module name="dubbo-filter-validation" />
@@ -65,7 +65,7 @@
         <module name="dubbo-rpc-dubbo" />
         <module name="dubbo-demo-api" />
         <module name="dubbo-serialization-fst" />
-        <module name="dubbo-common" />
+        <module name="dubbo-registry-redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

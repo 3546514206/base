@@ -28,6 +28,13 @@
           <file>file://$MODULE_DIR$/src/main/resources/spring-aop-bean-conf.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring-ioc.xml</file>
         </fileset>
+        <fileset id="fileset4" name="Spring Ioc Xmlfactory" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/edu/zjnu/spring/annotation/PersonConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-aop-conf.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-bean-conf.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc-common.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc-xmlfactory.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>

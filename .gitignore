@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+*.logs
 
 # BlueJ files
 *.ctxt
@@ -203,3 +204,4 @@ hs_err_pid*
 /dubbo/dubbo-serialization/dubbo-serialization-hessian2/target/classes/META-INF/LICENSE
 /dubbo/dubbo-serialization/dubbo-serialization-hessian2/target/test-classes/com/alibaba/dubbo/common/serialize/dubbo/SimpleDO.fc
 /dubbo/dubbo-serialization/dubbo-serialization-hessian2/target/test-classes/log4j.xml
+/.idea/

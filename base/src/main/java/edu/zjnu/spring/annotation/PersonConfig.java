@@ -1,6 +1,6 @@
 package edu.zjnu.spring.annotation;
 
-import edu.zjnu.spring.ioc.Person;
+import edu.zjnu.spring.ioc.common.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
