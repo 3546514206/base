@@ -6,77 +6,66 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo-demo-consumer" />
-        <module name="zookeeper-contrib-loggraph" />
-        <module name="dubbo-rpc-webservice" />
         <module name="dubbo-config-spring" />
-        <module name="zookeeper-prometheus-metrics" />
-        <module name="dubbo-test-benchmark" />
-        <module name="dubbo-rpc-injvm" />
-        <module name="dubbo-remoting-p2p" />
-        <module name="dubbo-serialization-fastjson" />
-        <module name="api" />
-        <module name="dubbo-serialization-jdk" />
-        <module name="dubbo-remoting-http" />
-        <module name="dubbo-monitor-default" />
-        <module name="dubbo-qos" />
-        <module name="dubbo-common" />
-        <module name="dubbo-serialization-kryo" />
-        <module name="zookeeper" />
-        <module name="dubbo-rpc-rmi" />
-        <module name="dubbo-registry-nacos" />
-        <module name="zookeeper-contrib-fatjar" />
         <module name="dubbo-registry-default" />
-        <module name="dubbo-serialization-fst" />
-        <module name="dubbo-registry-redis" />
-        <module name="dubbo-remoting-netty4" />
-        <module name="dubbo-remoting-api" />
-        <module name="dubbo-remoting-mina" />
         <module name="dubbo-container-log4j" />
-        <module name="dubbo-filter-cache" />
-        <module name="base" />
-        <module name="dubbo-rpc-thrift" />
-        <module name="dubbo-registry-api" />
-        <module name="zookeeper-it" />
-        <module name="dubbo-remoting-netty" />
-        <module name="dubbo-demo-provider" />
-        <module name="dubbo-rpc-memcached" />
-        <module name="dubbo-remoting-zookeeper" />
-        <module name="zookeeper-docs" />
-        <module name="dubbo-rpc-dubbo" />
-        <module name="boot" />
-        <module name="tomcat" />
-        <module name="dubbo-test-spring3" />
-        <module name="mybatis" />
-        <module name="zookeeper-contrib-rest" />
-        <module name="dubbo-config-api" />
-        <module name="dubbo-rpc-hessian" />
-        <module name="dubbo-serialization-hessian2" />
-        <module name="dubbo-rpc-rest" />
-        <module name="provider" />
-        <module name="dubbo-demo-api" />
-        <module name="dubbo (1)" />
-        <module name="dubbo-filter-validation" />
-        <module name="dubbo-container-spring" />
-        <module name="dubbo-rpc-http" />
-        <module name="zookeeper-recipes-election" />
-        <module name="dubbo-monitor-api" />
-        <module name="dubbo-registry-multicast" />
-        <module name="dubbo-remoting-grizzly" />
-        <module name="dubbo-container-api" />
-        <module name="dubbo-rpc-redis" />
-        <module name="zookeeper-recipes-queue" />
-        <module name="dubbo-test-integration" />
-        <module name="dubbo-rpc-api" />
-        <module name="dubbo-registry-zookeeper" />
-        <module name="dubbo-cluster" />
-        <module name="zookeeper-recipes-lock" />
-        <module name="zookeeper-jute" />
-        <module name="dubbo-test-examples" />
+        <module name="dubbo-remoting-api" />
         <module name="dubbo-serialization-api" />
+        <module name="dubbo-cluster" />
+        <module name="dubbo-remoting-netty" />
+        <module name="dubbo-test-examples" />
+        <module name="dubbo-qos" />
+        <module name="dubbo-rpc-thrift" />
+        <module name="dubbo-monitor-default" />
+        <module name="dubbo-demo-provider" />
+        <module name="dubbo-monitor-api" />
+        <module name="dubbo-remoting-mina" />
         <module name="consumer" />
+        <module name="dubbo-registry-nacos" />
+        <module name="dubbo-rpc-http" />
+        <module name="dubbo-demo-consumer" />
+        <module name="dubbo-serialization-jdk" />
+        <module name="dubbo-rpc-memcached" />
+        <module name="dubbo-remoting-http" />
+        <module name="dubbo-remoting-zookeeper" />
+        <module name="dubbo-test-spring3" />
         <module name="dubbo-container-logback" />
+        <module name="dubbo-registry-multicast" />
+        <module name="dubbo-rpc-api" />
+        <module name="provider" />
+        <module name="dubbo-registry-redis" />
+        <module name="dubbo-serialization-kryo" />
+        <module name="dubbo-rpc-redis" />
+        <module name="dubbo-config-api" />
+        <module name="dubbo-remoting-grizzly" />
+        <module name="dubbo-test-integration" />
         <module name="tomcat-jdbc" />
+        <module name="tomcat" />
+        <module name="dubbo-rpc-hessian" />
+        <module name="dubbo-remoting-netty4" />
+        <module name="base" />
+        <module name="dubbo-container-spring" />
+        <module name="dubbo-test-benchmark" />
+        <module name="mybatis" />
+        <module name="api" />
+        <module name="dubbo (1)" />
+        <module name="boot" />
+        <module name="dubbo-filter-cache" />
+        <module name="dubbo-serialization-fastjson" />
+        <module name="dubbo-rpc-injvm" />
+        <module name="dubbo-registry-zookeeper" />
+        <module name="dubbo-remoting-p2p" />
+        <module name="dubbo-serialization-hessian2" />
+        <module name="dubbo-container-api" />
+        <module name="dubbo-rpc-rest" />
+        <module name="dubbo-registry-api" />
+        <module name="dubbo-filter-validation" />
+        <module name="dubbo-rpc-rmi" />
+        <module name="dubbo-rpc-webservice" />
+        <module name="dubbo-rpc-dubbo" />
+        <module name="dubbo-demo-api" />
+        <module name="dubbo-serialization-fst" />
+        <module name="dubbo-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -157,42 +146,14 @@
       <module name="dubbo-test-spring3" target="1.6" />
       <module name="learning" target="1.5" />
       <module name="mybatis" target="8" />
-      <module name="parent" target="1.8" />
       <module name="provider" target="1.5" />
       <module name="tomcat" target="1.8" />
       <module name="tomcat-jdbc" target="1.8" />
-      <module name="zookeeper" target="1.8" />
-      <module name="zookeeper-assembly" target="1.8" />
-      <module name="zookeeper-client" target="1.8" />
-      <module name="zookeeper-contrib" target="1.8" />
-      <module name="zookeeper-contrib-fatjar" target="1.8" />
-      <module name="zookeeper-contrib-loggraph" target="1.8" />
-      <module name="zookeeper-contrib-rest" target="1.8" />
-      <module name="zookeeper-docs" target="1.8" />
-      <module name="zookeeper-it" target="1.8" />
-      <module name="zookeeper-jute" target="1.8" />
-      <module name="zookeeper-metrics-providers" target="1.8" />
-      <module name="zookeeper-prometheus-metrics" target="1.8" />
-      <module name="zookeeper-recipes" target="1.8" />
-      <module name="zookeeper-recipes-election" target="1.8" />
-      <module name="zookeeper-recipes-lock" target="1.8" />
-      <module name="zookeeper-recipes-queue" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boot" options="-parameters" />
-      <module name="zookeeper" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
-      <module name="zookeeper-contrib-fatjar" options="-Xlint:none" />
-      <module name="zookeeper-contrib-loggraph" options="-Xlint:none" />
-      <module name="zookeeper-contrib-rest" options="-Xlint:none" />
-      <module name="zookeeper-docs" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
-      <module name="zookeeper-it" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
-      <module name="zookeeper-jute" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
-      <module name="zookeeper-prometheus-metrics" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
-      <module name="zookeeper-recipes-election" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
-      <module name="zookeeper-recipes-lock" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
-      <module name="zookeeper-recipes-queue" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
     </option>
   </component>
 </project>
