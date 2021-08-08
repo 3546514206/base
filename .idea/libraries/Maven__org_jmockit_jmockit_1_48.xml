@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.jmockit:jmockit:1.48">
     <CLASSES>
-      <root url="jar://D:/maven/repo/org/jmockit/jmockit/1.48/jmockit-1.48.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jmockit/jmockit/1.48/jmockit-1.48.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/maven/repo/org/jmockit/jmockit/1.48/jmockit-1.48-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jmockit/jmockit/1.48/jmockit-1.48-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://D:/maven/repo/org/jmockit/jmockit/1.48/jmockit-1.48-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jmockit/jmockit/1.48/jmockit-1.48-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

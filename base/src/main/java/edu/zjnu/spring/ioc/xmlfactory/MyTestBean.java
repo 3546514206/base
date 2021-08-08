@@ -7,7 +7,7 @@ package edu.zjnu.spring.ioc.xmlfactory;
  **/
 public class MyTestBean {
 
-    private String testStr = "testStr";
+    private String testStr = "this is a testStr";
 
     public String getTestStr() {
         return testStr;
