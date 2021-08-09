@@ -103,6 +103,7 @@
       <module fileurl="file://$PROJECT_DIR$/sofa/tracer-src/tracer-all-parent.iml" filepath="$PROJECT_DIR$/sofa/tracer-src/tracer-all-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/sofa/tracer-src/tracer-core/tracer-core.iml" filepath="$PROJECT_DIR$/sofa/tracer-src/tracer-core/tracer-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/sofa/tracer-src/tracer-extensions/tracer-extensions.iml" filepath="$PROJECT_DIR$/sofa/tracer-src/tracer-extensions/tracer-extensions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-catchbiz/tracer-sample-with-catchbiz.iml" filepath="$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-catchbiz/tracer-sample-with-catchbiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-dubbo/tracer-sample-with-dubbo.iml" filepath="$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-dubbo/tracer-sample-with-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-dubbo/tracer-sample-with-dubbo-consumer/tracer-sample-with-dubbo-consumer.iml" filepath="$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-dubbo/tracer-sample-with-dubbo-consumer/tracer-sample-with-dubbo-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-dubbo/tracer-sample-with-dubbo-facade/tracer-sample-with-dubbo-facade.iml" filepath="$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-dubbo/tracer-sample-with-dubbo-facade/tracer-sample-with-dubbo-facade.iml" />

@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-rest/pom.xml" />
         <option value="$PROJECT_DIR$/sofa/tracer-sample/pom.xml" />
         <option value="$PROJECT_DIR$/sofa/tracer-src/pom.xml" />
+        <option value="$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-catchbiz/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

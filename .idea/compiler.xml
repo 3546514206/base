@@ -69,6 +69,7 @@
         <module name="dubbo-test-spring3" />
         <module name="sofa-tracer-okhttp-plugin" />
         <module name="mybatis" />
+        <module name="tracer-sample-with-catchbiz" />
         <module name="tracer-sample-with-dubbo-facade" />
         <module name="tracer-sample-with-sampler" />
         <module name="sofa-tracer-sample-with-h2" />
@@ -215,6 +216,7 @@
       <module name="tracer-all-parent" target="1.8" />
       <module name="tracer-core" target="1.8" />
       <module name="tracer-extensions" target="1.8" />
+      <module name="tracer-sample-with-catchbiz" target="1.8" />
       <module name="tracer-sample-with-dubbo" target="1.8" />
       <module name="tracer-sample-with-dubbo-consumer" target="1.8" />
       <module name="tracer-sample-with-dubbo-facade" target="1.8" />
@@ -252,6 +254,7 @@
       <module name="sofa-tracer-sample-with-slf4j" options="-parameters" />
       <module name="sofa-tracer-sample-with-sofarpc" options="-parameters" />
       <module name="sofa-tracer-sample-with-springmvc" options="-parameters" />
+      <module name="tracer-sample-with-catchbiz" options="-parameters" />
       <module name="tracer-sample-with-dubbo-consumer" options="-parameters" />
       <module name="tracer-sample-with-dubbo-facade" options="-parameters" />
       <module name="tracer-sample-with-dubbo-provider" options="-parameters" />
