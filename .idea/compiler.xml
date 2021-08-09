@@ -190,31 +190,31 @@
       <module name="mybatis" target="8" />
       <module name="parent" target="1.8" />
       <module name="provider" target="1.5" />
-      <module name="sofa-tracer-core-test" target="1.5" />
-      <module name="sofa-tracer-datasource-plugin" target="1.5" />
-      <module name="sofa-tracer-dubbo-2.6.x-plugin" target="1.5" />
-      <module name="sofa-tracer-dubbo-plugin" target="1.5" />
-      <module name="sofa-tracer-flexible-plugin" target="1.5" />
+      <module name="sofa-tracer-core-test" target="1.8" />
+      <module name="sofa-tracer-datasource-plugin" target="1.7" />
+      <module name="sofa-tracer-dubbo-2.6.x-plugin" target="1.8" />
+      <module name="sofa-tracer-dubbo-plugin" target="1.8" />
+      <module name="sofa-tracer-flexible-plugin" target="1.8" />
       <module name="sofa-tracer-guides" target="1.8" />
-      <module name="sofa-tracer-httpclient-plugin" target="1.5" />
-      <module name="sofa-tracer-log4j-test" target="1.5" />
-      <module name="sofa-tracer-log4j2-test" target="1.5" />
-      <module name="sofa-tracer-logback-test" target="1.5" />
-      <module name="sofa-tracer-okhttp-plugin" target="1.5" />
-      <module name="sofa-tracer-resttmplate-plugin" target="1.5" />
+      <module name="sofa-tracer-httpclient-plugin" target="1.8" />
+      <module name="sofa-tracer-log4j-test" target="1.8" />
+      <module name="sofa-tracer-log4j2-test" target="1.8" />
+      <module name="sofa-tracer-logback-test" target="1.8" />
+      <module name="sofa-tracer-okhttp-plugin" target="1.8" />
+      <module name="sofa-tracer-resttmplate-plugin" target="1.8" />
       <module name="sofa-tracer-sample-with-h2" target="1.8" />
       <module name="sofa-tracer-sample-with-slf4j" target="1.8" />
       <module name="sofa-tracer-sample-with-sofarpc" target="1.8" />
       <module name="sofa-tracer-sample-with-springmvc" target="1.8" />
-      <module name="sofa-tracer-spring-cloud-plugin" target="1.5" />
-      <module name="sofa-tracer-springmvc-plugin" target="1.5" />
-      <module name="sofa-tracer-zipkin-plugin" target="1.5" />
+      <module name="sofa-tracer-spring-cloud-plugin" target="1.8" />
+      <module name="sofa-tracer-springmvc-plugin" target="1.8" />
+      <module name="sofa-tracer-zipkin-plugin" target="1.8" />
       <module name="tomcat" target="1.8" />
       <module name="tomcat-jdbc" target="1.8" />
-      <module name="tracer-all" target="1.5" />
-      <module name="tracer-all-parent" target="1.5" />
-      <module name="tracer-core" target="1.5" />
-      <module name="tracer-extensions" target="1.5" />
+      <module name="tracer-all" target="1.8" />
+      <module name="tracer-all-parent" target="1.8" />
+      <module name="tracer-core" target="1.8" />
+      <module name="tracer-extensions" target="1.8" />
       <module name="tracer-sample-with-dubbo" target="1.8" />
       <module name="tracer-sample-with-dubbo-consumer" target="1.8" />
       <module name="tracer-sample-with-dubbo-facade" target="1.8" />
@@ -226,7 +226,7 @@
       <module name="tracer-sample-with-resttemplate" target="1.8" />
       <module name="tracer-sample-with-sampler" target="1.8" />
       <module name="tracer-sample-with-zipkin" target="1.8" />
-      <module name="tracer-sofa-boot-starter" target="1.5" />
+      <module name="tracer-sofa-boot-starter" target="1.7" />
       <module name="zookeeper" target="1.8" />
       <module name="zookeeper-assembly" target="1.8" />
       <module name="zookeeper-client" target="1.8" />
