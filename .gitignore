@@ -206,3 +206,4 @@ hs_err_pid*
 /dubbo/dubbo-serialization/dubbo-serialization-hessian2/target/test-classes/log4j.xml
 /.idea/
 /zookeeper/zookeeper-server/target/test-classes/
+/zookeeper/zookeeper-jute/target/
