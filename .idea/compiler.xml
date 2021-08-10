@@ -7,51 +7,81 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dubbo-demo-consumer" />
-        <module name="zookeeper-contrib-loggraph" />
+        <module name="sofa-tracer-springmvc-plugin" />
+        <module name="tracer-extensions" />
+        <module name="tracer-sample-with-resttemplate" />
         <module name="dubbo-rpc-webservice" />
+        <module name="sofa-tracer-flexible-plugin" />
         <module name="dubbo-config-spring" />
+        <module name="sofa-tracer-datasource-plugin" />
         <module name="zookeeper-prometheus-metrics" />
         <module name="dubbo-test-benchmark" />
         <module name="dubbo-rpc-injvm" />
-        <module name="dubbo-remoting-p2p" />
-        <module name="dubbo-serialization-fastjson" />
+        <module name="sofa-tracer-dubbo-plugin" />
+        <module name="sofa-tracer-log4j-test" />
+        <module name="dubbo-rpc-memcached" />
         <module name="api" />
         <module name="dubbo-serialization-jdk" />
         <module name="dubbo-remoting-http" />
         <module name="dubbo-monitor-default" />
+        <module name="zookeeper-it" />
+        <module name="dubbo-rpc-hessian" />
         <module name="dubbo-qos" />
         <module name="dubbo-common" />
         <module name="dubbo-serialization-kryo" />
         <module name="zookeeper" />
+        <module name="sofa-tracer-httpclient-plugin" />
         <module name="dubbo-rpc-rmi" />
         <module name="dubbo-registry-nacos" />
         <module name="zookeeper-contrib-fatjar" />
         <module name="dubbo-registry-default" />
+        <module name="tracer-sofa-boot-starter" />
         <module name="dubbo-serialization-fst" />
-        <module name="dubbo-registry-redis" />
+        <module name="tomcat" />
+        <module name="sofa-tracer-dubbo-2.6.x-plugin" />
         <module name="dubbo-remoting-netty4" />
+        <module name="tracer-sample-with-openfeign-consumer" />
+        <module name="tracer-sample-with-httpclient" />
+        <module name="tracer-core" />
+        <module name="tracer-sample-with-openfeign-provider" />
         <module name="dubbo-remoting-api" />
         <module name="dubbo-remoting-mina" />
+        <module name="tracer-sample-with-zipkin" />
+        <module name="zookeeper-jute" />
         <module name="dubbo-container-log4j" />
-        <module name="dubbo-filter-cache" />
+        <module name="dubbo-container-api" />
         <module name="base" />
+        <module name="sofa-tracer-resttmplate-plugin" />
         <module name="dubbo-rpc-thrift" />
         <module name="dubbo-registry-api" />
-        <module name="zookeeper-it" />
+        <module name="dubbo-registry-redis" />
         <module name="dubbo-remoting-netty" />
         <module name="dubbo-demo-provider" />
-        <module name="dubbo-rpc-memcached" />
+        <module name="sofa-tracer-spring-cloud-plugin" />
+        <module name="tracer-sample-with-dubbo-provider" />
         <module name="dubbo-remoting-zookeeper" />
         <module name="zookeeper-docs" />
+        <module name="sofa-tracer-core-test" />
+        <module name="sofa-tracer-sample-with-springmvc" />
         <module name="dubbo-rpc-dubbo" />
         <module name="boot" />
-        <module name="tomcat" />
+        <module name="sofa-tracer-sample-with-slf4j" />
         <module name="dubbo-test-spring3" />
+        <module name="sofa-tracer-okhttp-plugin" />
         <module name="mybatis" />
-        <module name="javassist" />
+        <module name="tracer-sample-with-catchbiz" />
+        <module name="tracer-sample-with-dubbo-facade" />
+        <module name="tracer-sample-with-sampler" />
+        <module name="sofa-tracer-sample-with-h2" />
+        <module name="sofa-tracer-log4j2-test" />
+        <module name="sofa-tracer-logback-test" />
         <module name="zookeeper-contrib-rest" />
         <module name="dubbo-config-api" />
-        <module name="dubbo-rpc-hessian" />
+        <module name="zookeeper-contrib-loggraph" />
+        <module name="tracer-sample-with-dubbo-consumer" />
+        <module name="sofa-tracer-zipkin-plugin" />
+        <module name="dubbo-remoting-p2p" />
+        <module name="dubbo-filter-cache" />
         <module name="dubbo-serialization-hessian2" />
         <module name="dubbo-rpc-rest" />
         <module name="provider" />
@@ -64,15 +94,16 @@
         <module name="dubbo-monitor-api" />
         <module name="dubbo-registry-multicast" />
         <module name="dubbo-remoting-grizzly" />
-        <module name="dubbo-container-api" />
+        <module name="sofa-tracer-sample-with-sofarpc" />
         <module name="dubbo-rpc-redis" />
+        <module name="tracer-all" />
         <module name="zookeeper-recipes-queue" />
         <module name="dubbo-test-integration" />
         <module name="dubbo-rpc-api" />
         <module name="dubbo-registry-zookeeper" />
         <module name="dubbo-cluster" />
         <module name="zookeeper-recipes-lock" />
-        <module name="zookeeper-jute" />
+        <module name="dubbo-serialization-fastjson" />
         <module name="dubbo-test-examples" />
         <module name="dubbo-serialization-api" />
         <module name="consumer" />
@@ -156,13 +187,48 @@
       <module name="dubbo-test-examples" target="1.6" />
       <module name="dubbo-test-integration" target="1.6" />
       <module name="dubbo-test-spring3" target="1.6" />
-      <module name="javassist" target="1.8" />
       <module name="learning" target="1.5" />
       <module name="mybatis" target="8" />
       <module name="parent" target="1.8" />
       <module name="provider" target="1.5" />
+      <module name="sofa-tracer-core-test" target="1.8" />
+      <module name="sofa-tracer-datasource-plugin" target="1.7" />
+      <module name="sofa-tracer-dubbo-2.6.x-plugin" target="1.8" />
+      <module name="sofa-tracer-dubbo-plugin" target="1.8" />
+      <module name="sofa-tracer-flexible-plugin" target="1.8" />
+      <module name="sofa-tracer-guides" target="1.8" />
+      <module name="sofa-tracer-httpclient-plugin" target="1.8" />
+      <module name="sofa-tracer-log4j-test" target="1.8" />
+      <module name="sofa-tracer-log4j2-test" target="1.8" />
+      <module name="sofa-tracer-logback-test" target="1.8" />
+      <module name="sofa-tracer-okhttp-plugin" target="1.8" />
+      <module name="sofa-tracer-resttmplate-plugin" target="1.8" />
+      <module name="sofa-tracer-sample-with-h2" target="1.8" />
+      <module name="sofa-tracer-sample-with-slf4j" target="1.8" />
+      <module name="sofa-tracer-sample-with-sofarpc" target="1.8" />
+      <module name="sofa-tracer-sample-with-springmvc" target="1.8" />
+      <module name="sofa-tracer-spring-cloud-plugin" target="1.8" />
+      <module name="sofa-tracer-springmvc-plugin" target="1.8" />
+      <module name="sofa-tracer-zipkin-plugin" target="1.8" />
       <module name="tomcat" target="1.8" />
       <module name="tomcat-jdbc" target="1.8" />
+      <module name="tracer-all" target="1.8" />
+      <module name="tracer-all-parent" target="1.8" />
+      <module name="tracer-core" target="1.8" />
+      <module name="tracer-extensions" target="1.8" />
+      <module name="tracer-sample-with-catchbiz" target="1.8" />
+      <module name="tracer-sample-with-dubbo" target="1.8" />
+      <module name="tracer-sample-with-dubbo-consumer" target="1.8" />
+      <module name="tracer-sample-with-dubbo-facade" target="1.8" />
+      <module name="tracer-sample-with-dubbo-provider" target="1.8" />
+      <module name="tracer-sample-with-httpclient" target="1.8" />
+      <module name="tracer-sample-with-openfeign" target="1.8" />
+      <module name="tracer-sample-with-openfeign-consumer" target="1.8" />
+      <module name="tracer-sample-with-openfeign-provider" target="1.8" />
+      <module name="tracer-sample-with-resttemplate" target="1.8" />
+      <module name="tracer-sample-with-sampler" target="1.8" />
+      <module name="tracer-sample-with-zipkin" target="1.8" />
+      <module name="tracer-sofa-boot-starter" target="1.7" />
       <module name="zookeeper" target="1.8" />
       <module name="zookeeper-assembly" target="1.8" />
       <module name="zookeeper-client" target="1.8" />
@@ -184,6 +250,20 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boot" options="-parameters" />
+      <module name="sofa-tracer-sample-with-h2" options="-parameters" />
+      <module name="sofa-tracer-sample-with-slf4j" options="-parameters" />
+      <module name="sofa-tracer-sample-with-sofarpc" options="-parameters" />
+      <module name="sofa-tracer-sample-with-springmvc" options="-parameters" />
+      <module name="tracer-sample-with-catchbiz" options="-parameters" />
+      <module name="tracer-sample-with-dubbo-consumer" options="-parameters" />
+      <module name="tracer-sample-with-dubbo-facade" options="-parameters" />
+      <module name="tracer-sample-with-dubbo-provider" options="-parameters" />
+      <module name="tracer-sample-with-httpclient" options="-parameters" />
+      <module name="tracer-sample-with-openfeign-consumer" options="-parameters" />
+      <module name="tracer-sample-with-openfeign-provider" options="-parameters" />
+      <module name="tracer-sample-with-resttemplate" options="-parameters" />
+      <module name="tracer-sample-with-sampler" options="-parameters" />
+      <module name="tracer-sample-with-zipkin" options="-parameters" />
       <module name="zookeeper" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
       <module name="zookeeper-contrib-fatjar" options="-Xlint:none" />
       <module name="zookeeper-contrib-loggraph" options="-Xlint:none" />
