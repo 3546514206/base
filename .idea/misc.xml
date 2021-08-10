@@ -32,23 +32,6 @@
       <set>
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-assembly/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-client/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-fatjar/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-loggraph/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-rest/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-docs/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-it/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-jute/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-metrics-providers/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-metrics-providers/zookeeper-prometheus-metrics/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-recipes/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-recipes/zookeeper-recipes-election/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-recipes/zookeeper-recipes-lock/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-recipes/zookeeper-recipes-queue/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/zookeeper-server/pom.xml" />
       </set>
     </option>
   </component>
