@@ -207,3 +207,4 @@ hs_err_pid*
 /.idea/
 /sofa/tracer-sample/tracer-sample-with-zipkin/target/classes/
 /zookeeper/zookeeper-jute/target/
+/zookeeper/
