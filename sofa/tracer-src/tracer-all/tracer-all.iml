@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="FacetManager">
-    <facet type="Spring" name="Spring">
-      <configuration />
-    </facet>
-  </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$APPLICATION_HOME_DIR$/bin">
@@ -16,22 +11,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="tracer-core" />
-    <orderEntry type="library" name="Maven: io.opentracing:opentracing-api:0.22.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing:opentracing-noop:0.22.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing:opentracing-mock:0.22.0" level="project" />
-    <orderEntry type="library" name="Maven: io.opentracing:opentracing-util:0.22.0" level="project" />
-    <orderEntry type="module" module-name="tracer-extensions" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
-    <orderEntry type="module" module-name="sofa-tracer-springmvc-plugin" />
-    <orderEntry type="module" module-name="sofa-tracer-httpclient-plugin" />
-    <orderEntry type="module" module-name="sofa-tracer-resttmplate-plugin" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.19.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.19.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.19.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.19.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.19.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.19.RELEASE" level="project" />
-    <orderEntry type="module" module-name="sofa-tracer-datasource-plugin" />
   </component>
 </module>

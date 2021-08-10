@@ -26,6 +26,9 @@
         <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-fatjar/pom.xml" />
         <option value="$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-rest/pom.xml" />
         <option value="$PROJECT_DIR$/javasistant/pom.xml" />
+        <option value="$PROJECT_DIR$/javassist/pom.xml" />
+        <option value="$PROJECT_DIR$/sofa/tracer-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/sofa/tracer-src/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

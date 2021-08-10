@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$APPLICATION_HOME_DIR$/bin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base/src/main/resources" charset="UTF-8" />
@@ -104,6 +105,7 @@
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-compatibility/dubbo-test-spring3/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-examples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-examples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javassist/src/main" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-catchbiz/src/main/java" charset="UTF-8" />
@@ -121,17 +123,22 @@
     <file url="file://$PROJECT_DIR$/sofa/tracer-sample/tracer-sample-with-zipkin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-datasource-plugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-dubbo-2.6.x-plugin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-dubbo-2.6.x-plugin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-dubbo-plugin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-flexible-plugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-httpclient-plugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-okhttp-plugin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-resttmplate-plugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-spring-cloud-plugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-springmvc-plugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/sofa-tracer-plugins/sofa-tracer-zipkin-plugin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/tracer-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/tracer-extensions/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sofa/tracer-src/tracer-extensions/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sofa/tracer-src/tracer-sofa-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sofa/tracer-src/tracer-sofa-boot-starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tomcat/modules/jdbc-pool/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zookeeper/conf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zookeeper/zookeeper-contrib/zookeeper-contrib-fatjar/src/main/java" charset="UTF-8" />
