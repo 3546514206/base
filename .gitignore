@@ -205,5 +205,5 @@ hs_err_pid*
 /dubbo/dubbo-serialization/dubbo-serialization-hessian2/target/test-classes/com/alibaba/dubbo/common/serialize/dubbo/SimpleDO.fc
 /dubbo/dubbo-serialization/dubbo-serialization-hessian2/target/test-classes/log4j.xml
 /.idea/
-/zookeeper/
 /sofa/tracer-sample/tracer-sample-with-zipkin/target/classes/
+/zookeeper/zookeeper-jute/target/
