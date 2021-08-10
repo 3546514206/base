@@ -111,6 +111,6 @@ public class SpringLoader {
         //获取Bean
         Person person = (Person) context.getBean("person");
         log.info(person.toString());
-    }
+        }
 
 }
