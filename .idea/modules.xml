@@ -74,6 +74,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-examples/dubbo-test-examples.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-examples/dubbo-test-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-integration/dubbo-test-integration.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-integration/dubbo-test-integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-compatibility/dubbo-test-spring3/dubbo-test-spring3.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-test/dubbo-test-compatibility/dubbo-test-spring3/dubbo-test-spring3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javasistant/javasistant.iml" filepath="$PROJECT_DIR$/javasistant/javasistant.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning.iml" filepath="$PROJECT_DIR$/learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper/parent.iml" filepath="$PROJECT_DIR$/zookeeper/parent.iml" />
