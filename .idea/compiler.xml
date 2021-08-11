@@ -72,7 +72,6 @@
         <module name="sofa-tracer-okhttp-plugin" />
         <module name="tracer-sample-with-dubbo-consumer" />
         <module name="mybatis" />
-        <module name="javassist" />
         <module name="tracer-all" />
         <module name="sofa-tracer-sample-with-h2" />
         <module name="sofa-tracer-logback-test" />
@@ -187,7 +186,7 @@
       <module name="dubbo-test-examples" target="1.6" />
       <module name="dubbo-test-integration" target="1.6" />
       <module name="dubbo-test-spring3" target="1.6" />
-      <module name="javassist" target="1.8" />
+      <module name="javassist" target="1.5" />
       <module name="learning" target="1.5" />
       <module name="mybatis" target="8" />
       <module name="parent" target="1.8" />
