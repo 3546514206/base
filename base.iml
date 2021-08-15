@@ -4,38 +4,12 @@
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
-        <datasource-mapping>
-          <factory-entry name="Entities" />
-        </datasource-mapping>
+        <datasource-mapping />
         <naming-strategy-map />
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset" name="Spring Aop" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/spring-aop.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc.xml</file>
-        </fileset>
-        <fileset id="fileset2" name="Spring Aop Conf" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/edu/zjnu/spring/annotation/PersonConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-bean.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-conf.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc.xml</file>
-        </fileset>
-        <fileset id="fileset3" name="Spring Aop Aop Conf" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/edu/zjnu/spring/annotation/PersonConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-aop-conf.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-bean-conf.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc.xml</file>
-        </fileset>
-        <fileset id="fileset4" name="Spring Ioc Xmlfactory" removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/edu/zjnu/spring/annotation/PersonConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-aop-conf.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-aop-bean-conf.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc-common.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring-ioc-xmlfactory.xml</file>
-        </fileset>
-      </configuration>
+      <configuration />
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
@@ -45,7 +19,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/src/main/java/edu/zjnu/spring/ioc/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

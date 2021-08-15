@@ -6,7 +6,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/tomcat/modules/jdbc-pool/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/dubbo-test/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo/pom.xml" />
@@ -28,12 +27,12 @@
         <option value="$PROJECT_DIR$/javasistant/pom.xml" />
         <option value="$PROJECT_DIR$/sofa/tracer-sample/pom.xml" />
         <option value="$PROJECT_DIR$/sofa/tracer-src/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/dubbo/dubbo-load/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
       </set>
     </option>
   </component>
