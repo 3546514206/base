@@ -1,1 +1,0 @@
-dubboSofaTracerFilter=com.alipay.sofa.tracer.plugins.dubbo.DubboSofaTracerFilter

@@ -1,1 +1,0 @@
-tracerCodec=com.alipay.sofa.tracer.plugins.dubbo.wrapper.DataSizeCodecWrapper
