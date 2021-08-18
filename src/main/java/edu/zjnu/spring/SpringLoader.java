@@ -32,7 +32,7 @@ public class SpringLoader {
         //  iocV2();
         //aopBean();
         //aopConfig();
-//        annotation();
+        annotation();
     }
 
     /**
