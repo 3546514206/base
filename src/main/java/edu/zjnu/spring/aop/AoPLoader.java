@@ -36,5 +36,8 @@ public class AoPLoader {
         duck.swim();
     }
 
+    public static void main(String[] args) {
+        aopBean();
+    }
 
 }
