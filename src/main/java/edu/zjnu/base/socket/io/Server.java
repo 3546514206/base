@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * @description: Server
+ * @description: NioServer
  * @author: 杨海波
  * @date: 2021-08-21
  **/

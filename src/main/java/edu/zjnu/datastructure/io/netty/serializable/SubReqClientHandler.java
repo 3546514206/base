@@ -33,7 +33,7 @@ public class SubReqClientHandler extends ChannelHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        System.out.println("Receive server response : [" + msg + "]");
+        System.out.println("NioServer server response : [" + msg + "]");
     }
 
     @Override

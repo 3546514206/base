@@ -138,7 +138,7 @@ public class TimeClientHandle implements Runnable {
         writeBuffer.flip();
         sc.write(writeBuffer);
         if (!writeBuffer.hasRemaining()) {
-            System.out.println("Send order to server succeed.");
+            System.out.println("NioClient order to server succeed.");
         }
     }
 }

@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 /**
- * @description: Client
+ * @description: NioClient
  * @author: 杨海波
  * @date: 2021-08-21
  **/
