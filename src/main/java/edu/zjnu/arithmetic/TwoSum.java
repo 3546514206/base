@@ -74,4 +74,29 @@ class TwoSum {
 
         return null;
     }
+
+    /**
+     * 双指针，复杂度：一次遍历，O(N)
+     */
+    private int[] twoPoint(int[] nums, int target) {
+
+        int[] index = new int[2];
+
+        int i = 0;
+        int j = nums.length - 1;
+
+        while (i < j) {
+            if (nums[i] + nums[j] == target) {
+                index[0] = i;
+                index[1] = j;
+                break;
+            }
+            if (nums[i] + nums[j] < target) {
+
+            }
+
+        }
+
+        return index;
+    }
 }
