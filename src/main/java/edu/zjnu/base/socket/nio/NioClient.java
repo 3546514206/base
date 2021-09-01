@@ -50,7 +50,7 @@ public class NioClient {
                 totalBytesReceived += bytesReceived;
                 System.out.println("等待服务器回应.....");
             }
-            
+
             System.out.println("Server said: " + new String(readBuffer.array()));
         } catch (IOException e) {
             e.printStackTrace();

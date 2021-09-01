@@ -25,10 +25,10 @@ public class IoCLoader {
     private static Logger log = Logger.getLogger(IoCLoader.class);
 
     public static void main(String[] args) {
-        ioc();
+        //ioc();
         beanFactory();
-        iocV2();
-        annotation();
+        //iocV2();
+        //annotation();
     }
 
     /**
