@@ -11,5 +11,11 @@ public class CallLinkMain {
         ClassB classB = new ClassB();
         //你不好奇f1()内部调用f2()的时候执行的是哪个f2()么
         classB.f1();
+
+        System.out.println(" ");
+
+        ClassA classA = new ClassA();
+        //这样的话呢
+        classA.f1();
     }
 }
