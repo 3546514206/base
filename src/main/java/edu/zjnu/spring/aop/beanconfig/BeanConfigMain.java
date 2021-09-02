@@ -1,16 +1,15 @@
-package edu.zjnu.spring.aop;
+package edu.zjnu.spring.aop.beanconfig;
 
-import edu.zjnu.spring.aop.aopconfig.Swimable;
-import edu.zjnu.spring.aop.beanconfig.Sleepable;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @description: AoPLoader
+ * @description: todo
  * @author: 杨海波
- * @date: 2021-08-19
+ * @date: 2021-09-02
  **/
-public class AoPLoader {
+public class BeanConfigMain {
+
     /**
      * 通过<bean/>标签配合ProxyFactoryBean的方式
      */
@@ -27,17 +26,7 @@ public class AoPLoader {
         meProxy.sleep();
     }
 
-    /**
-     * 通过<aop:config/>标签
-     */
-    private static void aopConfig() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-aop-aop-conf.xml");
-        Swimable duck = (Swimable) context.getBean("duck");
-        duck.swim();
-    }
-
     public static void main(String[] args) {
         aopBean();
     }
-
 }
