@@ -1,14 +1,10 @@
-package edu.zjnu.spring.ioc;
+package edu.zjnu.spring.ioc.common;
 
 import edu.zjnu.spring.annotation.PersonConfig;
-import edu.zjnu.spring.ioc.common.Person;
-import edu.zjnu.spring.ioc.xmlfactory.MyTestBean;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionReader;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -25,20 +21,11 @@ public class IoCLoader {
     private static Logger log = Logger.getLogger(IoCLoader.class);
 
     public static void main(String[] args) {
-        //ioc();
-        beanFactory();
-        //iocV2();
-        //annotation();
+        ioc();
+        iocV2();
+        annotation();
     }
 
-    /**
-     * 直接使用BeanFactory作为容器
-     */
-    private static void beanFactory() {
-        BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("spring-ioc-xmlfactory.xml"));
-        MyTestBean bean = (MyTestBean) beanFactory.getBean("myTestBean");
-        System.out.println(bean.getTestStr());
-    }
 
     private static void iocV2() {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-ioc-common.xml");
