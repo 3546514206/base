@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="a" class="edu.zjnu.spring.ioc.cyclicdependencies.constructor.A">
+        <constructor-arg index="0" ref="b"/>
+    </bean>
+
+    <bean name="b" class="edu.zjnu.spring.ioc.cyclicdependencies.constructor.B">
+        <constructor-arg index="0" ref="a"/>
+    </bean>
+
+
+</beans>
