@@ -28,7 +28,7 @@ public class IoCLoader {
 
 
     private static void iocV2() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-ioc-common.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-common.xml");
 
         Person person = (Person) context.getBean("person");
         log.info(person.toString());
@@ -40,7 +40,7 @@ public class IoCLoader {
      */
     private static void ioc() {
         // bean定义文件的抽象
-        Resource resource = new ClassPathResource("spring-ioc-common.xml");
+        Resource resource = new ClassPathResource("spring-common.xml");
 
         //  bean工厂：默认的可列举工厂
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();

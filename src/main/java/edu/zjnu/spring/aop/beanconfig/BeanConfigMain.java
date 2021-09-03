@@ -14,7 +14,7 @@ public class BeanConfigMain {
      * 通过<bean/>标签配合ProxyFactoryBean的方式
      */
     private static void aopBean() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-aop-bean-conf.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-bean-conf.xml");
 
         Sleepable me = (Sleepable) context.getBean("me");
         Sleepable meProxy = (Sleepable) context.getBean("meProxy");

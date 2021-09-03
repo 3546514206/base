@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class FactoryBeanMain {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-aop-factorybean.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-factorybean.xml");
         Car car = (Car) context.getBean("carFactoryBean");
         System.out.println(car.getClass());
         CarFactoryBean carFactoryBean = (CarFactoryBean) context.getBean("&carFactoryBean");

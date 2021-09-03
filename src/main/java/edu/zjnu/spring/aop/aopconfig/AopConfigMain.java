@@ -18,7 +18,7 @@ public class AopConfigMain {
      * 通过<aop:config/>标签
      */
     private static void aopConfig() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-aop-aop-conf.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-aop-conf.xml");
         Swimable duck = (Swimable) context.getBean("duck");
         duck.swim();
     }

@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MethodReplacerMain {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-ioc-replacemethod.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-replacemethod.xml");
         TestChangeMethod changeMethod = context.getBean(TestChangeMethod.class);
         changeMethod.change();
 

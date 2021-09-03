@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class LookUpMain {
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring-ioc-lookup.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-lookup.xml");
         GetBeanTest getBean = context.getBean(GetBeanTest.class);
         getBean.showMe();
     }

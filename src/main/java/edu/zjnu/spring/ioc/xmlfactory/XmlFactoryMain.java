@@ -14,7 +14,7 @@ public class XmlFactoryMain {
      * 直接使用BeanFactory作为容器
      */
     private static void beanFactory() {
-        BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("spring-ioc-xmlfactory.xml"));
+        BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("spring-xmlfactory.xml"));
         MyTestBean bean = (MyTestBean) beanFactory.getBean("myTestBean");
         //MyTestBean bean =  beanFactory.getBean(MyTestBean.class);
         System.out.println(bean.getTestStr());
