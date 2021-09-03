@@ -1,4 +1,4 @@
-package edu.zjnu.spring.annotation;
+package edu.zjnu.spring.ioc.common;
 
 import edu.zjnu.spring.ioc.common.Person;
 import org.springframework.context.annotation.Bean;

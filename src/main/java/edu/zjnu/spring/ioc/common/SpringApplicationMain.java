@@ -1,6 +1,5 @@
 package edu.zjnu.spring.ioc.common;
 
-import edu.zjnu.spring.annotation.PersonConfig;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.support.BeanDefinitionReader;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
@@ -16,12 +15,12 @@ import org.springframework.core.io.Resource;
  * @description Spring 框架启动入口
  * @date 2021-02-13 00:52
  */
-public class IoCLoader {
+public class SpringApplicationMain {
 
-    private static Logger log = Logger.getLogger(IoCLoader.class);
+    private static Logger log = Logger.getLogger(SpringApplicationMain.class);
 
     public static void main(String[] args) {
-        ioc();
+        //ioc();
         iocV2();
         annotation();
     }
@@ -70,6 +69,6 @@ public class IoCLoader {
         //获取Bean
         Person person = (Person) context.getBean("person");
         log.info(person.toString());
-        }
+    }
 
 }
