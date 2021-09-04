@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="protoc-jar-3.11.4">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/protoc-jar-3.11.4.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
