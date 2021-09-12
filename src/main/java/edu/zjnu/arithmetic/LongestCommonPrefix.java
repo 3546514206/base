@@ -8,10 +8,10 @@ package edu.zjnu.arithmetic;
 public class LongestCommonPrefix {
 
     public static void main(String[] args) {
-        String stringA = "asdwian";
-        String stringB = "asdeian";
-        String stringC = "asdwran";
-        String[] strs = new String[]{stringA, stringB, stringC};
+        String stringA = "ab";
+        String stringB = "a";
+
+        String[] strs = new String[]{stringA, stringB};
 
         String rs = new LongestCommonPrefix().sulotion(strs);
         String rs1 = new LongestCommonPrefix().longestCommonPrefix(strs);
