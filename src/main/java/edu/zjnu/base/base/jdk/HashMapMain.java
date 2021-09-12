@@ -29,6 +29,7 @@ public class HashMapMain {
         map.put("7",null);
         // 结论：hashmap key value 都可以为Null，不会报错。但是value为null是实际上没有意义。
         // key为null是有意义的值。
+        map.put("null",new Person("张三"));
 
         System.out.println(JsonPrintUtil.formatToJson(JSON.toJSON(map).toString()));
     }
