@@ -58,8 +58,8 @@ public class SecurityTestAll {
         System.out.println("软件加密方式验签结果:" + b);
         System.out.println("验签2,硬件加密方式:");
         String sm2_signForHard = sign.getSm2_signForHard();
-        System.out.println("签名R:"+sign.sign_r);
-        System.out.println("签名S:"+sign.sign_s);
+        System.out.println("签名R:" + sign.sign_r);
+        System.out.println("签名S:" + sign.sign_s);
         //System.out.println("硬:"+sm2_signForHard);
         b = verifySM2Signature(sm2KeyVO.getPubHexInSoft(), s5, SM2SignHardToSoft(sign.getSm2_signForHard()));
         System.out.println("硬件加密方式验签结果:" + b);
@@ -70,25 +70,25 @@ public class SecurityTestAll {
 
         System.out.println("--SM3摘要测试--");
         String s = generateSM3HASH(src);
-        System.out.println("hash:"+s);
+        System.out.println("hash:" + s);
         System.out.println("--SM3摘要结束--");
 
         System.out.println("--生成SM4秘钥--");
         String sm4Key = generateSM4Key();
-        System.out.println("sm4Key:"+sm4Key);
+        System.out.println("sm4Key:" + sm4Key);
         System.out.println("--生成SM4结束--");
         System.out.println("--SM4的CBC加密--");
         String s1 = SM4EncForCBC(sm4Key, src);
-        System.out.println("密文:"+s1);
+        System.out.println("密文:" + s1);
         System.out.println("CBC解密");
         String s2 = SM4DecForCBC(sm4Key, s1);
-        System.out.println("解密结果:"+s2);
+        System.out.println("解密结果:" + s2);
         System.out.println("--ECB加密--");
         String s3 = SM4EncForECB(sm4Key, src);
-        System.out.println("ECB密文:"+s3);
+        System.out.println("ECB密文:" + s3);
         System.out.println("ECB解密");
         String s4 = SM4DecForECB(sm4Key, s3);
-        System.out.println("ECB解密结果:"+s4);
+        System.out.println("ECB解密结果:" + s4);
     }
 
     //SM2公钥soft和Hard转换
@@ -111,14 +111,14 @@ public class SecurityTestAll {
     public static String SM2Enc(String pubKey, String src) throws IOException {
         String encrypt = SM2EncDecUtils.encrypt(Util.hexStringToBytes(pubKey), src.getBytes());
         //删除04
-        encrypt=encrypt.substring(2,encrypt.length());
+        encrypt = encrypt.substring(2, encrypt.length());
         return encrypt;
     }
 
     //私钥解密
     public static String SM2Dec(String priKey, String encryptedData) throws IOException {
         //填充04
-        encryptedData="04"+encryptedData;
+        encryptedData = "04" + encryptedData;
         byte[] decrypt = SM2EncDecUtils.decrypt(Util.hexStringToBytes(priKey), Util.hexStringToBytes(encryptedData));
         return new String(decrypt);
     }
@@ -180,7 +180,7 @@ public class SecurityTestAll {
 
 
     //对称秘钥加密(CBC)
-    public static String SM4EncForCBC(String key,String text) {
+    public static String SM4EncForCBC(String key, String text) {
         SM4Utils sm4 = new SM4Utils();
         sm4.secretKey = key;
         sm4.hexString = true;
@@ -190,7 +190,7 @@ public class SecurityTestAll {
     }
 
     //对称秘钥解密(CBC)
-    public static String SM4DecForCBC(String key,String text) {
+    public static String SM4DecForCBC(String key, String text) {
         SM4Utils sm4 = new SM4Utils();
         sm4.secretKey = key;
         sm4.hexString = true;
@@ -198,16 +198,18 @@ public class SecurityTestAll {
         String plainText = sm4.decryptData_CBC(text);
         return plainText;
     }
+
     //对称秘钥加密(ECB)
-    public static String SM4EncForECB(String key,String text) {
+    public static String SM4EncForECB(String key, String text) {
         SM4Utils sm4 = new SM4Utils();
         sm4.secretKey = key;
         sm4.hexString = true;
         String cipherText = sm4.encryptData_ECB(text);
         return cipherText;
     }
+
     //对称秘钥解密(ECB)
-    public static String SM4DecForECB(String key,String text) {
+    public static String SM4DecForECB(String key, String text) {
         SM4Utils sm4 = new SM4Utils();
         sm4.secretKey = key;
         sm4.hexString = true;

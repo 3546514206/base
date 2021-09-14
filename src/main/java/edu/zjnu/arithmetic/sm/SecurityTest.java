@@ -21,8 +21,8 @@ public class SecurityTest {
         String privatekey = "73e83d33d95274eeeb23f01834d02fe920b4afece377410435698dfdf1d84203";
 
         SM2SignVO sign = SM2SignVerUtils.Sign2SM2(Util.hexStringToBytes(privatekey), Util.hexToByte(src));
-        System.out.println("R:"+sign.sign_r);
-        System.out.println("S:"+sign.sign_s);
+        System.out.println("R:" + sign.sign_r);
+        System.out.println("S:" + sign.sign_s);
         //验签硬加密的串
         String signYJ = "54720652E5EE53D14F338A03EDAC10E7F93D877EC2168F9287810807D02D2409F3EEE542638AD0B204BC3C8F93EDBCFBE87DEEFB07C0B36F34508AB49B6F90EF";
         SM2SignVO verify = SM2SignVerUtils.VerifySignSM2(Util.hexStringToBytes(publicKey), Util.hexToByte(src), Util.hexToByte(SecurityTestAll.SM2SignHardToSoft(signYJ)));
@@ -40,8 +40,8 @@ public class SecurityTest {
         String privatekey = "62329467E71E70960C7A479C03CA7FC0A2BE92E000240C4F4080F0B2437C536D";
 
         SM2SignVO sign = SM2SignVerUtils.Sign2SM2(Util.hexStringToBytes(privatekey), Util.hexToByte(src));
-        System.out.println("R:"+sign.sign_r);
-        System.out.println("S:"+sign.sign_s);
+        System.out.println("R:" + sign.sign_r);
+        System.out.println("S:" + sign.sign_s);
         //验签硬加密的串
         String signYJ = "233fabe6f81002fbee8c69d9561114d99e0640ecf27d63561d850d77ac76ee5f5d0530bd6eca60e960784f9ad883b77dcfa3c8b274918034faf509faeee2e5ea";
         SM2SignVO verify = SM2SignVerUtils.VerifySignSM2(Util.hexStringToBytes(publicKey), Util.hexToByte(src), Util.hexToByte(SecurityTestAll.SM2SignHardToSoft(signYJ)));

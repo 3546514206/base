@@ -8,7 +8,7 @@ package edu.zjnu.arithmetic.leecode;
 public class GenerateParenthesis {
 
     public static void main(String[] args) {
-        
+
     }
 
 

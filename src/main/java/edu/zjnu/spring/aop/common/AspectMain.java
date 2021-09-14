@@ -12,7 +12,7 @@ public class AspectMain {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-aspect.xml");
-        TestBean bean =(TestBean)  context.getBean("testBean");
+        TestBean bean = (TestBean) context.getBean("testBean");
         bean.test();
     }
 }

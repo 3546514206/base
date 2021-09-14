@@ -14,11 +14,11 @@ public class BeanWrapperTest {
     public static void main(String[] args) {
         Person person = new Person();
 
-        BeanWrapper beanWrapper  = PropertyAccessorFactory.forBeanPropertyAccess(person);
-        beanWrapper.setPropertyValue("name","杨海波");
+        BeanWrapper beanWrapper = PropertyAccessorFactory.forBeanPropertyAccess(person);
+        beanWrapper.setPropertyValue("name", "杨海波");
         System.out.println(person.getName());
 
-        PropertyValue value = new PropertyValue("name","新垣结衣");
+        PropertyValue value = new PropertyValue("name", "新垣结衣");
         beanWrapper.setPropertyValue(value);
         System.out.println(person.getName());
     }

@@ -7,7 +7,7 @@ package edu.zjnu.spring.ioc.changemehtod;
  **/
 public class TestChangeMethod {
 
-    public void change(){
+    public void change() {
         System.out.println("i am changed");
     }
 }

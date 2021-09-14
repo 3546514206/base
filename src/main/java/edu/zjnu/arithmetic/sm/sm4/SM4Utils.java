@@ -6,6 +6,7 @@ package edu.zjnu.arithmetic.sm.sm4;
 
 import edu.zjnu.arithmetic.sm.Util;
 import org.apache.commons.codec.binary.Base64;
+
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -50,7 +51,8 @@ public class SM4Utils {
     public String decryptData_ECB(String cipherText) {
         try {
             byte[] encrypted = Util.hexToByte(cipherText);
-            cipherText=Base64.encodeBase64String(encrypted);;
+            cipherText = Base64.encodeBase64String(encrypted);
+            ;
             //cipherText = new BASE64Encoder().encode(encrypted);
             if (cipherText != null && cipherText.trim().length() > 0) {
                 Pattern p = Pattern.compile("\\s*|\t|\r|\n");
@@ -109,7 +111,8 @@ public class SM4Utils {
     public String decryptData_CBC(String cipherText) {
         try {
             byte[] encrypted = Util.hexToByte(cipherText);
-            cipherText=Base64.encodeBase64String(encrypted);;
+            cipherText = Base64.encodeBase64String(encrypted);
+            ;
             //cipherText = new BASE64Encoder().encode(encrypted);
             if (cipherText != null && cipherText.trim().length() > 0) {
                 Pattern p = Pattern.compile("\\s*|\t|\r|\n");

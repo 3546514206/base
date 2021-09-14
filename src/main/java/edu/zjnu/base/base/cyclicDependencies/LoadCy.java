@@ -7,7 +7,7 @@ package edu.zjnu.base.base.cyclicDependencies;
  **/
 public class LoadCy {
 
-    public static void main(String args[]){
-        Channel ch = new Channel("日期","今天是周五！");
+    public static void main(String args[]) {
+        Channel ch = new Channel("日期", "今天是周五！");
     }
 }

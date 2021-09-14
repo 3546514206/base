@@ -6,7 +6,7 @@
     <bean name="replceMethod" class="edu.zjnu.spring.ioc.changemehtod.MyMethodReplacer"/>
 
     <bean name="testChangeMethod" class="edu.zjnu.spring.ioc.changemehtod.TestChangeMethod">
-        <replaced-method name="change" replacer="replceMethod" />
+        <replaced-method name="change" replacer="replceMethod"/>
     </bean>
 
 </beans>

@@ -9,7 +9,7 @@
 
     <bean name="myBeanGetTest" class="edu.zjnu.spring.ioc.lookup.GetBeanTest">
         <lookup-method name="getBean" bean="student"/>
-<!--        <lookup-method name="getBean" bean="teacher"/>-->
+        <!--        <lookup-method name="getBean" bean="teacher"/>-->
     </bean>
 
 </beans>

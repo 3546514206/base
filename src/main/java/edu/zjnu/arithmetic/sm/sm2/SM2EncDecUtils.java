@@ -12,12 +12,12 @@ import java.math.BigInteger;
 
 public class SM2EncDecUtils {
     //生成随机秘钥对
-    public static SM2KeyVO generateKeyPair(){
+    public static SM2KeyVO generateKeyPair() {
         SM2 sm2 = SM2.Instance();
         AsymmetricCipherKeyPair key = null;
-        while (true){
-            key=sm2.ecc_key_pair_generator.generateKeyPair();
-            if(((ECPrivateKeyParameters) key.getPrivate()).getD().toByteArray().length==32){
+        while (true) {
+            key = sm2.ecc_key_pair_generator.generateKeyPair();
+            if (((ECPrivateKeyParameters) key.getPrivate()).getD().toByteArray().length == 32) {
                 break;
             }
         }
@@ -34,15 +34,12 @@ public class SM2EncDecUtils {
     }
 
     //数据加密
-    public static String encrypt(byte[] publicKey, byte[] data) throws IOException
-    {
-        if (publicKey == null || publicKey.length == 0)
-        {
+    public static String encrypt(byte[] publicKey, byte[] data) throws IOException {
+        if (publicKey == null || publicKey.length == 0) {
             return null;
         }
 
-        if (data == null || data.length == 0)
-        {
+        if (data == null || data.length == 0) {
             return null;
         }
 
@@ -69,15 +66,12 @@ public class SM2EncDecUtils {
     }
 
     //数据解密
-    public static byte[] decrypt(byte[] privateKey, byte[] encryptedData) throws IOException
-    {
-        if (privateKey == null || privateKey.length == 0)
-        {
+    public static byte[] decrypt(byte[] privateKey, byte[] encryptedData) throws IOException {
+        if (privateKey == null || privateKey.length == 0) {
             return null;
         }
 
-        if (encryptedData == null || encryptedData.length == 0)
-        {
+        if (encryptedData == null || encryptedData.length == 0) {
             return null;
         }
         //加密字节数组转换为十六进制的字符串 长度变为encryptedData.length * 2
@@ -87,20 +81,20 @@ public class SM2EncDecUtils {
          * （C3 = C3实体部分64位  = 64）
          * （C2 = encryptedData.length * 2 - C1长度  - C2长度）
 
-        byte[] c1Bytes = Util.hexToByte(data.substring(0,130));
-        int c2Len = encryptedData.length - 97;
-        byte[] c2 = Util.hexToByte(data.substring(130,130 + 2 * c2Len));
-        byte[] c3 = Util.hexToByte(data.substring(130 + 2 * c2Len,194 + 2 * c2Len));
-        */
+         byte[] c1Bytes = Util.hexToByte(data.substring(0,130));
+         int c2Len = encryptedData.length - 97;
+         byte[] c2 = Util.hexToByte(data.substring(130,130 + 2 * c2Len));
+         byte[] c3 = Util.hexToByte(data.substring(130 + 2 * c2Len,194 + 2 * c2Len));
+         */
         /***分解加密字串 C1 | C3 | C2
          * （C1 = C1标志位2位 + C1实体部分128位 = 130）
          * （C3 = C3实体部分64位  = 64）
          * （C2 = encryptedData.length * 2 - C1长度  - C2长度）
          */
-        byte[] c1Bytes = Util.hexToByte(data.substring(0,130));
+        byte[] c1Bytes = Util.hexToByte(data.substring(0, 130));
         int c2Len = encryptedData.length - 97;
-        byte[] c3 = Util.hexToByte(data.substring(130,130 + 64));
-        byte[] c2 = Util.hexToByte(data.substring(194,194 + 2 * c2Len));
+        byte[] c3 = Util.hexToByte(data.substring(130, 130 + 64));
+        byte[] c2 = Util.hexToByte(data.substring(194, 194 + 2 * c2Len));
 
         SM2 sm2 = SM2.Instance();
         BigInteger userD = new BigInteger(1, privateKey);
@@ -176,8 +170,7 @@ public class SM2EncDecUtils {
         return new BigInteger[] { r, s };
     }*/
 
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
         String plainText = "ILoveYou11";
         //SM3测试
         //生成密钥对
@@ -192,10 +185,10 @@ public class SM2EncDecUtils {
 
         String prik = "4cf170068e9c47ebdb521fb9fc62c4a55a5773fb9da33b0acf8129e28d09d205";
         String pubk = "04aabda53043e8dcb86d42f690b61a4db869821dadf9f851ec3c5c43d0c8f95a6677fdba984afc3bb010a8436b1d17cefc2011a34e01e9e801124d29ffa928d803";
-        String publicKey ="04BB34D657EE7E8490E66EF577E6B3CEA28B739511E787FB4F71B7F38F241D87F18A5A93DF74E90FF94F4EB907F271A36B295B851F971DA5418F4915E2C1A23D6E";
+        String publicKey = "04BB34D657EE7E8490E66EF577E6B3CEA28B739511E787FB4F71B7F38F241D87F18A5A93DF74E90FF94F4EB907F271A36B295B851F971DA5418F4915E2C1A23D6E";
         String privatekey = "0B1CE43098BC21B8E82B5C065EDB534CB86532B1900A49D49F3C53762D2997FA";
-        prik=privatekey;
-        pubk=publicKey;
+        prik = privatekey;
+        pubk = publicKey;
         System.out.println("加密: ");
         String cipherText = SM2EncDecUtils.encrypt(Util.hexToByte(pubk), sourceData);
         //cipherText = "0452ba81cf5119c9f29c81c2be9c4a49ad8c0a33ed899b60548d21a62971a8e994cafc0e9fbc710a0a220b055804bb890833b50ac04ec4e130a5db75338c0c1d49a52a6d373076a5db370564a5cebb5300f79877003c52adf49dac16370e51e14e0754110547bb3b";

@@ -5,7 +5,7 @@ package edu.zjnu.base.base.serviceUtil;
  * @author: 杨海波
  * @date: 2021-09-13
  **/
-public  interface IService {
+public interface IService {
 
     void doService();
 }

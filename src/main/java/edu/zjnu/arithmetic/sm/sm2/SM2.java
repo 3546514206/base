@@ -24,8 +24,7 @@ public class SM2 {
             "BC3736A2F4F6779C59BDCEE36B692153D0A9877CC62A474002DF32E52139F0A0"
     };
 
-    public static SM2 Instance()
-    {
+    public static SM2 Instance() {
         return new SM2();
     }
 
@@ -42,8 +41,7 @@ public class SM2 {
     public final ECFieldElement ecc_gx_fieldelement;
     public final ECFieldElement ecc_gy_fieldelement;
 
-    public SM2()
-    {
+    public SM2() {
         this.ecc_p = new BigInteger(ecc_param[0], 16);
         this.ecc_a = new BigInteger(ecc_param[1], 16);
         this.ecc_b = new BigInteger(ecc_param[2], 16);

@@ -11,6 +11,6 @@ public class Main {
         list.add(1);
         list.add(2);
 
-        list.toArray(new Integer [0]);
+        list.toArray(new Integer[0]);
     }
 }

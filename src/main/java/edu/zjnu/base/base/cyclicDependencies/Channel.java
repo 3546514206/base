@@ -10,12 +10,12 @@ class Channel {
 
     private Message message;
 
-    public Channel(String title,String content){
-        this.message = new Message(this,title,content);
+    public Channel(String title, String content) {
+        this.message = new Message(this, title, content);
         this.message.send();
     }
 
-    public boolean isConnect(){
+    public boolean isConnect() {
         return true;
     }
 }

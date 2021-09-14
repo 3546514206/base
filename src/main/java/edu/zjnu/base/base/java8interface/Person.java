@@ -15,11 +15,11 @@ public interface Person {
 //
 //    }
 
-   default void say(){
-       System.out.println("i am a person");
-   }
+    default void say() {
+        System.out.println("i am a person");
+    }
 
-   static void learn(){
-       System.out.println("i am a person,i am learning");
-   }
+    static void learn() {
+        System.out.println("i am a person,i am learning");
+    }
 }

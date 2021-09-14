@@ -17,7 +17,7 @@ public class TestBean {
         this.testString = testString;
     }
 
-    public void test(){
+    public void test() {
         System.out.println("this is a test ");
     }
 }

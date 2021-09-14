@@ -7,7 +7,7 @@ package edu.zjnu.spring.ioc.qualifier;
  **/
 public class QualifierBean {
 
-    public void func(){
+    public void func() {
         System.out.println(" do something");
     }
 }
