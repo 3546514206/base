@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic;
+package edu.zjnu.arithmetic.leecode;
 
 /**
  * @description: 括号生成

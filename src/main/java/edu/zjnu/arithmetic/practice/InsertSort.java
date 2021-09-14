@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic;
+package edu.zjnu.arithmetic.practice;
 
 /**
  * @description: 插入排序

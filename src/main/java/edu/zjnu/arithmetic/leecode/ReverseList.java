@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic;
+package edu.zjnu.arithmetic.leecode;
 
 /**
  * @author 杨海波

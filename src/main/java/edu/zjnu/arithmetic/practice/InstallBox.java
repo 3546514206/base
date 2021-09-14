@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic;
+package edu.zjnu.arithmetic.practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;

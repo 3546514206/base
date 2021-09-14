@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic;
+package edu.zjnu.arithmetic.leecode;
 
 import java.util.HashMap;
 import java.util.Map;
