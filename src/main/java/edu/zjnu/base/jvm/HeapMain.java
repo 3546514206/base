@@ -15,7 +15,7 @@ public class HeapMain {
         // 所有的 HeapObject 都被 objects 引用，不会被回收
         while (true) {
             //1KB
-            objects.add(new HeapObject(new byte[1024]));
+            objects.add(new HeapObject(new byte[1]));
         }
     }
 
