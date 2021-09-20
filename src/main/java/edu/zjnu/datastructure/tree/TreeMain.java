@@ -1,5 +1,9 @@
 package edu.zjnu.datastructure.tree;
 
+import com.sun.istack.internal.NotNull;
+
+import java.util.Scanner;
+
 /**
  * @description: 构造一棵树，二叉树的先后中遍历
  * @author: 杨海波
@@ -7,14 +11,92 @@ package edu.zjnu.datastructure.tree;
  **/
 public class TreeMain {
 
+    /**
+     * 队列大小
+     */
+    private static final int MAX_NODES = 100;
+
     public static void main(String[] args) {
         TreeNode<Integer> root = buildTree();
 
-        preOder(root);
-        System.out.println();
-        midOder(root);
-        System.out.println();
-        afterOder(root);
+        Scanner scanner = new Scanner(System.in);
+        Boolean ctn = Boolean.TRUE;
+        while (ctn) {
+            System.out.println("遍历方式（整数）：1-先序，2-中序，3-后序，4-层次遍历");
+            Integer type = scanner.nextInt();
+            oder(root, OderType.getInstance(type));
+            System.out.println("是否继续？Y/N");
+            String c = scanner.next();
+            if (!"Y".equals(c) && !"y".equals(c)) {
+                ctn = Boolean.FALSE;
+                System.out.println("谢谢使用");
+            }
+        }
+
+
+    }
+
+    private static void oder(TreeNode<Integer> root, @NotNull OderType type) {
+        switch (type) {
+            case MID: {
+                System.out.print("中序遍历：");
+                midOder(root);
+                break;
+            }
+            case PRE: {
+                System.out.print("先序遍历：");
+                preOder(root);
+                break;
+            }
+            case AFTER: {
+                System.out.print("后续遍历：");
+                afterOder(root);
+                break;
+            }
+            case LEVEL: {
+                System.out.print("层次遍历：");
+                levelOrder(root);
+                break;
+            }
+            default: {
+                System.out.print("error type!");
+            }
+        }
+    }
+
+    /**
+     *
+     * @param root
+     */
+    private static void levelOrder(TreeNode<Integer> root) {
+        // 构造一个队列
+        TreeNode<Integer>[] queue = new TreeNode[MAX_NODES];
+        // 队头指针和队尾指针，队头初始为-1，队尾初始为0，表示初始状态队列没有数据
+        int front = -1, rear = 0;
+
+        if (null == root) {
+            return;
+        }
+
+        // 根节点进队列
+        queue[rear] = root;
+
+        while (front != rear) {
+            front++;
+            // 访问数据域
+            System.out.print(queue[front].value + " ");
+            //队列首节点左孩子进队列
+            if (null != queue[front].left) {
+                rear++;
+                queue[rear] = queue[front].left;
+            }
+            //将队首节点的右孩子节点进队列
+            if (null != queue[front].right) {
+                rear++;
+                queue[rear] = queue[front].right;
+            }
+        }
+
     }
 
     /**
@@ -85,5 +167,44 @@ public class TreeMain {
         System.out.println(node_3);
 
         return node_3;
+    }
+
+    public enum OderType {
+        /**
+         * 怎么理解枚举？如果把枚举的定义改成成类的定义方式：
+         * public class OderType
+         * 枚举就相当于可以公开访问的静态常量
+         * public static final PRE = new OderType(1);
+         * public static final MID = new OderType(2);
+         * public static final AFTER = new OderType(3);
+         * public static final LEVEL = new OderType(4);
+         * 特别指出：枚举的构造方法默认是私有的，而且自带了values()方法获取所有的"静态常量"（枚举）
+         */
+        PRE(1), MID(2), AFTER(3), LEVEL(4);
+
+        private Integer value;
+
+
+        // 枚举的构造方法都是private
+        OderType(Integer value) {
+            this.value = value;
+        }
+
+        public static OderType getInstance(Integer value) {
+            for (OderType oderType : values()) {
+                if (oderType.getValue().equals(value)) {
+                    return oderType;
+                }
+            }
+            return null;
+        }
+
+        public Integer getValue() {
+            return value;
+        }
+
+        public void setValue(Integer value) {
+            this.value = value;
+        }
     }
 }
