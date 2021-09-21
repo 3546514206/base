@@ -137,7 +137,7 @@ public class TreeMain {
         }
     }
 
-    private static TreeNode<Integer> buildTree() {
+    public static TreeNode<Integer> buildTree() {
         TreeNode<Integer> node_1 = new TreeNode<>(1);
         TreeNode<Integer> node_2 = new TreeNode<>(2);
         TreeNode<Integer> node_3 = new TreeNode<>(3);
