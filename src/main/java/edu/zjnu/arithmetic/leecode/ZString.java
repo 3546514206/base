@@ -46,22 +46,35 @@ public class ZString {
      * 重写一遍
      *
      * @param s
-     * @param n
+     * @param numRows
      * @return
      */
-    public String f(String s, int n) {
+    public String f(String s, int numRows) {
 
-        //
-        if (n < 2) {
-            return s;
-        }
+        if (numRows < 2) return s;
 
-        List<StringBuilder> builders = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
+        List<StringBuilder> builders = new ArrayList<>(numRows);
+
+        for (int i = 0; i < numRows; i++) {
             builders.add(new StringBuilder());
         }
 
+        int index = 0, flag = -1;
 
-        return null;
+        for (char c : s.toCharArray()) {
+            builders.get(index).append(c);
+            if (index == 0 || index == numRows - 1) {
+                flag = -flag;
+            }
+            index = index + flag;
+        }
+
+        StringBuilder res = new StringBuilder();
+
+        for (StringBuilder builder : builders) {
+            res.append(builder);
+        }
+
+        return res.toString();
     }
 }
