@@ -7,7 +7,7 @@ package edu.zjnu.base.jvm.classloader;
  **/
 public class SalaryCaler {
 
-    public double cla(double money) {
-        return money;
+    public double cla(double salary) {
+        return salary;
     }
 }
