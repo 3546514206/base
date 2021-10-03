@@ -7,9 +7,13 @@ package edu.zjnu.base.jvm.classloader;
  **/
 public class OAS {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, ClassNotFoundException, IllegalAccessException, InstantiationException {
         double salary = 25000.0d;
         double realSalary = 0.0d;
+
+        String classpath = "/Users/setsunayang/Documents/learnspace/learning/target/classes/edu/zjnu/base/jvm/classloader/SalaryCalerV2.class";
+        SalaryClassLoader salaryClassLoader = new SalaryClassLoader(classpath);
+        Class<?> classLoaderClass = salaryClassLoader.findClass("edu.zjnu.base.jvm.classloader.SalaryCalerV2");
 
         while (true) {
             realSalary = new SalaryCaler().cla(salary);
