@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic.leecode;
+package edu.zjnu.arithmetic.leetcode;
 
 /**
  * @description: 整数反转

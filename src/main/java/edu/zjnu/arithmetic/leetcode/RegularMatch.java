@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic.leecode;
+package edu.zjnu.arithmetic.leetcode;
 
 /**
  * @description: RegularMatch 力扣第十题
