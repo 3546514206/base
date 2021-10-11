@@ -15,4 +15,5 @@ public class XOR {
         System.out.println(0b0110 << 1);
         System.out.println(0b0110 << 3);
     }
+
 }
