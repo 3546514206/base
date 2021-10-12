@@ -17,11 +17,26 @@ public class ThreeSumMain {
     }
 
     /**
-     * 暴力
+     * 排序加双指针
      * @param nums
      * @return
      */
     public List<List<Integer>> threeSum(int[] nums) {
+
+        Arrays.sort(nums);
+
+        List<List<Integer>> list = new ArrayList<>();
+
+
+        return list;
+    }
+
+    /**
+     * 暴力
+     * @param nums
+     * @return
+     */
+    public List<List<Integer>> threeSum1(int[] nums) {
 
         Arrays.sort(nums);
 
