@@ -112,8 +112,8 @@ public class SM3 {
     }
 
     private static int[][] expand(int[] B) {
-        int W[] = new int[68];
-        int W1[] = new int[64];
+        int[] W = new int[68];
+        int[] W1 = new int[64];
         for (int i = 0; i < B.length; i++) {
             W[i] = B[i];
         }
@@ -127,7 +127,7 @@ public class SM3 {
             W1[i] = W[i] ^ W[i + 4];
         }
 
-        int arr[][] = new int[][]{W, W1};
+        int[][] arr = new int[][]{W, W1};
         return arr;
     }
 
@@ -157,23 +157,19 @@ public class SM3 {
 
     // 逻辑位运算函数
     private static int FF1j(int X, int Y, int Z) {
-        int tmp = X ^ Y ^ Z;
-        return tmp;
+        return X ^ Y ^ Z;
     }
 
     private static int FF2j(int X, int Y, int Z) {
-        int tmp = ((X & Y) | (X & Z) | (Y & Z));
-        return tmp;
+        return ((X & Y) | (X & Z) | (Y & Z));
     }
 
     private static int GG1j(int X, int Y, int Z) {
-        int tmp = X ^ Y ^ Z;
-        return tmp;
+        return X ^ Y ^ Z;
     }
 
     private static int GG2j(int X, int Y, int Z) {
-        int tmp = (X & Y) | (~X & Z);
-        return tmp;
+        return (X & Y) | (~X & Z);
     }
 
     private static int P0(int X) {
@@ -181,13 +177,11 @@ public class SM3 {
         y = bitCycleLeft(X, 9);
         int z = rotateLeft(X, 17);
         z = bitCycleLeft(X, 17);
-        int t = X ^ y ^ z;
-        return t;
+        return X ^ y ^ z;
     }
 
     private static int P1(int X) {
-        int t = X ^ bitCycleLeft(X, 15) ^ bitCycleLeft(X, 23);
-        return t;
+        return X ^ bitCycleLeft(X, 15) ^ bitCycleLeft(X, 23);
     }
 
     /**

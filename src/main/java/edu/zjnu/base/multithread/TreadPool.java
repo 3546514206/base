@@ -15,7 +15,7 @@ public class TreadPool implements LogInterFace {
         ExecutorService executorService = new ThreadPoolExecutor(
                 2,
                 5,
-                999999999,
+                10,
                 TimeUnit.SECONDS,
                 new ArrayBlockingQueue<>(5),
                 Executors.defaultThreadFactory(),
