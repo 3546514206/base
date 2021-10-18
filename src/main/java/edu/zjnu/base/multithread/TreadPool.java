@@ -29,5 +29,9 @@ public class TreadPool implements LogInterFace {
             });
         }
 
+
+        ExecutorService cachedExecutor = Executors.newCachedThreadPool();
+        ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor();
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(10);
     }
 }
