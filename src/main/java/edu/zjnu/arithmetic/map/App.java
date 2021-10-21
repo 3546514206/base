@@ -11,7 +11,7 @@ import java.util.Map;
 public class App {
 
     public static void main(String[] args) {
-        Map<String, String> map = new HashMap<>();
+        HashMap<String, String> map = new HashMap<>();
         map.put("abc", "123");
         System.out.println(map.get("abc"));
     }
