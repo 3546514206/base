@@ -1,4 +1,4 @@
-package edu.zjnu.base.net;
+package edu.zjnu.base.socket.net;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
