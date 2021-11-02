@@ -43,11 +43,6 @@ public class ThreeSumClosestMain {
                 if (sum > target) {
                     // 如果和大于 target，移动 c 对应的指针
                     int k0 = k - 1;
-                    // 移动到下一个不相等的元素
-                    while (j < k0 && nums[k0] == nums[k]) {
-                        --k0;
-                    }
-                    k = k0;
                 } else {
                     // 如果和小于 target，移动 b 对应的指针
                     int j0 = j + 1;
