@@ -32,4 +32,25 @@ public class IsAnagramMain {
 
         return true;
     }
+
+    public boolean isAnagram2(String s, String t) {
+
+        if (s.length() != t.length()) return false;
+
+        int len = s.length();
+
+        int[] count = new int[26];
+        for (int i = 0; i < len; i++) {
+            count[s.charAt(i) - 'a']++;
+            count[t.charAt(i) - 'a']--;
+        }
+
+        for (int c : count) {
+            if (c != 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
