@@ -17,10 +17,6 @@ public class HeapOomMain {
         while (true) {
             list.add(new byte[1024 * 1024]);
             System.out.println(++i);
-            if (i == 99) {
-                Class.forName("edu.zjnu.datastructure.tree.TreeNode");
-            }
-
         }
     }
 }
