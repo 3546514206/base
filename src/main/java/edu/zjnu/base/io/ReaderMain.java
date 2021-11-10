@@ -16,7 +16,7 @@ public class ReaderMain {
     public static void main(String[] args) throws IOException {
         ClassLoader classLoader = StreamMain.class.getClassLoader();
         // 可以二进制文本编辑器打开这个文件然后对照着看
-        URL resource = classLoader.getResource("AddTwoNumbers");
+        URL resource = classLoader.getResource("relay-bin.000010");
         assert resource != null;
         String path = resource.getPath();
 
