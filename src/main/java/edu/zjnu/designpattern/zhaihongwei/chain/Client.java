@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.chain;
+package edu.zjnu.designpattern.zhaihongwei.chain;
 
 /**
  * Create by zhaihongwei on 2018/3/29

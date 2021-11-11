@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.singleton.singleton.statics;
+package edu.zjnu.designpattern.zhaihongwei.singleton.singleton.statics;
 
 /**
  * 静态变量初始化实现线程安全的单例模式<br>

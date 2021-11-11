@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.strategy.src.strategy;
+package edu.zjnu.designpattern.zhaihongwei.strategy.src.strategy;
 
 /**
  * Create by zhaihongwei on 2018/3/23

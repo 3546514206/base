@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.singleton.singleton.classic;
+package edu.zjnu.designpattern.zhaihongwei.singleton.singleton.classic;
 
 /**
  * 经典的非线程安全单例模式实现类

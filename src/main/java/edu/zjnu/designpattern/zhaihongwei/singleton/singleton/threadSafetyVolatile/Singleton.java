@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.singleton.singleton.threadSafetyVolatile;
+package edu.zjnu.designpattern.zhaihongwei.singleton.singleton.threadSafetyVolatile;
 
 /**
  * 高效的线程安全的单例模式实现类

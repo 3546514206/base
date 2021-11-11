@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.builder;
+package edu.zjnu.designpattern.zhaihongwei.builder;
 
 /**
  * Create by zhaihongwei on 2018/3/13

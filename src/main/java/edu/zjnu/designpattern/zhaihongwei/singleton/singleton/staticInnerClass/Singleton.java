@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.singleton.singleton.staticInnerClass;
+package edu.zjnu.designpattern.zhaihongwei.singleton.singleton.staticInnerClass;
 
 /**
  * 静态内部类实现的线程安全的单例模式<br>

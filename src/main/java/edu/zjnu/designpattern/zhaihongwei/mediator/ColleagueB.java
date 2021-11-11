@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.mediator;
+package edu.zjnu.designpattern.zhaihongwei.mediator;
 
 /**
  * Create by zhaihongwei on 2018/4/4

@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.facade.src.facade;
+package edu.zjnu.designpattern.zhaihongwei.facade.src.facade;
 
 /**
  * Create by zhaihongwei on 2018/3/19

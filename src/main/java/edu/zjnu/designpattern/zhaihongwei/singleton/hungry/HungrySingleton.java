@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.singleton.hungry;
+package edu.zjnu.designpattern.zhaihongwei.singleton.hungry;
 
 /**
  * Create by zhaihongwei on 2018/3/12

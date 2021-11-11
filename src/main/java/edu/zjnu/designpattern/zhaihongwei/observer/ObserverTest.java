@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.observer;
+package edu.zjnu.designpattern.zhaihongwei.observer;
 
 
 /**

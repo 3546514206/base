@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.prototype.shallow;
+package edu.zjnu.designpattern.zhaihongwei.prototype.shallow;
 
 
 /**

@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.command;
+package edu.zjnu.designpattern.zhaihongwei.command;
 
 /**
  * Create by zhaihongwei on 2018/3/30

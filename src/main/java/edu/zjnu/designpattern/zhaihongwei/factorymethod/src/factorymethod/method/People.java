@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.factorymethod.src.factorymethod.method;
+package edu.zjnu.designpattern.zhaihongwei.factorymethod.src.factorymethod.method;
 
 /**
  * Create by zhaihongwei on 2018/3/9

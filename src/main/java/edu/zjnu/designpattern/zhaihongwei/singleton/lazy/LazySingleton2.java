@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.singleton.lazy;
+package edu.zjnu.designpattern.zhaihongwei.singleton.lazy;
 
 
 /**

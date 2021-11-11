@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.abstractfactory;
+package edu.zjnu.designpattern.zhaihongwei.abstractfactory;
 
 /**
  * Create by zhaihongwei on 2018/3/10

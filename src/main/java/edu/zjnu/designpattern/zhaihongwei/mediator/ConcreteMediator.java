@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.mediator;
+package edu.zjnu.designpattern.zhaihongwei.mediator;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.iterator.src.iterator;
+package edu.zjnu.designpattern.zhaihongwei.iterator.src.iterator;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.observer;
+package edu.zjnu.designpattern.zhaihongwei.observer;
 
 /**
  * Create by zhaihongwei on 2018/3/26

@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.visitor.visitor;
+package edu.zjnu.designpattern.zhaihongwei.visitor.visitor;
 
 /**
  * Create by zhaihongwei on 2018/4/3

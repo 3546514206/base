@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.memento.src.memento;
+package edu.zjnu.designpattern.zhaihongwei.memento.src.memento;
 
 /**
  * Create by zhaihongwei on 2018/3/31

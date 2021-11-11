@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.proxy;
+package edu.zjnu.designpattern.zhaihongwei.proxy;
 
 
 /**

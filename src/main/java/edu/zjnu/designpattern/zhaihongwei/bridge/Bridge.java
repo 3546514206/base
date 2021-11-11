@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.bridge;
+package edu.zjnu.designpattern.zhaihongwei.bridge;
 
 /**
  * Create by zhaihongwei on 2018/3/20

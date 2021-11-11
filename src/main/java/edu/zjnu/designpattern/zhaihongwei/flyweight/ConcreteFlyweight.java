@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.flyweight;
+package edu.zjnu.designpattern.zhaihongwei.flyweight;
 
 /**
  * Create by zhaihongwei on 2018/3/22

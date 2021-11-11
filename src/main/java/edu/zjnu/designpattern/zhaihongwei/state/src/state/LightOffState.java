@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.state.src.state;
+package edu.zjnu.designpattern.zhaihongwei.state.src.state;
 
 /**
  * Create by zhaihongwei on 2018/4/2

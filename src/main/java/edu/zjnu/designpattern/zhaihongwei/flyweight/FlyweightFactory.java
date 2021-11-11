@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.flyweight;
+package edu.zjnu.designpattern.zhaihongwei.flyweight;
 
 import java.util.HashMap;
 import java.util.List;

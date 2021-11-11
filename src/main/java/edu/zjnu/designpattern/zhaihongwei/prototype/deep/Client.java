@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.prototype.deep;
+package edu.zjnu.designpattern.zhaihongwei.prototype.deep;
 
 import java.io.IOException;
 

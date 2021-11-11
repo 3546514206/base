@@ -1,4 +1,4 @@
-package edu.zjnu.designpattern.command;
+package edu.zjnu.designpattern.zhaihongwei.command;
 
 
 /**
