@@ -7,6 +7,7 @@ import org.bouncycastle.math.ec.ECPoint;
 import java.math.BigInteger;
 
 public class SM2KeyVO {
+
     BigInteger privateKey;
     ECPoint publicKey;
 
