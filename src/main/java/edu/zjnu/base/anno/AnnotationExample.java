@@ -17,5 +17,6 @@ public class AnnotationExample {
         Class aClass = annotationExample.getClass();
         Annotation[] annotation = aClass.getAnnotations();
         System.out.println(annotation.toString());
+        System.out.println(annotation.length);
     }
 }
