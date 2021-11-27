@@ -34,7 +34,7 @@ public class DepthMain {
 
 
     /**
-     * 求深度：分治思想，递归实现
+     * 求深度
      * @param root
      */
     private static void getDepthV2(TreeNode<Integer> root) {
