@@ -18,7 +18,9 @@ public class NoVisibility {
     }
 
     private static class ReaderThread extends Thread {
+
         public void run() {
+
             while (!ready) {
                 /**
                  * 而yield()：
