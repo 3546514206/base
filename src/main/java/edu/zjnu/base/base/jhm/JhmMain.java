@@ -14,8 +14,10 @@ public class JhmMain {
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(FilterPerf.class.getName()) // 指定需要执行的文件或者匹配的文件
-                .forks(1) // 启动1个进程来执行测试
+                // 指定需要执行的文件或者匹配的文件
+                .include(FilterPerf.class.getName())
+                // 启动1个进程来执行测试
+                .forks(1)
                 .build();
 
         new Runner(opt).run();

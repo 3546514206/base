@@ -8,10 +8,10 @@ package edu.zjnu.arithmetic.leetcode;
 public class MaxPower {
 
     public static void main(String[] args) {
-        System.out.println(new MaxPower().maxPower("leetcode"));
+        System.out.println(new MaxPower().maxPowerV1("leetcode"));
     }
 
-    public int maxPower(String s) {
+    public int maxPowerV1(String s) {
 
         int res = 0, i = 0, j = 0;
 
@@ -29,4 +29,6 @@ public class MaxPower {
         return res;
 
     }
+
+
 }
