@@ -1,7 +1,7 @@
 package edu.zjnu.designpattern.zhaihongwei.proxy;
 
 /**
- * Create by zhaihongwei on 2018/3/17
+ *
  * 代理对象，通过代理对象操作被代理对象（真实对象）
  */
 public class Proxy implements Component {
