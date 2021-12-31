@@ -27,6 +27,8 @@ public class Proxy2Main {
                 handler);
         //System.out.println(proxy.toString());
         System.out.println(proxy.work());
+
+
     }
 
 }
