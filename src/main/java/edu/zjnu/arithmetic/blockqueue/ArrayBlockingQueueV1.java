@@ -10,7 +10,7 @@ public class ArrayBlockingQueueV1<E> implements BlockingQueue<E> {
     /**
      * 默认的大小：16
      */
-    private static final int DEFAULT_CAPACITY = 2 >> 4;
+    private static final int DEFAULT_CAPACITY = 2 << 4;
 
     /**
      * 承载队列元素的数组
@@ -23,7 +23,7 @@ public class ArrayBlockingQueueV1<E> implements BlockingQueue<E> {
     private int head;
 
     /**
-     * 队列尾部
+     * 队列尾部(表示下一个添加的位置，也就是说tail位置上一般情况下都为null)
      */
     private int tail;
 
@@ -58,6 +58,7 @@ public class ArrayBlockingQueueV1<E> implements BlockingQueue<E> {
         this.elements[this.tail] = e;
         // 尾部插入新元素后 tail下标后移一位
         this.tail = getIndex(this.tail + 1);
+        this.count++;
 
         this.count++;
     }
@@ -70,10 +71,7 @@ public class ArrayBlockingQueueV1<E> implements BlockingQueue<E> {
      */
     private int getIndex(int logicIndex) {
         int innerArrayLength = this.elements.length;
-//        0000 0000 0000 0110
-        //head==13 tail==14
-//      1000 0000 0000 0011
-//        head == 14 tail == 0
+
         // 由于队列下标逻辑上是循环的
         if (logicIndex < 0) {
             // 当逻辑下标小于零时
@@ -102,6 +100,6 @@ public class ArrayBlockingQueueV1<E> implements BlockingQueue<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return this.count > 0;
     }
 }
