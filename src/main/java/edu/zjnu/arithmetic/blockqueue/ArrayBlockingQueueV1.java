@@ -10,7 +10,7 @@ public class ArrayBlockingQueueV1<E> implements BlockingQueue<E> {
     /**
      * 默认的大小：16
      */
-    private static final int DEFAULT_CAPACITY = 2 << 4;
+    private static final int DEFAULT_CAPACITY = 1 << 4;
 
     /**
      * 承载队列元素的数组
@@ -58,7 +58,6 @@ public class ArrayBlockingQueueV1<E> implements BlockingQueue<E> {
         this.elements[this.tail] = e;
         // 尾部插入新元素后 tail下标后移一位
         this.tail = getIndex(this.tail + 1);
-        this.count++;
 
         this.count++;
     }
@@ -100,6 +99,6 @@ public class ArrayBlockingQueueV1<E> implements BlockingQueue<E> {
 
     @Override
     public boolean isEmpty() {
-        return this.count > 0;
+        return this.count == 0;
     }
 }
