@@ -77,13 +77,13 @@ public class ArrayBlockingQueueV3<E> implements BlockingQueue<E> {
                 condition.await();
             }
 
-            E headElement = dequeue();
+            E e = dequeue();
 
             // 唤醒可能等待着的生产者线程
             // 由于共用了一个condition，所以不能用signal，否则一旦唤醒的也是消费者线程就会陷入上面的while死循环）
             condition.signalAll();
 
-            return headElement;
+            return e;
         } finally {
             // 出队完毕，释放锁
             reentrantLock.unlock();
