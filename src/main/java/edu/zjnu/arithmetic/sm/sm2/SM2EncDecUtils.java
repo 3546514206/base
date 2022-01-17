@@ -110,81 +110,94 @@ public class SM2EncDecUtils {
         return c2;
     }
 
-/*    public static BigInteger[] Sm2Sign(byte[] md, AsymmetricCipherKeyPair keypair)
-    {
-        SM3Digest sm3 = new SM3Digest();
+//  public static BigInteger[] Sm2Sign(byte[] md, AsymmetricCipherKeyPair keypair)
+//    {
+//        SM3Digest sm3 = new SM3Digest();
+//
+//        ECPublicKeyParameters ecpub = (ECPublicKeyParameters)keypair.getPublic();
+//
+//        byte[] z = SM2CryptoServiceProvider.Sm2GetZ(Encoding.Default.GetBytes(SM2CryptoServiceProvider.userId), ecpub.getQ());
+//        sm3.update(z, 0, z.length);
+//
+//        byte[] p = md;
+//        sm3.update(p, 0, p.length);
+//
+//        byte[] hashData = new byte[32];
+//        sm3.doFinal(hashData, 0);
+//
+//        // e
+//        BigInteger e = new BigInteger(1, hashData);
+//        // k
+//        BigInteger k = null;
+//        ECPoint kp = null;
+//        BigInteger r = null;
+//        BigInteger s = null;
+//        BigInteger userD = null;
+//
+//        do
+//        {
+//            do
+//            {
+//
+//                ECPrivateKeyParameters ecpriv = (ECPrivateKeyParameters)keypair.getPrivate();
+//                k = ecpriv.getD();
+//                kp = ecpub.getQ();
+//
+//                userD = ecpriv.getD();
+//
+//                // r
+//                r = e.add(kp.getX().toBigInteger());
+//                r = r.mod(ecc_n);
+//            }
+//            while (r.equals(BigInteger.ZERO) || r.add(k).equals(ecc_n));
+//
+//            // (1 + dA)~-1
+//            BigInteger da_1 = userD.add(BigInteger.ONE);
+//            da_1 = da_1.modInverse(ecc_n);
+//            // s
+//            s = r.multiply(userD);
+//            s = k.subtract(s).mod(ecc_n);
+//            s = da_1.multiply(s).mod(ecc_n);
+//        }
+//        while (s.equals(BigInteger.ZERO));
+//
+//        byte[] btRS = new byte[64];
+//        byte[] btR = r.toByteArray();
+//        byte[] btS = s.toByteArray();
+//        Array.Copy(btR, btR.length - 32, btRS, 0, 32);
+//        Array.Copy(btS, btS.length - 32, btRS, 32, 32);
+//
+//        return new BigInteger[] { r, s };
+//    }
 
-        ECPublicKeyParameters ecpub = (ECPublicKeyParameters)keypair.getPublic();
 
-        byte[] z = SM2CryptoServiceProvider.Sm2GetZ(Encoding.Default.GetBytes(SM2CryptoServiceProvider.userId), ecpub.getQ());
-        sm3.update(z, 0, z.length);
-
-        byte[] p = md;
-        sm3.update(p, 0, p.length);
-
-        byte[] hashData = new byte[32];
-        sm3.doFinal(hashData, 0);
-
-        // e
-        BigInteger e = new BigInteger(1, hashData);
-        // k
-        BigInteger k = null;
-        ECPoint kp = null;
-        BigInteger r = null;
-        BigInteger s = null;
-        BigInteger userD = null;
-
-        do
-        {
-            do
-            {
-
-                ECPrivateKeyParameters ecpriv = (ECPrivateKeyParameters)keypair.getPrivate();
-                k = ecpriv.getD();
-                kp = ecpub.getQ();
-
-                userD = ecpriv.getD();
-
-                // r
-                r = e.add(kp.getX().toBigInteger());
-                r = r.mod(ecc_n);
-            }
-            while (r.equals(BigInteger.ZERO) || r.add(k).equals(ecc_n));
-
-            // (1 + dA)~-1
-            BigInteger da_1 = userD.add(BigInteger.ONE);
-            da_1 = da_1.modInverse(ecc_n);
-            // s
-            s = r.multiply(userD);
-            s = k.subtract(s).mod(ecc_n);
-            s = da_1.multiply(s).mod(ecc_n);
-        }
-        while (s.equals(BigInteger.ZERO));
-
-        byte[] btRS = new byte[64];
-        byte[] btR = r.toByteArray();
-        byte[] btS = s.toByteArray();
-        Array.Copy(btR, btR.length - 32, btRS, 0, 32);
-        Array.Copy(btS, btS.length - 32, btRS, 32, 32);
-
-        return new BigInteger[] { r, s };
-    }*/
+    /**
+     * 推荐参数：
+     * p=FFFFFFFE FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000000 FFFFFFFF FFFFFFFF
+     * a=FFFFFFFE FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 00000000 FFFFFFFF FFFFFFFC
+     * b=28E9FA9E 9D9F5E34 4D5A9E4B CF6509A7 F39789F5 15AB8F92 DDBCBD41 4D940E93
+     * n=FFFFFFFE FFFFFFFF FFFFFFFF FFFFFFFF 7203DF6B 21C6052B 53BBF409 39D54123
+     * Gx=32C4AE2C 1F198119 5F990446 6A39C994 8FE30BBF F2660BE1 715A4589 334C74C7
+     * Gy=BC3736A2 F4F6779C 59BDCEE3 6B692153 D0A9877C C62A4740 02DF32E5 2139F0A0
+     * @param args
+     * @throws Exception
+     */
 
     public static void main(String[] args) throws Exception {
-        String plainText = "ILoveYou11";
+        String plainText = "this is not encrypted text";
         //SM3测试
         //生成密钥对
         //generateKeyPair();
         byte[] sourceData = plainText.getBytes();
 
-        //下面的秘钥可以使用generateKeyPair()生成的秘钥内容
-        // 国密规范正式私钥
-        //String prik = "3690655E33D5EA3D9A4AE1A1ADD766FDEA045CDEAA43A9206FB8C430CEFE0D94";
-        // 国密规范正式公钥
-        //String pubk = "04F6E0C3345AE42B51E06BF50B98834988D54EBC7460FE135A48171BC0629EAE205EEDE253A530608178A98F1E19BB737302813BA39ED3FA3C51639D7A20C7391A";
 
-        String prik = "4cf170068e9c47ebdb521fb9fc62c4a55a5773fb9da33b0acf8129e28d09d205";
-        String pubk = "04aabda53043e8dcb86d42f690b61a4db869821dadf9f851ec3c5c43d0c8f95a6677fdba984afc3bb010a8436b1d17cefc2011a34e01e9e801124d29ffa928d803";
+        // 国密规范正式私钥
+        String prik = "3690655E33D5EA3D9A4AE1A1ADD766FDEA045CDEAA43A9206FB8C430CEFE0D94";
+        // 国密规范正式公钥
+        String pubk = "04F6E0C3345AE42B51E06BF50B98834988D54EBC7460FE135A48171BC0629EAE205EEDE253A530608178A98F1E19BB737302813BA39ED3FA3C51639D7A20C7391A";
+
+        //String prik = "4cf170068e9c47ebdb521fb9fc62c4a55a5773fb9da33b0acf8129e28d09d205";
+        //String pubk = "04aabda53043e8dcb86d42f690b61a4db869821dadf9f851ec3c5c43d0c8f95a6677fdba984afc3bb010a8436b1d17cefc2011a34e01e9e801124d29ffa928d803";
         String publicKey = "04BB34D657EE7E8490E66EF577E6B3CEA28B739511E787FB4F71B7F38F241D87F18A5A93DF74E90FF94F4EB907F271A36B295B851F971DA5418F4915E2C1A23D6E";
         String privatekey = "0B1CE43098BC21B8E82B5C065EDB534CB86532B1900A49D49F3C53762D2997FA";
         prik = privatekey;
