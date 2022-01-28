@@ -1,4 +1,4 @@
-package edu.zjnu.base.base.java8interface;
+package edu.zjnu.base.base.java8interface.demo;
 
 /**
  * @description: Man
