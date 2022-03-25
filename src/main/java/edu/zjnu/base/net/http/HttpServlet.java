@@ -1,4 +1,4 @@
-package edu.zjnu.base.http;
+package edu.zjnu.base.net.http;
 
 /**
  * @description: HttpServlet
