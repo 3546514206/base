@@ -14,7 +14,6 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
 
     private int counter;
 
-    @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
 //        ByteBuf buf = (ByteBuf)msg;
 //        byte[] req = new byte[buf.readableBytes()];
