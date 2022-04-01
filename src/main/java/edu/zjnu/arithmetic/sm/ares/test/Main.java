@@ -17,28 +17,29 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * The Class Main.
+ * @author SetsunaYang
  */
 public class Main {
 
 	/**
 	 * 异步线程池，核心线程大小
 	 */
-	private static int poolCoreSize = 10;
+	private static final int POOL_CORE_SIZE = 10;
 
 	/**
 	 * The pool max size. 异步线程池，最大线程
 	 */
-	private static int poolMaxSize = 100;
+	private static final int POOL_MAX_SIZE = 100;
 
 	/**
 	 * The pool keep alive time 线程空闲多少秒后自动结束
 	 */
-	private static int poolKeepAliveTime = 60;
+	private static final int poolKeepAliveTime = 60;
 
 	/**
 	 * The pool 等待队列大小
 	 */
-	private static int poolQueueSize = 100;
+	private static final int poolQueueSize = 100;
 
 	static boolean isBreak;
 
@@ -49,15 +50,19 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue<>(poolQueueSize);
-		ThreadPoolExecutor executor = new ThreadPoolExecutor(poolCoreSize, poolMaxSize, poolKeepAliveTime,
-				TimeUnit.SECONDS, workQueue);
+		ThreadPoolExecutor executor = new ThreadPoolExecutor(
+				POOL_CORE_SIZE,
+				POOL_MAX_SIZE,
+				poolKeepAliveTime,
+				TimeUnit.SECONDS,
+				workQueue);
 
 		final int count = 10000;
-		final CountDownLatch latch = new CountDownLatch(poolMaxSize);
+		final CountDownLatch latch = new CountDownLatch(POOL_MAX_SIZE);
 
 		final AtomicInteger resultCount = new AtomicInteger();
 		long start = System.currentTimeMillis();
-		for (int i = 0; i < poolMaxSize; i++) {
+		for (int i = 0; i < POOL_MAX_SIZE; i++) {
 			executor.execute(new Runnable() {
 				@Override
 				public void run() {
