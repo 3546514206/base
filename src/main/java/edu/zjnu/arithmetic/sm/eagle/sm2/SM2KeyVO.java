@@ -1,7 +1,7 @@
-package edu.zjnu.arithmetic.sm.sm2;
+package edu.zjnu.arithmetic.sm.eagle.sm2;
 
-import edu.zjnu.arithmetic.sm.SecurityTestAll;
-import edu.zjnu.arithmetic.sm.Util;
+import edu.zjnu.arithmetic.sm.eagle.SecurityTestAll;
+import edu.zjnu.arithmetic.sm.eagle.Util;
 import org.bouncycastle.math.ec.ECPoint;
 
 import java.math.BigInteger;

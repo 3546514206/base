@@ -1,7 +1,7 @@
-package edu.zjnu.arithmetic.sm.sm2;
+package edu.zjnu.arithmetic.sm.eagle.sm2;
 
 
-import edu.zjnu.arithmetic.sm.Util;
+import edu.zjnu.arithmetic.sm.eagle.Util;
 import org.bouncycastle.crypto.AsymmetricCipherKeyPair;
 import org.bouncycastle.crypto.params.ECPrivateKeyParameters;
 import org.bouncycastle.crypto.params.ECPublicKeyParameters;

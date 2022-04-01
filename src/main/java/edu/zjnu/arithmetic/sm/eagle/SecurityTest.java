@@ -1,8 +1,8 @@
-package edu.zjnu.arithmetic.sm;
+package edu.zjnu.arithmetic.sm.eagle;
 
-import edu.zjnu.arithmetic.sm.sm2.SM2EncDecUtils;
-import edu.zjnu.arithmetic.sm.sm2.SM2SignVO;
-import edu.zjnu.arithmetic.sm.sm2.SM2SignVerUtils;
+import edu.zjnu.arithmetic.sm.eagle.sm2.SM2EncDecUtils;
+import edu.zjnu.arithmetic.sm.eagle.sm2.SM2SignVO;
+import edu.zjnu.arithmetic.sm.eagle.sm2.SM2SignVerUtils;
 import org.bouncycastle.crypto.digests.SM3Digest;
 import org.bouncycastle.util.encoders.Hex;
 import org.junit.Test;

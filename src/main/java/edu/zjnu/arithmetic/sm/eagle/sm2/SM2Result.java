@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic.sm.sm2;
+package edu.zjnu.arithmetic.sm.eagle.sm2;
 
 import org.bouncycastle.math.ec.ECPoint;
 

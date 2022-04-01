@@ -1,6 +1,6 @@
-package edu.zjnu.arithmetic.sm.sm2;
+package edu.zjnu.arithmetic.sm.eagle.sm2;
 
-import edu.zjnu.arithmetic.sm.Util;
+import edu.zjnu.arithmetic.sm.eagle.Util;
 import org.bouncycastle.asn1.*;
 import org.bouncycastle.crypto.digests.SM3Digest;
 import org.bouncycastle.math.ec.ECPoint;

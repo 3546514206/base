@@ -1,6 +1,6 @@
-package edu.zjnu.arithmetic.sm.sm3;
+package edu.zjnu.arithmetic.sm.eagle.sm3;
 
-import edu.zjnu.arithmetic.sm.Util;
+import edu.zjnu.arithmetic.sm.eagle.Util;
 import org.bouncycastle.crypto.digests.SM3Digest;
 import org.bouncycastle.util.encoders.Hex;
 

@@ -1,10 +1,10 @@
-package edu.zjnu.arithmetic.sm.sm4;
+package edu.zjnu.arithmetic.sm.eagle.sm4;
 
 /**
  * Created by $(USER) on $(DATE)
  */
 
-import edu.zjnu.arithmetic.sm.Util;
+import edu.zjnu.arithmetic.sm.eagle.Util;
 import org.apache.commons.codec.binary.Base64;
 
 import java.io.IOException;

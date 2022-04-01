@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic.sm.sm4;
+package edu.zjnu.arithmetic.sm.eagle.sm4;
 
 /**
  * Created by $(USER) on $(DATE)

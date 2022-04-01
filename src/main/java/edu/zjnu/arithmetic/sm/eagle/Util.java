@@ -1,4 +1,4 @@
-package edu.zjnu.arithmetic.sm;
+package edu.zjnu.arithmetic.sm.eagle;
 
 import java.math.BigInteger;
 
