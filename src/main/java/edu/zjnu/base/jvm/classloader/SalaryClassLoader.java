@@ -6,6 +6,7 @@ import com.sun.xml.internal.ws.util.ByteArrayBuffer;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.security.SecureClassLoader;
 
 /**
@@ -53,5 +54,18 @@ public class SalaryClassLoader extends SecureClassLoader {
             }
         }
         return null;
+    }
+
+
+    public static void main(String[] args) throws ClassNotFoundException {
+        URL url = SalaryClassLoader.class.getClassLoader().getResource("application.properties");
+        if (null != url) {
+            String packageString = SalaryClassLoader.class.getPackage().toString();
+            String classPath = url.getPath().substring(0, url.getPath().length() - "application.properties".length()) + packageString.substring(8).replace(".", File.separator);
+            classPath = classPath + "/SalaryCalerV2.class";
+            System.out.println(classPath);
+            Class salaryCalerClass = new SalaryClassLoader(classPath).findClass(classPath);
+            System.out.println(salaryCalerClass);
+        }
     }
 }
