@@ -1,0 +1,5 @@
+edu/zjnu/BeLoader.class
+edu/zjnu/TargetVM.class
+edu/zjnu/PremainAgent.class
+edu/zjnu/PremainAgent$CustomClassTransformer.class
+edu/zjnu/AgentLoader.class
