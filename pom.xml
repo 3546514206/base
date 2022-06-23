@@ -5,6 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>base</artifactId>
+    <modules>
+        <module>agent</module>
+    </modules>
     <groupId>edu.zjnu</groupId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -21,7 +24,7 @@
         </plugins>
     </build>
 
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

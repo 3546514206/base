@@ -1,4 +1,4 @@
-package edu.zjnu.base.anno;
+package edu.zjnu.base.base.anno;
 
 import edu.zjnu.base.NullClass;
 

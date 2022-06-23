@@ -1,4 +1,4 @@
-package edu.zjnu.base.jvm;
+package edu.zjnu.base.base.jvm;
 
 /**
  * @description: person

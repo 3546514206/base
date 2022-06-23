@@ -1,4 +1,4 @@
-package edu.zjnu.base.jvm.jmm;
+package edu.zjnu.base.base.jvm.jmm;
 
 import java.util.Properties;
 

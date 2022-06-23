@@ -1,4 +1,4 @@
-package edu.zjnu.base.jvm.classloader;
+package edu.zjnu.base.base.jvm.classloader;
 
 /**
  * @description: OAS
@@ -13,7 +13,7 @@ public class OAS {
 
         String classpath = "/Users/setsunayang/Documents/learnspace/learning/target/classes/edu/zjnu/base/jvm/classloader/SalaryCalerV2.class";
         SalaryClassLoader salaryClassLoader = new SalaryClassLoader(classpath);
-        Class<?> classLoaderClass = salaryClassLoader.findClass("edu.zjnu.base.jvm.classloader.SalaryCalerV2");
+        Class<?> classLoaderClass = salaryClassLoader.findClass("edu.zjnu.base.base.jvm.classloader.SalaryCalerV2");
 
         while (true) {
             realSalary = new SalaryCaler().cla(salary);

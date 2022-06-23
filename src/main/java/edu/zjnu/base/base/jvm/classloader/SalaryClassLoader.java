@@ -1,4 +1,4 @@
-package edu.zjnu.base.jvm.classloader;
+package edu.zjnu.base.base.jvm.classloader;
 
 
 import com.sun.xml.internal.ws.util.ByteArrayBuffer;
@@ -57,15 +57,22 @@ public class SalaryClassLoader extends SecureClassLoader {
     }
 
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, InterruptedException {
         URL url = SalaryClassLoader.class.getClassLoader().getResource("application.properties");
         if (null != url) {
             String packageString = SalaryClassLoader.class.getPackage().toString();
             String classPath = url.getPath().substring(0, url.getPath().length() - "application.properties".length()) + packageString.substring(8).replace(".", File.separator);
-            classPath = classPath + "/SalaryCalerV2.class";
+            classPath = classPath + "/SalaryCaler.class";
             System.out.println(classPath);
-            Class salaryCalerClass = new SalaryClassLoader(classPath).findClass(classPath);
-            System.out.println(salaryCalerClass);
+            Class salaryCalerClass = new SalaryClassLoader(classPath).findClass("edu.zjnu.base.base.jvm.classloader.SalaryCaler");
+            SalaryCaler salaryCaler = (SalaryCaler) salaryCalerClass.newInstance();
+            while (true) {
+
+                salaryCaler.cla(1000d);
+                Thread.sleep(6000);
+            }
+
+            //            System.out.println(salaryCalerClass);
         }
     }
 }
