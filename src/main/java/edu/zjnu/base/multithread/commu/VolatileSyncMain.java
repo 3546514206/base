@@ -15,7 +15,6 @@ public class VolatileSyncMain {
     public static void main(String[] args) {
 
         List<Integer> list = new ArrayList<>();
-
         Thread thread1 = new Thread(()->{
             for (int i = 0; i < 100; i++) {
                 list.add(1);
