@@ -16,8 +16,9 @@ public class LockObjectMain {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                synchronized (lock) {
-                    for (int i = 0; i < 20; i++) {
+
+                for (int i = 0; i < 20; i++) {
+                    synchronized (lock) {
                         list.add("order:" + i);
                         System.out.println("线程1 向 list 添加元素，此时的元素个数：" + list.size());
 
@@ -34,7 +35,7 @@ public class LockObjectMain {
                     }
                 }
             }
-        },"thread-00001");
+        }, "thread-00001");
 
         Thread thread2 = new Thread(new Runnable() {
             @Override
@@ -51,7 +52,7 @@ public class LockObjectMain {
                     }
                 }
             }
-        },"thread-00002");
+        }, "thread-00002");
 
         thread2.start();
         try {
