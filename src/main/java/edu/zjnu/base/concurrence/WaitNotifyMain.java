@@ -62,6 +62,13 @@ public class WaitNotifyMain {
                 while (!produced) {
                     try {
                         System.out.println("生产者线程未生产，进入等待");
+                        // wait() 的时候必须释放锁!!!当然，这是 JVM 做的，不需要用户自己做
+                        // 否则 producer 线程将永远无法获取锁，从而得到执行权限。
+                        // wait(){
+                        // 1) 释放当前线程持有的锁
+                        // 2) 阻塞，等待被其他线程notify
+                        // 3) 重新获取锁
+                        // }
                         monitor.wait();
                         System.out.println("结束等待");
                     } catch (InterruptedException e) {
