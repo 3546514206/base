@@ -22,7 +22,7 @@ public class WaitNotifyMain {
 
     private static boolean produced = false;
 
-    public static void main(String[] args) throws InterruptedException {
+    public  static void main(String[] args) throws InterruptedException {
         Thread producer = new Thread(new Producer(), "producer");
         Thread consumer = new Thread(new Consumer(), "consumer");
         consumer.start();
@@ -61,16 +61,16 @@ public class WaitNotifyMain {
         @Override
         public void run() {
             synchronized (monitor) {
-                System.out.println(monitor);
+                //System.out.println(monitor);
                 while (!produced) {
                     try {
                         System.out.println("生产者线程未生产，进入等待");
                         // wait() 的时候必须释放锁!!!当然，这是 JVM 做的，不需要用户自己做
                         // 否则 producer 线程将永远无法获取锁，从而得到执行权限。
                         // wait(){
-                        // 1) 释放当前线程持有的锁
-                        // 2) 阻塞，等待被其他线程notify
-                        // 3) 重新获取锁
+                        //      1) 释放当前线程持有的锁
+                        //      2) 阻塞，等待被其他线程notify
+                        //      3) 重新获取锁
                         // }
                         monitor.wait();
                         System.out.println("结束等待");
@@ -79,6 +79,12 @@ public class WaitNotifyMain {
                     }
                 }
                 System.out.println("消费者线程开始消费");
+                try {
+                    // 模拟消费过程
+                    TimeUnit.MILLISECONDS.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println("消费者线程结束消费");
             }
         }

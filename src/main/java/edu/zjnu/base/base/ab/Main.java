@@ -15,6 +15,7 @@ package edu.zjnu.base.base.ab;
  *   4）构造方法，类方法（用static修饰的方法）不能声明为抽象方法；
  *   5）抽象方法的子类必须给出抽象方法的具体实现，除非改子类也是抽象方法
  *
+ * @author SetsunaYang
  */
 public class Main {
 
