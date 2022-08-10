@@ -18,9 +18,9 @@ import java.util.Scanner;
 public class GcMain {
 
     public static void main(String[] args) {
-        System.out.println("breakpoint");
         List<byte[]> container = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
+
         while (true) {
             int size = scanner.nextInt();
             // size == 1         1b
