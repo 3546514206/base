@@ -1,7 +1,7 @@
 package edu.zjnu.base.concurrence.lock;
 
 /**
- * @description: TODO
+ * @description: ReentrantSynchronizedLock
  * @author: 杨海波
  * @date: 2022-08-05 09:07
  **/
