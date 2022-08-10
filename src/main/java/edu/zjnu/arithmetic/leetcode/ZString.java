@@ -51,7 +51,9 @@ public class ZString {
      */
     public String f(String s, int numRows) {
 
-        if (numRows < 2) return s;
+        if (numRows < 2) {
+            return s;
+        }
 
         List<StringBuilder> builders = new ArrayList<>(numRows);
 

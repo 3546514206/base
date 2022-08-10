@@ -77,7 +77,7 @@ public class ReentrantReadWriteLockMain {
 
 class LockTask {
     // private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
-    private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock(true);
+    private static final ReentrantReadWriteLock lock = new ReentrantReadWriteLock(true);
 
     public void read() {
         try {
