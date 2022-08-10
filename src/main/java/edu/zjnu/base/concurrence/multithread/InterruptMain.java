@@ -14,6 +14,7 @@ public class InterruptMain {
     private static int i = 0;
 
     public static void main(String[] args) throws InterruptedException {
+
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -24,11 +25,11 @@ public class InterruptMain {
                         Thread.sleep(5000);
                     } catch (InterruptedException e) {
                         System.out.println("exception。。。");
-                        //①:发出中断请求，设置中断状态
+                        // ①:发出中断请求，设置中断状态
                         Thread.currentThread().interrupt();
-                        //②:判断中断状态（不清除中断状态）
+                        // ②:判断中断状态（不清除中断状态）
                         System.out.println(Thread.currentThread().isInterrupted());
-                        //③:判断中断状态（同时清除中断状态）
+                        // ③:判断中断状态（同时清除中断状态）
                         System.out.println(Thread.interrupted());
                     }
                     System.out.println("current thread haven't been broken");

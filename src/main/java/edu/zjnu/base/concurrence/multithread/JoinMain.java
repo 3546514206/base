@@ -29,7 +29,7 @@ public class JoinMain {
         // 调用start方法但是调用该方法只是准备线程并不是马上启动
         thread1.start();
         thread2.start();
-        // 只有当start()启动后 才能正确执行join（）
+        // 只有当 start() 启动后 才能正确执行 join()
         thread1.join();
         thread2.join();
         System.out.println(Thread.currentThread().getName() + ":" + "主线程执行");
