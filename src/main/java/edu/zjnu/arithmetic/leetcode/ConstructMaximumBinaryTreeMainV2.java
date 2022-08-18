@@ -3,7 +3,7 @@ package edu.zjnu.arithmetic.leetcode;
 import java.util.Stack;
 
 /**
- * @description: ConstructMaximumBinaryTreeMainV2 基于单调栈构建最大树
+ * @description: ConstructMaximumBinaryTreeMainV2 基于单调栈构建最大树(没写完，不会)
  * @author: 杨海波
  * @date: 2022-08-12 10:29
  **/
