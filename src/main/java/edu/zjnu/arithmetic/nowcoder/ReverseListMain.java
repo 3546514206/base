@@ -33,13 +33,15 @@ public class ReverseListMain {
 
        return pre;
     }
-}
 
-class ListNode {
-    int val;
-    ListNode next = null;
+    static class ListNode {
+        int val;
+        ListNode next = null;
 
-    ListNode(int val) {
-        this.val = val;
+        ListNode(int val) {
+            this.val = val;
+        }
     }
+
 }
+
