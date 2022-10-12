@@ -7,15 +7,15 @@ package edu.zjnu.base.base.ref;
  **/
 public class ChangeString {
 
-    public static void  changeStr(String str){
+    public static void changeStr(String str) {
         System.out.println(str);
-        str= "welcome" ;
+        str = "welcome";
     }
 
-    public static void  main(String[] args) {
+    public static void main(String[] args) {
 
-        String str= "1234" ;
+        String str = "1234";
         changeStr(str);
-        System. out .println(str);
+        System.out.println(str);
     }
 }
