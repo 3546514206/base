@@ -3,7 +3,7 @@ package edu.zjnu.arithmetic.zcy;
 /**
  * @Auther: setsunayang
  * @Date: 2022-10-23 20:32:35
- * @Description: 将十进制的整形数打印成二进制的字符串
+ * @Description: 将十进制的整形数打印成二进制的字符串-无符号
  */
 public class PrintIntBin {
 
