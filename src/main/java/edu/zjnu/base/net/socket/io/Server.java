@@ -1,4 +1,4 @@
-package edu.zjnu.base.socket.io;
+package edu.zjnu.base.net.socket.io;
 
 import java.io.BufferedReader;
 import java.io.IOException;
