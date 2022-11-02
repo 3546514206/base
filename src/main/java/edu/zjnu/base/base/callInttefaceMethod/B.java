@@ -1,4 +1,4 @@
-package edu.zjnu.base.callInttefaceMethod;
+package edu.zjnu.base.base.callInttefaceMethod;
 
 /**
  * @description: 实现A类的f()方法
