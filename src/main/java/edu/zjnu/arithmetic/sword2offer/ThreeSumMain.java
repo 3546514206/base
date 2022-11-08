@@ -28,14 +28,18 @@ public class ThreeSumMain {
             while (i < numbers.length - 2) {
                 // 寻找 -numbers[i] = numbers[j] + numbers[k]
                 twoSum(numbers, i, results);
-                ++i;
+
+                int temp = numbers[i];
+                do {
+                    ++i;
+                } while (i < numbers.length - 2 && temp == numbers[i]);
             }
         }
 
         return results;
     }
 
-    // todo 过滤下标不同，但是元素相同的三元组
+
     private static void twoSum(int[] numbers, int i, List<List<Integer>> results) {
         int j = i + 1;
         int k = numbers.length - 1;
@@ -51,7 +55,12 @@ public class ThreeSumMain {
                 result.add(j);
                 result.add(k);
                 results.add(result);
-                ++j;
+
+                int temp = numbers[j];
+                do {
+                    ++j;
+                } while (numbers[j] == temp && j < k);
+
             } else if (numbers[i] + numbers[j] + numbers[k] < 0) {
                 ++j;
             } else {
