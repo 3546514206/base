@@ -35,6 +35,7 @@ public class ThreeSumMain {
         return results;
     }
 
+    // todo 过滤下标不同，但是元素相同的三元组
     private static void twoSum(int[] numbers, int i, List<List<Integer>> results) {
         int j = i + 1;
         int k = numbers.length - 1;
