@@ -12,6 +12,9 @@ public class TwoPointMain {
         int target = 8;
 
         int[] twoIndex = twoSum(numbers, target);
+        for (int index : twoIndex) {
+            System.out.println(index);
+        }
     }
 
     private static int[] twoSum(int[] numbers, int target) {
