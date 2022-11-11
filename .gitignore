@@ -208,3 +208,4 @@ hs_err_pid*
 /zookeeper/zookeeper-server/target/test-classes/
 /zookeeper/zookeeper-jute/target/
 /sofa/tracer-sample/tracer-sample-with-zipkin/target/classes/
+/cmake-build-debug/
