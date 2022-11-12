@@ -1,5 +1,11 @@
+//
+// Created by 杨海波 on 2022/11/12.
+//
+
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "testStaticStructDef.h"
 
 typedef struct ElemType {
     int x;
@@ -10,7 +16,7 @@ typedef struct Node {
     struct Node *prior, *next;
 } Node, *List;
 
-int main() {
+void test(){
     List list = (List) malloc(sizeof(struct Node));
     list->next = NULL;
     list->prior = NULL;
@@ -29,4 +35,11 @@ int main() {
         node->prior = list->prior;
     }
     printf("test");
+}
+
+int main() {
+
+
+
+
 }
