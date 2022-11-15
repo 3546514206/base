@@ -10,20 +10,16 @@ public:
     double breadth;
     double height;
 
-    double get(void);
+    double get(void) {
+        return length * breadth * height;
+    }
 
-    void set(double len, double bre, double hel);
+    void set(double len, double bre, double hel) {
+        this->height = len;
+        this->breadth = bre;
+        this->height = hel;
+    }
 };
-
-double Box::get(void) {
-    return length * breadth * height;
-}
-
-void Box::set(double len, double bre, double hel) {
-    this->height = len;
-    this->breadth = bre;
-    this->height = hel;
-}
 
 int main() {
     Box box;
