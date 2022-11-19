@@ -27,7 +27,7 @@ int index(String *string, String *ttring) {
             j++;
         } else {
             k++;
-            i = k;
+            i = k;  // 主串扫描指针会发生回退， KMP 也是针对此做出优化
             j = j;
         }
     }
