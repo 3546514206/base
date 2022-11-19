@@ -7,7 +7,7 @@ typedef struct {
     int length;
 } String;
 
-void initString(String *string, char s[], int size) {
+void init_string(String *string, char s[], int size) {
     string->length = size;
     for (int i = 1; i <= size; ++i) {
         string->chars[i] = s[i - 1];
@@ -39,15 +39,19 @@ int index(String *string, String *ttring) {
     }
 }
 
+int kmp_index(){
+    
+}
+
 int main() {
 
     String string;
     char s[] = {'w', 'a', 'n', 'g', 'd', 'a', 'o'};
-    initString(&string, s, sizeof(s) / sizeof(s[0]));
+    init_string(&string, s, sizeof(s) / sizeof(s[0]));
 
     char t[] = {'g', 'd', 'a'};
     String ttring;
-    initString(&ttring, t, sizeof(t) / sizeof(s[0]));
+    init_string(&ttring, t, sizeof(t) / sizeof(s[0]));
 
     printf("模式串在子串中的位置：%d", index(&string, &ttring));
 
