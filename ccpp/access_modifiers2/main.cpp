@@ -29,6 +29,7 @@ private:
     int a3;
 };
 
+// ！！！！！！ public 继承：基类 public 成员，protected 成员的访问属性在派生类中分别变成：public, protected,；private 成员无法被派生类访问
 class B : public A {
 public:
     int a;

@@ -29,7 +29,8 @@ private:
     int a3;
 };
 
-class B :  A {
+// 即便不写 private ，默认的继承方式也是 private
+class B : private A {
 public:
     int a;
 
