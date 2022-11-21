@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigator</title>
+</head>
+<body>
+<p id="example"></p>
+</body>
+<script>
+    //window.navigator 对象包含有关访问者浏览器的信息。
+    txt = "<p>浏览器代号: " + navigator.appCodeName + "</p>";
+    txt+= "<p>浏览器名称: " + navigator.appName + "</p>";
+    txt+= "<p>浏览器版本: " + navigator.appVersion + "</p>";
+    txt+= "<p>启用Cookies: " + navigator.cookieEnabled + "</p>";
+    txt+= "<p>硬件平台: " + navigator.platform + "</p>";
+    txt+= "<p>用户代理: " + navigator.userAgent + "</p>";
+    txt+= "<p>用户代理语言: " + navigator.language + "</p>";
+    document.getElementById("example").innerHTML=txt;
+</script>
+
+</html>

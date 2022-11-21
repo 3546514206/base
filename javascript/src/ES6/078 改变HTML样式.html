@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改变HTML样式</title>
+</head>
+<body>
+
+<p id="p1">hello world</p>
+<p id="p2">hello world</p>
+<script>
+    setTimeout(function () {
+        document.getElementById("p2").style.color="blue";
+        document.getElementById("p2").style.fontFamily="Arial";
+        document.getElementById("p2").style.fontSize="larger";
+    }, 2000);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取和操作节点列表</title>
+</head>
+<body>
+<div>
+    <p id="p1">段落1</p>
+    <p id="p2">段落2</p>
+    <p id="p3">段落3</p>
+    <p id="demo">这里会显示节点数</p>
+</div>
+
+<script>
+    setTimeout(function () {
+        let nodeList = document.querySelectorAll("p");
+        document.getElementById("demo").innerHTML= nodeList.length;
+    }, 5000);
+</script>
+</body>
+</html>

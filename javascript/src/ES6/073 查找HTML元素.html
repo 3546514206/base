@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查找HTML元素</title>
+</head>
+<body>
+
+<div id="main">
+    <p id="p1">段落一</p>
+    <p id="p2">段落二</p>
+</div>
+
+<script>
+
+    //根据id查找HTML元素
+    let mainDiv = document.getElementById("main");
+    // 根据标签查找HTML元素
+    let ps = mainDiv.getElementsByTagName("p");
+    console.log(mainDiv);
+    console.log(ps);
+    window.alert("hello ");
+</script>
+</body>
+</html>

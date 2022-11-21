@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var myObject = {
+        firstName:"John",
+        lastName: "Doe",
+        fullName: function () {
+            return this.firstName + " " + this.lastName;
+        },
+        getObject:function () {
+            return this;
+        },
+        getArg : function () {
+            return arguments;
+        }
+    };
+    console.log(myObject.fullName());         // 返回 "John Doe"
+    console.log(myObject.getObject());
+    console.log(myObject.getArg(1,2,3));
+</script>
+</body>
+</html>

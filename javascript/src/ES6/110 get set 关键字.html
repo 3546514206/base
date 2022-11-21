@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型对象</title>
+</head>
+<body>
+
+<script>
+    const obj = {
+        data: ['a', 'b', 'c'],
+        get latest() {
+            if (this.data.length === 0) {
+                return undefined;
+            }
+            return this.data[this.data.length - 1];
+        }
+    };
+    // js 是基于原型的面向对象，java是基于类型的面向对象
+    // set 和 get 关键字这两个关键字是用了在对象中创建和获取伪属性（pseudo-property）
+    // 注意getter是函数形式定义，但不是函数形式使用
+    console.log(obj.latest);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建HTML元素</title>
+</head>
+<body>
+<div id="div">
+    <p id="p">这是一个段落</p>
+</div>
+<script>
+
+    setTimeout(function () {
+        let div = document.getElementById("div");
+        let p = document.getElementById("p");
+
+        let pNew = document.createElement("p");
+        let nodeText = document.createTextNode("创建新的元素");
+
+        pNew.appendChild(nodeText);
+        div.insertBefore(pNew, p);
+    }, 5000);
+</script>
+</body>
+</html>

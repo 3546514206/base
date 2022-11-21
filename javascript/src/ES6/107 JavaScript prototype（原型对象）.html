@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型对象</title>
+</head>
+<body>
+
+<script>
+    function Students(name, height, age) {
+        this.name = name;
+        this.height = height;
+        this.age = age;
+        this.outputInfo = function () {
+            document.write('name = ' + this.name + '<br\>' + 'height = ' + this.height + '<br\>');
+        }
+    }
+
+    // Students
+
+    //通过原型对象增加一个新方法
+    Students.prototype.newFunction = function () {
+        document.write('此方法是通过prototype继承后实现的');
+    };
+
+    var stu1 = new Students('zhang', 123, 12);
+    stu1.outputInfo();
+    stu1.newFunction();
+
+</script>
+</body>
+</html>

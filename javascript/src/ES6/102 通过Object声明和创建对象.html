@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 Object 定义并创建对象的实例</title>
+</head>
+<body>
+
+<script>
+
+    // 在 JavaScript 中，几乎所有的对象都是 Object 类型的实例，它们都会从 Object.prototype 继承属性和方法。
+    // Object 构造函数创建一个对象包装器。
+    // Object 构造函数，会根据给定的参数创建对象，具体有以下情况：
+    // 如果给定值是 null 或 undefined，将会创建并返回一个空对象。
+    // 如果传进去的是一个基本类型的值，则会构造其包装类型的对象。
+    // 如果传进去的是引用类型的值，仍然会返回这个值，经他们复制的变量保有和源对象相同的引用地址。
+    // 当以非构造函数形式被调用时，Object 的行为等同于 new Object()。
+    let o = new Object(1);
+    console.log(o);
+    console.log(typeof o);
+    let b = new Number(1);
+    console.log(b.toString());
+    console.log(typeof b);
+
+    let j = new Object("abc");
+    console.log(j);
+    console.log(typeof j);
+    let k = new String("abc");
+    console.log(k.toString());
+    console.log(typeof k);
+
+    //一行代码直接声明一个Object对象
+    person = {
+        firstname: "John",
+        lastname: "Doe",
+        age: 50, eyecolor: "blue"
+    };
+
+
+
+</script>
+</body>
+</html>

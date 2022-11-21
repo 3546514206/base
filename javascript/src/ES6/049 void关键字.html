@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>void</title>
+</head>
+<body>
+
+
+<script>
+
+    function func() {
+        console.log("1111");
+    }
+
+    // 该操作符指定要计算一个表达式但是不返回值
+    void (func());
+
+    let a = 1;
+    console.log(void (1 + 2 + a));   //输出undefined
+</script>
+</body>
+</html>

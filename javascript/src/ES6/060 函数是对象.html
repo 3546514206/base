@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数是对象</title>
+</head>
+<body>
+<script>
+    //在 JavaScript 中使用 typeof 操作符判断函数类型将返回 "function" 。
+    //但是JavaScript 函数描述为一个对象更加准确。
+    //JavaScript 函数有 属性 和 方法。
+
+    function flength(a, b) {
+        return arguments.length;
+    }
+
+    console.log(flength(22, 33));
+    console.log(flength.toString());
+
+</script>
+</body>
+</html>

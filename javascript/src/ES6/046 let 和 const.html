@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>let 和 const</title>
+</head>
+<body>
+
+<p>
+    不考虑let,const: js里面只有两种作用域，全局作用域和局部作用域，局部作用域是函数或者对象的方法的花括号包起来的。
+    花括号包起来的还有另外一种情况，对象的花括号。但是对象的花括号这里并不当做作用域理解，而是应当
+    做“归属”的理解。况且，作用域是一块能够让表达式执行的区域。js对象的花括号并不等同于java的类花括
+    号，java表示类的花括号中可以写可执行代码，而js不行。所以对象花括号的属性，并不是作用域的含
+    义，而是包起来，表示归属。
+</p>
+<script>
+
+
+    // 全局变量
+    var carName = "Volvo";
+
+    // 这里可以使用 carName 变量
+    function myFunction() {
+        // 这里也可以使用 carName 变量
+    }
+
+    // 这里可以使用 carName 变量
+
+    //局部变量
+    // 这里不能使用 carName1 变量
+    function myFunction1() {
+        var carName1 = "Volvo";
+        // 这里可以使用 carName 变量
+    }
+
+    // 这里不能使用 carName1 变量
+
+    // 块级作用域
+    // 在 ES6 之前，是没有块级作用域的概念的。
+    // ES6 可以使用 let 关键字来实现块级作用域。
+    // let 声明的变量只在 let 命令所在的代码块 {} 内有效，在 {} 之外不能访问。
+    {
+        var x = 2;
+    }
+    // 这里可以使用 x 变量
+    {
+        let y = 2;
+    }
+    // 这里不能使用 y 变量
+
+    //重新定义变量
+    var z = 10;
+    {
+        var z = 2;
+        console.log("z= " + z);
+    }
+    console.log("z= " + z);
+
+    var j = 2;
+    console.log("j=" + j);
+    var j;
+    console.log("j=" + j);
+
+    //重新定义变量
+    var k = 10;
+    {
+        let k = 2;
+        console.log(k);
+    }
+    console.log(k);
+
+
+    var s = 5;
+    for (var s = 0; s < 10; s++) {
+        // 一些代码...
+    }
+    console.log(s);  //输出10
+
+
+
+</script>
+</body>
+</html>

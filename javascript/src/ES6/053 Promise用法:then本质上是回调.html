@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise用法</title>
+</head>
+<body>
+
+<script>
+    function f() {
+        return new Promise(function (resolve, reject) {
+            setTimeout(function () {
+                console.log("执行成功");
+                resolve("this is a success string");
+            }, 10000);
+        });
+    }
+
+    f().then(function(data){
+        console.log(data);
+    });
+
+</script>
+</body>
+</html>

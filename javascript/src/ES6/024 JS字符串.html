@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串</title>
+</head>
+<body>
+
+<script>
+    var carname1 = "Volvo XC61";
+    console.log(carname1);
+    var carname2 = 'Volvo XC62';
+    console.log(carname2);
+
+    //使用索引位置来访问字符串中的每个字符! 注意！！！Java和C++是不允许这样的
+    var character = carname1[carname1.length - 1];
+    console.log(character);
+
+    //通常， JavaScript 字符串是原始值，可以使用字符创建： var firstName = "John"
+    //但我们也可以使用 new 关键字将字符串定义为一个对象： var firstName = new String("John")
+    var x = "John";
+    var y = new String("John");
+    console.log(typeof x); // 返回 string
+    console.log(typeof y);// 返回 object
+
+    var a = "this is a string";
+    console.log(a.length);
+    console.log(a.constructor);
+    // 灭有这个玩意
+    //console.log(a.prototype);
+
+    var b = "  11 ";
+    console.log(b);
+    console.log(b.trim());
+    var c = "Hileks sa";
+    console.log(c.toString());
+    console.log(c.charAt(3));
+    console.log(c.charCodeAt(3))
+
+    var a1 = "this is ";
+    var a2 = "a string";
+    console.log(a1 + a2);
+    console.log(a1.concat(a2, " ",a2));
+    console.log("\u8fd9\u662f\u86c7\u4e1c\u897f\uff1f");
+    console.log("What's the matter?");
+    console.log("What's the matter?".toUpperCase());
+
+</script>
+</body>
+</html>

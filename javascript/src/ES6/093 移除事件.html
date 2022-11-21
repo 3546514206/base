@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移除事件</title>
+</head>
+<body>
+<button id="btn">你点我呀</button>
+
+<script>
+    function myFunction() {
+        console.log("完了 BBQ了");
+    }
+
+    let element = document.getElementById("btn");
+    element.addEventListener("click", myFunction);
+
+    setTimeout(function () {
+        element.removeEventListener("click", myFunction);
+        console.log("事件已移除");
+    }, 20000);
+
+</script>
+</body>
+</html>

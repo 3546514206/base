@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链式操作</title>
+</head>
+<body>
+
+<script>
+    function f0() {
+        return new Promise(function (resolve, reject) {
+            setTimeout(function () {
+                console.log("0");
+                resolve("f0");
+            }, 5000);
+        });
+    }
+
+    function f1() {
+        return new Promise(function (resolve, reject) {
+            setTimeout(function () {
+                console.log("1");
+                resolve("f1");
+            }, 5000);
+        });
+    }
+
+    function f2() {
+        return new Promise(function (resolve, reject) {
+            setTimeout(function () {
+                console.log("2");
+                resolve("f2");
+            }, 5000);
+        });
+    }
+
+    // then实际上是接受一个回调函数
+    f0().then(function (data) {
+        // f0回调，输出f0的resolve数据
+        console.log(data)
+        return f1();
+    }).then(function (data) {
+        // f1回调，输出f1的resolve数据
+        console.log(data);
+        return f2();
+    }).then(function (data) {
+        // f2回调，输出f2的resolve数据
+        console.log(data);
+    });
+
+</script>
+</body>
+</html>

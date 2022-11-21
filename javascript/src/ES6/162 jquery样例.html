@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery样例</title>
+</head>
+<body>
+<p>点击我会消失</p>
+<p>继续点击继续消失</p>
+<P>还会消失，就和爱一样，都会消失的</P>
+</body>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("p").click(function () {
+            $(this).hide();
+        });
+    });
+</script>
+</html>

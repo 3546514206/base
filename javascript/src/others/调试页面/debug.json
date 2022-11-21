@@ -1,0 +1,19 @@
+{
+  "apis": [
+    {
+      "name": "getUserById",
+      "param": {
+        "userId": 0
+      }
+    },
+    {
+      "name": "getUserByName",
+      "param": {
+        "userName": "sxy"
+      }
+    }
+  ],
+
+  "name": "debug.index",
+  "version": "0.0.1"
+}

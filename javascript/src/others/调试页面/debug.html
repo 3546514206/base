@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>debug</title>
+    <script>
+
+    window.onload = function () {
+            let url = "debug.json";
+            let request = new XMLHttpRequest();
+            request.open("get", url);
+            request.send(null);
+            request.onload = function () {
+                if (request.status === 200) {
+                    debugger;
+                    let json = JSON.parse(request.responseText);
+                    console.log(json);
+
+
+                }
+            }
+        };
+
+    function delApi() {
+    //todo
+    }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>接口名称</td>
+        <td>URL</td>
+        <td>参数</td>
+        <td>接口操作</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+            <input type="button" value="修改接口" onclick="delApi();">
+            <input type="button" value="删除接口">
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

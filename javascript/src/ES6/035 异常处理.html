@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>错误或者异常</title>
+</head>
+<body>
+
+<script>
+    try {
+        // Create an instance of the object type and throw it
+        throw new MyException("Value too high");
+    } catch (e) {
+        console.log("this is catch block");
+        console.log(e.toString());
+        console.log(e);
+    } finally {
+        console.log("this is finally code block");
+    }
+
+    // Create an object type UserException
+    // JS中万物皆对象，函数也是对象
+    function MyException(message) {
+        this.message = message;
+        this.name = "MyException";
+    }
+
+    // Make the exception convert to a pretty string when used as
+    // a string (e.g. by the error console)
+    MyException.prototype.toString = function () {
+        return this.name + ': "' + this.message + '"';
+    }
+
+
+    try {
+        var a = "992";
+        if ((a.constructor.toString().indexOf("Number()") < 0)) {
+            console.log(typeof a);
+            throw "不是数字";
+        }
+    } catch (e) {
+        console.log(e);
+    } finally {
+        console.log("finally");
+    }
+
+
+</script>
+</body>
+</html>

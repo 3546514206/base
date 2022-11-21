@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>事件冒泡、事件捕获</title>
+    <style>
+        div {
+            background-color: coral;
+            border: 1px solid;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<p>实例演示了在添加不同事件监听时，冒泡与捕获的不同。</p>
+<div id="myDiv">
+    <p id="myP">点击段落，我是事件冒泡。</p>
+</div><br>
+<div id="myDiv2">
+    <p id="myP2">点击段落，我是事件捕获。 </p>
+</div>
+<script>
+    document.getElementById("myP").addEventListener("click", function() {
+        alert("你点击了 P 元素!");
+    }, false);
+    document.getElementById("myDiv").addEventListener("click", function() {
+        alert(" 你点击了 DIV 元素 !");
+    }, false);
+    document.getElementById("myP2").addEventListener("click", function() {
+        alert("你点击了 P2 元素!");
+    }, true);
+    document.getElementById("myDiv2").addEventListener("click", function() {
+        alert("你点击了 DIV2 元素 !");
+    }, true);
+</script>
+
+</body>
+</html>

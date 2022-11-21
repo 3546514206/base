@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function() 构造函数</title>
+</head>
+<body>
+
+<script>
+    var f = new Function("a", "b", "return a * b");
+
+    console.log(f(2, 5));
+
+    console.log(f.toString());
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>arguments 对象</title>
+</head>
+<body>
+
+<script>
+    x = findMax(1, 123, 500, 115, 44, 88);
+
+    function findMax() {
+        var i, max = arguments[0];
+
+        if(arguments.length < 2) return max;
+
+        for (i = 0; i < arguments.length; i++) {
+            if (arguments[i] > max) {
+                max = arguments[i];
+            }
+        }
+        return max;
+    }
+
+</script>
+</body>
+</html>

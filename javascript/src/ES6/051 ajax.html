@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+</head>
+<body>
+
+<script>
+    const http = new XMLHttpRequest();
+
+    http.onload = function(){
+        console.log(http.responseText);
+    };
+
+    http.onerror = function () {
+       console.log("请求失败")
+    };
+
+    http.open("GET","https://www.baidu.com/",true);
+    http.send();
+
+</script>
+</body>
+</html>

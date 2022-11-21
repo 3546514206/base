@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tomdog</title>
+</head>
+<body>
+
+</body>
+<script>
+    const http = new XMLHttpRequest();
+
+    http.onload = function(){
+        debugger;
+        console.log(http.responseText);
+    };
+
+    http.onerror = function () {
+        console.log("请求失败")
+    };
+
+    http.open("POST","http://localhost:8999/getUserList",true);
+    http.send();
+</script>
+</html>

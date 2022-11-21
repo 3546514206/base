@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>异步任务</title>
+</head>
+<body>
+
+<script>
+    // 先打印11111，再打印22222
+    setTimeout(function () {
+        console.log(2222222);
+    }, 10000);
+    console.log(111111);
+</script>
+</body>
+</html>

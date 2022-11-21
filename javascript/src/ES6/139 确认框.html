@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认框</title>
+</head>
+<body>
+<button onclick="f()">点击我</button>
+<p id="demo"></p>
+</body>
+<script>
+    function f() {
+        let x;
+        let c = confirm("按下确认按钮");
+        if (c === true) {
+            x = "你按下了\"确定\"按钮!";
+        } else {
+            x = "你按下了\"取消\"按钮!";
+        }
+
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+</html>

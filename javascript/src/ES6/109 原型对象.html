@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型对象</title>
+</head>
+<body>
+
+<script>
+    function f() {
+        this.name = "陈灿";
+    }
+
+    let a = new f();
+    console.log(a.prototype);
+    let o = new Object();
+    console.log(Object.prototype);
+    debugger;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<form name="myForm" onsubmit="validateForm()" method="post">
+    <label>
+        名字:
+        <input type="text" name="fname">
+    </label>
+    <input type="submit" value="提交">
+</form>
+
+<script>
+    function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x === null || x === "") {
+            alert("需要输入名字。");
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

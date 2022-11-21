@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onchange事件</title>
+</head>
+<body>
+<label for="fname"></label><input type="text" id="fname" onchange="(function upperCase() {
+     let text = document.getElementById('fname').value;
+     document.getElementById('fname').value = text.toUpperCase();
+})()">
+</body>
+</html>

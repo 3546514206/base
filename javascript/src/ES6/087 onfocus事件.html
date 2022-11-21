@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onfocus事件</title>
+</head>
+<body>
+<label>
+    输入你的名字:
+    <input type="text" onfocus="myFunction(this)">
+</label>
+<p>当输入框获取焦点时，修改背景色（background-color属性） 将被触发。</p>
+<script>
+    function myFunction(x) {
+        x.style.background = "yellow";
+    }
+</script>
+</body>
+</html>

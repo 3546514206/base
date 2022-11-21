@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览器尺寸</title>
+</head>
+<body>
+
+<script>
+    //对于Internet Explorer、Chrome、Firefox、Opera 以及 Safari：
+    var w = window.innerWidth
+        // 对于 Internet Explorer 8、7、6、5：
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+    var h = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;
+
+    console.log(w, h);
+
+</script>
+</body>
+</html>

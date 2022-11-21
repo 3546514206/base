@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包</title>
+</head>
+<body>
+
+<script>
+    // 变量 add 指定了函数自我调用的返回字值。
+    // 自我调用函数只执行一次。设置计数器为 0。并返回函数表达式。
+    // add变量可以作为一个函数使用。非常棒的部分是它可以访问函数上一层作用域的计数器。
+    // 这个叫作 JavaScript 闭包。它使得函数拥有私有变量变成可能。
+    // 计数器受匿名函数的作用域保护，只能通过 add 方法修改。
+
+    let add = (function () {
+        let counter = 0;
+        return function () {return counter += 1;}
+    })();
+
+    console.log(add());
+    console.log(add());
+    console.log(add());
+</script>
+</body>
+</html>

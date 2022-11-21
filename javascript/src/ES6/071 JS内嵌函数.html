@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内嵌函数</title>
+</head>
+<body>
+
+<script>
+    function add() {
+        // debugger;
+        var counter = 0;
+
+        function plus() {
+            counter += 1;
+        }
+
+        plus();
+        return counter;
+    }
+
+    console.log(add());
+    console.log(add());
+    console.log(add());
+
+</script>
+</body>
+</html>

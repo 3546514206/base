@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rangeOverflow属性</title>
+</head>
+<body>
+<label for="test">输入框：</label><input id="test" type="number" max="100"/>
+<button onclick="myFunction()">验证</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        var txt = "";
+        if(document.getElementById("test").validity.rangeOverflow){
+            txt = "输入的值太大了";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+    }
+</script>
+</body>
+</html>

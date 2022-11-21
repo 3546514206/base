@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超出部分用。。。表示</title>
+    <script>
+        function handle() {
+           var input = document.getElementById("input").value;
+
+           if(input.length > 20){
+             var inString = input.slice(0,21);
+             document.getElementById("out").innerHTML = inString + "。。。";
+           }else {
+               document.getElementById("out").innerHTML = input;
+           }
+
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+<label for="input"></label>
+<input id="input" name="input" type="text">
+<input type="button" name="button" onclick="handle()" value="读入">
+<p id="out">您输入的文本是：</p>
+</html>
