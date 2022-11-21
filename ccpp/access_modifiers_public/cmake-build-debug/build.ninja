@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: access_modifiers
+# Project: access_modifiers_public
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers/cmake-build-debug/
+cmake_ninja_workdir = /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers_public/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers -B/Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers/cmake-build-debug
+  COMMAND = cd /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers_public/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers_public -B/Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers_public/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,43 +57,43 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers_public/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target access_modifiers
+# Object build statements for EXECUTABLE target access_modifiers2
 
 
 #############################################
-# Order-only phony target for access_modifiers
+# Order-only phony target for access_modifiers2
 
-build cmake_object_order_depends_target_access_modifiers: phony || CMakeFiles/access_modifiers.dir
+build cmake_object_order_depends_target_access_modifiers2: phony || CMakeFiles/access_modifiers2.dir
 
-build CMakeFiles/access_modifiers.dir/main.cpp.o: CXX_COMPILER__access_modifiers_Debug /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers/main.cpp || cmake_object_order_depends_target_access_modifiers
-  DEP_FILE = CMakeFiles/access_modifiers.dir/main.cpp.o.d
+build CMakeFiles/access_modifiers2.dir/main.cpp.o: CXX_COMPILER__access_modifiers2_Debug /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers_public/main.cpp || cmake_object_order_depends_target_access_modifiers2
+  DEP_FILE = CMakeFiles/access_modifiers2.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
-  OBJECT_DIR = CMakeFiles/access_modifiers.dir
-  OBJECT_FILE_DIR = CMakeFiles/access_modifiers.dir
+  OBJECT_DIR = CMakeFiles/access_modifiers2.dir
+  OBJECT_FILE_DIR = CMakeFiles/access_modifiers2.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target access_modifiers
+# Link build statements for EXECUTABLE target access_modifiers2
 
 
 #############################################
-# Link the executable access_modifiers
+# Link the executable access_modifiers2
 
-build access_modifiers: CXX_EXECUTABLE_LINKER__access_modifiers_Debug CMakeFiles/access_modifiers.dir/main.cpp.o
+build access_modifiers2: CXX_EXECUTABLE_LINKER__access_modifiers2_Debug CMakeFiles/access_modifiers2.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   LINK_FLAGS = -L/opt/homebrew/opt/openssl@1.1/lib
-  OBJECT_DIR = CMakeFiles/access_modifiers.dir
+  OBJECT_DIR = CMakeFiles/access_modifiers2.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = access_modifiers
-  TARGET_PDB = access_modifiers.dbg
+  TARGET_FILE = access_modifiers2
+  TARGET_PDB = access_modifiers2.dbg
 
 # =============================================================================
 # Target aliases.
@@ -104,9 +104,9 @@ build access_modifiers: CXX_EXECUTABLE_LINKER__access_modifiers_Debug CMakeFiles
 # =============================================================================
 
 #############################################
-# Folder: /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers/cmake-build-debug
+# Folder: /Users/setsunayang/Documents/learning/learning/ccpp/access_modifiers_public/cmake-build-debug
 
-build all: phony access_modifiers
+build all: phony access_modifiers2
 
 # =============================================================================
 # Built-in targets

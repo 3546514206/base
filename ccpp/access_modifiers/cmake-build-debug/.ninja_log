@@ -1,11 +1,3 @@
 # ninja log v5
-0	396	1669015724175483186	CMakeFiles/access_modifiers.dir/main.cpp.o	b0a88e857bbc011
-397	428	1669015724209998082	access_modifiers	69b01f7a359f71a3
-4	365	1669017054059271764	CMakeFiles/access_modifiers.dir/main.cpp.o	b0a88e857bbc011
-365	405	1669017054101784545	access_modifiers	69b01f7a359f71a3
-2	268	1669017189162805922	CMakeFiles/access_modifiers.dir/main.cpp.o	b0a88e857bbc011
-268	294	1669017189189427337	access_modifiers	69b01f7a359f71a3
-2	380	1669017321000104275	CMakeFiles/access_modifiers.dir/main.cpp.o	b0a88e857bbc011
-380	437	1669017321060607081	access_modifiers	69b01f7a359f71a3
 1	242	1669017334425574327	CMakeFiles/access_modifiers.dir/main.cpp.o	b0a88e857bbc011
 242	266	1669017334451180847	access_modifiers	69b01f7a359f71a3
