@@ -1,0 +1,11 @@
+# ninja log v5
+0	318	1669045775452687332	CMakeFiles/constructor_init_list.dir/main.cpp.o	a34eea95846982be
+319	350	1669045775486795346	constructor_init_list	582486441a5d7ecb
+1	202	1669045793004477457	CMakeFiles/constructor_init_list.dir/main.cpp.o	a34eea95846982be
+202	227	1669045793030665529	constructor_init_list	582486441a5d7ecb
+1	203	1669045857096008587	CMakeFiles/constructor_init_list.dir/main.cpp.o	a34eea95846982be
+204	230	1669045857123438312	constructor_init_list	582486441a5d7ecb
+1	216	1669045916246008165	CMakeFiles/constructor_init_list.dir/main.cpp.o	a34eea95846982be
+216	240	1669045916271632687	constructor_init_list	582486441a5d7ecb
+1	198	1669045967348831027	CMakeFiles/constructor_init_list.dir/main.cpp.o	a34eea95846982be
+198	223	1669045967374777972	constructor_init_list	582486441a5d7ecb
