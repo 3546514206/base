@@ -15,16 +15,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d985722-8c42-4307-a471-0a476ca91e93" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../access_modifiers3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../access_modifiers3/.idea/access_modifiers3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../access_modifiers3/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../access_modifiers3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../access_modifiers3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cinatra.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/client_factory.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/connection.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/cookie.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/define.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/dh1024.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/function_traits.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/gzip.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/http_cache.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/http_client.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/http_parser.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/http_router.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/http_server.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/io_service_pool.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/itoa.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/itoa_jeaiii.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/mime_types.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/modern_callback.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/multipart_parser.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/multipart_reader.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/picohttpparser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/render.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/request.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/response.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/response_cv.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/response_parser.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/router.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/server.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/session.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/session_manager.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/sha1.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/smtp_client.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/upload_file.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/uri.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/url_encode_decode.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/use_asio.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/utils.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/websocket.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cinatra/ws_define.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d0acb6cfca53af188318.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-21T08-56-31-0616.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cinatra-Debug-1ea78473a2f9e3fb4766.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cinatra.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cinatra.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cinatra" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cinatra" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +75,19 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="杨海波 &lt;3546514206@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -66,18 +118,19 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -101,14 +154,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669019056170</updated>
-      <workItem from="1669019057257" duration="1907000" />
+      <workItem from="1669019057257" duration="4197000" />
     </task>
+    <task id="LOCAL-00001" summary="CMake 关于 boost 的配置">
+      <created>1669021077189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669021077189</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="CMake 关于 boost 的配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMake 关于 boost 的配置" />
   </component>
 </project>
