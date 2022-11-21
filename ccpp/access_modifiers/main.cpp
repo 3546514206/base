@@ -75,9 +75,8 @@ int main() {
     std::cout << base_instance.get_length() << "\n";
 
     sub sub_instance;
-//    以下代码会报错，因为 get_length 方法未曾在子类定义，
-//    java 的继承，是可以直接访问父类受保护和公共的方法的
-//    C++ 不行
+//    java 中子类会直接继承父类声明为 public 和 protect 的方法，算得上是一种"隐式继承"
+//    但是在 C++ 中，子类不声明父类的方法并重写，就无法调用，因为子类根本没有父类的这个方法
 //    std::cout << sub_instance.get_length() << "\n";
 
     small_box small_box_instance;
