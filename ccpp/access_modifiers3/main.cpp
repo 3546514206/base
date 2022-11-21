@@ -28,7 +28,7 @@ private:
     int a3;
 };
 
-class B : protected A {
+class B : A {
 public:
     int a;
 
@@ -48,9 +48,9 @@ public:
 int main() {
     B b(10);
     cout << b.a << endl;       //正确。public成员
-    cout << b.a1 << endl;      //错误，protected成员不能在类外访问。Java 中是可以用在类外访问protected成员的
-    cout << b.a2 << endl;      //错误，protected成员不能在类外访问。
-    cout << b.a3 << endl;      //错误，private成员不能在类外访问。
+//    cout << b.a1 << endl;      //错误，protected成员不能在类外访问。Java 中是可以用在类外访问protected成员的
+//    cout << b.a2 << endl;      //错误，protected成员不能在类外访问。
+//    cout << b.a3 << endl;      //错误，private成员不能在类外访问。
     system("pause");
     return 0;
 }
