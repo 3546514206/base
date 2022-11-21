@@ -50,8 +50,8 @@ int main() {
     B b(10);
     cout << b.a << endl;
     cout << b.a1 << endl;   //正确
-    cout << b.a2 << endl;   //错误，类外不能访问protected成员
-    cout << b.a3 << endl;   //错误，类外不能访问private成员
-    system("pause");
+//    cout << b.a2 << endl;   //错误，类外不能访问protected成员
+//    cout << b.a3 << endl;   //错误，类外不能访问private成员
+//    system("pause");
     return 0;
 }
