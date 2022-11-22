@@ -15,6 +15,11 @@ public:
         height = h;
     }
 
+//  得到this的地址
+    box *get_address() {
+        return this;
+    }
+
     double volume() {
         return length * breadth * height;
     }
@@ -30,13 +35,16 @@ private:
 };
 
 int main() {
-    box Box1(3.3, 1.2, 1.5);    // Declare box1
-    box Box2(8.5, 6.0, 2.0);    // Declare box2
+    box box1(3.3, 1.2, 1.5);    // Declare box1
+    box box2(8.5, 6.0, 2.0);    // Declare box2
 
-    if (Box1.compare(Box2)) {
-        cout << "Box2 is smaller than Box1" << endl;
+    if (box1.compare(box2)) {
+        cout << "box2 is smaller than box1" << endl;
     } else {
-        cout << "Box2 is equal to or larger than Box1" << endl;
+        cout << "box2 is equal to or larger than box1" << endl;
     }
+
+    cout << "box1's address is " << box1.get_address() << endl;
+    cout << "box2's address is " << box2.get_address() << endl;
     return 0;
 }
