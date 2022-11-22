@@ -1,0 +1,5 @@
+# ninja log v5
+0	288	1669081795035552114	CMakeFiles/default_copy_constructor.dir/main.cpp.o	2d21b9ff8b1c66e9
+289	314	1669081795063038200	default_copy_constructor	359229fda0b7b7d5
+1	329	1669082215546539694	CMakeFiles/default_copy_constructor.dir/main.cpp.o	2d21b9ff8b1c66e9
+330	371	1669082215590240939	default_copy_constructor	359229fda0b7b7d5
