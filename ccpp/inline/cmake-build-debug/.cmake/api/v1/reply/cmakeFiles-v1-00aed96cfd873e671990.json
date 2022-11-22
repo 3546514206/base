@@ -1123,8 +1123,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/setsunayang/Documents/learning/learning/ccpp/constructor/cmake-build-debug",
-		"source" : "/Users/setsunayang/Documents/learning/learning/ccpp/constructor"
+		"build" : "/Users/setsunayang/Documents/learning/learning/ccpp/inline/cmake-build-debug",
+		"source" : "/Users/setsunayang/Documents/learning/learning/ccpp/inline"
 	},
 	"version" : 
 	{
