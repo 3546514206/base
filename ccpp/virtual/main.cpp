@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// virtual 修饰的方法类似于 java 中抽象类或者接口的抽象方法，是希望子类去重写（实现）的
 class GrandFather {
 public:
     GrandFather() {}
