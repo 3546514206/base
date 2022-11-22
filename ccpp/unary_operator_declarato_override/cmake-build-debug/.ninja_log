@@ -1,0 +1,5 @@
+# ninja log v5
+0	235	1669104811912302968	CMakeFiles/unary_operator_declarato_override.dir/main.cpp.o	41ef3e3a41e73356
+236	260	1669104811939087543	unary_operator_declarato_override	2becaf6c14dd6aba
+2	253	1669104837540495601	CMakeFiles/unary_operator_declarato_override.dir/main.cpp.o	41ef3e3a41e73356
+253	285	1669104837574043592	unary_operator_declarato_override	2becaf6c14dd6aba
