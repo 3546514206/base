@@ -36,6 +36,8 @@ public:
 
     int address;
 
+    int *p;
+
     void display();
 
 private:
@@ -51,7 +53,7 @@ student::student(const student &stu) {
     this->m_name = stu.m_name;
     this->m_age = stu.m_age;
     this->m_score = stu.m_score;
-
+    this->p = stu.p;
     cout << "Copy constructor was called." << endl;
 }
 
@@ -60,7 +62,11 @@ void student::display() {
 }
 
 int main() {
+
+    int p_value;
+
     student stu1("小明", 16, 90.5);
+    stu1.p = &p_value;
     student stu2 = stu1;  //调用拷贝构造函数，隐式调用了 student(const student &stu);
     student stu3(stu1);  //调用拷贝构造函数
     stu1.display();
@@ -74,5 +80,11 @@ int main() {
 // 相同字段地址也不一样
     cout << "stu1.address 的地址" << &(stu1.address) << endl;
     cout << "stu2.address 的地址" << &(stu2.address) << endl;
+    // 指针要注意！！！！
+    cout << "stu1.p 的地址" << &(stu1.p) << endl;
+    cout << "stu2.p 的地址" << &(stu2.p) << endl;
+    // 指针要注意！！！！
+    cout << "stu1.p 的值" << stu1.p << endl;
+    cout << "stu2.p 的值" << stu2.p << endl;
     return 0;
 }
