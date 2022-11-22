@@ -1,0 +1,9 @@
+# ninja log v5
+0	216	1669109061071242817	CMakeFiles/virtual_deconstructor.dir/main.cpp.o	fcc6aae90f89dcdc
+217	239	1669109061095671606	virtual_deconstructor	7f5fe7693e2eff9a
+2	217	1669109137048017315	CMakeFiles/virtual_deconstructor.dir/main.cpp.o	fcc6aae90f89dcdc
+217	241	1669109137074000693	virtual_deconstructor	7f5fe7693e2eff9a
+2	219	1669109363741942552	CMakeFiles/virtual_deconstructor.dir/main.cpp.o	fcc6aae90f89dcdc
+220	244	1669109363768101181	virtual_deconstructor	7f5fe7693e2eff9a
+1	224	1669109484618853169	CMakeFiles/virtual_deconstructor.dir/main.cpp.o	fcc6aae90f89dcdc
+224	246	1669109484642255247	virtual_deconstructor	7f5fe7693e2eff9a
