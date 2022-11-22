@@ -1,11 +1,3 @@
 # ninja log v5
-0	242	1669080094973496134	CMakeFiles/copy_constructor.dir/main.cpp.o	d1e76a369aefb425
-243	282	1669080095014970475	copy_constructor	cda0c1126ae0b135
-1	276	1669080272590648784	CMakeFiles/copy_constructor.dir/main.cpp.o	d1e76a369aefb425
-276	304	1669080272620996483	copy_constructor	cda0c1126ae0b135
-3	418	1669081336159243872	CMakeFiles/copy_constructor.dir/main.cpp.o	d1e76a369aefb425
-418	453	1669081336196385672	copy_constructor	cda0c1126ae0b135
-1	228	1669081385462363155	CMakeFiles/copy_constructor.dir/main.cpp.o	d1e76a369aefb425
-228	253	1669081385488624395	copy_constructor	cda0c1126ae0b135
 2	250	1669081467954322810	CMakeFiles/copy_constructor.dir/main.cpp.o	d1e76a369aefb425
 250	276	1669081467981397106	copy_constructor	cda0c1126ae0b135

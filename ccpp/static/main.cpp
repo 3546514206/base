@@ -13,7 +13,7 @@ using namespace std;
 //前半句和 Java 一样，但是后半句和 Java 是相反的。Java 中静态变量拥有全局作用域。
 
 // 对象的静态成员属性
-namespace static_class_member_case {
+namespace static_class_member_attribute_case {
 
 
 //    1 静态成员变量是该类的所有对象所共有的。对于普通成员变量，每个类对象都有自己的一份拷贝（浅拷贝）。而静态成员变量一共就一份，无论这个类的对象被定义
@@ -80,7 +80,7 @@ namespace static_class_member_case {
         cout << "sum=" << sum << endl;
     }
 
-    void test_static_class_member() {
+    void test_static_class_attribute() {
         my_class m(1, 2, 3);
         m.get_sum();
         my_class n(4, 5, 6);
@@ -92,7 +92,7 @@ namespace static_class_member_case {
         // 一下两行代码等价
 //        在 C++ 中和 Java 中，都可以通过类型或者对象访问静态成员属性，但是不推荐以对象的方式访问
         cout << l.sum << endl;
-        cout << static_class_member_case::the_other_class::sum << endl;
+        cout << static_class_member_attribute_case::the_other_class::sum << endl;
 
         // 以下地址是相同的
         cout << &l.sum << endl;
@@ -102,8 +102,133 @@ namespace static_class_member_case {
     }
 }
 
+namespace static_class_member_method_case {
+
+//    出现在类体外的函数定义不能指定关键字static；
+//    静态成员之间可以相互访问，即静态成员函数（仅）可以访问静态成员变量、静态成员函数；
+//    静态成员函数不能访问非静态成员函数和非静态成员变量；
+//    非静态成员函数可以任意地访问静态成员函数和静态数据成员；
+//    由于没有this指针的额外开销，静态成员函数与类的全局函数相比速度上会稍快；
+//    调用静态成员函数，两种方式：
+//      1 通过成员访问操作符(.)和(->)，即通过类对象或指向类对象的指针调用静态成员函数。
+//      2 直接通过类来调用静态成员函数。＜类名＞::＜静态成员函数名＞（＜参数表＞）。也即，静态成员不需要通过对象就能访问。
+
+//    拷贝构造函数的问题
+//  在使用包含静态成员的类时，有时候会调用拷贝构造函数生成临时的隐藏的类对象，而这个临时对象在消亡时会调用析构函数有可能会对静态
+//  变量做操作（例如total_num--），可是这些对象在生成时却没有执行构造函数中的total_num++的操作。解决方案是为这个类写一个拷贝
+//  构造函数，在该拷贝构造函数中完成total_num++的操作。
+
+    class student {
+    private:
+        char *name;
+        int age;
+        float score;
+        static int num;    //学生人数
+        static float total;  //总分
+    public:
+        student(char *, int, float);
+
+        void say();
+
+        static float get_average();  //静态成员函数，用来获得平均成绩
+    };
+
+    int student::num = 0;
+    float student::total = 0;
+
+    student::student(char *name, int age, float score) {
+        this->name = name;
+        this->age = age;
+        this->score = score;
+        num++;
+        total += score;
+    }
+
+    void student::say() {
+        cout << name << "的年龄是 " << age << "，成绩是 " << score << "（当前共" << num << "名学生）" << endl;
+    }
+
+//    外部声明不在需要 static 关键字
+    float student::get_average() {
+        return total / num;
+    }
+
+    void test_static_class_method() {
+        (new student("小明", 15, 90))->say();
+        (new student("李磊", 16, 80))->say();
+        (new student("张华", 16, 99))->say();
+        (new student("王康", 14, 60))->say();
+        cout << "平均成绩为 " << student::get_average() << endl;
+
+    }
+}
+
+
+void test_static_global_variable();
+
+void test_static_locality_variable();
+
+static void test_static_function_v1();//声明静态函数
+
+static void test_static_function_v2() {
+    int n = 99;
+    cout << n << endl;
+}
+
+//静态全局变量有以下特点：
+//1、该变量在全局数据区分配内存；
+//2、未经初始化的静态全局变量会被程序自动初始化为0（自动变量的自动初始化值是随机的）；
+//3、静态全局变量在声明它的整个文件都是可见的，而在文件之外是不可见的； 　
+//4、静态变量都在全局数据区分配内存，包括后面将要提到的静态局部变量。对于一个完整的程序，在内存中的分布
+// 情况如下：【代码区】【全局数据区】【堆区】【栈区】，一般程序的由new产生的动态数据存放在堆区，函数内部的自动变量存放在栈区，静
+// 态数据（即使是函数内部的静态局部变量）存放在全局数据区。自动变量一般会随着函数的退出而释放空间，而全局数据区的数据并不会因为函
+// 数的退出而释放空间。
+static int n; //定义静态全局变量
+
+//定义全局变量就可以实现变量在文件中的共享，但定义静态全局变量还有以下好处：
+//1、静态全局变量不能被其它文件所用；
+//2、其它文件中可以定义相同名字的变量，不会发生冲突；
+int m; //定义全局变量
+
 int main() {
-    static_class_member_case::test_static_class_member();
+//    静态成员属性（面向对象）
+//    static_class_member_attribute_case::test_static_class_attribute();
+//    静态成员方法（面向对象）
+//    static_class_member_method_case::test_static_class_method();
+//    test_static_global_variable();
+//    调两次，观察 v 的值
+//    test_static_locality_variable();
+//    test_static_locality_variable();
+
+    test_static_function_v1();
+    test_static_function_v2();
 
     return 0;
 }
+
+// 静态全局变量
+void test_static_global_variable() {
+    n++;
+    cout << n << endl;
+}
+
+
+//静态局部变量有以下特点：
+//1、静态局部变量在全局数据区分配内存；
+//2、静态局部变量在程序执行到该对象的声明处时被首次初始化，即以后的函数调用不再进行初始化；
+//3、静态局部变量一般在声明处初始化，如果没有显式初始化，会被程序自动初始化为0；
+//4、静态局部变量始终驻留在全局数据区，直到程序运行结束。但其作用域为局部作用域，当定义它的函数或语句块结束时，其作用域随之结束；
+void test_static_locality_variable() {
+    static int v = 10;
+    v++;
+    cout << v << endl;
+}
+
+//定义静态函数的好处：（类似于静态全局变量）:
+//静态函数不能被其它文件所用；
+//其它文件中可以定义相同名字的函数，不会发生冲突；
+void test_static_function_v1() {
+    int n = 10;
+    cout << n << endl;
+}
+
