@@ -13,15 +13,15 @@ private:
     int price;
 
     friend int MostExpensiveCar(car cars[], int total);  //声明友元
-    friend void car_driver::ModifyCar(car *pCar);  //声明友元
+    friend void car_driver::ModifyCar(car *pCar);  //声明友元，一定要在当前类的外部定义
 };
 
 void car_driver::ModifyCar(car *pCar) {
     pCar->price += 1000;  //汽车改装后价值增加
 }
 
-int MostExpensiveCar(car cars[], int total)  //求最贵气车的价格
-{
+//求最贵气车的价格
+int MostExpensiveCar(car cars[], int total) {
     int tmpMax = -1;
     for (int i = 0; i < total; ++i)
         if (cars[i].price > tmpMax)
