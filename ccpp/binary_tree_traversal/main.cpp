@@ -49,11 +49,32 @@ public:
     }
 
     void mid_order(binary_tree_node *root) {
+        if (root == NULL) {
+            return;
+        }
 
+        if (root->left_child != NULL) {
+            mid_order(root->left_child);
+        }
+        std::cout << root->get_data() << std::endl;
+        if (root->right_child != NULL) {
+            mid_order(root->right_child);
+        }
     }
 
     void after_order(binary_tree_node *root) {
+        if (root == NULL) {
+            return;
+        }
 
+        if (root->left_child != NULL) {
+            after_order(root->left_child);
+        }
+        if (root->right_child != NULL) {
+            after_order(root->right_child);
+        }
+
+        std::cout << root->get_data() << std::endl;
     }
 };
 
@@ -87,8 +108,8 @@ int main() {
 
     binary_tree *tree = new binary_tree(node_a);
 
-    tree->pre_order(tree->root);
-    tree->mid_order(tree->root);
+//    tree->pre_order(tree->root);
+//    tree->mid_order(tree->root);
     tree->after_order(tree->root);
 
     return 0;
