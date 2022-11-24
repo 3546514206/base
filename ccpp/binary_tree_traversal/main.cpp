@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 
 class binary_tree_node {
 public:
@@ -76,6 +77,28 @@ public:
 
         std::cout << root->get_data() << std::endl;
     }
+
+    void level_order(binary_tree_node *root) {
+        std::queue<binary_tree_node> queue;
+        // 根节点处理
+        if (NULL != root) {
+            queue.push(*root);
+        }
+
+        while (!queue.empty()) {
+            std::cout << queue.front().get_data() << std::endl;
+
+            if (queue.front().left_child != NULL) {
+                queue.push(*queue.front().left_child);
+            }
+
+            if (queue.front().right_child != NULL) {
+                queue.push(*queue.front().right_child);
+            }
+            // 弹出第一个元素
+            queue.pop();
+        }
+    }
 };
 
 binary_tree::binary_tree(binary_tree_node *root) : root(root) {
@@ -110,7 +133,8 @@ int main() {
 
 //    tree->pre_order(tree->root);
 //    tree->mid_order(tree->root);
-    tree->after_order(tree->root);
+//    tree->after_order(tree->root);
 
+    tree->level_order(tree->root);
     return 0;
 }
