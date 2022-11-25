@@ -11,14 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c991b6-e775-4d71-96ed-23f0b650ca8b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/template_coding.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../namespace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../namespace/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f1c991b6-e775-4d71-96ed-23f0b650ca8b" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +22,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="杨海波 &lt;3546514206@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -79,12 +77,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669366351512</updated>
-      <workItem from="1669366352627" duration="274000" />
+      <workItem from="1669366352627" duration="419000" />
     </task>
+    <task id="LOCAL-00001" summary="引用是变量的别名，指针是变量的地址">
+      <created>1669366759400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669366759400</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="引用是变量的别名，指针是变量的地址" />
+    <option name="LAST_COMMIT_MESSAGE" value="引用是变量的别名，指针是变量的地址" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
