@@ -6,7 +6,7 @@
 #define NAMESPACE_NAME_SPACE_1_HPP
 
 namespace ns{
-    int x = 1;
+//    int x = 1;
 }
 
 
