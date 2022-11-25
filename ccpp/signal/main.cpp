@@ -4,7 +4,8 @@
 
 using namespace std;
 
-void signalHandler(int signum) {
+void signal_handler(int signum) {
+    cout <<"\n";
     cout << "Interrupt signal (" << signum << ") received.\n";
 
     // 清理并关闭
@@ -16,7 +17,7 @@ void signalHandler(int signum) {
 
 int main() {
     // 注册信号 SIGINT 和信号处理程序
-    signal(SIGINT, signalHandler);
+    signal(SIGINT, signal_handler);
 
     while (1) {
         cout << "Going to sleep...." << endl;
