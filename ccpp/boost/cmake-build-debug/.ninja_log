@@ -1,0 +1,5 @@
+# ninja log v5
+0	708	1669382408208741282	CMakeFiles/boost.dir/main.cpp.o	d14fcf6d584601fd
+1	711	1669382408208740699	CMakeFiles/boost.dir/thread.cpp.o	69773bf5608fac30
+711	743	1669382408247786553	boost	8c7b6a7afe3d8431
+3	930	1669382483921999079	CMakeFiles/boost.dir/thread.cpp.o	69773bf5608fac30
