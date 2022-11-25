@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1c991b6-e775-4d71-96ed-23f0b650ca8b" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/../def_exception/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../def_exception/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669366351512</updated>
       <workItem from="1669366352627" duration="419000" />
+      <workItem from="1669368926718" duration="523000" />
     </task>
     <task id="LOCAL-00001" summary="引用是变量的别名，指针是变量的地址">
       <created>1669366759400</created>
@@ -83,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669366759400</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="注释">
+      <created>1669369173876</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669369173876</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,17 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="引用是变量的别名，指针是变量的地址" />
-    <option name="LAST_COMMIT_MESSAGE" value="引用是变量的别名，指针是变量的地址" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>19</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="注释" />
   </component>
 </project>
