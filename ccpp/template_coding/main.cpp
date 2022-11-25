@@ -28,19 +28,32 @@ void stack<T>::push(T const &elem) {
 
 template<class T>
 void stack<T>::pop() {
-    if (elems.empty()) {
-        throw std::out_of_range("Stack<>::pop(): empty stack");
+    if (this->elems.empty()) {
+        throw std::out_of_range("stack<>::pop(): empty stack");
     }
     // 删除最后一个元素
     elems.pop_back();
 }
 
+
 template<class T>
 T stack<T>::top() const {
-
+    if (elems.empty()) {
+        throw std::out_of_range("Stack<>::top(): empty stack");
+    }
+    // 返回最后一个元素的副本
+    return elems.back();
 }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    stack<int> int_stack;
+    stack<std::string> string_stack;
+
+    int_stack.push(7);
+    int_stack.pop();
+
+    string_stack.push("hello");
+    std::cout << string_stack.top() << std::endl;
+
     return 0;
 }
