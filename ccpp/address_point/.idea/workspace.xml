@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1c991b6-e775-4d71-96ed-23f0b650ca8b" name="变更" comment="" />
+    <list default="true" id="f1c991b6-e775-4d71-96ed-23f0b650ca8b" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/../def_exception/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../def_exception/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,11 +60,6 @@
     <option name="enabled" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="address_point" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="address_point" TARGET_NAME="address_point" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="address_point" RUN_TARGET_NAME="address_point">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
