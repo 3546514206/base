@@ -2,17 +2,22 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="namespace" targetName="namespace" />
+      <config projectName="address_point" targetName="address_point" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a5da5fa-a2fe-4243-b92f-f003d8cbcf6c" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f1c991b6-e775-4d71-96ed-23f0b650ca8b" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../template_coding/.idea/template_coding.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../namespace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../namespace/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +29,6 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="杨海波 &lt;3546514206@qq.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -39,21 +39,17 @@
     <option name="majorVersion" value="2021" />
     <option name="minorVersion" value="3.4" />
   </component>
-  <component name="ProjectId" id="2I20Cbc1D6F3WtjbXRQsOC5s2UG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2I24TVmJAnzd4Oqmf20GgXycWEa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
@@ -64,7 +60,12 @@
     <option name="enabled" value="false" />
   </component>
   <component name="RunManager">
-    <configuration name="namespace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="namespace" TARGET_NAME="namespace" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="namespace" RUN_TARGET_NAME="namespace">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="address_point" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="address_point" TARGET_NAME="address_point" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="address_point" RUN_TARGET_NAME="address_point">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -73,36 +74,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="0a5da5fa-a2fe-4243-b92f-f003d8cbcf6c" name="变更" comment="" />
-      <created>1669364243285</created>
+      <changelist id="f1c991b6-e775-4d71-96ed-23f0b650ca8b" name="变更" comment="" />
+      <created>1669366351512</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1669364243285</updated>
-      <workItem from="1669364244386" duration="737000" />
-      <workItem from="1669365107319" duration="334000" />
+      <updated>1669366351512</updated>
+      <workItem from="1669366352627" duration="274000" />
     </task>
-    <task id="LOCAL-00001" summary="不同文件拥有相同的命名空间">
-      <created>1669364537781</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1669364537781</updated>
-    </task>
-    <task id="LOCAL-00002" summary="不同文件拥有相同的命名空间">
-      <created>1669364574711</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1669364574711</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="不同文件拥有相同的命名空间" />
-    <option name="LAST_COMMIT_MESSAGE" value="不同文件拥有相同的命名空间" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
