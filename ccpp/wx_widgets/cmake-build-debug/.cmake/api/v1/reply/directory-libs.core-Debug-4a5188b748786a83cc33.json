@@ -1,0 +1,75 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"wx_install",
+			"wx_add_library"
+		],
+		"files" : 
+		[
+			"build/cmake/functions.cmake",
+			"build/cmake/lib/core/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 436,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 75,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libwx_osx_cocoau_core-3.2.0.1.0.dylib",
+				"lib/libwx_osx_cocoau_core-3.2.0.dylib"
+			],
+			"targetId" : "wxcore::@7bc883c3d40b22fbda52",
+			"targetIndex" : 4,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libwx_osx_cocoau_core-3.2.dylib"
+			],
+			"targetId" : "wxcore::@7bc883c3d40b22fbda52",
+			"targetIndex" : 4,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "libs/core",
+		"source" : "build/cmake/lib/core"
+	}
+}
