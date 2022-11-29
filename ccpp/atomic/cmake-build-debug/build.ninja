@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: boost
+# Project: atomic
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/setsunayang/Documents/learning/learning/ccpp/boost/cmake-build-debug/
+cmake_ninja_workdir = /Users/setsunayang/Documents/learning/learning/ccpp/atomic/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/setsunayang/Documents/learning/learning/ccpp/boost/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/setsunayang/Documents/learning/learning/ccpp/boost -B/Users/setsunayang/Documents/learning/learning/ccpp/boost/cmake-build-debug
+  COMMAND = cd /Users/setsunayang/Documents/learning/learning/ccpp/atomic/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/setsunayang/Documents/learning/learning/ccpp/atomic -B/Users/setsunayang/Documents/learning/learning/ccpp/atomic/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,58 +57,44 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/setsunayang/Documents/learning/learning/ccpp/boost/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/setsunayang/Documents/learning/learning/ccpp/atomic/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target boost
+# Object build statements for EXECUTABLE target atomic
 
 
 #############################################
-# Order-only phony target for boost
+# Order-only phony target for atomic
 
-build cmake_object_order_depends_target_boost: phony || CMakeFiles/boost.dir
+build cmake_object_order_depends_target_atomic: phony || CMakeFiles/atomic.dir
 
-build CMakeFiles/boost.dir/main.cpp.o: CXX_COMPILER__boost_Debug /Users/setsunayang/Documents/learning/learning/ccpp/boost/main.cpp || cmake_object_order_depends_target_boost
-  DEP_FILE = CMakeFiles/boost.dir/main.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+build CMakeFiles/atomic.dir/main.cpp.o: CXX_COMPILER__atomic_Debug /Users/setsunayang/Documents/learning/learning/ccpp/atomic/main.cpp || cmake_object_order_depends_target_atomic
+  DEP_FILE = CMakeFiles/atomic.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
   INCLUDES = -I/usr/local/include
-  OBJECT_DIR = CMakeFiles/boost.dir
-  OBJECT_FILE_DIR = CMakeFiles/boost.dir
-
-build CMakeFiles/boost.dir/thread_sample.cpp.o: CXX_COMPILER__boost_Debug /Users/setsunayang/Documents/learning/learning/ccpp/boost/thread_sample.cpp || cmake_object_order_depends_target_boost
-  DEP_FILE = CMakeFiles/boost.dir/thread_sample.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/include
-  OBJECT_DIR = CMakeFiles/boost.dir
-  OBJECT_FILE_DIR = CMakeFiles/boost.dir
-
-build CMakeFiles/boost.dir/atomic_sample.cpp.o: CXX_COMPILER__boost_Debug /Users/setsunayang/Documents/learning/learning/ccpp/boost/atomic_sample.cpp || cmake_object_order_depends_target_boost
-  DEP_FILE = CMakeFiles/boost.dir/atomic_sample.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/include
-  OBJECT_DIR = CMakeFiles/boost.dir
-  OBJECT_FILE_DIR = CMakeFiles/boost.dir
+  OBJECT_DIR = CMakeFiles/atomic.dir
+  OBJECT_FILE_DIR = CMakeFiles/atomic.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target boost
+# Link build statements for EXECUTABLE target atomic
 
 
 #############################################
-# Link the executable boost
+# Link the executable atomic
 
-build boost: CXX_EXECUTABLE_LINKER__boost_Debug CMakeFiles/boost.dir/main.cpp.o CMakeFiles/boost.dir/thread_sample.cpp.o CMakeFiles/boost.dir/atomic_sample.cpp.o
+build atomic: CXX_EXECUTABLE_LINKER__atomic_Debug CMakeFiles/atomic.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   LINK_FLAGS = -L/opt/homebrew/opt/openssl@1.1/lib
-  OBJECT_DIR = CMakeFiles/boost.dir
+  OBJECT_DIR = CMakeFiles/atomic.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = boost
-  TARGET_PDB = boost.dbg
+  TARGET_FILE = atomic
+  TARGET_PDB = atomic.dbg
 
 # =============================================================================
 # Target aliases.
@@ -119,9 +105,9 @@ build boost: CXX_EXECUTABLE_LINKER__boost_Debug CMakeFiles/boost.dir/main.cpp.o 
 # =============================================================================
 
 #############################################
-# Folder: /Users/setsunayang/Documents/learning/learning/ccpp/boost/cmake-build-debug
+# Folder: /Users/setsunayang/Documents/learning/learning/ccpp/atomic/cmake-build-debug
 
-build all: phony boost
+build all: phony atomic
 
 # =============================================================================
 # Built-in targets
