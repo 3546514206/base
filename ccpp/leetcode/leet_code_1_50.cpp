@@ -13,13 +13,14 @@ vector<int> leetcode_00001::Solution::twoSum(vector<int> &nums, int target) {
             if (nums.at(i) + nums.at(j) == target) {
                 index_1 = i;
                 index_2 = j;
-                break;
+                vector<int> rz = vector<int>();
+                rz.push_back(index_1);
+                rz.push_back(index_2);
+                return rz;
             }
         }
     }
 
     vector<int> rz = vector<int>();
-    rz.push_back(index_1);
-    rz.push_back(index_2);
     return rz;
 }
