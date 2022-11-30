@@ -14,10 +14,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d262d8-8fa0-49a6-8444-69a51710da1b" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leet_code_1_50.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leet_code_1_50.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="19d262d8-8fa0-49a6-8444-69a51710da1b" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669778183424</updated>
-      <workItem from="1669778185477" duration="2958000" />
+      <workItem from="1669778185477" duration="3588000" />
     </task>
     <task id="LOCAL-00001" summary="力扣第一题">
       <created>1669788450486</created>
@@ -103,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669788450486</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改">
+      <created>1669788922507</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669788922507</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +115,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="力扣第一题" />
-    <option name="LAST_COMMIT_MESSAGE" value="力扣第一题" />
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
