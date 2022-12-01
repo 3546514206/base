@@ -24,3 +24,7 @@ vector<int> leetcode_00001::Solution::twoSum(vector<int> &nums, int target) {
     vector<int> rz = vector<int>();
     return rz;
 }
+
+vector<int> leetcode_00001::Solution::twoSumV2(vector<int> &nums, int target) {
+        
+}

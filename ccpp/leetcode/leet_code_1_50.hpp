@@ -14,6 +14,8 @@ namespace leetcode_00001 {
     class Solution {
     public:
         vector<int> twoSum(vector<int> &nums, int target);
+
+        vector<int> twoSumV2(vector<int> &nums, int target);
     };
 }
 
