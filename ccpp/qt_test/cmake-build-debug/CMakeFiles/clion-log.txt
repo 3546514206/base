@@ -1,0 +1,14 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja CMAKE_PREFIX_PATH=/Library/Java/Extensions/qt-6.4/6.4.1/macos -G Ninja /Users/setsunayang/Documents/learning/learning/ccpp/qt_test
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE  
+-- Found OpenGL: /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework   
+-- Found WrapOpenGL: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/setsunayang/Documents/learning/learning/ccpp/qt_test/cmake-build-debug
