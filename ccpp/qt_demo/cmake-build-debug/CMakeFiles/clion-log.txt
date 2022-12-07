@@ -1,0 +1,14 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/setsunayang/Documents/learning/learning/ccpp/qt_demo
+CMake Error at CMakeLists.txt:14 (include):
+  include could not find requested file:
+
+    /Users/setsunayang/Documents/learning/learning/ccpp/qt_demo/cmake-build-debug/conanbuildinfo.cmake
+
+
+CMake Error at CMakeLists.txt:15 (conan_basic_setup):
+  Unknown CMake command "conan_basic_setup".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/setsunayang/Documents/learning/learning/ccpp/qt_demo/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/setsunayang/Documents/learning/learning/ccpp/qt_demo/cmake-build-debug/CMakeFiles/CMakeError.log".
