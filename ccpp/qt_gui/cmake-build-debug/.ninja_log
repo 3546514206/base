@@ -1,0 +1,14 @@
+# ninja log v5
+0	106	1670427301187117940	qt_gui_autogen/timestamp	b6d0cd8cdeb9e011
+0	106	1670427301187117940	qt_gui_autogen/mocs_compilation.cpp	b6d0cd8cdeb9e011
+0	106	1670427301187117940	/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/qt_gui_autogen/timestamp	b6d0cd8cdeb9e011
+0	106	1670427301187117940	/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/qt_gui_autogen/mocs_compilation.cpp	b6d0cd8cdeb9e011
+106	136	1670427301221720570	CMakeFiles/qt_gui.dir/qt_gui_autogen/mocs_compilation.cpp.o	e8edb006a7faa49e
+106	981	1670427302064259479	CMakeFiles/qt_gui.dir/main.cpp.o	5e1924c972155e85
+982	1050	1670427302136525951	qt_gui	300b781d383c0e34
+2	23	1670427870856692452	qt_gui_autogen/timestamp	b6d0cd8cdeb9e011
+2	23	1670427870856692452	qt_gui_autogen/mocs_compilation.cpp	b6d0cd8cdeb9e011
+2	23	1670427870856692452	/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/qt_gui_autogen/timestamp	b6d0cd8cdeb9e011
+2	23	1670427870856692452	/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/qt_gui_autogen/mocs_compilation.cpp	b6d0cd8cdeb9e011
+24	1005	1670427871834153968	CMakeFiles/qt_gui.dir/main.cpp.o	5e1924c972155e85
+1005	1067	1670427871900382891	qt_gui	300b781d383c0e34

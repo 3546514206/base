@@ -1,9 +1,7 @@
-# CMAKE_PREFIX_PATH=/Library/Java/Extensions/qt-6.4/6.4.1/macos
-
 cmake_minimum_required(VERSION 3.21)
-project(qt_test)
+project(qt_gui)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
@@ -16,8 +14,8 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(qt_test main.cpp main_windows.cpp main_windows.hpp main_windows.ui)
-target_link_libraries(qt_test
+add_executable(qt_gui main.cpp)
+target_link_libraries(qt_gui
         Qt::Core
         Qt::Gui
         Qt::Widgets

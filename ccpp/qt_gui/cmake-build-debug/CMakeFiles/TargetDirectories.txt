@@ -1,0 +1,5 @@
+/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/CMakeFiles/qt_gui.dir
+/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/CMakeFiles/qt_gui_autogen_timestamp_deps.dir
+/Users/setsunayang/Documents/learning/learning/ccpp/qt_gui/cmake-build-debug/CMakeFiles/qt_gui_autogen.dir
