@@ -20,5 +20,6 @@ public class SynchronizedListMain {
         CopyOnWriteArrayList<Integer> list1 = new CopyOnWriteArrayList<>();
         // 3
         // 同步机制：加锁
+        // Collections.synchronizedMap();
     }
 }
