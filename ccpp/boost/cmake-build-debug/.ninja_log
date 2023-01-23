@@ -1,5 +1,0 @@
-# ninja log v5
-4	671	1669692302869193342	CMakeFiles/boost.dir/main.cpp.o	d14fcf6d584601fd
-2	762	1669691125703790317	CMakeFiles/boost.dir/thread.cpp.o	69773bf5608fac30
-7	366	1669692276262957033	CMakeFiles/boost.dir/atomic_sample.cpp.o	4b48c7ae1b6cdf5
-671	698	1669692302899590912	boost	5f0db27f38d532ee

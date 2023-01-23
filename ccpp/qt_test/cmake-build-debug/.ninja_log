@@ -1,8 +1,0 @@
-# ninja log v5
-0	39	1670422025882790320	qt_test_autogen/timestamp	5e84ad94c14679e5
-499	557	1670422026406227490	qt_test	e7232e65f33743e8
-0	39	1670422025882790320	qt_test_autogen/mocs_compilation.cpp	5e84ad94c14679e5
-0	39	1670422025882790320	/Users/setsunayang/Documents/learning/learning/ccpp/qt_test/cmake-build-debug/qt_test_autogen/timestamp	5e84ad94c14679e5
-39	77	1670422025925759496	CMakeFiles/qt_test.dir/qt_test_autogen/mocs_compilation.cpp.o	d5e793a7e8be77c9
-0	39	1670422025882790320	/Users/setsunayang/Documents/learning/learning/ccpp/qt_test/cmake-build-debug/qt_test_autogen/mocs_compilation.cpp	5e84ad94c14679e5
-39	498	1670422026345446106	CMakeFiles/qt_test.dir/main.cpp.o	64d6ac3d36413cef
