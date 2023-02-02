@@ -27,6 +27,7 @@ public class ListenableFutureMain {
             return "step2 result";
         });
         ListenableFuture<List<String>> future1And2 = Futures.allAsList(future1, future2);
+
         Futures.addCallback(future1And2, new FutureCallback<List<String>>() {
             @Override
             public void onSuccess(List<String> result) {
