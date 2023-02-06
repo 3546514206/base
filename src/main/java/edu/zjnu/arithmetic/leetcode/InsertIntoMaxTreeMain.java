@@ -37,7 +37,7 @@ public class InsertIntoMaxTreeMain {
     /**
      * 构建最大树
      *
-     * @param list 4 1 3 2 5
+     * @param list        4 1 3 2 5
      * @param newTreeRoot
      * @param leftIndex
      * @param rightIndex
