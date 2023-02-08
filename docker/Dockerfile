@@ -5,7 +5,7 @@ FROM centos:7
 MAINTAINER "3546514206@qq.com"
 
 # 设置环境变量
-ENV ROOT_PASSWORD Yhb199605
+ENV ROOT_PASSWORD root
 
 # yum安装openssh-server、openssh-clients、net-tools
 RUN yum install -y openssh-server
