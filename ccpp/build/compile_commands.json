@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/setsunayang/Documents/learning/base/ccpp/build",
+  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/hello.dir/main.cpp.o -c /Users/setsunayang/Documents/learning/base/ccpp/main.cpp",
+  "file": "/Users/setsunayang/Documents/learning/base/ccpp/main.cpp"
+}
+]
