@@ -5,6 +5,7 @@
         "*.excalidrawlib": "json",
         "ostream": "cpp",
         "__config": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "iostream": "cpp"
     }
 }

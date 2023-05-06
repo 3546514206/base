@@ -13,7 +13,7 @@ int main()
     std::cout << "sin(d):" << sin(s) << std::endl;
     std::cout << "abs(i):" << abs(i) << std::endl;
     std::cout << "floor(d):" << floor(d) << std::endl;
-    std::cout << "sqrt(f):" << sqrt(f) << std::endl;
+    std::cout << "sqrt(f):" << sqrt(f) << std::endl; 
     std::cout << "pow(d,2):" << pow(d, 2) << std::endl;
 
     return 0;
