@@ -3,6 +3,8 @@
     "files.associations": {
         "*.excalidraw": "json",
         "*.excalidrawlib": "json",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "__config": "cpp",
+        "vector": "cpp"
     }
 }
