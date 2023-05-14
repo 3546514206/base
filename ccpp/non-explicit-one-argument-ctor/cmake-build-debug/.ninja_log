@@ -1,0 +1,13 @@
+# ninja log v5
+0	335	1684065723764946844	CMakeFiles/non_explicit_one_argument_ator.dir/main.cpp.o	a001e8dec79ebee9
+336	369	1684065723800677440	non_explicit_one_argument_ator	f1aac9f9f5271b60
+1	194	1684065741675155763	CMakeFiles/non_explicit_one_argument_ator.dir/main.cpp.o	a001e8dec79ebee9
+194	218	1684065741701096378	non_explicit_one_argument_ator	f1aac9f9f5271b60
+1	186	1684065763451865494	CMakeFiles/non_explicit_one_argument_ator.dir/main.cpp.o	a001e8dec79ebee9
+186	208	1684065763474887365	non_explicit_one_argument_ator	f1aac9f9f5271b60
+1	220	1684065849837531737	CMakeFiles/non_explicit_one_argument_ator.dir/main.cpp.o	a001e8dec79ebee9
+220	244	1684065849863032157	non_explicit_one_argument_ator	f1aac9f9f5271b60
+1	328	1684065965665143488	CMakeFiles/non_explicit_one_argument_ator.dir/main.cpp.o	a001e8dec79ebee9
+328	359	1684065965697844079	non_explicit_one_argument_ator	f1aac9f9f5271b60
+2	321	1684066111554928886	CMakeFiles/non_explicit_one_argument_ator.dir/main.cpp.o	a001e8dec79ebee9
+321	354	1684066111589366791	non_explicit_one_argument_ator	f1aac9f9f5271b60
