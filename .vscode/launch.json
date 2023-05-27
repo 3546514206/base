@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: sample web",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/Python/web/sample.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
             "name": "(memberFunction) 启动",
             "type": "cppdbg",
             "request": "launch",
@@ -16,7 +24,6 @@
             "externalConsole": false,
             "MIMode": "lldb"
         },
-
         {
             "name": "(shitcode) 启动",
             "type": "cppdbg",
