@@ -8,7 +8,8 @@ package edu.zjnu.base.base.ref;
 public class ChangeStringV2 {
 
     public void  changeStr(String str){
-        str= "welcome" ;
+        str=str + "welcome" ;
+
     }
 
     public static void  main(String[] args) {
