@@ -1,0 +1,4 @@
+# ninja log v5
+598	634	1685948656777248485	_huffman_tree	16f5ac73aa2c71b6
+0	597	1685948656737940025	CMakeFiles/_huffman_tree.dir/main.cpp.o	358643fd0a29ea08
+0	51	1685949112826031771	build.ninja	a211a76dea843ec7
