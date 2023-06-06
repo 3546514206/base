@@ -13,7 +13,8 @@ public:
 
 class derive : public base_1 {
 public:
-    void my_a() { cout << "derive my_a()" << endl; }
+    int x;
+    // void my_a() { cout << "derive my_a()" << endl; }
 };
 
 int main() {
