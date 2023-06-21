@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/setsunayang/Documents/learning/base/ccpp/_design_chain/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/__design_chain.dir/main.cpp.o -c /Users/setsunayang/Documents/learning/base/ccpp/_design_chain/main.cpp",
+  "file": "/Users/setsunayang/Documents/learning/base/ccpp/_design_chain/main.cpp",
+  "output": "CMakeFiles/__design_chain.dir/main.cpp.o"
+}
+]

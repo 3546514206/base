@@ -154,14 +154,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.8.1</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
             <version>1.8.1</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- 性能测试依赖包 -->
@@ -169,25 +167,6 @@
             <groupId>com.github.houbb</groupId>
             <artifactId>junitperf</artifactId>
             <version>2.0.7</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>1.8.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.github.houbb</groupId>
-            <artifactId>junitperf</artifactId>
-            <version>2.0.7</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.8.1</version>
-            <scope>compile</scope>
         </dependency>
         <!-- test 依赖包 start... -->
 

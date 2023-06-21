@@ -10,11 +10,11 @@ int main() {
     sql::ResultSet* res;
 
     driver = sql::mysql::get_mysql_driver_instance();
-    con = driver->connect("tcp://127.0.0.1:3306", "username", "password");
+    con = driver->connect("tcp://127.0.0.1:3306", "root", "root");
 
     stmt = con->createStatement();
-    stmt->execute("USE database_name");
-    res = stmt->executeQuery("SELECT * FROM table_name");
+    stmt->execute("USE webloader");
+    res = stmt->executeQuery("SELECT * FROM user");
 
     while (res->next()) {
         int id = res->getInt("id");

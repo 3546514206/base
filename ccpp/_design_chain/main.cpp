@@ -79,6 +79,7 @@ int main() {
 
     handlerA->setSuccessor(handlerB);
     handlerB->setSuccessor(handlerC);
+    std::cout<<"test"<<std::endl;
 
     handlerA->handleRequest("A");
 
