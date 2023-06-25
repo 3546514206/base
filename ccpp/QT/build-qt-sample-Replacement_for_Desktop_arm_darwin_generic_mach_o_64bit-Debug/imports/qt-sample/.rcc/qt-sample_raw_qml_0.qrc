@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt-sample/">
+    <file alias="Constants.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/qt-sample/imports/qt-sample/Constants.qml</file>
+    <file alias="DirectoryFontLoader.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/qt-sample/imports/qt-sample/DirectoryFontLoader.qml</file>
+    <file alias="EventListModel.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/qt-sample/imports/qt-sample/EventListModel.qml</file>
+    <file alias="EventListSimulator.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/qt-sample/imports/qt-sample/EventListSimulator.qml</file>
+  </qresource>
+</RCC>
+

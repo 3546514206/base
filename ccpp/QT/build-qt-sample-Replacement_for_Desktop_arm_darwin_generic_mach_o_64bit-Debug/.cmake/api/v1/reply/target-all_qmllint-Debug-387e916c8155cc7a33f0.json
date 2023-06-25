@@ -1,0 +1,403 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_qt_internal_target_enable_qmllint",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"add_dependencies",
+			"include"
+		],
+		"files" : 
+		[
+			"/opt/homebrew/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/CMakeLists.txt",
+			"qmlmodules",
+			"CMakeLists.txt",
+			"/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/effects_qt6/CMakeLists.txt",
+			"/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/flowview/CMakeLists.txt",
+			"/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/logichelper/CMakeLists.txt",
+			"/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/multitext/CMakeLists.txt",
+			"/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/tools/eventsimulator/CMakeLists.txt",
+			"/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/tools/eventsystem/CMakeLists.txt",
+			"/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/application/CMakeLists.txt",
+			"content/CMakeLists.txt",
+			"imports/qt-sample/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 874,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 42,
+				"parent" : 5
+			},
+			{
+				"file" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 4,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 10
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 3
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 2,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 14
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 15
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 16
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 6,
+				"parent" : 18
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 19
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 20
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 21
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 2,
+				"parent" : 23
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 24
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 25
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 26
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 7,
+				"line" : 2,
+				"parent" : 28
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 29
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 30
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 31
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 8,
+				"line" : 6,
+				"parent" : 33
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 34
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 35
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 36
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 7,
+				"parent" : 38
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 39
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 40
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 41
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 6,
+				"parent" : 43
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 44
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1840,
+				"parent" : 45
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 46
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 5,
+				"parent" : 48
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 49
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 50
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 51
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 12,
+				"line" : 10,
+				"parent" : 53
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 54
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2080,
+				"parent" : 55
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 56
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 11,
+			"id" : "qt-sampleApp_qmllint::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "QuickStudioComponents_qmllint::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "QuickStudioEffects_qmllint::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "FlowView_qmllint::@f99fd1e4b9fa497fd232"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "QuickStudioLogicHelper_qmllint::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "QuickStudioMultiText_qmllint::@a7b8d61f767e497853c2"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "QuickStudioEventSimulator_qmllint::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 42,
+			"id" : "QuickStudioEventSystem_qmllint::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 47,
+			"id" : "QuickStudioApplication_qmllint::@a324641c06033e250fc2"
+		},
+		{
+			"backtrace" : 52,
+			"id" : "content_qmllint::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 57,
+			"id" : "qt-sample_qmllint::@a55f03667b206e54bc18"
+		}
+	],
+	"id" : "all_qmllint::@b8ea75ca72e9d0096cda",
+	"name" : "all_qmllint",
+	"paths" : 
+	{
+		"build" : "_deps/ds-build/src/imports/components",
+		"source" : "/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

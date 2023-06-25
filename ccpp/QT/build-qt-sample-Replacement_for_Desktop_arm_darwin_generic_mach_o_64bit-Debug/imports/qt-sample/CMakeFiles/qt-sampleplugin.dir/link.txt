@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../qml/qt-sample/libqt-sampleplugin.a "CMakeFiles/qt-sampleplugin.dir/qt-sampleplugin_autogen/mocs_compilation.cpp.o" "CMakeFiles/qt-sampleplugin.dir/qt-sampleplugin_qt_samplePlugin.cpp.o"
+/usr/bin/ranlib ../../qml/qt-sample/libqt-sampleplugin.a

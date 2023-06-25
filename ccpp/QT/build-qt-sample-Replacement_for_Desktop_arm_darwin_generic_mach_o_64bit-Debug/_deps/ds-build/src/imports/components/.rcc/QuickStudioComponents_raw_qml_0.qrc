@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="/QtQuick/Studio/Components/">
+    <file alias="ArcItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/ArcItem.qml</file>
+    <file alias="PieItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/PieItem.qml</file>
+    <file alias="TriangleItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/TriangleItem.qml</file>
+    <file alias="SvgPathItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/SvgPathItem.qml</file>
+    <file alias="EllipseItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/EllipseItem.qml</file>
+    <file alias="FlipableItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/FlipableItem.qml</file>
+    <file alias="RectangleItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/RectangleItem.qml</file>
+    <file alias="RegularPolygonItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/RegularPolygonItem.qml</file>
+    <file alias="BorderItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/BorderItem.qml</file>
+    <file alias="IsoItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/IsoItem.qml</file>
+    <file alias="GroupItem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/GroupItem.qml</file>
+    <file alias="ArcArrow.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/ArcArrow.qml</file>
+    <file alias="StraightArrow.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/components/StraightArrow.qml</file>
+  </qresource>
+</RCC>
+

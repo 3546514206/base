@@ -1,0 +1,51 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "StudioApplication"
+                },
+                {
+                    "name": "QML.AddedInVersion",
+                    "value": "1538"
+                }
+            ],
+            "className": "QuickStudioApplication",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "fontPath",
+                    "notify": "fontPathChanged",
+                    "read": "fontPath",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QUrl",
+                    "user": false,
+                    "write": "setFontPath"
+                }
+            ],
+            "qualifiedClassName": "QuickStudioApplication",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "fontPathChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "quickstudioapplication_p.h",
+    "outputRevision": 68
+}

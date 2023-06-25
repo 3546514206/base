@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../../qml/QtQuick/Studio/EventSystem/libQuickStudioEventSystemplugin.a CMakeFiles/QuickStudioEventSystemplugin.dir/QuickStudioEventSystemplugin_autogen/mocs_compilation.cpp.o CMakeFiles/QuickStudioEventSystemplugin.dir/QuickStudioEventSystemplugin_QtQuick_Studio_EventSystemPlugin.cpp.o
+/usr/bin/ranlib ../../../../../../qml/QtQuick/Studio/EventSystem/libQuickStudioEventSystemplugin.a

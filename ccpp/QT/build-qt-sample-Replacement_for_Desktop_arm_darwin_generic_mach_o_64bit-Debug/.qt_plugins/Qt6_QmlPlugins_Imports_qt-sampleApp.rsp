@@ -1,0 +1,15 @@
+-rootPath
+/Users/setsunayang/Documents/learning/base/ccpp/QT/qt-sample
+-cmake-output
+-output-file
+/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_qt-sampleApp.cmake
+-importPath
+/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/qml/Main
+-importPath
+/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/qml
+-importPath
+/opt/homebrew/share/qt/qml
+-qrcFiles
+/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/.rcc/configuration.qrc
+/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/.rcc/qmake_Main.qrc
+/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/.rcc/qt-sampleApp_raw_qml_0.qrc

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../qml/QtQuick/Studio/MultiText/libQuickStudioMultiTextplugin.a CMakeFiles/QuickStudioMultiTextplugin.dir/QuickStudioMultiTextplugin_autogen/mocs_compilation.cpp.o CMakeFiles/QuickStudioMultiTextplugin.dir/QuickStudioMultiTextplugin_QtQuick_Studio_MultiTextPlugin.cpp.o
+/usr/bin/ranlib ../../../../../qml/QtQuick/Studio/MultiText/libQuickStudioMultiTextplugin.a
