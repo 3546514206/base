@@ -31,7 +31,7 @@ public class MergeMain {
     }
 
     private static void case01() {
-        // 第一个[] 是最外面的的数组长度，数值是2，第二个[] 是内部数组的长度，数值是3
+        // 第一个[] 是最外面的的数组长度，数值是4，第二个[] 是内部数组的长度，数值是2
         int[][] x = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
         int[][] rz = new MergeMain().merge(x);
         System.out.println(Arrays.deepToString(rz));
