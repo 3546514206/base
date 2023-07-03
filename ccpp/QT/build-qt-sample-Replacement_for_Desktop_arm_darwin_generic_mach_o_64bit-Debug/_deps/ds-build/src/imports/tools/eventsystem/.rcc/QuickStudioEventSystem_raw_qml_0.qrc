@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/QtQuick/Studio/EventSystem/">
-    <file alias="EventSystem.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/tools/eventsystem/EventSystem.qml</file>
-    <file alias="EventListener.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/tools/eventsystem/EventListener.qml</file>
-  </qresource>
-</RCC>
-

@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/QtQuick/Studio/EventSimulator/">
-    <file alias="EventSimulator.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/tools/eventsimulator/EventSimulator.qml</file>
-    <file alias="EventSimulatorDelegate.qml">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/_deps/ds-src/src/imports/tools/eventsimulator/EventSimulatorDelegate.qml</file>
-  </qresource>
-</RCC>
-

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libqt-sample.a "CMakeFiles/qt-sample.dir/qt-sample_autogen/mocs_compilation.cpp.o" "CMakeFiles/qt-sample.dir/qt-sample_qmltyperegistrations.cpp.o" "CMakeFiles/qt-sample.dir/.rcc/qmlcache/qt-sample_Constants_qml.cpp.o" "CMakeFiles/qt-sample.dir/.rcc/qmlcache/qt-sample_DirectoryFontLoader_qml.cpp.o" "CMakeFiles/qt-sample.dir/.rcc/qmlcache/qt-sample_EventListModel_qml.cpp.o" "CMakeFiles/qt-sample.dir/.rcc/qmlcache/qt-sample_EventListSimulator_qml.cpp.o"
-/usr/bin/ranlib libqt-sample.a

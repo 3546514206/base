@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/QtQuick/Studio/MultiText">
-    <file alias="qmldir">/Users/setsunayang/Documents/learning/base/ccpp/QT/build-qt-sample-Replacement_for_Desktop_arm_darwin_generic_mach_o_64bit-Debug/qml/QtQuick/Studio/MultiText/qmldir</file>
-  </qresource>
-</RCC>
-

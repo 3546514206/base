@@ -1,4 +1,0 @@
-module Main
-typeinfo qt-sampleApp.qmltypes
-prefer :/Main/
-
