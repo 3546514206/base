@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/setsunayang/Documents/learning/base/ccpp/_ skip_list/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/_skip_list.dir/main.cpp.o -c \"/Users/setsunayang/Documents/learning/base/ccpp/_ skip_list/main.cpp\"",
+  "file": "/Users/setsunayang/Documents/learning/base/ccpp/_ skip_list/main.cpp",
+  "output": "CMakeFiles/_skip_list.dir/main.cpp.o"
+}
+]
