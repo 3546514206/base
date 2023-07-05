@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "__config": "cpp",
+        "__config_site": "cpp"
+    }
+}

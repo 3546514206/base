@@ -35,18 +35,27 @@ class SkipList
 {
 public:
     SkipList();
+
     ~SkipList();
+
     void insert(int key, int value);
+
     void remove(int key);
+
     int search(int key);
+
     void display();
 
 private:
+
     int randomLevel();
+
     SkipNode *createNode(int level, int key, int value);
 
 private:
+
     SkipNode *header;
+
     int level;
 };
 
@@ -71,10 +80,12 @@ SkipList::~SkipList()
 int SkipList::randomLevel()
 {
     int level = 0;
+
     while (rand() % 2 == 0 && level < MAX_LEVEL)
     {
         level++;
     }
+    
     return level;
 }
 
