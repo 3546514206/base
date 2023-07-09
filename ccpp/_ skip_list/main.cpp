@@ -47,13 +47,11 @@ public:
     void display();
 
 private:
-
     int randomLevel();
 
     SkipNode *createNode(int level, int key, int value);
 
 private:
-
     SkipNode *header;
 
     int level;
@@ -85,7 +83,7 @@ int SkipList::randomLevel()
     {
         level++;
     }
-    
+
     return level;
 }
 
