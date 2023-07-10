@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0020/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/_cmake_sample.dir/main.cpp.o -c /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0020/main.cpp",
+  "file": "/Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0020/main.cpp",
+  "output": "CMakeFiles/_cmake_sample.dir/main.cpp.o"
+}
+]

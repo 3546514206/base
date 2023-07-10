@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "__config": "cpp",
+        "__config_site": "cpp",
+        "string": "cpp",
+        "iosfwd": "cpp",
+        "unordered_map": "cpp",
+        "stack": "cpp"
+    }
+}
