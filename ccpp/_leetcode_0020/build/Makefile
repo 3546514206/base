@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named _cmake_sample
+# Target rules for targets named _leetcode_0020
 
 # Build rule for target.
-_cmake_sample: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _cmake_sample
-.PHONY : _cmake_sample
+_leetcode_0020: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _leetcode_0020
+.PHONY : _leetcode_0020
 
 # fast build rule for target.
-_cmake_sample/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_cmake_sample.dir/build.make CMakeFiles/_cmake_sample.dir/build
-.PHONY : _cmake_sample/fast
+_leetcode_0020/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_leetcode_0020.dir/build.make CMakeFiles/_leetcode_0020.dir/build
+.PHONY : _leetcode_0020/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_cmake_sample.dir/build.make CMakeFiles/_cmake_sample.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_leetcode_0020.dir/build.make CMakeFiles/_leetcode_0020.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_cmake_sample.dir/build.make CMakeFiles/_cmake_sample.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_leetcode_0020.dir/build.make CMakeFiles/_leetcode_0020.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_cmake_sample.dir/build.make CMakeFiles/_cmake_sample.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_leetcode_0020.dir/build.make CMakeFiles/_leetcode_0020.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... _cmake_sample"
+	@echo "... _leetcode_0020"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

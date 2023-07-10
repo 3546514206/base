@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
-project(_cmake_sample)
+project(_leetcode_0020)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(_cmake_sample main.cpp)
+add_executable(_leetcode_0020 main.cpp)

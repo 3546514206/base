@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_002
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/_cmake_sample.dir/all
+all: CMakeFiles/_leetcode_0020.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/_cmake_sample.dir/clean
+clean: CMakeFiles/_leetcode_0020.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/_cmake_sample.dir
+# Target rules for target CMakeFiles/_leetcode_0020.dir
 
 # All Build rule for target.
-CMakeFiles/_cmake_sample.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_cmake_sample.dir/build.make CMakeFiles/_cmake_sample.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_cmake_sample.dir/build.make CMakeFiles/_cmake_sample.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0020/build/CMakeFiles --progress-num=1,2 "Built target _cmake_sample"
-.PHONY : CMakeFiles/_cmake_sample.dir/all
+CMakeFiles/_leetcode_0020.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_leetcode_0020.dir/build.make CMakeFiles/_leetcode_0020.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_leetcode_0020.dir/build.make CMakeFiles/_leetcode_0020.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0020/build/CMakeFiles --progress-num=1,2 "Built target _leetcode_0020"
+.PHONY : CMakeFiles/_leetcode_0020.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/_cmake_sample.dir/rule: cmake_check_build_system
+CMakeFiles/_leetcode_0020.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0020/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/_cmake_sample.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/_leetcode_0020.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0020/build/CMakeFiles 0
-.PHONY : CMakeFiles/_cmake_sample.dir/rule
+.PHONY : CMakeFiles/_leetcode_0020.dir/rule
 
 # Convenience name for target.
-_cmake_sample: CMakeFiles/_cmake_sample.dir/rule
-.PHONY : _cmake_sample
+_leetcode_0020: CMakeFiles/_leetcode_0020.dir/rule
+.PHONY : _leetcode_0020
 
 # clean rule for target.
-CMakeFiles/_cmake_sample.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_cmake_sample.dir/build.make CMakeFiles/_cmake_sample.dir/clean
-.PHONY : CMakeFiles/_cmake_sample.dir/clean
+CMakeFiles/_leetcode_0020.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_leetcode_0020.dir/build.make CMakeFiles/_leetcode_0020.dir/clean
+.PHONY : CMakeFiles/_leetcode_0020.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

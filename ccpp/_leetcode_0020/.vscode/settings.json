@@ -6,6 +6,13 @@
         "string": "cpp",
         "iosfwd": "cpp",
         "unordered_map": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "__split_buffer": "cpp",
+        "__string": "cpp",
+        "deque": "cpp",
+        "istream": "cpp",
+        "locale": "cpp",
+        "sstream": "cpp",
+        "vector": "cpp"
     }
 }
