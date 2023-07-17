@@ -2,8 +2,7 @@
 
 using namespace std;
 
-struct ListNode
-{
+struct ListNode {
     int val;
 
     ListNode *next;
@@ -15,8 +14,7 @@ struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-class Solution
-{
+class Solution {
 public:
     ListNode *removeNthFromEnd(ListNode *head, int n);
 
@@ -26,11 +24,9 @@ private:
     int getLength(ListNode *head);
 };
 
-int Solution::getLength(ListNode *head)
-{
+int Solution::getLength(ListNode *head) {
     int length = 0;
-    while (head)
-    {
+    while (head) {
         ++length;
         head = head->next;
     }
@@ -39,27 +35,23 @@ int Solution::getLength(ListNode *head)
     return length;
 }
 
-ListNode *Solution::removeNthFromEnd(ListNode *head, int n)
-{
+ListNode *Solution::removeNthFromEnd(ListNode *head, int n) {
     ListNode *dummy = new ListNode(-1, head);
 
     int length = getLength(head);
     ListNode *cur = dummy;
-    for (int i = 1; i < length - n + 1; ++i)
-    {
+    for (int i = 1; i < length - n + 1; ++i) {
         cur = cur->next;
     }
 
 
-    
     return dummy->next;
 }
 
 ListNode *Solution::removeNthFromEndV2(ListNode *head, int n) {}
 
-int main()
-{
-   
+int main() {
 
-  return 0;
+
+    return 0;
 }

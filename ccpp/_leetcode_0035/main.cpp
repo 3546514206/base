@@ -3,29 +3,23 @@
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
     int searchInsert(vector<int> &nums, int target);
 };
 
-int Solution::searchInsert(vector<int> &nums, int target)
-{
+int Solution::searchInsert(vector<int> &nums, int target) {
     int l = 0;
     int r = nums.size() - 1;
 
     int ans = nums.size();
 
-    while (l <= r)
-    {
+    while (l <= r) {
         int mid = l + (r - l) / 2;
-        if (target <= nums[mid])
-        {
+        if (target <= nums[mid]) {
             ans = mid;
             r = mid - 1;
-        }
-        else
-        {
+        } else {
             l = mid + 1;
         }
     }
@@ -33,8 +27,7 @@ int Solution::searchInsert(vector<int> &nums, int target)
     return ans;
 }
 
-int main()
-{
+int main() {
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: _leetcode_0002
+# Project: _leetcode_0035
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002/cmake-build-debug/
+cmake_ninja_workdir = /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002 -B/Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002/cmake-build-debug
+  COMMAND = cd /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035 -B/Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,46 +57,46 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target _leetcode_0002
+# Object build statements for EXECUTABLE target _leetcode_0035
 
 
 #############################################
-# Order-only phony target for _leetcode_0002
+# Order-only phony target for _leetcode_0035
 
-build cmake_object_order_depends_target__leetcode_0002: phony || CMakeFiles/_leetcode_0002.dir
+build cmake_object_order_depends_target__leetcode_0035: phony || CMakeFiles/_leetcode_0035.dir
 
-build CMakeFiles/_leetcode_0002.dir/main.cpp.o: CXX_COMPILER___leetcode_0002_Debug /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002/main.cpp || cmake_object_order_depends_target__leetcode_0002
-  DEP_FILE = CMakeFiles/_leetcode_0002.dir/main.cpp.o.d
+build CMakeFiles/_leetcode_0035.dir/main.cpp.o: CXX_COMPILER___leetcode_0035_Debug /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035/main.cpp || cmake_object_order_depends_target__leetcode_0035
+  DEP_FILE = CMakeFiles/_leetcode_0035.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -std=gnu++11
-  OBJECT_DIR = CMakeFiles/_leetcode_0002.dir
-  OBJECT_FILE_DIR = CMakeFiles/_leetcode_0002.dir
-  TARGET_COMPILE_PDB = CMakeFiles/_leetcode_0002.dir/
-  TARGET_PDB = _leetcode_0002.pdb
+  OBJECT_DIR = CMakeFiles/_leetcode_0035.dir
+  OBJECT_FILE_DIR = CMakeFiles/_leetcode_0035.dir
+  TARGET_COMPILE_PDB = CMakeFiles/_leetcode_0035.dir/
+  TARGET_PDB = _leetcode_0035.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target _leetcode_0002
+# Link build statements for EXECUTABLE target _leetcode_0035
 
 
 #############################################
-# Link the executable _leetcode_0002
+# Link the executable _leetcode_0035
 
-build _leetcode_0002: CXX_EXECUTABLE_LINKER___leetcode_0002_Debug CMakeFiles/_leetcode_0002.dir/main.cpp.o
+build _leetcode_0035: CXX_EXECUTABLE_LINKER___leetcode_0035_Debug CMakeFiles/_leetcode_0035.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
   LINK_FLAGS = -L/opt/homebrew/opt/openssl@1.1/lib
-  OBJECT_DIR = CMakeFiles/_leetcode_0002.dir
+  OBJECT_DIR = CMakeFiles/_leetcode_0035.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/_leetcode_0002.dir/
-  TARGET_FILE = _leetcode_0002
-  TARGET_PDB = _leetcode_0002.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/_leetcode_0035.dir/
+  TARGET_FILE = _leetcode_0035
+  TARGET_PDB = _leetcode_0035.pdb
 
 # =============================================================================
 # Target aliases.
@@ -107,9 +107,9 @@ build _leetcode_0002: CXX_EXECUTABLE_LINKER___leetcode_0002_Debug CMakeFiles/_le
 # =============================================================================
 
 #############################################
-# Folder: /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002/cmake-build-debug
+# Folder: /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035/cmake-build-debug
 
-build all: phony _leetcode_0002
+build all: phony _leetcode_0035
 
 # =============================================================================
 # Built-in targets

@@ -16,12 +16,19 @@ class Solution {
 
     }
 
-    class ListNode {
-        int val;
-        edu.zjnu.arithmetic.leetcode.ListNode next;
+    static class ListNode {
 
-        ListNode(int x) {
-            val = x;
+        int val;
+
+        ListNode next;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
         }
     }
 }

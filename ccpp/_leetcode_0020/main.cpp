@@ -5,39 +5,31 @@
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
     bool isValid(string s);
 };
 
-bool Solution::isValid(string s)
-{
+bool Solution::isValid(string s) {
     int n = s.size();
-    if (n % 2 == 1)
-    {
+    if (n % 2 == 1) {
         return false;
     }
 
     unordered_map<char, char> pairs = {
-        {')', '('},
-        {']', '['},
-        {'}', '{'}};
+            {')', '('},
+            {']', '['},
+            {'}', '{'}};
 
     stack<char> stak;
-    for (char ch : s)
-    {
-        if (pairs.count(ch))
-        {
-            if (stak.empty() || stak.top() != pairs[ch])
-            {
+    for (char ch: s) {
+        if (pairs.count(ch)) {
+            if (stak.empty() || stak.top() != pairs[ch]) {
                 return false;
             }
 
             stak.pop();
-        }
-        else
-        {
+        } else {
             stak.push(ch);
         }
     }
@@ -45,7 +37,6 @@ bool Solution::isValid(string s)
     return stak.empty();
 }
 
-int main()
-{
+int main() {
     return 0;
 }

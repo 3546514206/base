@@ -9,30 +9,26 @@ using namespace std;
 const int MAX_LEVEL = 10;
 
 // 跳表节点
-struct SkipNode
-{
+struct SkipNode {
     int key;
     int value;
     // 每层的指针数组
     SkipNode **forward;
 
-    SkipNode(int level, int key, int value)
-    {
+    SkipNode(int level, int key, int value) {
         this->key = key;
         this->value = value;
         forward = new SkipNode *[level + 1];
         memset(forward, 0, sizeof(SkipNode *) * (level + 1));
     }
 
-    ~SkipNode()
-    {
+    ~SkipNode() {
         delete[] forward;
     }
 };
 
 // 跳表
-class SkipList
-{
+class SkipList {
 public:
     SkipList();
 
@@ -57,17 +53,14 @@ private:
     int level;
 };
 
-SkipList::SkipList()
-{
+SkipList::SkipList() {
     header = new SkipNode(MAX_LEVEL, INT_MIN, 0);
     level = 0;
 }
 
-SkipList::~SkipList()
-{
+SkipList::~SkipList() {
     SkipNode *current = header->forward[0];
-    while (current)
-    {
+    while (current) {
         SkipNode *next = current->forward[0];
         delete current;
         current = next;
@@ -75,109 +68,88 @@ SkipList::~SkipList()
     delete header;
 }
 
-int SkipList::randomLevel()
-{
+int SkipList::randomLevel() {
     int level = 0;
 
-    while (rand() % 2 == 0 && level < MAX_LEVEL)
-    {
+    while (rand() % 2 == 0 && level < MAX_LEVEL) {
         level++;
     }
 
     return level;
 }
 
-SkipNode *SkipList::createNode(int level, int key, int value)
-{
+SkipNode *SkipList::createNode(int level, int key, int value) {
     SkipNode *newNode = new SkipNode(level, key, value);
     return newNode;
 }
 
-void SkipList::insert(int key, int value)
-{
+void SkipList::insert(int key, int value) {
+
     SkipNode *update[MAX_LEVEL + 1];
+
     memset(update, 0, sizeof(SkipNode *) * (MAX_LEVEL + 1));
 
     SkipNode *current = header;
-    for (int i = level; i >= 0; i--)
-    {
-        while (current->forward[i] && current->forward[i]->key < key)
-        {
+    for (int i = level; i >= 0; i--) {
+        while (current->forward[i] && current->forward[i]->key < key) {
             current = current->forward[i];
         }
         update[i] = current;
     }
     current = current->forward[0];
 
-    if (current && current->key == key)
-    {
+    if (current && current->key == key) {
         current->value = value;
-    }
-    else
-    {
+    } else {
         int newLevel = randomLevel();
-        if (newLevel > level)
-        {
-            for (int i = level + 1; i <= newLevel; i++)
-            {
+        if (newLevel > level) {
+            for (int i = level + 1; i <= newLevel; i++) {
                 update[i] = header;
             }
             level = newLevel;
         }
 
         SkipNode *newNode = createNode(newLevel, key, value);
-        for (int i = 0; i <= newLevel; i++)
-        {
+        for (int i = 0; i <= newLevel; i++) {
             newNode->forward[i] = update[i]->forward[i];
             update[i]->forward[i] = newNode;
         }
     }
 }
 
-void SkipList::remove(int key)
-{
+void SkipList::remove(int key) {
     SkipNode *update[MAX_LEVEL + 1];
     memset(update, 0, sizeof(SkipNode *) * (MAX_LEVEL + 1));
 
     SkipNode *current = header;
-    for (int i = level; i >= 0; i--)
-    {
-        while (current->forward[i] && current->forward[i]->key < key)
-        {
+    for (int i = level; i >= 0; i--) {
+        while (current->forward[i] && current->forward[i]->key < key) {
             current = current->forward[i];
         }
         update[i] = current;
     }
     current = current->forward[0];
 
-    if (current && current->key == key)
-    {
-        for (int i = 0; i <= level; i++)
-        {
-            if (update[i]->forward[i] != current)
-            {
+    if (current && current->key == key) {
+        for (int i = 0; i <= level; i++) {
+            if (update[i]->forward[i] != current) {
                 break;
             }
             update[i]->forward[i] = current->forward[i];
         }
         delete current;
 
-        while (level > 0 && header->forward[level] == nullptr)
-        {
+        while (level > 0 && header->forward[level] == nullptr) {
             level--;
         }
     }
 }
 
-int SkipList::search(int key)
-{
+int SkipList::search(int key) {
     SkipNode *current = header;
-    for (int i = level; i >= 0; i--)
-    {
-        while (current->forward[i] && current->forward[i]->key <= key)
-        {
-            if (current->forward[i]->key == key)
-            {
+    for (int i = level; i >= 0; i--) {
+        while (current->forward[i] && current->forward[i]->key <= key) {
+            if (current->forward[i]->key == key) {
                 return current->forward[i]->value;
             }
             current = current->forward[i];
@@ -186,14 +158,11 @@ int SkipList::search(int key)
     return -1;
 }
 
-void SkipList::display()
-{
-    for (int i = level; i >= 0; i--)
-    {
+void SkipList::display() {
+    for (int i = level; i >= 0; i--) {
         SkipNode *current = header->forward[i];
         cout << "Level " << i << ": ";
-        while (current)
-        {
+        while (current) {
             cout << current->key << " ";
             current = current->forward[i];
         }
@@ -201,8 +170,7 @@ void SkipList::display()
     }
 }
 
-int main()
-{
+int main() {
     // 设置随机种子
     srand(time(0));
 

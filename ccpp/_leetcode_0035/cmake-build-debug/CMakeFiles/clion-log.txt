@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035
 -- The C compiler identification is AppleClang 14.0.0.14000029
 -- The CXX compiler identification is AppleClang 14.0.0.14000029
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0002/cmake-build-debug
+-- Build files have been written to: /Users/setsunayang/Documents/learning/base/ccpp/_leetcode_0035/cmake-build-debug

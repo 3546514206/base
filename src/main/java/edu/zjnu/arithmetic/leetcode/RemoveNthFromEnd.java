@@ -53,4 +53,20 @@ class RemoveNthFromEnd {
         new RemoveNthFromEnd().removeNthFromEnd(head, 2);
 
     }
+
+    static class ListNode {
+
+        int val;
+
+        ListNode next;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
 }

@@ -45,21 +45,22 @@ class AddTwoNumbers {
         int val = (l1 == null ? 0 : l1.val) + (l2 == null ? 0 : l2.val) + (step ? 1 : 0);
         return new ListNode(val % 10, addTwoNumbers(l1 == null ? null : l1.next, l2 == null ? null : l2.next, val >= 10));
     }
-}
+    static class ListNode {
 
+        int val;
 
-class ListNode {
+        ListNode next;
 
-    int val;
+        ListNode(int val) {
+            this.val = val;
+        }
 
-    ListNode next;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 }
+
+
+
