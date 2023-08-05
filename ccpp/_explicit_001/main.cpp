@@ -2,6 +2,7 @@
 
 class Temperature {
 public:
+
     // explicit 表示要求创建 Temperature 对象的时候必须显示调用该构造函数
     // 不允许发生隐式转换
     explicit Temperature(double value) : temperature(value) {}
