@@ -1,0 +1,4 @@
+# ninja log v5
+0	328	1692945069000774842	CMakeFiles/single.dir/main.cpp.o	847a4dba2b4454fd
+1	333	1692945069007161241	CMakeFiles/single.dir/singleton.cpp.o	4fc09468281a4a77
+334	376	1692945069050858545	single	c206d71ab86437fb

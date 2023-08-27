@@ -1,0 +1,2 @@
+/usr/bin/ar qc libQuickStudioApplication.a CMakeFiles/QuickStudioApplication.dir/QuickStudioApplication_autogen/mocs_compilation.cpp.o CMakeFiles/QuickStudioApplication.dir/quickstudioapplication_qmltyperegistrations.cpp.o CMakeFiles/QuickStudioApplication.dir/quickstudioapplication.cpp.o
+/usr/bin/ranlib libQuickStudioApplication.a

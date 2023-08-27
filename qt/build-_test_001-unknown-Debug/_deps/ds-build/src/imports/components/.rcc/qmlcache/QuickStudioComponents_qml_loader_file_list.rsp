@@ -1,0 +1,13 @@
+/QtQuick/Studio/Components/ArcItem.qml
+/QtQuick/Studio/Components/PieItem.qml
+/QtQuick/Studio/Components/TriangleItem.qml
+/QtQuick/Studio/Components/SvgPathItem.qml
+/QtQuick/Studio/Components/EllipseItem.qml
+/QtQuick/Studio/Components/FlipableItem.qml
+/QtQuick/Studio/Components/RectangleItem.qml
+/QtQuick/Studio/Components/RegularPolygonItem.qml
+/QtQuick/Studio/Components/BorderItem.qml
+/QtQuick/Studio/Components/IsoItem.qml
+/QtQuick/Studio/Components/GroupItem.qml
+/QtQuick/Studio/Components/ArcArrow.qml
+/QtQuick/Studio/Components/StraightArrow.qml

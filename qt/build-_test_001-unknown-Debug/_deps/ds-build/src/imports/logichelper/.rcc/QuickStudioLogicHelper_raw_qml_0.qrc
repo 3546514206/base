@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/QtQuick/Studio/LogicHelper/">
+    <file alias="BidirectionalBinding.qml">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/_deps/ds-src/src/imports/logichelper/BidirectionalBinding.qml</file>
+    <file alias="RangeMapper.qml">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/_deps/ds-src/src/imports/logichelper/RangeMapper.qml</file>
+    <file alias="MinMaxMapper.qml">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/_deps/ds-src/src/imports/logichelper/MinMaxMapper.qml</file>
+    <file alias="StringMapper.qml">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/_deps/ds-src/src/imports/logichelper/StringMapper.qml</file>
+    <file alias="OrOperator.qml">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/_deps/ds-src/src/imports/logichelper/OrOperator.qml</file>
+    <file alias="AndOperator.qml">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/_deps/ds-src/src/imports/logichelper/AndOperator.qml</file>
+    <file alias="NotOperator.qml">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/_deps/ds-src/src/imports/logichelper/NotOperator.qml</file>
+  </qresource>
+</RCC>
+

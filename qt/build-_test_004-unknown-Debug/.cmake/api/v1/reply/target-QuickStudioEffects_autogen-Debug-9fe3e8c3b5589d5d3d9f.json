@@ -1,0 +1,69 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"/Users/setsunayang/Documents/learning/base/qt/build-_test_004-unknown-Debug/_deps/ds-src/src/imports/effects_qt6/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioEffects_tooling::@981cd0cfbc19161bec24"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "QuickStudioEffects_autogen::@981cd0cfbc19161bec24",
+	"isGeneratorProvided" : true,
+	"name" : "QuickStudioEffects_autogen",
+	"paths" : 
+	{
+		"build" : "_deps/ds-build/src/imports/effects_qt6",
+		"source" : "/Users/setsunayang/Documents/learning/base/qt/build-_test_004-unknown-Debug/_deps/ds-src/src/imports/effects_qt6"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/setsunayang/Documents/learning/base/qt/build-_test_004-unknown-Debug/_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffects_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/setsunayang/Documents/learning/base/qt/build-_test_004-unknown-Debug/_deps/ds-build/src/imports/effects_qt6/CMakeFiles/QuickStudioEffects_autogen.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

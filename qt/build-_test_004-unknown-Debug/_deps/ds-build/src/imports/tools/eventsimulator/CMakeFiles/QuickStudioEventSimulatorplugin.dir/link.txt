@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../../qml/QtQuick/Studio/EventSimulator/libQuickStudioEventSimulatorplugin.a CMakeFiles/QuickStudioEventSimulatorplugin.dir/QuickStudioEventSimulatorplugin_autogen/mocs_compilation.cpp.o CMakeFiles/QuickStudioEventSimulatorplugin.dir/QuickStudioEventSimulatorplugin_QtQuick_Studio_EventSimulatorPlugin.cpp.o
+/usr/bin/ranlib ../../../../../../qml/QtQuick/Studio/EventSimulator/libQuickStudioEventSimulatorplugin.a

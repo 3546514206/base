@@ -1,0 +1,2 @@
+_deps/ds-build/src/imports/logichelper/CMakeFiles/QuickStudioLogicHelper_resources_1.dir/.rcc/qrc_qmake_QtQuick_Studio_LogicHelper.cpp.o: \
+  /Users/setsunayang/Documents/learning/base/qt/build-_test_004-unknown-Debug/_deps/ds-build/src/imports/logichelper/.rcc/qrc_qmake_QtQuick_Studio_LogicHelper.cpp

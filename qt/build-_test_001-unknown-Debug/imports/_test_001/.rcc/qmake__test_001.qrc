@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/_test_001">
+    <file alias="qmldir">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/qml/_test_001/qmldir</file>
+  </qresource>
+</RCC>
+

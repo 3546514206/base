@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/FlowView">/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/qml/FlowView</file>
+
+  </qresource>
+</RCC>

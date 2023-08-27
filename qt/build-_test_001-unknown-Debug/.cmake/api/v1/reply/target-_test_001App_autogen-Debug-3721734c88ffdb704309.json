@@ -1,0 +1,120 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "_test_001App_tooling::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "_test_001App_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioComponentsplugin::@b8ea75ca72e9d0096cda"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioEffectsplugin::@981cd0cfbc19161bec24"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "FlowViewplugin::@f99fd1e4b9fa497fd232"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioLogicHelperplugin::@a133c4daf6f4e56b78b8"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioMultiTextplugin::@a7b8d61f767e497853c2"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioEventSimulatorplugin::@639cba86296065e16922"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioEventSystemplugin::@c931a55b2364f386d7db"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QuickStudioApplicationplugin::@a324641c06033e250fc2"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "contentplugin::@73a38b9e525c9c2ae262"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "_test_001plugin::@17f1b77a12826d937443"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "_test_001App_autogen::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "_test_001App_autogen",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/CMakeFiles/_test_001App_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/CMakeFiles/_test_001App_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/.rcc/qmlcache/_test_001App_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

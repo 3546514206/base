@@ -1,0 +1,1 @@
+/Users/setsunayang/Documents/learning/base/qt/build-_test_004-unknown-Debug/_deps/ds-build/src/imports/application/QuickStudioApplication_autogen/include/../EWIEGA46WW/moc_quickstudioapplication_p.cpp.json

@@ -1,0 +1,15 @@
+-rootPath
+/Users/setsunayang/Documents/learning/base/qt/_test_001
+-cmake-output
+-output-file
+/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/.qt_plugins/Qt6_QmlPlugins_Imports__test_001App.cmake
+-importPath
+/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/qml/Main
+-importPath
+/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/qml
+-importPath
+/opt/homebrew/share/qt/qml
+-qrcFiles
+/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/.rcc/configuration.qrc
+/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/.rcc/qmake_Main.qrc
+/Users/setsunayang/Documents/learning/base/qt/build-_test_001-unknown-Debug/.rcc/_test_001App_raw_qml_0.qrc

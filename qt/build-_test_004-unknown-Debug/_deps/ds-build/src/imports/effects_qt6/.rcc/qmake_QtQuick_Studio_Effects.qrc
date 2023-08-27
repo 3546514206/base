@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/QtQuick/Studio/Effects">
+    <file alias="qmldir">/Users/setsunayang/Documents/learning/base/qt/build-_test_004-unknown-Debug/qml/QtQuick/Studio/Effects/qmldir</file>
+  </qresource>
+</RCC>
+
