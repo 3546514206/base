@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/blacksoft.css</file>
+        <file>qss/blacksoft/add_bottom.png</file>
+        <file>qss/blacksoft/add_left.png</file>
+        <file>qss/blacksoft/add_right.png</file>
+        <file>qss/blacksoft/add_top.png</file>
+        <file>qss/blacksoft/arrow_bottom.png</file>
+        <file>qss/blacksoft/arrow_left.png</file>
+        <file>qss/blacksoft/arrow_right.png</file>
+        <file>qss/blacksoft/arrow_top.png</file>
+        <file>qss/blacksoft/branch_close.png</file>
+        <file>qss/blacksoft/branch_open.png</file>
+        <file>qss/blacksoft/calendar_nextmonth.png</file>
+        <file>qss/blacksoft/calendar_prevmonth.png</file>
+        <file>qss/blacksoft/checkbox_checked.png</file>
+        <file>qss/blacksoft/checkbox_checked_disable.png</file>
+        <file>qss/blacksoft/checkbox_parcial.png</file>
+        <file>qss/blacksoft/checkbox_parcial_disable.png</file>
+        <file>qss/blacksoft/checkbox_unchecked.png</file>
+        <file>qss/blacksoft/checkbox_unchecked_disable.png</file>
+        <file>qss/blacksoft/menu_checked.png</file>
+        <file>qss/blacksoft/radiobutton_checked.png</file>
+        <file>qss/blacksoft/radiobutton_checked_disable.png</file>
+        <file>qss/blacksoft/radiobutton_unchecked.png</file>
+        <file>qss/blacksoft/radiobutton_unchecked_disable.png</file>
+    </qresource>
+</RCC>
