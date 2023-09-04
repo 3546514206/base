@@ -22,9 +22,9 @@ SendEmailThread::SendEmailThread(QObject *parent) : QThread(parent)
 {
     stopped = false;
     emialTitle = "邮件标题";
-    sendEmailAddr = "feiyangqingyun@126.com";
-    sendEmailPwd = "123456789";
-    receiveEmailAddr = "feiyangqingyun@163.com;517216493@qq.com";
+    sendEmailAddr = "ifczbo@gmail.com";
+    sendEmailPwd = "Zic200716";
+    receiveEmailAddr = "517216493@qq.com";
     contents.clear();
     fileNames.clear();
 }

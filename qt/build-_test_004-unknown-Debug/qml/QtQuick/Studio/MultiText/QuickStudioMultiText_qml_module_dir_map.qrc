@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/QtQuick/Studio/MultiText">/Users/setsunayang/Documents/learning/base/qt/build-_test_004-unknown-Debug/qml/QtQuick/Studio/MultiText</file>
-
-  </qresource>
-</RCC>

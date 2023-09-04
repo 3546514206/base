@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib_test_004.a CMakeFiles/_test_004.dir/_test_004_autogen/mocs_compilation.cpp.o CMakeFiles/_test_004.dir/_test_004_qmltyperegistrations.cpp.o CMakeFiles/_test_004.dir/.rcc/qmlcache/_test_004_Constants_qml.cpp.o CMakeFiles/_test_004.dir/.rcc/qmlcache/_test_004_DirectoryFontLoader_qml.cpp.o CMakeFiles/_test_004.dir/.rcc/qmlcache/_test_004_EventListModel_qml.cpp.o CMakeFiles/_test_004.dir/.rcc/qmlcache/_test_004_EventListSimulator_qml.cpp.o
-/usr/bin/ranlib lib_test_004.a

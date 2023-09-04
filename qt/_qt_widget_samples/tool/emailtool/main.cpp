@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 #endif
 
     frmEmailTool w;
-    w.setWindowTitle("邮件发送工具 V2021 (QQ: 517216493 WX: feiyangqingyun)");
+    w.setWindowTitle("邮件发送工具");
     w.show();
 
     return a.exec();

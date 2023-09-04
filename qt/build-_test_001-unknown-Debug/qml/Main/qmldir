@@ -1,4 +1,0 @@
-module Main
-typeinfo _test_001App.qmltypes
-prefer :/Main/
-

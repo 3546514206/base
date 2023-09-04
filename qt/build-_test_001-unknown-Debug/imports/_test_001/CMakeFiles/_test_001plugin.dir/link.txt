@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../qml/_test_001/lib_test_001plugin.a CMakeFiles/_test_001plugin.dir/_test_001plugin_autogen/mocs_compilation.cpp.o CMakeFiles/_test_001plugin.dir/_test_001plugin__test_001Plugin.cpp.o
-/usr/bin/ranlib ../../qml/_test_001/lib_test_001plugin.a
