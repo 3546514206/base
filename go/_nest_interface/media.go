@@ -1,4 +1,4 @@
-package _nest_interface
+package main
 
 type Player interface {
 	Play() string
