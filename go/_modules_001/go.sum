@@ -1,0 +1,4 @@
+github.com/admpub/dgoogauth v0.0.1/go.mod h1:e7sbVlkeACqjLRA8qGHvoV3yQzCJDYzro1dDNon0pCw=
+github.com/admpub/email v2.4.1+incompatible/go.mod h1:qoIKEwd0d9NL1XWUTl0Zd3lrQRy/NB19HrMoJG8PbV8=
+github.com/admpub/errors v0.8.2/go.mod h1:QKu3XgCRS3u6Nz84MKmkldSCANMRHaQL1YYwKBFe/nw=
+github.com/admpub/events v1.3.5/go.mod h1:WH16fETVlGhPtG7VzNQtZNXVVbuAMe9qqznAJaEm0IU=
