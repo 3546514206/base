@@ -17,7 +17,7 @@
    <item row="1" column="0">
     <widget class="QLineEdit" name="txtText">
      <property name="text">
-      <string>游龙 feiyangqingyun QQ: 517216493</string>
+      <string/>
      </property>
     </widget>
    </item>
@@ -98,7 +98,7 @@
    <item row="0" column="0">
     <widget class="QLineEdit" name="txtFile">
      <property name="text">
-      <string>E:/myFile/美女图片/2.jpg</string>
+      <string/>
      </property>
     </widget>
    </item>

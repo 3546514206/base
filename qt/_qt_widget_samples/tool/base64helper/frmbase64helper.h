@@ -7,8 +7,7 @@ namespace Ui {
 class frmBase64Helper;
 }
 
-class frmBase64Helper : public QWidget
-{
+class frmBase64Helper : public QWidget {
     Q_OBJECT
 
 public:
