@@ -1,6 +1,6 @@
 package edu.zjnu.base.base.objectlayout;
 
-import edu.zjnu.base.LogInterFace;
+import edu.zjnu.base.base.LogInterFace;
 import org.openjdk.jol.info.GraphLayout;
 import org.openjdk.jol.vm.VM;
 

@@ -1,4 +1,4 @@
-package edu.zjnu.base;
+package edu.zjnu.base.base;
 
 /**
  *

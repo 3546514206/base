@@ -31,6 +31,8 @@ public class HashMapMain {
         // key为null是有意义的值。
         map.put("null", new Person("张三"));
 
+        map.get("3");
+
         System.out.println(JsonPrintUtil.formatToJson(JSON.toJSON(map).toString()));
     }
 }

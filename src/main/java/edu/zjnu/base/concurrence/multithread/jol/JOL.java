@@ -1,6 +1,6 @@
 package edu.zjnu.base.concurrence.multithread.jol;
 
-import edu.zjnu.base.LogInterFace;
+import edu.zjnu.base.base.LogInterFace;
 
 /**
  * @author 杨海波

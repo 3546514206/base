@@ -1,6 +1,6 @@
 package edu.zjnu.base.base.anno;
 
-import edu.zjnu.base.NullClass;
+import edu.zjnu.base.base.NullClass;
 
 import java.lang.annotation.Annotation;
 

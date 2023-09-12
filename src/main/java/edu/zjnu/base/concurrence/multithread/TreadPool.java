@@ -1,6 +1,6 @@
 package edu.zjnu.base.concurrence.multithread;
 
-import edu.zjnu.base.LogInterFace;
+import edu.zjnu.base.base.LogInterFace;
 
 import java.util.concurrent.*;
 
