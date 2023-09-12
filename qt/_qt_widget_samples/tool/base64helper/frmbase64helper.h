@@ -4,6 +4,7 @@
 #include <QWidget>
 
 namespace Ui {
+
 class frmBase64Helper;
 }
 
