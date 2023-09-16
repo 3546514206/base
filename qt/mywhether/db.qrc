@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>db_weather.db</file>
-    </qresource>
-</RCC>

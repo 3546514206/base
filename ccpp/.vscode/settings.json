@@ -1,8 +1,0 @@
-{
-    "cmake.sourceDirectory": "/Users/setsunayang/Documents/learning/base/ccpp/_const_001",
-    "files.associations": {
-        "*.excalidraw": "json",
-        "*.excalidrawlib": "json",
-        "ostream": "cpp"
-    }
-}

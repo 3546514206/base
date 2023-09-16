@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>loginPicture.jpg</file>
-        <file>app.ico</file>
-        <file>aboutPicture.jpg</file>
-        <file>blue.qss</file>
-    </qresource>
-</RCC>

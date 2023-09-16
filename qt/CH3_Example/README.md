@@ -1,1 +1,0 @@
-#CH3_Example
