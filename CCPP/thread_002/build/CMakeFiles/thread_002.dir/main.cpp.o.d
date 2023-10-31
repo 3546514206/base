@@ -1,5 +1,5 @@
-CMakeFiles/thread_001.dir/main.cpp.o: \
-  /Users/setsunayang/Documents/learning/base/CCPP/thread_001/main.cpp \
+CMakeFiles/thread_002.dir/main.cpp.o: \
+  /Users/setsunayang/Documents/learning/base/CCPP/thread_002/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
