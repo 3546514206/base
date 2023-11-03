@@ -1,3 +1,0 @@
-/Users/setsunayang/Documents/learning/base/CCPP/test_001/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/setsunayang/Documents/learning/base/CCPP/test_001/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/setsunayang/Documents/learning/base/CCPP/test_001/cmake-build-debug/CMakeFiles/test_001.dir
