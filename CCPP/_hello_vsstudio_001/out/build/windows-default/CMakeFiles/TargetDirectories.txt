@@ -1,0 +1,3 @@
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_hello_vsstudio_001/out/build/windows-default/CMakeFiles/_hello_vsstudio_001.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_hello_vsstudio_001/out/build/windows-default/CMakeFiles/edit_cache.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_hello_vsstudio_001/out/build/windows-default/CMakeFiles/rebuild_cache.dir
