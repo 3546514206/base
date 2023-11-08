@@ -16,7 +16,9 @@ public class UserController {
 
     @RequestMapping(value = "/user/login", method = RequestMethod.POST)
     public User login(@RequestBody User user) {
-        System.out.println();
+        user.setId("-1");
+        user.setName("setsunayang");
+        user.setAge("18");
         return user;
     }
 }
