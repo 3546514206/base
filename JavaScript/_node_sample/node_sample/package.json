@@ -1,0 +1,12 @@
+{
+  "name": "node_sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node demo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
