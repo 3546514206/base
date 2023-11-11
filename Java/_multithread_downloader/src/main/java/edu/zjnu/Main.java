@@ -12,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
         String url = null;
 
+        // 拿到下载链接
         if (args == null || args.length == 0) {
             for (; ; ) {
                 System.out.println("请输入下载链接");
