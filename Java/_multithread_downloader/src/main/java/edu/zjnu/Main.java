@@ -1,5 +1,7 @@
 package edu.zjnu;
 
+import edu.zjnu.corn.Downloader;
+
 import java.util.Scanner;
 
 /**
@@ -28,6 +30,13 @@ public class Main {
             url = args[0];
             checkUrl(url);
         }
+
+        doDownloader(url);
+    }
+
+    private static void doDownloader(String url) {
+        Downloader downloader = new Downloader();
+        downloader.download(url);
     }
 
     // 校验地址
