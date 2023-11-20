@@ -8,6 +8,8 @@ import java.util.Scanner;
  * @author: 杨海波
  * @date: 2023-11-07 23:09:23
  * @description: 下载器主类
+ *
+ * 下载测试地址：https://dldir1.qq.com/qqfile/qq/PCQQ9.7.19/QQ9.7.19.29259.exe
  */
 public class Main {
 
