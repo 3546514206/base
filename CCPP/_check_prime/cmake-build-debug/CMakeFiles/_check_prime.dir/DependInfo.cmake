@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/setsunayang/Documents/learning/base/CCPP/_check_prime/_check_prime.cpp" "CMakeFiles/_check_prime.dir/_check_prime.cpp.o" "gcc" "CMakeFiles/_check_prime.dir/_check_prime.cpp.o.d"
+  "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp" "CMakeFiles/_check_prime.dir/_check_prime.cpp.obj" "gcc" "CMakeFiles/_check_prime.dir/_check_prime.cpp.obj.d"
   )
 
 # Targets to which this target links.
