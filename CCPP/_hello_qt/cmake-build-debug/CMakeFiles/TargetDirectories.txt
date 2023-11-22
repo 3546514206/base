@@ -1,0 +1,5 @@
+/Users/setsunayang/Documents/learning/base/CCPP/_hello_qt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_hello_qt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_hello_qt/cmake-build-debug/CMakeFiles/_hello_qt.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_hello_qt/cmake-build-debug/CMakeFiles/_hello_qt_autogen_timestamp_deps.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_hello_qt/cmake-build-debug/CMakeFiles/_hello_qt_autogen.dir
