@@ -1,0 +1,9 @@
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/_qt_samples_win.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/_qt_samples_win_autogen_timestamp_deps.dir
+C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/CMakeFiles/_qt_samples_win_autogen.dir

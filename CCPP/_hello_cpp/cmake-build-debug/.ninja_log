@@ -1,3 +1,5 @@
 # ninja log v5
 0	287	1700450204269987873	CMakeFiles/_hello_cpp.dir/main.cpp.o	6f0b553f4ca971c4
 288	323	1700450204307840761	_hello_cpp	85fca80fcfa0c312
+1	646	7223685300685544	CMakeFiles/_hello_cpp.dir/main.cpp.obj	89d52f82d7f58c1c
+649	926	7223685303464321	_hello_cpp.exe	7065fa098d27342f

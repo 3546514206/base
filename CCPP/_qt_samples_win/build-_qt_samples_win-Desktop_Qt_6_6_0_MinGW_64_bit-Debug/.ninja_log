@@ -1,0 +1,9 @@
+# ninja log v5
+2	2350	7223671285054019	_qt_samples_win_autogen/timestamp	c5125db3e23cce6a
+2	2350	7223671285054019	_qt_samples_win_autogen/mocs_compilation.cpp	c5125db3e23cce6a
+2	2350	7223671285054019	C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/_qt_samples_win_autogen/timestamp	c5125db3e23cce6a
+2	2350	7223671285054019	C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_samples_win/build-_qt_samples_win-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/_qt_samples_win_autogen/mocs_compilation.cpp	c5125db3e23cce6a
+2351	5323	7223671320498192	CMakeFiles/_qt_samples_win.dir/_qt_samples_win_autogen/mocs_compilation.cpp.obj	43f11af97d19216c
+2438	5429	7223671321517353	CMakeFiles/_qt_samples_win.dir/main.cpp.obj	b9a0351d56e82e0c
+2394	5437	7223671321627500	CMakeFiles/_qt_samples_win.dir/mainwindow.cpp.obj	9689b6ade2e948df
+5438	5882	7223671325995227	_qt_samples_win.exe	7a2354697671a336
