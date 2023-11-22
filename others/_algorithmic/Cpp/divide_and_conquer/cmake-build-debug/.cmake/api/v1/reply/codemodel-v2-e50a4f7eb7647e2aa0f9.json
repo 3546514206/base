@@ -1,0 +1,57 @@
+{
+  "configurations": [
+    {
+      "directories": [
+        {
+          "build": ".",
+          "hasInstallRule": true,
+          "jsonFile": "directory-.-Debug-6fe44c000e8f5f853493.json",
+          "projectIndex": 0,
+          "source": ".",
+          "targetIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "name": "Debug",
+      "projects": [
+        {
+          "directoryIndexes": [
+            0
+          ],
+          "name": "Project",
+          "targetIndexes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "directoryIndex": 0,
+          "id": "karatsuba_algorithm_for_fast_multiplication::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-karatsuba_algorithm_for_fast_multiplication-Debug-ded647a80699da85cc91.json",
+          "name": "karatsuba_algorithm_for_fast_multiplication",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "strassen_matrix_multiplication::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-strassen_matrix_multiplication-Debug-ac0d9920433269bec857.json",
+          "name": "strassen_matrix_multiplication",
+          "projectIndex": 0
+        }
+      ]
+    }
+  ],
+  "kind": "codemodel",
+  "paths": {
+    "build": "/Users/setsunayang/Documents/learning/base/others/_algorithmic/Cpp/divide_and_conquer/cmake-build-debug",
+    "source": "/Users/setsunayang/Documents/learning/base/others/_algorithmic/Cpp/divide_and_conquer"
+  },
+  "version": {
+    "major": 2,
+    "minor": 3
+  }
+}

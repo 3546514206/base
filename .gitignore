@@ -28,3 +28,4 @@ hs_err_pid*
 /.idea/
 
 /cmake-build-debug/
+/CCPP/_hello_qt/build-_hello_qt-unknown-Debug/

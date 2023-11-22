@@ -1,0 +1,95 @@
+{
+  "artifacts": [
+    {
+      "path": "karatsuba_algorithm_for_fast_multiplication"
+    }
+  ],
+  "backtrace": 1,
+  "backtraceGraph": {
+    "commands": [
+      "add_executable",
+      "install"
+    ],
+    "files": [
+      "CMakeLists.txt"
+    ],
+    "nodes": [
+      {
+        "file": 0
+      },
+      {
+        "command": 0,
+        "file": 0,
+        "line": 10,
+        "parent": 0
+      },
+      {
+        "command": 1,
+        "file": 0,
+        "line": 16,
+        "parent": 0
+      }
+    ]
+  },
+  "compileGroups": [
+    {
+      "compileCommandFragments": [
+        {
+          "fragment": "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7"
+        }
+      ],
+      "language": "CXX",
+      "sourceIndexes": [
+        0
+      ]
+    }
+  ],
+  "id": "karatsuba_algorithm_for_fast_multiplication::@6890427a1f51a3e7e1df",
+  "install": {
+    "destinations": [
+      {
+        "backtrace": 2,
+        "path": "bin/divide_and_conquer"
+      }
+    ],
+    "prefix": {
+      "path": "/usr/local"
+    }
+  },
+  "link": {
+    "commandFragments": [
+      {
+        "fragment": "-g",
+        "role": "flags"
+      },
+      {
+        "fragment": "-L/opt/homebrew/opt/openssl@1.1/lib",
+        "role": "flags"
+      }
+    ],
+    "language": "CXX"
+  },
+  "name": "karatsuba_algorithm_for_fast_multiplication",
+  "nameOnDisk": "karatsuba_algorithm_for_fast_multiplication",
+  "paths": {
+    "build": ".",
+    "source": "."
+  },
+  "sourceGroups": [
+    {
+      "name": "Source Files",
+      "sourceIndexes": [
+        0
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "backtrace": 1,
+      "compileGroupIndex": 0,
+      "path": "karatsuba_algorithm_for_fast_multiplication.cpp",
+      "sourceGroupIndex": 0
+    }
+  ],
+  "type": "EXECUTABLE"
+}

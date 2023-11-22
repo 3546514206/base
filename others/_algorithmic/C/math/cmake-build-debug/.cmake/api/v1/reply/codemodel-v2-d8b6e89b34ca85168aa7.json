@@ -1,0 +1,246 @@
+{
+  "configurations": [
+    {
+      "directories": [
+        {
+          "build": ".",
+          "hasInstallRule": true,
+          "jsonFile": "directory-.-Debug-2b981128c120a6f92604.json",
+          "projectIndex": 0,
+          "source": ".",
+          "targetIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        }
+      ],
+      "name": "Debug",
+      "projects": [
+        {
+          "directoryIndexes": [
+            0
+          ],
+          "name": "Project",
+          "targetIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "directoryIndex": 0,
+          "id": "armstrong_number::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-armstrong_number-Debug-7829c449493901aa8016.json",
+          "name": "armstrong_number",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "cantor_set::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-cantor_set-Debug-ab4930560446c9297c62.json",
+          "name": "cantor_set",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "cartesian_to_polar::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-cartesian_to_polar-Debug-1351fc7d0b50e84cd724.json",
+          "name": "cartesian_to_polar",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "catalan::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-catalan-Debug-e8fe7b44a0e0e4754acc.json",
+          "name": "catalan",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "collatz::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-collatz-Debug-6ce1622e12db08e43442.json",
+          "name": "collatz",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "euclidean_algorithm_extended::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-euclidean_algorithm_extended-Debug-1036e066ab450eb13f31.json",
+          "name": "euclidean_algorithm_extended",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "factorial::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-factorial-Debug-d1afbcb8dea1d4e78911.json",
+          "name": "factorial",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "factorial_large_number::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-factorial_large_number-Debug-bf680493689ff095fa78.json",
+          "name": "factorial_large_number",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "factorial_trailing_zeroes::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-factorial_trailing_zeroes-Debug-8f95a2c2fb5811819ccf.json",
+          "name": "factorial_trailing_zeroes",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "fibonacci::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-fibonacci-Debug-5dabd5037080307f7ea2.json",
+          "name": "fibonacci",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "fibonacci_dp::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-fibonacci_dp-Debug-d09f15d240384d2c0ea3.json",
+          "name": "fibonacci_dp",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "fibonacci_fast::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-fibonacci_fast-Debug-aec5faaebffcfb4a25bc.json",
+          "name": "fibonacci_fast",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "fibonacci_formula::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-fibonacci_formula-Debug-cb2bfd7d25f4bca2a3b7.json",
+          "name": "fibonacci_formula",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "gcd::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-gcd-Debug-1c7af685f0d03a663ccf.json",
+          "name": "gcd",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "is_armstrong::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-is_armstrong-Debug-ca166ac8bbf1d69f9c07.json",
+          "name": "is_armstrong",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "large_factorials::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-large_factorials-Debug-4b4677c06a9660d2fe33.json",
+          "name": "large_factorials",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "lcm::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-lcm-Debug-5b3d9a6fd53d2e759816.json",
+          "name": "lcm",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "lerp::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-lerp-Debug-95ba0d4c5ff7dd859076.json",
+          "name": "lerp",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "palindrome::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-palindrome-Debug-386221cefa92d82627a4.json",
+          "name": "palindrome",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "prime::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-prime-Debug-c59235af0e3f203b900b.json",
+          "name": "prime",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "prime_factoriziation::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-prime_factoriziation-Debug-7cbf7d4e56eec702ac86.json",
+          "name": "prime_factoriziation",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "prime_sieve::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-prime_sieve-Debug-242c4ddf63449c2c6d60.json",
+          "name": "prime_sieve",
+          "projectIndex": 0
+        },
+        {
+          "directoryIndex": 0,
+          "id": "strong_number::@6890427a1f51a3e7e1df",
+          "jsonFile": "target-strong_number-Debug-8aad590734fad29a738b.json",
+          "name": "strong_number",
+          "projectIndex": 0
+        }
+      ]
+    }
+  ],
+  "kind": "codemodel",
+  "paths": {
+    "build": "/Users/setsunayang/Documents/learning/base/others/_algorithmic/C/math/cmake-build-debug",
+    "source": "/Users/setsunayang/Documents/learning/base/others/_algorithmic/C/math"
+  },
+  "version": {
+    "major": 2,
+    "minor": 3
+  }
+}
