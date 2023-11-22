@@ -1,0 +1,8 @@
+/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/build-_qt_samples_001-unknown-Debug/CMakeFiles/_qt_samples_001.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/build-_qt_samples_001-unknown-Debug/CMakeFiles/edit_cache.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/build-_qt_samples_001-unknown-Debug/CMakeFiles/rebuild_cache.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/build-_qt_samples_001-unknown-Debug/CMakeFiles/list_install_components.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/build-_qt_samples_001-unknown-Debug/CMakeFiles/install.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/build-_qt_samples_001-unknown-Debug/CMakeFiles/install/local.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/build-_qt_samples_001-unknown-Debug/CMakeFiles/install/strip.dir
+/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/build-_qt_samples_001-unknown-Debug/CMakeFiles/_qt_samples_001_autogen.dir
