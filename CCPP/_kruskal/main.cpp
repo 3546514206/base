@@ -50,6 +50,7 @@ private:
 
 // Kruskal 算法实现
 vector<edge> kruskal(const vector<edge> &edges, int num_vertices) {
+
     vector<edge> minimum_spanning_tree;
     // 将边按权重升序排序
     vector<edge> sorted_edges = edges;
