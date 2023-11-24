@@ -62,13 +62,13 @@ vector<edge> kruskal(const vector<edge> &edges, int num_vertices) {
 
     // 遍历排序后的边
     for (const edge &edge: sorted_edges) {
-        int rootSrc = uf.find(edge.src);
-        int rootDest = uf.find(edge.dest);
+        int root_src = uf.find(edge.src);
+        int root_dest = uf.find(edge.dest);
 
         // 如果边的两个端点不在同一个集合中，加入最小生成树，并合并集合
-        if (rootSrc != rootDest) {
+        if (root_src != root_dest) {
             minimum_spanning_tree.push_back(edge);
-            uf.merge(rootSrc, rootDest);
+            uf.merge(root_src, root_dest);
         }
     }
 
