@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "_kruskal"
+			"path" : "_kruskal.exe"
+		},
+		{
+			"path" : "_kruskal.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7"
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -66,14 +69,18 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-L/opt/homebrew/opt/openssl@1.1/lib",
+				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "_kruskal",
-	"nameOnDisk" : "_kruskal",
+	"nameOnDisk" : "_kruskal.exe",
 	"paths" : 
 	{
 		"build" : ".",

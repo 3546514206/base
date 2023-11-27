@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: _kruskal
+# Project: _wchar_t
 # Configurations: Debug
 # =============================================================================
 
@@ -39,60 +39,60 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_kruskal/cmake-build-debug/
-# =============================================================================
-# Object build statements for EXECUTABLE target _kruskal
-
-
-#############################################
-# Order-only phony target for _kruskal
-
-build cmake_object_order_depends_target__kruskal: phony || CMakeFiles/_kruskal.dir
-
-build CMakeFiles/_kruskal.dir/main.cpp.obj: CXX_COMPILER___kruskal_Debug C$:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_kruskal/main.cpp || cmake_object_order_depends_target__kruskal
-  DEP_FILE = CMakeFiles\_kruskal.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++11
-  OBJECT_DIR = CMakeFiles\_kruskal.dir
-  OBJECT_FILE_DIR = CMakeFiles\_kruskal.dir
-  TARGET_COMPILE_PDB = CMakeFiles\_kruskal.dir\
-  TARGET_PDB = _kruskal.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target _kruskal
-
-
-#############################################
-# Link the executable _kruskal.exe
-
-build _kruskal.exe: CXX_EXECUTABLE_LINKER___kruskal_Debug CMakeFiles/_kruskal.dir/main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\_kruskal.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\_kruskal.dir\
-  TARGET_FILE = _kruskal.exe
-  TARGET_IMPLIB = lib_kruskal.dll.a
-  TARGET_PDB = _kruskal.pdb
-
+cmake_ninja_workdir = C$:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_wchar_t/cmake-build-debug/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\SetsunaYang\Documents\GitHub\base\CCPP\_kruskal\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\SetsunaYang\Documents\GitHub\base\CCPP\_wchar_t\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target _wchar_t
+
+
+#############################################
+# Order-only phony target for _wchar_t
+
+build cmake_object_order_depends_target__wchar_t: phony || CMakeFiles/_wchar_t.dir
+
+build CMakeFiles/_wchar_t.dir/main.cpp.obj: CXX_COMPILER___wchar_t_Debug C$:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_wchar_t/main.cpp || cmake_object_order_depends_target__wchar_t
+  DEP_FILE = CMakeFiles\_wchar_t.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  OBJECT_DIR = CMakeFiles\_wchar_t.dir
+  OBJECT_FILE_DIR = CMakeFiles\_wchar_t.dir
+  TARGET_COMPILE_PDB = CMakeFiles\_wchar_t.dir\
+  TARGET_PDB = _wchar_t.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target _wchar_t
+
+
+#############################################
+# Link the executable _wchar_t.exe
+
+build _wchar_t.exe: CXX_EXECUTABLE_LINKER___wchar_t_Debug CMakeFiles/_wchar_t.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\_wchar_t.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\_wchar_t.dir\
+  TARGET_FILE = _wchar_t.exe
+  TARGET_IMPLIB = lib_wchar_t.dll.a
+  TARGET_PDB = _wchar_t.pdb
 
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\SetsunaYang\Documents\GitHub\base\CCPP\_kruskal\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\SetsunaYang\Documents\GitHub\base\CCPP\_kruskal -BC:\Users\SetsunaYang\Documents\GitHub\base\CCPP\_kruskal\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\SetsunaYang\Documents\GitHub\base\CCPP\_wchar_t\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\SetsunaYang\Documents\GitHub\base\CCPP\_wchar_t -BC:\Users\SetsunaYang\Documents\GitHub\base\CCPP\_wchar_t\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -102,7 +102,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build _kruskal: phony _kruskal.exe
+build _wchar_t: phony _wchar_t.exe
 
 # =============================================================================
 # Folder targets.
@@ -110,9 +110,9 @@ build _kruskal: phony _kruskal.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_kruskal/cmake-build-debug
+# Folder: C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_wchar_t/cmake-build-debug
 
-build all: phony _kruskal.exe
+build all: phony _wchar_t.exe
 
 # =============================================================================
 # Built-in targets

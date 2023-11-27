@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="阿里云服务器 (f55654fb-a915-462d-93e4-004b78e8d802)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/_extern_demo" local="$PROJECT_DIR$" web="/home/_extern_demo" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
