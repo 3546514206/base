@@ -1,0 +1,7 @@
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_hello_CSharp\_hello_CSharp\bin\Debug\_hello_CSharp.exe.config
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_hello_CSharp\_hello_CSharp\bin\Debug\_hello_CSharp.exe
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_hello_CSharp\_hello_CSharp\bin\Debug\_hello_CSharp.pdb
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_hello_CSharp\_hello_CSharp\obj\Debug\_hello_CSharp.csproj.AssemblyReference.cache
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_hello_CSharp\_hello_CSharp\obj\Debug\_hello_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_hello_CSharp\_hello_CSharp\obj\Debug\_hello_CSharp.exe
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_hello_CSharp\_hello_CSharp\obj\Debug\_hello_CSharp.pdb
