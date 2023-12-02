@@ -9,7 +9,6 @@ public class Constant {
 
 //    public static final String WORK_SPACE_PATH = "/Users/setsunayang/Documents/learning/base/Java/_multithread_downloader/workspace/";
 
-
     public static final String WORK_SPACE_PATH = "C:\\Users\\SetsunaYang\\Documents\\GitHub\\base\\Java\\_multithread_downloader\\workspace\\";
 
 }
