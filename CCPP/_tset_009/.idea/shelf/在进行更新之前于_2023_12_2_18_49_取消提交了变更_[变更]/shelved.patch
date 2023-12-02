@@ -1,0 +1,2401 @@
+Index: ../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/cache-v2-c437dfcc565159858962.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/cache-v2-c437dfcc565159858962.json b/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/cache-v2-c437dfcc565159858962.json
+deleted file mode 100644
+--- a/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/cache-v2-c437dfcc565159858962.json	
++++ /dev/null	
+@@ -1,1087 +0,0 @@
+-{
+-	"entries" : 
+-	[
+-		{
+-			"name" : "CMAKE_AR",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Path to a program."
+-				}
+-			],
+-			"type" : "FILEPATH",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/lib.exe"
+-		},
+-		{
+-			"name" : "CMAKE_BUILD_TYPE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "No help, variable specified on the command line."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "Debug"
+-		},
+-		{
+-			"name" : "CMAKE_CACHEFILE_DIR",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "This is the directory where this CMakeCache.txt was created"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "c:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/build/x64-Debug"
+-		},
+-		{
+-			"name" : "CMAKE_CACHE_MAJOR_VERSION",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Major version of cmake used to create the current loaded cache"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "3"
+-		},
+-		{
+-			"name" : "CMAKE_CACHE_MINOR_VERSION",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Minor version of cmake used to create the current loaded cache"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "20"
+-		},
+-		{
+-			"name" : "CMAKE_CACHE_PATCH_VERSION",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Patch version of cmake used to create the current loaded cache"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "21032501"
+-		},
+-		{
+-			"name" : "CMAKE_COMMAND",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Path to CMake executable."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe"
+-		},
+-		{
+-			"name" : "CMAKE_CPACK_COMMAND",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Path to cpack program executable."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe"
+-		},
+-		{
+-			"name" : "CMAKE_CTEST_COMMAND",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Path to ctest program executable."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe"
+-		},
+-		{
+-			"name" : "CMAKE_CXX_COMPILER",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "CXX compiler"
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe"
+-		},
+-		{
+-			"name" : "CMAKE_CXX_FLAGS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the CXX compiler during all build types."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+-		},
+-		{
+-			"name" : "CMAKE_CXX_FLAGS_DEBUG",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the CXX compiler during DEBUG builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/MDd /Zi /Ob0 /Od /RTC1"
+-		},
+-		{
+-			"name" : "CMAKE_CXX_FLAGS_MINSIZEREL",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the CXX compiler during MINSIZEREL builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/MD /O1 /Ob1 /DNDEBUG"
+-		},
+-		{
+-			"name" : "CMAKE_CXX_FLAGS_RELEASE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the CXX compiler during RELEASE builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/MD /O2 /Ob2 /DNDEBUG"
+-		},
+-		{
+-			"name" : "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the CXX compiler during RELWITHDEBINFO builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/MD /Zi /O2 /Ob1 /DNDEBUG"
+-		},
+-		{
+-			"name" : "CMAKE_CXX_STANDARD_LIBRARIES",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Libraries linked by default with all C++ applications."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib"
+-		},
+-		{
+-			"name" : "CMAKE_C_COMPILER",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "C compiler"
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe"
+-		},
+-		{
+-			"name" : "CMAKE_C_FLAGS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the C compiler during all build types."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/DWIN32 /D_WINDOWS /W3"
+-		},
+-		{
+-			"name" : "CMAKE_C_FLAGS_DEBUG",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the C compiler during DEBUG builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/MDd /Zi /Ob0 /Od /RTC1"
+-		},
+-		{
+-			"name" : "CMAKE_C_FLAGS_MINSIZEREL",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the C compiler during MINSIZEREL builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/MD /O1 /Ob1 /DNDEBUG"
+-		},
+-		{
+-			"name" : "CMAKE_C_FLAGS_RELEASE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the C compiler during RELEASE builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/MD /O2 /Ob2 /DNDEBUG"
+-		},
+-		{
+-			"name" : "CMAKE_C_FLAGS_RELWITHDEBINFO",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the C compiler during RELWITHDEBINFO builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/MD /Zi /O2 /Ob1 /DNDEBUG"
+-		},
+-		{
+-			"name" : "CMAKE_C_STANDARD_LIBRARIES",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Libraries linked by default with all C applications."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib"
+-		},
+-		{
+-			"name" : "CMAKE_EXECUTABLE_FORMAT",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Executable file format"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "Unknown"
+-		},
+-		{
+-			"name" : "CMAKE_EXE_LINKER_FLAGS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during all build types."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/machine:x64"
+-		},
+-		{
+-			"name" : "CMAKE_EXE_LINKER_FLAGS_DEBUG",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during DEBUG builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/debug /INCREMENTAL"
+-		},
+-		{
+-			"name" : "CMAKE_EXE_LINKER_FLAGS_MINSIZEREL",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during MINSIZEREL builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/INCREMENTAL:NO"
+-		},
+-		{
+-			"name" : "CMAKE_EXE_LINKER_FLAGS_RELEASE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during RELEASE builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/INCREMENTAL:NO"
+-		},
+-		{
+-			"name" : "CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during RELWITHDEBINFO builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/debug /INCREMENTAL"
+-		},
+-		{
+-			"name" : "CMAKE_EXPORT_COMPILE_COMMANDS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Enable/Disable output of compile commands during generation."
+-				}
+-			],
+-			"type" : "BOOL",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_EXTRA_GENERATOR",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Name of external makefile project generator."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_GENERATOR",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Name of generator."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "Ninja"
+-		},
+-		{
+-			"name" : "CMAKE_GENERATOR_INSTANCE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Generator instance identifier."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_GENERATOR_PLATFORM",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Name of generator platform."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_GENERATOR_TOOLSET",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Name of generator toolset."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_HOME_DIRECTORY",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Source directory with the top level CMakeLists.txt file for this project"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime"
+-		},
+-		{
+-			"name" : "CMAKE_INSTALL_PREFIX",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "No help, variable specified on the command line."
+-				}
+-			],
+-			"type" : "PATH",
+-			"value" : "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/install/x64-Debug"
+-		},
+-		{
+-			"name" : "CMAKE_LINKER",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Path to a program."
+-				}
+-			],
+-			"type" : "FILEPATH",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/link.exe"
+-		},
+-		{
+-			"name" : "CMAKE_MAKE_PROGRAM",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "make program"
+-				}
+-			],
+-			"type" : "FILEPATH",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe"
+-		},
+-		{
+-			"name" : "CMAKE_MODULE_LINKER_FLAGS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of modules during all build types."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/machine:x64"
+-		},
+-		{
+-			"name" : "CMAKE_MODULE_LINKER_FLAGS_DEBUG",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of modules during DEBUG builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/debug /INCREMENTAL"
+-		},
+-		{
+-			"name" : "CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of modules during MINSIZEREL builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/INCREMENTAL:NO"
+-		},
+-		{
+-			"name" : "CMAKE_MODULE_LINKER_FLAGS_RELEASE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of modules during RELEASE builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/INCREMENTAL:NO"
+-		},
+-		{
+-			"name" : "CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of modules during RELWITHDEBINFO builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/debug /INCREMENTAL"
+-		},
+-		{
+-			"name" : "CMAKE_MT",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Path to a program."
+-				}
+-			],
+-			"type" : "FILEPATH",
+-			"value" : "C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x86/mt.exe"
+-		},
+-		{
+-			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "number of local generators"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "1"
+-		},
+-		{
+-			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Platform information initialized"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "1"
+-		},
+-		{
+-			"name" : "CMAKE_PROJECT_DESCRIPTION",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Value Computed by CMake"
+-				}
+-			],
+-			"type" : "STATIC",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_PROJECT_HOMEPAGE_URL",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Value Computed by CMake"
+-				}
+-			],
+-			"type" : "STATIC",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_PROJECT_NAME",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Value Computed by CMake"
+-				}
+-			],
+-			"type" : "STATIC",
+-			"value" : "_check_prime"
+-		},
+-		{
+-			"name" : "CMAKE_RANLIB",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "noop for ranlib"
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : ":"
+-		},
+-		{
+-			"name" : "CMAKE_RC_COMPILER",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "RC compiler"
+-				}
+-			],
+-			"type" : "FILEPATH",
+-			"value" : "C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x86/rc.exe"
+-		},
+-		{
+-			"name" : "CMAKE_RC_COMPILER_WORKS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : ""
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "1"
+-		},
+-		{
+-			"name" : "CMAKE_RC_FLAGS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags for Windows Resource Compiler during all build types."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "-DWIN32"
+-		},
+-		{
+-			"name" : "CMAKE_RC_FLAGS_DEBUG",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags for Windows Resource Compiler during DEBUG builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "-D_DEBUG"
+-		},
+-		{
+-			"name" : "CMAKE_RC_FLAGS_MINSIZEREL",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags for Windows Resource Compiler during MINSIZEREL builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_RC_FLAGS_RELEASE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags for Windows Resource Compiler during RELEASE builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_RC_FLAGS_RELWITHDEBINFO",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags for Windows Resource Compiler during RELWITHDEBINFO builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_ROOT",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Path to CMake installation."
+-				}
+-			],
+-			"type" : "INTERNAL",
+-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20"
+-		},
+-		{
+-			"name" : "CMAKE_SHARED_LINKER_FLAGS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of shared libraries during all build types."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/machine:x64"
+-		},
+-		{
+-			"name" : "CMAKE_SHARED_LINKER_FLAGS_DEBUG",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of shared libraries during DEBUG builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/debug /INCREMENTAL"
+-		},
+-		{
+-			"name" : "CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of shared libraries during MINSIZEREL builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/INCREMENTAL:NO"
+-		},
+-		{
+-			"name" : "CMAKE_SHARED_LINKER_FLAGS_RELEASE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of shared libraries during RELEASE builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/INCREMENTAL:NO"
+-		},
+-		{
+-			"name" : "CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of shared libraries during RELWITHDEBINFO builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/debug /INCREMENTAL"
+-		},
+-		{
+-			"name" : "CMAKE_SKIP_INSTALL_RPATH",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "If set, runtime paths are not added when installing shared libraries, but are added when building."
+-				}
+-			],
+-			"type" : "BOOL",
+-			"value" : "NO"
+-		},
+-		{
+-			"name" : "CMAKE_SKIP_RPATH",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "If set, runtime paths are not added when using shared libraries."
+-				}
+-			],
+-			"type" : "BOOL",
+-			"value" : "NO"
+-		},
+-		{
+-			"name" : "CMAKE_STATIC_LINKER_FLAGS",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of static libraries during all build types."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : "/machine:x64"
+-		},
+-		{
+-			"name" : "CMAKE_STATIC_LINKER_FLAGS_DEBUG",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of static libraries during DEBUG builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of static libraries during MINSIZEREL builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_STATIC_LINKER_FLAGS_RELEASE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of static libraries during RELEASE builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Flags used by the linker during the creation of static libraries during RELWITHDEBINFO builds."
+-				}
+-			],
+-			"type" : "STRING",
+-			"value" : ""
+-		},
+-		{
+-			"name" : "CMAKE_VERBOSE_MAKEFILE",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "ADVANCED",
+-					"value" : "1"
+-				},
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "If this value is on, makefiles will be generated without the .SILENT directive, and all commands will be echoed to the console during the make.  This is useful for debugging only. With Visual Studio IDE projects all commands are done without /nologo."
+-				}
+-			],
+-			"type" : "BOOL",
+-			"value" : "FALSE"
+-		},
+-		{
+-			"name" : "_check_prime_BINARY_DIR",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Value Computed by CMake"
+-				}
+-			],
+-			"type" : "STATIC",
+-			"value" : "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/build/x64-Debug"
+-		},
+-		{
+-			"name" : "_check_prime_SOURCE_DIR",
+-			"properties" : 
+-			[
+-				{
+-					"name" : "HELPSTRING",
+-					"value" : "Value Computed by CMake"
+-				}
+-			],
+-			"type" : "STATIC",
+-			"value" : "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime"
+-		}
+-	],
+-	"kind" : "cache",
+-	"version" : 
+-	{
+-		"major" : 2,
+-		"minor" : 0
+-	}
+-}
+Index: ../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/cmakeFiles-v1-8c5c62371d470a2386da.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/cmakeFiles-v1-8c5c62371d470a2386da.json b/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/cmakeFiles-v1-8c5c62371d470a2386da.json
+deleted file mode 100644
+--- a/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/cmakeFiles-v1-8c5c62371d470a2386da.json	
++++ /dev/null	
+@@ -1,718 +0,0 @@
+-{
+-	"inputs" : 
+-	[
+-		{
+-			"path" : "CMakeLists.txt"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineSystem.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeSystem.cmake.in"
+-		},
+-		{
+-			"isGenerated" : true,
+-			"path" : "out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeSystem.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCompilerId.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCompilerIdDetection.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/ADSP-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Borland-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Bruce-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Clang-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Compaq-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Cray-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Embarcadero-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/GHS-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/GNU-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/HP-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IAR-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Intel-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/MSVC-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/NVHPC-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/NVIDIA-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/PGI-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/PathScale-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/SCO-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/SDCC-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/SunPro-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/TI-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Watcom-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/XL-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/XLClang-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeFindBinUtils.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCCompiler.cmake.in"
+-		},
+-		{
+-			"isGenerated" : true,
+-			"path" : "out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeCCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCXXCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Platform/Windows-Determine-CXX.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCompilerId.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCompilerIdDetection.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/ADSP-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Borland-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Clang-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Cray-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Embarcadero-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/GHS-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/HP-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IAR-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Intel-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/MSVC-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/NVHPC-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/NVIDIA-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/PGI-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/PathScale-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/SCO-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/TI-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/Watcom-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/XL-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeFindBinUtils.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCXXCompiler.cmake.in"
+-		},
+-		{
+-			"isGenerated" : true,
+-			"path" : "out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeCXXCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeGenericSystem.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Platform/Windows.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Platform/WindowsPaths.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCInformation.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/MSVC-C.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-C.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineRCCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeRCCompiler.cmake.in"
+-		},
+-		{
+-			"isGenerated" : true,
+-			"path" : "out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeRCCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeRCInformation.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeTestRCCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeTestCCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeTestCompilerCommon.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCompilerABI.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeParseImplicitIncludeInfo.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeParseImplicitLinkInfo.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeParseLibraryArchitecture.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeTestCompilerCommon.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCCompilerABI.c"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCompileFeatures.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Internal/FeatureTesting.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCCompiler.cmake.in"
+-		},
+-		{
+-			"isGenerated" : true,
+-			"path" : "out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeCCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCXXInformation.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/MSVC-CXX.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC-CXX.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeTestCXXCompiler.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeTestCompilerCommon.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCompilerABI.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeParseImplicitIncludeInfo.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeParseImplicitLinkInfo.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeParseLibraryArchitecture.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeTestCompilerCommon.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeDetermineCompileFeatures.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/Internal/FeatureTesting.cmake"
+-		},
+-		{
+-			"isCMake" : true,
+-			"isExternal" : true,
+-			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CMakeCXXCompiler.cmake.in"
+-		},
+-		{
+-			"isGenerated" : true,
+-			"path" : "out/build/x64-Debug/CMakeFiles/3.20.21032501-MSVC_2/CMakeCXXCompiler.cmake"
+-		}
+-	],
+-	"kind" : "cmakeFiles",
+-	"paths" : 
+-	{
+-		"build" : "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/build/x64-Debug",
+-		"source" : "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime"
+-	},
+-	"version" : 
+-	{
+-		"major" : 1,
+-		"minor" : 0
+-	}
+-}
+Index: ../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/index-2023-11-06T15-02-31-0260.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/index-2023-11-06T15-02-31-0260.json b/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/index-2023-11-06T15-02-31-0260.json
+deleted file mode 100644
+--- a/../_check_prime/out/build/x64-Debug/.cmake/api/v1/reply/index-2023-11-06T15-02-31-0260.json	
++++ /dev/null	
+@@ -1,132 +0,0 @@
+-{
+-	"cmake" : 
+-	{
+-		"generator" : 
+-		{
+-			"multiConfig" : false,
+-			"name" : "Ninja"
+-		},
+-		"paths" : 
+-		{
+-			"cmake" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
+-			"cpack" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe",
+-			"ctest" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe",
+-			"root" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20"
+-		},
+-		"version" : 
+-		{
+-			"isDirty" : false,
+-			"major" : 3,
+-			"minor" : 20,
+-			"patch" : 21032501,
+-			"string" : "3.20.21032501-MSVC_2",
+-			"suffix" : ""
+-		}
+-	},
+-	"objects" : 
+-	[
+-		{
+-			"jsonFile" : "codemodel-v2-4ec3e3e56bedc16ea853.json",
+-			"kind" : "codemodel",
+-			"version" : 
+-			{
+-				"major" : 2,
+-				"minor" : 2
+-			}
+-		},
+-		{
+-			"jsonFile" : "cache-v2-c437dfcc565159858962.json",
+-			"kind" : "cache",
+-			"version" : 
+-			{
+-				"major" : 2,
+-				"minor" : 0
+-			}
+-		},
+-		{
+-			"jsonFile" : "cmakeFiles-v1-8c5c62371d470a2386da.json",
+-			"kind" : "cmakeFiles",
+-			"version" : 
+-			{
+-				"major" : 1,
+-				"minor" : 0
+-			}
+-		},
+-		{
+-			"jsonFile" : "toolchains-v1-d8a667c3c241d9a2583a.json",
+-			"kind" : "toolchains",
+-			"version" : 
+-			{
+-				"major" : 1,
+-				"minor" : 0
+-			}
+-		}
+-	],
+-	"reply" : 
+-	{
+-		"client-MicrosoftVS" : 
+-		{
+-			"query.json" : 
+-			{
+-				"requests" : 
+-				[
+-					{
+-						"kind" : "cache",
+-						"version" : 2
+-					},
+-					{
+-						"kind" : "cmakeFiles",
+-						"version" : 1
+-					},
+-					{
+-						"kind" : "codemodel",
+-						"version" : 2
+-					},
+-					{
+-						"kind" : "toolchains",
+-						"version" : 1
+-					}
+-				],
+-				"responses" : 
+-				[
+-					{
+-						"jsonFile" : "cache-v2-c437dfcc565159858962.json",
+-						"kind" : "cache",
+-						"version" : 
+-						{
+-							"major" : 2,
+-							"minor" : 0
+-						}
+-					},
+-					{
+-						"jsonFile" : "cmakeFiles-v1-8c5c62371d470a2386da.json",
+-						"kind" : "cmakeFiles",
+-						"version" : 
+-						{
+-							"major" : 1,
+-							"minor" : 0
+-						}
+-					},
+-					{
+-						"jsonFile" : "codemodel-v2-4ec3e3e56bedc16ea853.json",
+-						"kind" : "codemodel",
+-						"version" : 
+-						{
+-							"major" : 2,
+-							"minor" : 2
+-						}
+-					},
+-					{
+-						"jsonFile" : "toolchains-v1-d8a667c3c241d9a2583a.json",
+-						"kind" : "toolchains",
+-						"version" : 
+-						{
+-							"major" : 1,
+-							"minor" : 0
+-						}
+-					}
+-				]
+-			}
+-		}
+-	}
+-}
+Index: ../_check_prime/out/build/x64-Debug/build.ninja
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># CMAKE generated file: DO NOT EDIT!\r\n# Generated by \"Ninja\" Generator, CMake Version 3.20\r\n\r\n# This file contains all the build statements describing the\r\n# compilation DAG.\r\n\r\n# =============================================================================\r\n# Write statements declared in CMakeLists.txt:\r\n# \r\n# Which is the root file.\r\n# =============================================================================\r\n\r\n# =============================================================================\r\n# Project: _check_prime\r\n# Configurations: Debug\r\n# =============================================================================\r\n\r\n#############################################\r\n# Minimal version of Ninja required by this file\r\n\r\nninja_required_version = 1.5\r\n\r\n\r\n#############################################\r\n# Set configuration variable for custom commands.\r\n\r\nCONFIGURATION = Debug\r\n# =============================================================================\r\n# Include auxiliary files.\r\n\r\n\r\n#############################################\r\n# Include rules file.\r\n\r\ninclude CMakeFiles\\rules.ninja\r\n\r\n# =============================================================================\r\n# Object build statements for EXECUTABLE target _check_prime\r\n\r\n\r\n#############################################\r\n# Order-only phony target for _check_prime\r\n\r\nbuild cmake_object_order_depends_target__check_prime: phony || CMakeFiles\\_check_prime.dir\r\n\r\nbuild CMakeFiles\\_check_prime.dir\\_check_prime.cpp.obj: CXX_COMPILER___check_prime_Debug ..\\..\\..\\_check_prime.cpp || cmake_object_order_depends_target__check_prime\r\n  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1\r\n  OBJECT_DIR = CMakeFiles\\_check_prime.dir\r\n  OBJECT_FILE_DIR = CMakeFiles\\_check_prime.dir\r\n  TARGET_COMPILE_PDB = CMakeFiles\\_check_prime.dir\\\r\n  TARGET_PDB = _check_prime.pdb\r\n\r\n\r\n# =============================================================================\r\n# Link build statements for EXECUTABLE target _check_prime\r\n\r\n\r\n#############################################\r\n# Link the executable _check_prime.exe\r\n\r\nbuild _check_prime.exe: CXX_EXECUTABLE_LINKER___check_prime_Debug CMakeFiles\\_check_prime.dir\\_check_prime.cpp.obj\r\n  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1\r\n  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console\r\n  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib\r\n  OBJECT_DIR = CMakeFiles\\_check_prime.dir\r\n  POST_BUILD = cd .\r\n  PRE_LINK = cd .\r\n  TARGET_COMPILE_PDB = CMakeFiles\\_check_prime.dir\\\r\n  TARGET_FILE = _check_prime.exe\r\n  TARGET_IMPLIB = _check_prime.lib\r\n  TARGET_PDB = _check_prime.pdb\r\n\r\n\r\n#############################################\r\n# Utility command for edit_cache\r\n\r\nbuild CMakeFiles\\edit_cache.util: CUSTOM_COMMAND\r\n  COMMAND = cmd.exe /C \"cd /D C:\\Users\\SetsunaYang\\Documents\\GitHub\\base\\CCPP\\_check_prime\\out\\build\\x64-Debug && \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe\" -E echo \"No interactive CMake dialog available.\"\"\r\n  DESC = No interactive CMake dialog available...\r\n  restat = 1\r\n\r\nbuild edit_cache: phony CMakeFiles\\edit_cache.util\r\n\r\n\r\n#############################################\r\n# Utility command for rebuild_cache\r\n\r\nbuild CMakeFiles\\rebuild_cache.util: CUSTOM_COMMAND\r\n  COMMAND = cmd.exe /C \"cd /D C:\\Users\\SetsunaYang\\Documents\\GitHub\\base\\CCPP\\_check_prime\\out\\build\\x64-Debug && \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe\" --regenerate-during-build -SC:\\Users\\SetsunaYang\\Documents\\GitHub\\base\\CCPP\\_check_prime -BC:\\Users\\SetsunaYang\\Documents\\GitHub\\base\\CCPP\\_check_prime\\out\\build\\x64-Debug\"\r\n  DESC = Running CMake to regenerate build system...\r\n  pool = console\r\n  restat = 1\r\n\r\nbuild rebuild_cache: phony CMakeFiles\\rebuild_cache.util\r\n\r\n# =============================================================================\r\n# Target aliases.\r\n\r\nbuild _check_prime: phony _check_prime.exe\r\n\r\n# =============================================================================\r\n# Folder targets.\r\n\r\n# =============================================================================\r\n\r\n#############################################\r\n# Folder: C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/build/x64-Debug\r\n\r\nbuild all: phony _check_prime.exe\r\n\r\n# =============================================================================\r\n# Built-in targets\r\n\r\n\r\n#############################################\r\n# Re-run CMake if any of its inputs changed.\r\n\r\nbuild build.ninja: RERUN_CMAKE | ..\\..\\..\\CMakeLists.txt C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCCompiler.cmake.in C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCCompilerABI.c C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCXXCompiler.cmake.in C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCXXCompilerABI.cpp C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCXXInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCommonLanguageInclude.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCompilerIdDetection.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCXXCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCompileFeatures.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCompilerABI.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCompilerId.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineRCCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineSystem.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeFindBinUtils.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeGenericSystem.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeInitializeConfigs.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeLanguageInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeParseImplicitIncludeInfo.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeParseImplicitLinkInfo.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeParseLibraryArchitecture.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeRCCompiler.cmake.in C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeRCInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeSystem.cmake.in C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeSystemSpecificInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeSystemSpecificInitialize.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeTestCCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeTestCXXCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeTestCompilerCommon.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeTestRCCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\ADSP-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\ARMCC-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\ARMClang-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\AppleClang-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Borland-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Bruce-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\CMakeCommonCompilerMacros.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Clang-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Clang-DetermineCompilerInternal.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Comeau-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Compaq-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Compaq-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Cray-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Embarcadero-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Fujitsu-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\GHS-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\GNU-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\GNU-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\HP-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\HP-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\IAR-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\IBMCPP-C-DetermineVersionInternal.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Intel-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\IntelLLVM-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\MSVC-C.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\MSVC-CXX.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\MSVC-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\NVHPC-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\NVIDIA-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\OpenWatcom-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\PGI-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\PathScale-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\SCO-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\SDCC-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\SunPro-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\SunPro-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\TI-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\TinyCC-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\VisualAge-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\VisualAge-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Watcom-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\XL-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\XL-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\XLClang-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\XLClang-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\zOS-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\zOS-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Internal\\FeatureTesting.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows-Determine-CXX.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows-MSVC-C.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows-MSVC-CXX.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows-MSVC.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\WindowsPaths.cmake CMakeCache.txt CMakeFiles\\3.20.21032501-MSVC_2\\CMakeCCompiler.cmake CMakeFiles\\3.20.21032501-MSVC_2\\CMakeCXXCompiler.cmake CMakeFiles\\3.20.21032501-MSVC_2\\CMakeRCCompiler.cmake CMakeFiles\\3.20.21032501-MSVC_2\\CMakeSystem.cmake\r\n  pool = console\r\n\r\n\r\n#############################################\r\n# A missing CMake input file is not an error.\r\n\r\nbuild ..\\..\\..\\CMakeLists.txt C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCCompiler.cmake.in C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCCompilerABI.c C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCXXCompiler.cmake.in C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCXXCompilerABI.cpp C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCXXInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCommonLanguageInclude.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeCompilerIdDetection.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCXXCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCompileFeatures.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCompilerABI.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineCompilerId.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineRCCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeDetermineSystem.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeFindBinUtils.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeGenericSystem.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeInitializeConfigs.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeLanguageInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeParseImplicitIncludeInfo.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeParseImplicitLinkInfo.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeParseLibraryArchitecture.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeRCCompiler.cmake.in C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeRCInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeSystem.cmake.in C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeSystemSpecificInformation.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeSystemSpecificInitialize.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeTestCCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeTestCXXCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeTestCompilerCommon.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\CMakeTestRCCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\ADSP-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\ARMCC-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\ARMClang-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\AppleClang-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Borland-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Bruce-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\CMakeCommonCompilerMacros.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Clang-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Clang-DetermineCompilerInternal.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Comeau-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Compaq-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Compaq-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Cray-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Embarcadero-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Fujitsu-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\GHS-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\GNU-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\GNU-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\HP-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\HP-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\IAR-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\IBMCPP-C-DetermineVersionInternal.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Intel-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\IntelLLVM-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\MSVC-C.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\MSVC-CXX.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\MSVC-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\NVHPC-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\NVIDIA-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\OpenWatcom-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\PGI-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\PathScale-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\SCO-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\SDCC-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\SunPro-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\SunPro-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\TI-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\TinyCC-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\VisualAge-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\VisualAge-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\Watcom-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\XL-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\XL-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\XLClang-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\XLClang-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\zOS-C-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Compiler\\zOS-CXX-DetermineCompiler.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Internal\\FeatureTesting.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows-Determine-CXX.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows-MSVC-C.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows-MSVC-CXX.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows-MSVC.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\Windows.cmake C$:\\Program$ Files$ (x86)\\Microsoft$ Visual$ Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.20\\Modules\\Platform\\WindowsPaths.cmake CMakeCache.txt CMakeFiles\\3.20.21032501-MSVC_2\\CMakeCCompiler.cmake CMakeFiles\\3.20.21032501-MSVC_2\\CMakeCXXCompiler.cmake CMakeFiles\\3.20.21032501-MSVC_2\\CMakeRCCompiler.cmake CMakeFiles\\3.20.21032501-MSVC_2\\CMakeSystem.cmake: phony\r\n\r\n\r\n#############################################\r\n# Clean all the built files.\r\n\r\nbuild clean: CLEAN\r\n\r\n\r\n#############################################\r\n# Print all primary targets available.\r\n\r\nbuild help: HELP\r\n\r\n\r\n#############################################\r\n# Make the all target the default.\r\n\r\ndefault all\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_check_prime/out/build/x64-Debug/build.ninja b/../_check_prime/out/build/x64-Debug/build.ninja
+--- a/../_check_prime/out/build/x64-Debug/build.ninja	
++++ b/../_check_prime/out/build/x64-Debug/build.ninja	
+@@ -115,14 +115,14 @@
+ #############################################
+ # Re-run CMake if any of its inputs changed.
+ 
+-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake
++build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake
+   pool = console
+ 
+ 
+ #############################################
+ # A missing CMake input file is not an error.
+ 
+-build ..\..\..\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake: phony
++build ..\..\..\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.20.21032501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake: phony
+ 
+ 
+ #############################################
+Index: ../_test_cpp14/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cpp14/.idea/.gitignore b/../_test_cpp14/.idea/.gitignore
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cpp14/.idea/.gitignore	
+@@ -0,0 +1,8 @@
++# 默认忽略的文件
++/shelf/
++/workspace.xml
++# 基于编辑器的 HTTP 客户端请求
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: ../_test_cuda/CMakeLists.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cuda/CMakeLists.txt b/../_test_cuda/CMakeLists.txt
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cuda/CMakeLists.txt	
+@@ -0,0 +1,9 @@
++cmake_minimum_required(VERSION 3.21)
++project(_test_cuda CUDA)
++
++set(CMAKE_CUDA_STANDARD 11)
++
++add_executable(_test_cuda main.cu)
++
++set_target_properties(_test_cuda PROPERTIES
++        CUDA_SEPARABLE_COMPILATION ON)
+Index: ../_test_cuda/main.cu
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cuda/main.cu b/../_test_cuda/main.cu
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cuda/main.cu	
+@@ -0,0 +1,6 @@
++#include <iostream>
++
++int main() {
++    std::cout << "Hello, World!" << std::endl;
++    return 0;
++}
+Index: ../_check_prime/.vs/VSWorkspaceState.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"ExpandedNodes\": [\r\n    \"\"\r\n  ],\r\n  \"SelectedNode\": \"\\\\CMakeLists.txt\",\r\n  \"PreviewInSolutionExplorer\": false\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_check_prime/.vs/VSWorkspaceState.json b/../_check_prime/.vs/VSWorkspaceState.json
+--- a/../_check_prime/.vs/VSWorkspaceState.json	
++++ b/../_check_prime/.vs/VSWorkspaceState.json	
+@@ -2,6 +2,5 @@
+   "ExpandedNodes": [
+     ""
+   ],
+-  "SelectedNode": "\\CMakeLists.txt",
+   "PreviewInSolutionExplorer": false
+ }
+\ No newline at end of file
+Index: ../_test_cuda/.idea/_test_cuda.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cuda/.idea/_test_cuda.iml b/../_test_cuda/.idea/_test_cuda.iml
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cuda/.idea/_test_cuda.iml	
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module classpath="CMake" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: ../_test_cuda/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cuda/.idea/modules.xml b/../_test_cuda/.idea/modules.xml
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cuda/.idea/modules.xml	
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/_test_cuda.iml" filepath="$PROJECT_DIR$/.idea/_test_cuda.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: CMakeLists.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+new file mode 100644
+--- /dev/null	
++++ b/CMakeLists.txt	
+@@ -0,0 +1,6 @@
++cmake_minimum_required(VERSION 3.21)
++project(_tset_009)
++
++set(CMAKE_CXX_STANDARD 11)
++
++add_executable(_tset_009 main.cpp)
+Index: main.cpp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.cpp b/main.cpp
+new file mode 100644
+--- /dev/null	
++++ b/main.cpp	
+@@ -0,0 +1,6 @@
++#include <iostream>
++
++int main() {
++    std::cout << "Hello, World!" << std::endl;
++    return 0;
++}
+Index: ../_test_cuda/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cuda/.idea/misc.xml b/../_test_cuda/.idea/misc.xml
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cuda/.idea/misc.xml	
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
++</project>
+\ No newline at end of file
+Index: ../_test_cuda/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cuda/.idea/vcs.xml b/../_test_cuda/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cuda/.idea/vcs.xml	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../_test_cuda/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cuda/.idea/.gitignore b/../_test_cuda/.idea/.gitignore
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cuda/.idea/.gitignore	
+@@ -0,0 +1,8 @@
++# 默认忽略的文件
++/shelf/
++/workspace.xml
++# 基于编辑器的 HTTP 客户端请求
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/_tset_009.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/_tset_009.iml b/.idea/_tset_009.iml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/_tset_009.iml	
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module classpath="CMake" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/modules.xml	
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/_tset_009.iml" filepath="$PROJECT_DIR$/.idea/_tset_009.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/misc.xml	
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/vcs.xml	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	
++++ b/.idea/.gitignore	
+@@ -0,0 +1,8 @@
++# 默认忽略的文件
++/shelf/
++/workspace.xml
++# 基于编辑器的 HTTP 客户端请求
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: ../_test_cpp14/.idea/_test_cpp14.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cpp14/.idea/_test_cpp14.iml b/../_test_cpp14/.idea/_test_cpp14.iml
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cpp14/.idea/_test_cpp14.iml	
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module classpath="CMake" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: ../_test_cpp14/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cpp14/.idea/modules.xml b/../_test_cpp14/.idea/modules.xml
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cpp14/.idea/modules.xml	
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/_test_cpp14.iml" filepath="$PROJECT_DIR$/.idea/_test_cpp14.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../_check_prime/out/build/x64-Debug/.ninja_log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># ninja log v5\r\n1\t745\t7209861772650552\tCMakeFiles/_check_prime.dir/_check_prime.cpp.obj\t1134a22965fba920\r\n746\t1489\t7209861779556418\t_check_prime.exe\tbfe763e0c994847\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_check_prime/out/build/x64-Debug/.ninja_log b/../_check_prime/out/build/x64-Debug/.ninja_log
+--- a/../_check_prime/out/build/x64-Debug/.ninja_log	
++++ b/../_check_prime/out/build/x64-Debug/.ninja_log	
+@@ -1,3 +1,5 @@
+ # ninja log v5
+ 1	745	7209861772650552	CMakeFiles/_check_prime.dir/_check_prime.cpp.obj	1134a22965fba920
+ 746	1489	7209861779556418	_check_prime.exe	bfe763e0c994847
++1	993	7232019801783470	CMakeFiles/_check_prime.dir/_check_prime.cpp.obj	7b61cb9011d055cc
++995	2311	7232019809774432	_check_prime.exe	878e731990b36aa4
+Index: ../_test_cpp14/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cpp14/.idea/misc.xml b/../_test_cpp14/.idea/misc.xml
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cpp14/.idea/misc.xml	
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
++</project>
+\ No newline at end of file
+Index: ../_check_prime/out/build/x64-Debug/CMakeCache.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># This is the CMakeCache file.\r\n# For build in directory: c:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/build/x64-Debug\r\n# It was generated by CMake: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe\r\n# You can edit this file to change values found and used by cmake.\r\n# If you do not want to change any of the values, simply exit the editor.\r\n# If you do want to change a value, simply edit, save, and exit the editor.\r\n# The syntax for the file is as follows:\r\n# KEY:TYPE=VALUE\r\n# KEY is the name of a variable in the cache.\r\n# TYPE is a hint to GUIs for the type of VALUE, DO NOT EDIT TYPE!.\r\n# VALUE is the current value for the KEY.\r\n\r\n########################\r\n# EXTERNAL cache entries\r\n########################\r\n\r\n//Path to a program.\r\nCMAKE_AR:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/lib.exe\r\n\r\n//No help, variable specified on the command line.\r\nCMAKE_BUILD_TYPE:STRING=Debug\r\n\r\n//CXX compiler\r\nCMAKE_CXX_COMPILER:STRING=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe\r\n\r\n//Flags used by the CXX compiler during all build types.\r\nCMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3 /GR /EHsc\r\n\r\n//Flags used by the CXX compiler during DEBUG builds.\r\nCMAKE_CXX_FLAGS_DEBUG:STRING=/MDd /Zi /Ob0 /Od /RTC1\r\n\r\n//Flags used by the CXX compiler during MINSIZEREL builds.\r\nCMAKE_CXX_FLAGS_MINSIZEREL:STRING=/MD /O1 /Ob1 /DNDEBUG\r\n\r\n//Flags used by the CXX compiler during RELEASE builds.\r\nCMAKE_CXX_FLAGS_RELEASE:STRING=/MD /O2 /Ob2 /DNDEBUG\r\n\r\n//Flags used by the CXX compiler during RELWITHDEBINFO builds.\r\nCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/MD /Zi /O2 /Ob1 /DNDEBUG\r\n\r\n//Libraries linked by default with all C++ applications.\r\nCMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib\r\n\r\n//C compiler\r\nCMAKE_C_COMPILER:STRING=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe\r\n\r\n//Flags used by the C compiler during all build types.\r\nCMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3\r\n\r\n//Flags used by the C compiler during DEBUG builds.\r\nCMAKE_C_FLAGS_DEBUG:STRING=/MDd /Zi /Ob0 /Od /RTC1\r\n\r\n//Flags used by the C compiler during MINSIZEREL builds.\r\nCMAKE_C_FLAGS_MINSIZEREL:STRING=/MD /O1 /Ob1 /DNDEBUG\r\n\r\n//Flags used by the C compiler during RELEASE builds.\r\nCMAKE_C_FLAGS_RELEASE:STRING=/MD /O2 /Ob2 /DNDEBUG\r\n\r\n//Flags used by the C compiler during RELWITHDEBINFO builds.\r\nCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=/MD /Zi /O2 /Ob1 /DNDEBUG\r\n\r\n//Libraries linked by default with all C applications.\r\nCMAKE_C_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib\r\n\r\n//Flags used by the linker during all build types.\r\nCMAKE_EXE_LINKER_FLAGS:STRING=/machine:x64\r\n\r\n//Flags used by the linker during DEBUG builds.\r\nCMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL\r\n\r\n//Flags used by the linker during MINSIZEREL builds.\r\nCMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO\r\n\r\n//Flags used by the linker during RELEASE builds.\r\nCMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO\r\n\r\n//Flags used by the linker during RELWITHDEBINFO builds.\r\nCMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL\r\n\r\n//Enable/Disable output of compile commands during generation.\r\nCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=\r\n\r\n//No help, variable specified on the command line.\r\nCMAKE_INSTALL_PREFIX:PATH=C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/install/x64-Debug\r\n\r\n//Path to a program.\r\nCMAKE_LINKER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/link.exe\r\n\r\n//make program\r\nCMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe\r\n\r\n//Flags used by the linker during the creation of modules during\r\n// all build types.\r\nCMAKE_MODULE_LINKER_FLAGS:STRING=/machine:x64\r\n\r\n//Flags used by the linker during the creation of modules during\r\n// DEBUG builds.\r\nCMAKE_MODULE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL\r\n\r\n//Flags used by the linker during the creation of modules during\r\n// MINSIZEREL builds.\r\nCMAKE_MODULE_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO\r\n\r\n//Flags used by the linker during the creation of modules during\r\n// RELEASE builds.\r\nCMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO\r\n\r\n//Flags used by the linker during the creation of modules during\r\n// RELWITHDEBINFO builds.\r\nCMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL\r\n\r\n//Path to a program.\r\nCMAKE_MT:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x86/mt.exe\r\n\r\n//Value Computed by CMake\r\nCMAKE_PROJECT_DESCRIPTION:STATIC=\r\n\r\n//Value Computed by CMake\r\nCMAKE_PROJECT_HOMEPAGE_URL:STATIC=\r\n\r\n//Value Computed by CMake\r\nCMAKE_PROJECT_NAME:STATIC=_check_prime\r\n\r\n//RC compiler\r\nCMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.19041.0/x86/rc.exe\r\n\r\n//Flags for Windows Resource Compiler during all build types.\r\nCMAKE_RC_FLAGS:STRING=-DWIN32\r\n\r\n//Flags for Windows Resource Compiler during DEBUG builds.\r\nCMAKE_RC_FLAGS_DEBUG:STRING=-D_DEBUG\r\n\r\n//Flags for Windows Resource Compiler during MINSIZEREL builds.\r\nCMAKE_RC_FLAGS_MINSIZEREL:STRING=\r\n\r\n//Flags for Windows Resource Compiler during RELEASE builds.\r\nCMAKE_RC_FLAGS_RELEASE:STRING=\r\n\r\n//Flags for Windows Resource Compiler during RELWITHDEBINFO builds.\r\nCMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=\r\n\r\n//Flags used by the linker during the creation of shared libraries\r\n// during all build types.\r\nCMAKE_SHARED_LINKER_FLAGS:STRING=/machine:x64\r\n\r\n//Flags used by the linker during the creation of shared libraries\r\n// during DEBUG builds.\r\nCMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL\r\n\r\n//Flags used by the linker during the creation of shared libraries\r\n// during MINSIZEREL builds.\r\nCMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=/INCREMENTAL:NO\r\n\r\n//Flags used by the linker during the creation of shared libraries\r\n// during RELEASE builds.\r\nCMAKE_SHARED_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO\r\n\r\n//Flags used by the linker during the creation of shared libraries\r\n// during RELWITHDEBINFO builds.\r\nCMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL\r\n\r\n//If set, runtime paths are not added when installing shared libraries,\r\n// but are added when building.\r\nCMAKE_SKIP_INSTALL_RPATH:BOOL=NO\r\n\r\n//If set, runtime paths are not added when using shared libraries.\r\nCMAKE_SKIP_RPATH:BOOL=NO\r\n\r\n//Flags used by the linker during the creation of static libraries\r\n// during all build types.\r\nCMAKE_STATIC_LINKER_FLAGS:STRING=/machine:x64\r\n\r\n//Flags used by the linker during the creation of static libraries\r\n// during DEBUG builds.\r\nCMAKE_STATIC_LINKER_FLAGS_DEBUG:STRING=\r\n\r\n//Flags used by the linker during the creation of static libraries\r\n// during MINSIZEREL builds.\r\nCMAKE_STATIC_LINKER_FLAGS_MINSIZEREL:STRING=\r\n\r\n//Flags used by the linker during the creation of static libraries\r\n// during RELEASE builds.\r\nCMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=\r\n\r\n//Flags used by the linker during the creation of static libraries\r\n// during RELWITHDEBINFO builds.\r\nCMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=\r\n\r\n//If this value is on, makefiles will be generated without the\r\n// .SILENT directive, and all commands will be echoed to the console\r\n// during the make.  This is useful for debugging only. With Visual\r\n// Studio IDE projects all commands are done without /nologo.\r\nCMAKE_VERBOSE_MAKEFILE:BOOL=FALSE\r\n\r\n//Value Computed by CMake\r\n_check_prime_BINARY_DIR:STATIC=C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/build/x64-Debug\r\n\r\n//Value Computed by CMake\r\n_check_prime_SOURCE_DIR:STATIC=C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime\r\n\r\n\r\n########################\r\n# INTERNAL cache entries\r\n########################\r\n\r\n//ADVANCED property for variable: CMAKE_AR\r\nCMAKE_AR-ADVANCED:INTERNAL=1\r\n//This is the directory where this CMakeCache.txt was created\r\nCMAKE_CACHEFILE_DIR:INTERNAL=c:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/out/build/x64-Debug\r\n//Major version of cmake used to create the current loaded cache\r\nCMAKE_CACHE_MAJOR_VERSION:INTERNAL=3\r\n//Minor version of cmake used to create the current loaded cache\r\nCMAKE_CACHE_MINOR_VERSION:INTERNAL=20\r\n//Patch version of cmake used to create the current loaded cache\r\nCMAKE_CACHE_PATCH_VERSION:INTERNAL=21032501\r\n//Path to CMake executable.\r\nCMAKE_COMMAND:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe\r\n//Path to cpack program executable.\r\nCMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe\r\n//Path to ctest program executable.\r\nCMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe\r\n//ADVANCED property for variable: CMAKE_CXX_COMPILER\r\nCMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_CXX_FLAGS\r\nCMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG\r\nCMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_CXX_FLAGS_MINSIZEREL\r\nCMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELEASE\r\nCMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO\r\nCMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_CXX_STANDARD_LIBRARIES\r\nCMAKE_CXX_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_C_COMPILER\r\nCMAKE_C_COMPILER-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_C_FLAGS\r\nCMAKE_C_FLAGS-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG\r\nCMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL\r\nCMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_C_FLAGS_RELEASE\r\nCMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO\r\nCMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_C_STANDARD_LIBRARIES\r\nCMAKE_C_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1\r\n//Executable file format\r\nCMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown\r\n//ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS\r\nCMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG\r\nCMAKE_EXE_LINKER_FLAGS_DEBUG-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_MINSIZEREL\r\nCMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELEASE\r\nCMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO\r\nCMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS\r\nCMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1\r\n//Name of external makefile project generator.\r\nCMAKE_EXTRA_GENERATOR:INTERNAL=\r\n//Name of generator.\r\nCMAKE_GENERATOR:INTERNAL=Ninja\r\n//Generator instance identifier.\r\nCMAKE_GENERATOR_INSTANCE:INTERNAL=\r\n//Name of generator platform.\r\nCMAKE_GENERATOR_PLATFORM:INTERNAL=\r\n//Name of generator toolset.\r\nCMAKE_GENERATOR_TOOLSET:INTERNAL=\r\n//Source directory with the top level CMakeLists.txt file for this\r\n// project\r\nCMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime\r\n//ADVANCED property for variable: CMAKE_LINKER\r\nCMAKE_LINKER-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS\r\nCMAKE_MODULE_LINKER_FLAGS-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_DEBUG\r\nCMAKE_MODULE_LINKER_FLAGS_DEBUG-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL\r\nCMAKE_MODULE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELEASE\r\nCMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO\r\nCMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_MT\r\nCMAKE_MT-ADVANCED:INTERNAL=1\r\n//number of local generators\r\nCMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1\r\n//Platform information initialized\r\nCMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1\r\n//noop for ranlib\r\nCMAKE_RANLIB:INTERNAL=:\r\n//ADVANCED property for variable: CMAKE_RC_COMPILER\r\nCMAKE_RC_COMPILER-ADVANCED:INTERNAL=1\r\nCMAKE_RC_COMPILER_WORKS:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_RC_FLAGS\r\nCMAKE_RC_FLAGS-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_RC_FLAGS_DEBUG\r\nCMAKE_RC_FLAGS_DEBUG-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_RC_FLAGS_MINSIZEREL\r\nCMAKE_RC_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_RC_FLAGS_RELEASE\r\nCMAKE_RC_FLAGS_RELEASE-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_RC_FLAGS_RELWITHDEBINFO\r\nCMAKE_RC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1\r\n//Path to CMake installation.\r\nCMAKE_ROOT:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20\r\n//ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS\r\nCMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG\r\nCMAKE_SHARED_LINKER_FLAGS_DEBUG-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL\r\nCMAKE_SHARED_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_RELEASE\r\nCMAKE_SHARED_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO\r\nCMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_SKIP_INSTALL_RPATH\r\nCMAKE_SKIP_INSTALL_RPATH-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_SKIP_RPATH\r\nCMAKE_SKIP_RPATH-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS\r\nCMAKE_STATIC_LINKER_FLAGS-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS_DEBUG\r\nCMAKE_STATIC_LINKER_FLAGS_DEBUG-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL\r\nCMAKE_STATIC_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS_RELEASE\r\nCMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO\r\nCMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1\r\n//ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE\r\nCMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_check_prime/out/build/x64-Debug/CMakeCache.txt b/../_check_prime/out/build/x64-Debug/CMakeCache.txt
+--- a/../_check_prime/out/build/x64-Debug/CMakeCache.txt	
++++ b/../_check_prime/out/build/x64-Debug/CMakeCache.txt	
+@@ -20,8 +20,8 @@
+ //No help, variable specified on the command line.
+ CMAKE_BUILD_TYPE:STRING=Debug
+ 
+-//CXX compiler
+-CMAKE_CXX_COMPILER:STRING=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe
++//No help, variable specified on the command line.
++CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe
+ 
+ //Flags used by the CXX compiler during all build types.
+ CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3 /GR /EHsc
+@@ -41,8 +41,8 @@
+ //Libraries linked by default with all C++ applications.
+ CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+ 
+-//C compiler
+-CMAKE_C_COMPILER:STRING=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe
++//No help, variable specified on the command line.
++CMAKE_C_COMPILER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x64/cl.exe
+ 
+ //Flags used by the C compiler during all build types.
+ CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3
+Index: ../_test_cpp14/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_test_cpp14/.idea/vcs.xml b/../_test_cpp14/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	
++++ b/../_test_cpp14/.idea/vcs.xml	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../_check_prime/out/build/x64-Debug/CMakeFiles/rules.ninja
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># CMAKE generated file: DO NOT EDIT!\r\n# Generated by \"Ninja\" Generator, CMake Version 3.20\r\n\r\n# This file contains all the rules used to get the outputs files\r\n# built from the input files.\r\n# It is included in the main 'build.ninja'.\r\n\r\n# =============================================================================\r\n# Project: _check_prime\r\n# Configurations: Debug\r\n# =============================================================================\r\n# =============================================================================\r\n\r\n#############################################\r\n# localized /showIncludes string\r\n\r\nmsvc_deps_prefix = 注意: 包含文件:  \r\n\r\n\r\n#############################################\r\n# Rule for compiling CXX files.\r\n\r\nrule CXX_COMPILER___check_prime_Debug\r\n  deps = msvc\r\n  command = C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in\r\n  description = Building CXX object $out\r\n\r\n\r\n#############################################\r\n# Rule for linking CXX executable.\r\n\r\nrule CXX_EXECUTABLE_LINKER___check_prime_Debug\r\n  command = cmd.exe /C \"$PRE_LINK && \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe\" -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests $MANIFESTS -- C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x64\\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD\"\r\n  description = Linking CXX executable $TARGET_FILE\r\n  restat = $RESTAT\r\n\r\n\r\n#############################################\r\n# Rule for running custom commands.\r\n\r\nrule CUSTOM_COMMAND\r\n  command = $COMMAND\r\n  description = $DESC\r\n\r\n\r\n#############################################\r\n# Rule for re-running cmake.\r\n\r\nrule RERUN_CMAKE\r\n  command = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe\" --regenerate-during-build -SC:\\Users\\SetsunaYang\\Documents\\GitHub\\base\\CCPP\\_check_prime -BC:\\Users\\SetsunaYang\\Documents\\GitHub\\base\\CCPP\\_check_prime\\out\\build\\x64-Debug\r\n  description = Re-running CMake...\r\n  generator = 1\r\n\r\n\r\n#############################################\r\n# Rule for cleaning all built files.\r\n\r\nrule CLEAN\r\n  command = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja\\ninja.exe\" $FILE_ARG -t clean $TARGETS\r\n  description = Cleaning all built files...\r\n\r\n\r\n#############################################\r\n# Rule for printing all primary targets available.\r\n\r\nrule HELP\r\n  command = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja\\ninja.exe\" -t targets\r\n  description = All primary targets available:\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../_check_prime/out/build/x64-Debug/CMakeFiles/rules.ninja b/../_check_prime/out/build/x64-Debug/CMakeFiles/rules.ninja
+--- a/../_check_prime/out/build/x64-Debug/CMakeFiles/rules.ninja	
++++ b/../_check_prime/out/build/x64-Debug/CMakeFiles/rules.ninja	
+@@ -22,7 +22,7 @@
+ 
+ rule CXX_COMPILER___check_prime_Debug
+   deps = msvc
+-  command = C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
++  command = C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+   description = Building CXX object $out
+ 
+ 
+@@ -30,7 +30,7 @@
+ # Rule for linking CXX executable.
+ 
+ rule CXX_EXECUTABLE_LINKER___check_prime_Debug
+-  command = cmd.exe /C "$PRE_LINK && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests $MANIFESTS -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
++  command = cmd.exe /C "$PRE_LINK && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests $MANIFESTS -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+   description = Linking CXX executable $TARGET_FILE
+   restat = $RESTAT
+ 
