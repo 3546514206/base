@@ -1,0 +1,9 @@
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\bin\Debug\_windows_CSharp.exe.config
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\bin\Debug\_windows_CSharp.exe
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\bin\Debug\_windows_CSharp.pdb
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\obj\Debug\_windows_CSharp.csproj.AssemblyReference.cache
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\obj\Debug\_windows_CSharp.Properties.Resources.resources
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\obj\Debug\_windows_CSharp.csproj.GenerateResource.cache
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\obj\Debug\_windows_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\obj\Debug\_windows_CSharp.exe
+C:\Users\SetsunaYang\Documents\GitHub\base\CSharp\_windows_CSharp\_windows_CSharp\obj\Debug\_windows_CSharp.pdb
