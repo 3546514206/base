@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/_maximum_circular_subarray.dir/main.cpp.obj"
-  "CMakeFiles/_maximum_circular_subarray.dir/main.cpp.obj.d"
-  "_maximum_circular_subarray.exe"
-  "_maximum_circular_subarray.exe.manifest"
+  "CMakeFiles/_maximum_circular_subarray.dir/main.cpp.o"
+  "CMakeFiles/_maximum_circular_subarray.dir/main.cpp.o.d"
+  "_maximum_circular_subarray"
   "_maximum_circular_subarray.pdb"
-  "lib_maximum_circular_subarray.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

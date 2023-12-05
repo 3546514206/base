@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "_maximum_circular_subarray::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-_maximum_circular_subarray-Debug-191497fc4582cc03e4c3.json",
+					"jsonFile" : "target-_maximum_circular_subarray-Debug-a46355cd3b18bb35ddbf.json",
 					"name" : "_maximum_circular_subarray",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_maximum_circular_subarray/cmake-build-debug",
-		"source" : "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_maximum_circular_subarray"
+		"build" : "/Users/setsunayang/Documents/learning/base/CCPP/_maximum_circular_subarray/cmake-build-debug",
+		"source" : "/Users/setsunayang/Documents/learning/base/CCPP/_maximum_circular_subarray"
 	},
 	"version" : 
 	{

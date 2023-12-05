@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "_maximum_circular_subarray.exe"
-		},
-		{
-			"path" : "_maximum_circular_subarray.pdb"
+			"path" : "_null"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -59,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "_maximum_circular_subarray::@6890427a1f51a3e7e1df",
+	"id" : "_null::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,18 +66,14 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-L/opt/homebrew/opt/openssl@1.1/lib",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "_maximum_circular_subarray",
-	"nameOnDisk" : "_maximum_circular_subarray.exe",
+	"name" : "_null",
+	"nameOnDisk" : "_null",
 	"paths" : 
 	{
 		"build" : ".",

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/setsunayang/Documents/learning/base/CCPP/_maximum_circular_subarray
+# Install script for directory: /Users/setsunayang/Documents/learning/base/CCPP/_null
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/setsunayang/Documents/learning/base/CCPP/_maximum_circular_subarray/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/setsunayang/Documents/learning/base/CCPP/_null/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
