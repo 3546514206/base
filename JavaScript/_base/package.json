@@ -1,0 +1,13 @@
+{
+  "name": "_base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "statement": "node statement.js",
+    "variable": "node variable.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
