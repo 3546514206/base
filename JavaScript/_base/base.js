@@ -56,5 +56,10 @@ function countdown(n) {
 
 countdown(3)
 
+{
+    var m = 18;
+}
+// 访问m不会报错，因为var声明的变量，是全局的。为了声明局部的变量，应当尽量使用let和const声明变量
+console.log(m)
 
 
