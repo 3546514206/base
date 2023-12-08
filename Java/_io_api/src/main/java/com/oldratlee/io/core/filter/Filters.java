@@ -8,6 +8,21 @@ import com.oldratlee.io.core.Sender;
  * @author oldratlee
  */
 public class Filters {
+    private Filters() {
+    }
+
+    public static <T, ReceiverThrowableType extends Throwable>
+    Output<T, ReceiverThrowableType> filter(Specification<? super T> specification,
+                                            Output<T, ? extends ReceiverThrowableType> output) {
+        return new SpecificationOutputWrapper<>(output, specification);
+    }
+
+    public static <From, To, ReceiverThrowableType extends Throwable>
+    Output<From, ReceiverThrowableType> filter(Function<? super From, ? extends To> function,
+                                               final Output<To, ? extends ReceiverThrowableType> output) {
+        return new FunctionOutputWrapper<>(output, function);
+    }
+
     static class SpecificationOutputWrapper<T, ReceiverThrowableType extends Throwable>
             implements Output<T, ReceiverThrowableType> {
 
@@ -72,13 +87,6 @@ public class Filters {
         }
     }
 
-    public static <T, ReceiverThrowableType extends Throwable>
-    Output<T, ReceiverThrowableType> filter(Specification<? super T> specification,
-                                            Output<T, ? extends ReceiverThrowableType> output) {
-        return new SpecificationOutputWrapper<>(output, specification);
-    }
-
-
     static class FunctionOutputWrapper<From, To, ReceiverThrowableType extends Throwable>
             implements Output<From, ReceiverThrowableType> {
 
@@ -138,14 +146,5 @@ public class Filters {
         public void finished() throws ReceiverThrowableType {
             receiver.finished();
         }
-    }
-
-    public static <From, To, ReceiverThrowableType extends Throwable>
-    Output<From, ReceiverThrowableType> filter(Function<? super From, ? extends To> function,
-                                               final Output<To, ? extends ReceiverThrowableType> output) {
-        return new FunctionOutputWrapper<>(output, function);
-    }
-
-    private Filters() {
     }
 }

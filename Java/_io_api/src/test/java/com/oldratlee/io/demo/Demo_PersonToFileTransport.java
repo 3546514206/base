@@ -13,6 +13,13 @@ import java.io.IOException;
  * @author ding.lid
  */
 public class Demo_PersonToFileTransport {
+    public static void main(String[] args) throws Exception {
+        Person person = new Person("Jerry", 42);
+        File destination = new File("out.tmp");
+
+        new PersonTextInput(person).transferTo(Outputs.text(destination));
+    }
+
     static class Person {
         private final String name;
         private final int age;
@@ -54,12 +61,5 @@ public class Demo_PersonToFileTransport {
             receiver.receive("name: " + person.name + LINE_SEPARATOR);
             receiver.receive("age: " + person.age + LINE_SEPARATOR);
         }
-    }
-
-    public static void main(String[] args) throws Exception {
-        Person person = new Person("Jerry", 42);
-        File destination = new File("out.tmp");
-
-        new PersonTextInput(person).transferTo(Outputs.text(destination));
     }
 }

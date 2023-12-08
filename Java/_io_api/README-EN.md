@@ -1,6 +1,5 @@
 # 📐 IO API Design
 
-
 <p align="center">
 <a href="https://github.com/oldratlee/io-api/actions/workflows/ci.yaml"><img src="https://img.shields.io/github/actions/workflow/status/oldratlee/io-api/ci.yaml?branch=main&logo=github&logoColor=white" alt="Github Workflow Build Status"></a>
 <a href="https://app.codecov.io/gh/oldratlee/io-api/tree/main"><img src="https://img.shields.io/codecov/c/github/oldratlee/io-api/main?logo=codecov&logoColor=white" alt="Codecov"></a>
@@ -22,7 +21,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [Function of Package](#function-of-package)
 - [More Info](#more-info)
 
@@ -30,19 +28,21 @@
 
 ------------------------------
 
-The demo implementation of the generic io api supplied in blog [A generic input/output API in Java](https://dzone.com/articles/generic-inputoutput-api-java) (PS: [Original blog link]((http://www.jroller.com/rickard/entry/a_generic_input_output_api) is broken...)
+The demo implementation of the generic io api supplied in
+blog [A generic input/output API in Java](https://dzone.com/articles/generic-inputoutput-api-java) (
+PS: [Original blog link]((http://www.jroller.com/rickard/entry/a_generic_input_output_api) is broken...)
 
 Function of Package
 -------------------
 
 - package `com.oldratlee.io.core`  
-    core interfaces
+  core interfaces
 - package `com.oldratlee.io.core.filter`  
-    implementation class of `Filter`
+  implementation class of `Filter`
 - package `com.oldratlee.io.utils`  
-    utils classes
+  utils classes
 - package `com.oldratlee.io.demo`  
-    `Main` classes of Demo sample
+  `Main` classes of Demo sample
 
 More Info
 -------------------

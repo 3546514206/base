@@ -21,7 +21,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [包的功能](#%E5%8C%85%E7%9A%84%E5%8A%9F%E8%83%BD)
 - [更多信息](#%E6%9B%B4%E5%A4%9A%E4%BF%A1%E6%81%AF)
 - [API设计的进一步学习资料](#api%E8%AE%BE%E8%AE%A1%E7%9A%84%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99)
@@ -32,7 +31,9 @@
 
 ------------------------------
 
-[Java的通用I/O API](https://github.com/oldratlee/translations/blob/master/generic-io-api-in-java-and-api-design/README.md)（by _Rickard Öberg_）中给出了一个通用`Java` `IO API`设计，并且有`API`的`Demo`代码。更重要的是给出了这个`API`设计本身的步骤和过程，这让`API`设计有些条理。文中示范了从 普通简单实现 整理成 正交分解、可复用、可扩展、高性能、无错误的`API`设计 的过程，这个过程是很值得理解和学习！
+[Java的通用I/O API](https://github.com/oldratlee/translations/blob/master/generic-io-api-in-java-and-api-design/README.md)（by _
+Rickard Öberg_）中给出了一个通用`Java` `IO API`设计，并且有`API`的`Demo`代码。更重要的是给出了这个`API`设计本身的步骤和过程，这让`API`设计有些条理。文中示范了从 普通简单实现 整理成
+正交分解、可复用、可扩展、高性能、无错误的`API`设计 的过程，这个过程是很值得理解和学习！
 
 设计偏向是艺术，一个赏心悦目的设计，尤其是`API`设计，旁人看来多是妙手偶得的感觉，如果能有些章可循真是一件美事。
 
@@ -46,13 +47,13 @@
 
 没有给出可运行的实现及其连接的细节，看起来可能比较费力，因为设计细致分解后抽象度高而不容易理解。
 
-为了大家和自己更深入有效地学习，需要：  
+为了大家和自己更深入有效地学习，需要：
 
 1. 给出这个通用`IO API`的可运行的`Demo`实现。  
-    这个工程即是本人的可运行的`Demo`实现。  
-    当然个人力荐你先自己实现练习一下，这样比直接看我的实现，在学习上会有效得多！
+   这个工程即是本人的可运行的`Demo`实现。  
+   当然个人力荐你先自己实现练习一下，这样比直接看我的实现，在学习上会有效得多！
 1. 写了一篇分析总结。  
-    本人的分析总结：[用Java I/O API设计练习的分析和总结](docs/java-api-design-exercise.md)。这个你可以直接看，以更高效方便地理解这个`API`的设计。
+   本人的分析总结：[用Java I/O API设计练习的分析和总结](docs/java-api-design-exercise.md)。这个你可以直接看，以更高效方便地理解这个`API`的设计。
 
 > PS：
 >
@@ -66,33 +67,40 @@
 ## 包的功能
 
 - 包`com.oldratlee.io.core`  
-    核心接口
+  核心接口
 - 包`com.oldratlee.io.core.filter`  
-    实现的`Filter`功能的类
+  实现的`Filter`功能的类
 - 包`com.oldratlee.io.utils`  
-    工具类
+  工具类
 - 包`com.oldratlee.io.demo`  
-    Demo示例的`Main`类
+  Demo示例的`Main`类
 
 ## 更多信息
 
 - 个人在组内分享时的PPT：[API设计实例分析](docs/ApiDesignSampleStudy.pptx)
-- 本人对这篇博文的译文：[【译】Java的通用I/O API](https://github.com/oldratlee/translations/tree/master/generic-io-api-in-java-and-api-design/README.md)
+-
+
+本人对这篇博文的译文：[【译】Java的通用I/O API](https://github.com/oldratlee/translations/tree/master/generic-io-api-in-java-and-api-design/README.md)
+
 - 问题交流： https://github.com/oldratlee/io-api/issues
 
 ## API设计的进一步学习资料
 
 ### 简单资料
 
-- How to Design a Good API and Why it Matters(by Joshua Bloch) 【[本地下载](docs/How-to-Design-a-Good-API-and-Why-it-Matters-by-Joshua-Bloch.pdf)】  
-    <http://lcsd05.cs.tamu.edu/slides/keynote.pdf>
+- How to Design a Good API and Why it Matters(by Joshua Bloch)
+  【[本地下载](docs/How-to-Design-a-Good-API-and-Why-it-Matters-by-Joshua-Bloch.pdf)】  
+  <http://lcsd05.cs.tamu.edu/slides/keynote.pdf>
 - Google Search  
-    <http://www.google.com.hk/search?&q=api+design>
+  <http://www.google.com.hk/search?&q=api+design>
 
 ### 系统书籍
 
 - The Little Manual of API Design 【[本地下载](docs/The-Little-Manual-of-API-Design.pdf)】  
-    <http://chaos.troll.no/~shausman/api-design/api-design.pdf>
-- [《软件框架设计的艺术》](http://book.douban.com/subject/6003832/) | 英文原版[Practical API Design: Confessions of a Java Framework Architect](http://www.amazon.com/Practical-API-Design-Confessions-Framework/dp/1430243171)  
-- [Contributing to Eclipse中文版](https://book.douban.com/subject/1219945/) | 英文原版[Contributing to Eclipse : Principles, Patterns, and Plug-Ins](https://book.douban.com/subject/1610318/)
-- [.NET设计规范 : NET约定、惯用法与模式](http://book.douban.com/subject/4805165/) | 英文原版[Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries (2nd Edition)](http://www.amazon.com/Framework-Design-Guidelines-Conventions-Libraries/dp/0321545613)  
+  <http://chaos.troll.no/~shausman/api-design/api-design.pdf>
+- [《软件框架设计的艺术》](http://book.douban.com/subject/6003832/) |
+  英文原版[Practical API Design: Confessions of a Java Framework Architect](http://www.amazon.com/Practical-API-Design-Confessions-Framework/dp/1430243171)
+- [Contributing to Eclipse中文版](https://book.douban.com/subject/1219945/) |
+  英文原版[Contributing to Eclipse : Principles, Patterns, and Plug-Ins](https://book.douban.com/subject/1610318/)
+- [.NET设计规范 : NET约定、惯用法与模式](http://book.douban.com/subject/4805165/) |
+  英文原版[Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries (2nd Edition)](http://www.amazon.com/Framework-Design-Guidelines-Conventions-Libraries/dp/0321545613)  

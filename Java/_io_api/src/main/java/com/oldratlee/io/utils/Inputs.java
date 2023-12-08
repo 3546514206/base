@@ -14,6 +14,13 @@ import java.io.*;
  */
 public class Inputs {
 
+    private Inputs() {
+    }
+
+    public static Input<String, IOException> text(File source) throws IOException {
+        return new TextInput(source);
+    }
+
     static class TextInput implements Input<String, IOException> {
         private final Reader reader;
 
@@ -52,12 +59,5 @@ public class Inputs {
                 receiver.receive(readLine + "\n");
             }
         }
-    }
-
-    public static Input<String, IOException> text(File source) throws IOException {
-        return new TextInput(source);
-    }
-
-    private Inputs() {
     }
 }

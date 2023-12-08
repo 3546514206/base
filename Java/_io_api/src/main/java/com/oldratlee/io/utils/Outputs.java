@@ -15,6 +15,13 @@ import java.io.Writer;
  * @author oldratlee
  */
 public class Outputs {
+    private Outputs() {
+    }
+
+    public static Output<String, IOException> text(File destination) throws IOException {
+        return new TextOutput(destination);
+    }
+
     static class TextOutput implements Output<String, IOException> {
         private final Writer writer;
 
@@ -53,12 +60,5 @@ public class Outputs {
         @Override
         public void finished() {
         }
-    }
-
-    public static Output<String, IOException> text(File destination) throws IOException {
-        return new TextOutput(destination);
-    }
-
-    private Outputs() {
     }
 }
