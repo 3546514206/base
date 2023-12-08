@@ -1,0 +1,32 @@
+*.tmp
+
+# maven build directory
+target/
+
+# Eclipse project files
+.settings/
+.project
+.classpath
+
+# IntelliJ IDEA project files
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temporary files
+*.log
+*.log.*
+
+*.cache
+*.diff
+*.patch
+
+*.bak
+*.bkp
+*.swp
+~$*
+
+# os temporary files
+.DS_Store
+Thumbs.db
