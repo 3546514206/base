@@ -68,6 +68,15 @@ if (o = p) {
     console.log(o)
 }
 
+var i = 0;
+
+// while (i < 100) {
+//     console.log('i 当前为：' + i);
+//     i = i + 1;
+// }
+
+console.log(undefined == null)
+console.log(undefined === null)
 
 
 
