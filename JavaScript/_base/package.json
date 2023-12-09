@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "statement": "node statement.js",
-    "variable": "node base.js"
+    "base": "node base.js"
   },
   "keywords": [],
   "author": "",

@@ -13,11 +13,11 @@ console.log(a + ":" + b);
 // 访问未定义的变量e会报错
 // console.log(e);
 
-// 变量提升会导致，console#log 方法访问c也不会报错，因为第15行代码的声明会在构造抽象语法树期间提升至开头
+// 变量提升会导致，console#log 方法访问c也不会报错，因为第18行代码的声明会在构造抽象语法树期间提升至开头
 console.log(c);
 var c = 1;
 
-// 但是这样是可以的
+// 但是这样是可以的，等价于 var f = 7
 f = 7;
 console.log(f);
 
@@ -42,9 +42,8 @@ var 临时变量 = 1;
 console.log(临时变量)
 
 // 注释就不多说了，由于历史上 JavaScript 可以兼容 HTML 代码的注释，所以<!--和-->也被视为合法的单行注释。
-var g = 78; <!-- x = 2;
--->
-var h = 87;
+var g = 78; <!-- h = 87;  -->
+
 console.log(g);
 // 以下代码会报错，因为 "--> var h = 87" 是注释
 // console.log(h);
@@ -63,7 +62,11 @@ countdown(3)
 console.log(m)
 
 
-
+var o = 98;
+var p = 99;
+if (o = p) {
+    console.log(o)
+}
 
 
 
