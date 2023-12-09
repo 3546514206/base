@@ -68,7 +68,7 @@ if (o = p) {
     console.log(o)
 }
 
-var i = 0;
+// var i = 0;
 
 // while (i < 100) {
 //     console.log('i 当前为：' + i);
@@ -77,6 +77,9 @@ var i = 0;
 
 console.log(undefined == null)
 console.log(undefined === null)
+
+var q = Number(null);
+console.log(q);
 
 
 
