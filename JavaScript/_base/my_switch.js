@@ -1,4 +1,4 @@
-var fruit = "apple";
+var fruit = "banana";
 
 switch (fruit) {
     case "apple" :
@@ -7,7 +7,6 @@ switch (fruit) {
         break;
     case "banana" :
         console.log("22");
-
     // fruit = "pear";
     case "pear":
         console.log("33");
