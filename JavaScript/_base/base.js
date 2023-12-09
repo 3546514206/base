@@ -82,4 +82,8 @@ var q = Number(null);
 console.log(q);
 
 
+console.log(3 !== '3');// true，值相等但数据类型不同
+console.log(3 !== 3);// false，值和数据类型都相同)
 
+console.log(3 != '3');  // false，值相等，不关心数据类型
+console.log(3 != 4); // true，值不相等
