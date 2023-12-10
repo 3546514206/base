@@ -27,3 +27,16 @@ var add = new Function(
 // function add(x, y) {
 //     return x + y;
 // }
+
+
+function f_1() {
+    console.log(1);
+}
+
+f_1() // 2
+
+function f_1() {
+    console.log(2);
+}
+
+f_1() // 2
