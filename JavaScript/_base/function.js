@@ -5,3 +5,25 @@ function f() {
 }
 
 console.log(f.toString())
+
+// 第一种声明
+function print(s) {
+    console.log(s);
+}
+
+//第二种声明
+var print_1 = function (s) {
+    console.log(s);
+};
+
+// 第三中声明
+var add = new Function(
+    'x',
+    'y',
+    'return x + y'
+);
+
+// 等同于
+// function add(x, y) {
+//     return x + y;
+// }
