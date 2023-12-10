@@ -32,5 +32,5 @@ parseInt('8e-7'); // 8
 parseFloat(true);  // NaN
 
 console.log(isNaN(NaN));
-
+console.log(isNaN("123"));
 
