@@ -34,3 +34,10 @@ parseFloat(true);  // NaN
 console.log(isNaN(NaN));
 console.log(isNaN("123"));
 
+isFinite(Infinity); // false
+isFinite(-Infinity); // false
+isFinite(NaN); // false
+isFinite(undefined); // false
+isFinite(null); // true
+isFinite(-1); // true
+console.log(isFinite("123"));
