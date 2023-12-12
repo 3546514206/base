@@ -3,8 +3,12 @@ function UserError(message) {
     this.name = 'UserError';
 }
 
+function throwIt(message) {
+    throw new UserError(message);
+}
+
 try {
-    throw new UserError();
+    throwIt('do it');
 } catch (e) {
     console.log(e.message)
 }
