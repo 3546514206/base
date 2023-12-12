@@ -13,4 +13,4 @@ var obj_1 = {
     }
 };
 
-console.log(obj_1 + 2)
+console.log(obj_1 + 2);
