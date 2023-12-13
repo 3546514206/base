@@ -1,5 +1,0 @@
-# ninja log v5
-0	54	1700450974964428664	CMakeFiles/cantor_set.dir/cantor_set.o	c44f96da7c0175a
-54	80	1700450974991327533	cantor_set	8ecfbf40f0ab2a5f
-0	154	1700450993414370516	CMakeFiles/collatz.dir/collatz.o	7e1cb70e3d37d4c8
-154	189	1700450993450095523	collatz	1056915f89acabf4

@@ -1,8 +1,0 @@
-dog
-cat
-tree
-flower
-table
-programming
-language
-testing
