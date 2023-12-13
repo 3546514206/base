@@ -26,3 +26,10 @@ function Person(name, age) {
 var actor = _new(Person, '张三san', 28);
 // 打印对象
 console.log(actor.valueOf())
+
+
+function Dog(name) {
+    this.name = name
+}
+
+var d = new Dog("Tina");
