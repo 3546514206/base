@@ -87,3 +87,9 @@ console.log(3 !== 3);// false，值和数据类型都相同)
 
 console.log(3 != '3');  // false，值相等，不关心数据类型
 console.log(3 != 4); // true，值不相等
+
+
+let test_obj = {}
+
+console.log(test_obj.prototype)
+
