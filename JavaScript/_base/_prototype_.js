@@ -31,5 +31,5 @@ console.log(typeof test_prot.prototype);
 let cat_2 = new Cat("Tina", "Yellow");
 console.log(cat_2.color);
 Cat.prototype.name = "Black";
-//
 console.log(cat_2.color);
+
