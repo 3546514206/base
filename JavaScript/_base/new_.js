@@ -25,5 +25,7 @@ function Person(name) {
 }
 
 const personInstance = new Person('John');
-console.log(personInstance.name);  // undefined，因为构造函数返回的是一个新对象，而不是新创建的对象
-console.log(personInstance.greeting);  // 输出 "Hello from the returned object!"
+// undefined，因为构造函数返回的是一个新对象，而不是新创建的对象
+console.log(personInstance.name);
+// 输出 "Hello from the returned object!"
+console.log(personInstance.greeting);
