@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  jdk:
+    build:
+      context: ./docker/builds/jdk
+      dockerfile: Dockerfile
+    volumes:
+      - target:/var/www/java-beginners-guide
+      - jvm-sources:/usr/lib/jvm
+      - maven-repository:/root/.m2
+    ports:
+      - 5005:5005
+    environment:
+      - DEBUG=${DEBUG}
+volumes:
+  target:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${CODEBASE}
+      o: bind
+  jvm-sources:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${CODEBASE}/jvm-sources
+      o: bind
+  maven-repository:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${CODEBASE}/.m2
+      o: bind
