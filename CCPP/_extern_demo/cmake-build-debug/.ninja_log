@@ -1,6 +1,0 @@
-# ninja log v5
-1	625	7224515749479291	CMakeFiles/_extern_demo.dir/main.cpp.obj	3721ad3078a64e6c
-41	663	7224515749819097	CMakeFiles/_extern_demo.dir/helper.cpp.obj	68a2fdc0e0aa4036
-663	960	7224515752717397	_extern_demo.exe	d5502686820b97fe
-7	595	7224516178809864	CMakeFiles/_extern_demo.dir/main.cpp.obj	3721ad3078a64e6c
-596	915	7224516181938093	_extern_demo.exe	d5502686820b97fe

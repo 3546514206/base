@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/Users/setsunayang/Documents/learning/base/CCPP/_extern_demo/build",
+    "command": "/usr/bin/clang++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/_extern_demo.dir/main.cpp.o -c /Users/setsunayang/Documents/learning/base/CCPP/_extern_demo/main.cpp",
+    "file": "/Users/setsunayang/Documents/learning/base/CCPP/_extern_demo/main.cpp",
+    "output": "CMakeFiles/_extern_demo.dir/main.cpp.o"
+  },
+  {
+    "directory": "/Users/setsunayang/Documents/learning/base/CCPP/_extern_demo/build",
+    "command": "/usr/bin/clang++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/_extern_demo.dir/helper.cpp.o -c /Users/setsunayang/Documents/learning/base/CCPP/_extern_demo/helper.cpp",
+    "file": "/Users/setsunayang/Documents/learning/base/CCPP/_extern_demo/helper.cpp",
+    "output": "CMakeFiles/_extern_demo.dir/helper.cpp.o"
+  }
+]
