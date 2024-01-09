@@ -1,0 +1,2 @@
+local.profile.path: prod
+agent.images.host: https://yml.localhost.prod

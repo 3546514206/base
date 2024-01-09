@@ -1,0 +1,9 @@
+DEL /q C:\03_webserver\apache-tomcat-7.0.91\logs\*.* 
+set "JAVA_HOME=C:\04_soft\openjdk-1.8.0.191"
+set "CATALINA_HOME=C:\03_webserver\apache-tomcat-7.0.91"
+set "CATALINA_BASE=C:\08_instances\test"
+set "TITLE=Customer Sync tomcat"
+SET CATALINA_OPTS=-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=7776 -Djava.net.preferIPv4Stack=true
+set "JAVA_OPTS=%JAVA_OPTS% -Dlog.path=C:\08_instances\test\logs -server -Xms1024m -Xmx1024m -Djavax.net.ssl.trustStore=C:/data/resources/certs/cacerts -Djavax.net.ssl.keyStore=C:\data\resources\certs\mgkeycert.jks -Djavax.net.ssl.keyStorePassword=Key2St0re -Djdk.tls.client.protocols=TLSv1.2 -Dsun.security.ssl.allowUnsafeRenegotiation=false -Dhttps.protocols=TLSv1.2"
+call "%CATALINA_HOME%\bin\startup.bat"
+rem -XX:+TraceClassLoading -XX:+PrintClassHistogram
