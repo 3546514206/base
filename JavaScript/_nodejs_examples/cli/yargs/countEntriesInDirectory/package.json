@@ -1,0 +1,33 @@
+{
+  "name": "count-entries-in-directory",
+  "version": "1.0.0",
+  "description": "This is a CLI built with [yargs](https://www.npmjs.com/package/yargs) that searches the directory (path) passed to it and then spits out how many entries (files and directories) are within _that directory_. It does not recursively search additional directories within it.",
+  "main": "index.js",
+  "bin": {
+    "countEntriesInDirectory": "./bin/cli.js"
+  },
+  "scripts": {
+    "test:unit": "jest --coverage",
+    "test:onlychanged": "jest --onlyChanged --coverage",
+    "lint": "standard",
+    "test": "npm run lint && npm run test:unit"
+  },
+  "keywords": [],
+  "author": "Tierney Cyren <hello@bnb.im>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^25.2.6",
+    "standard": "^14.3.3"
+  },
+  "dependencies": {
+    "yargs": "^15.3.1"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "test",
+      "expect",
+      "jest"
+    ]
+  }
+}
