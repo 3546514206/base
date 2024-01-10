@@ -1,9 +1,0 @@
-# ninja log v5
-0	508	1700635514899634438	_qt_samples_001_autogen/timestamp	ef2c4d1511add366
-0	508	1700635514899634438	_qt_samples_001_autogen/mocs_compilation.cpp	ef2c4d1511add366
-0	508	1700635514899634438	/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/_qt_samples_001/cmake-build-debug/_qt_samples_001_autogen/timestamp	ef2c4d1511add366
-0	508	1700635514899634438	/Users/setsunayang/Documents/learning/base/CCPP/_qt_samples_001/_qt_samples_001/cmake-build-debug/_qt_samples_001_autogen/mocs_compilation.cpp	ef2c4d1511add366
-509	1338	1700635515729843524	CMakeFiles/_qt_samples_001.dir/main.cpp.o	17f8966b7804cb7a
-508	1340	1700635515730784870	CMakeFiles/_qt_samples_001.dir/_qt_samples_001_autogen/mocs_compilation.cpp.o	cc2d70ab2e2dd643
-509	1358	1700635515752733107	CMakeFiles/_qt_samples_001.dir/mainwindow.cpp.o	1113fd8a052e0d24
-1359	1485	1700635515880848609	_qt_samples_001.app/Contents/MacOS/_qt_samples_001	ff7b110d3ccd5c33

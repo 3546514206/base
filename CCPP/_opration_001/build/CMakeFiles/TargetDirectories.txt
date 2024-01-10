@@ -1,3 +1,0 @@
-C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_opration_001/build/CMakeFiles/_cmake_sample.dir
-C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_opration_001/build/CMakeFiles/edit_cache.dir
-C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_opration_001/build/CMakeFiles/rebuild_cache.dir

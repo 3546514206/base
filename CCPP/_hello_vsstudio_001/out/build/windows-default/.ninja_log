@@ -1,6 +1,0 @@
-# ninja log v5
-0	25	0	clean	9992afb1f91dc381
-1	668	7209834420786001	CMakeFiles/_hello_vsstudio_001.dir/_hello_vsstudio_001.cpp.obj	d6c024751dbb6c0e
-669	2604	7209834439837405	_hello_vsstudio_001.exe	d6e622f2a1f194ba
-0	1264	7209858399366013	CMakeFiles/_hello_vsstudio_001.dir/_hello_vsstudio_001.cpp.obj	d6c024751dbb6c0e
-1265	1631	7209858402813852	_hello_vsstudio_001.exe	d6e622f2a1f194ba

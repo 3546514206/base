@@ -1,1 +1,0 @@
-/usr/bin/clang++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/openssl@1.1/lib CMakeFiles/_extern_demo.dir/main.cpp.o CMakeFiles/_extern_demo.dir/helper.cpp.o -o _extern_demo 

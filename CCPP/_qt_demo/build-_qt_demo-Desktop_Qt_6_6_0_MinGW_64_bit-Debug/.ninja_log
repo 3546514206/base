@@ -1,9 +1,0 @@
-# ninja log v5
-3	2225	7223688457526940	_qt_demo_autogen/timestamp	1e7a729ec8c8103e
-3	2225	7223688457526940	_qt_demo_autogen/mocs_compilation.cpp	1e7a729ec8c8103e
-3	2225	7223688457526940	C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_demo/build-_qt_demo-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/_qt_demo_autogen/timestamp	1e7a729ec8c8103e
-3	2225	7223688457526940	C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_qt_demo/build-_qt_demo-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/_qt_demo_autogen/mocs_compilation.cpp	1e7a729ec8c8103e
-2311	5229	7223688491755245	CMakeFiles/_qt_demo.dir/mainwindow.cpp.obj	84446f67e8520d28
-2227	5265	7223688492135014	CMakeFiles/_qt_demo.dir/_qt_demo_autogen/mocs_compilation.cpp.obj	8c7fcee28bd6c05e
-2268	5277	7223688492245066	CMakeFiles/_qt_demo.dir/main.cpp.obj	c1fbbea621f71b2b
-5277	5714	7223688496518672	_qt_demo.exe	a3b20147977588b0

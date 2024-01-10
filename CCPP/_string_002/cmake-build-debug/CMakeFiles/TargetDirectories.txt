@@ -1,3 +1,0 @@
-C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_string_002/cmake-build-debug/CMakeFiles/_string_002.dir
-C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_string_002/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_string_002/cmake-build-debug/CMakeFiles/rebuild_cache.dir

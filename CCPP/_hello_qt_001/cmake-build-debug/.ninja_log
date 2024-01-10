@@ -1,8 +1,0 @@
-# ninja log v5
-1	121	1700632367508039715	_hello_qt_001_autogen/timestamp	552f587f5a9c4d97
-1	121	1700632367508039715	_hello_qt_001_autogen/mocs_compilation.cpp	552f587f5a9c4d97
-1	121	1700632367508039715	/Users/setsunayang/Documents/learning/base/CCPP/_hello_qt_001/cmake-build-debug/_hello_qt_001_autogen/timestamp	552f587f5a9c4d97
-1	121	1700632367508039715	/Users/setsunayang/Documents/learning/base/CCPP/_hello_qt_001/cmake-build-debug/_hello_qt_001_autogen/mocs_compilation.cpp	552f587f5a9c4d97
-122	157	1700632367547727497	CMakeFiles/_hello_qt_001.dir/_hello_qt_001_autogen/mocs_compilation.cpp.o	92fb81ad2ca57b4a
-122	804	1700632368193222023	CMakeFiles/_hello_qt_001.dir/main.cpp.o	a4891b7e3b82b02f
-804	918	1700632368309114288	_hello_qt_001	438e498ff93a4e7f
