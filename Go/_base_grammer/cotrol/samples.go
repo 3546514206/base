@@ -44,3 +44,21 @@ func ConditionFor() {
 
 	fmt.Println(sum)
 }
+
+// BreakContinueFor for 循环的过程，可以使用 continue 来跳过当次循环，使用 break 中断循环。
+func BreakContinueFor() {
+
+	for i := 0; i < 100; i++ {
+		if i%2 == 0 {
+			continue
+		}
+
+		// 大于 10 就中断循环
+		if i > 10 {
+			break
+		}
+
+		fmt.Printf("%d", i)
+	}
+	fmt.Println()
+}
