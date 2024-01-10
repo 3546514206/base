@@ -6,7 +6,7 @@ import "fmt"
 func CanBuy(hasMoney, productPrice int) {
 	// if 后面不需要括号，if 的执行体无论是否为空 { } 都是必须的
 	if hasMoney >= productPrice {
-		fmt.Printf("you can, will %d left", hasMoney-productPrice)
+		fmt.Printf("you can, will %d left\n", hasMoney-productPrice)
 	}
 }
 
@@ -21,4 +21,15 @@ func CheckPrice(amount int) {
 	} else {
 		fmt.Println("真便宜啊")
 	}
+}
+
+// FullFor 完整的 For 循环
+func FullFor() {
+	sum := 0
+
+	for i := 0; i < 100; i++ {
+		sum = sum + i
+	}
+
+	fmt.Println(sum)
 }
