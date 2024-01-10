@@ -47,6 +47,7 @@ func PrintChinese() {
 	var x rune = '中'
 	var y rune = '国'
 	fmt.Printf("%c%c\n", x, y)
+	fmt.Println(y)
 }
 
 // NumberOverflow 因为 50 的二进制是 110010，110010 和 110010 的乘积(按位相乘再相加)是 100111000100 = 2500，但是 num3 只有 8 位，
@@ -62,4 +63,12 @@ func NumberOverflow() {
 	num3 = num1 * num2
 	// 期望是 2500，结果显示 196，改为 uint16 则正常
 	fmt.Printf("%d", num3)
+}
+
+func PrintBool() {
+	var a bool = false
+	b := true
+	fmt.Println(a)
+	// 打印 bool
+	fmt.Printf("%T", b)
 }

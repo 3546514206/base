@@ -10,5 +10,6 @@ func main() {
 	// _type.ShowStaticType()
 	// _type.PrintSpace()
 	// _type.PrintChinese()
-	_type.NumberOverflow()
+	// _type.NumberOverflow()
+	_type.PrintBool()
 }
