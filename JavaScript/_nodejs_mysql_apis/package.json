@@ -1,0 +1,23 @@
+{
+  "name": "MysqlUtil-For-Node.js",
+  "version": "1.0.0",
+  "description": "``` javascript\r /*\r *  @name：node.js操作mysql数据库模块\r *  @author：SunSeekerX\r *  @time：2019年4月25日13点55分\r * */",
+  "main": "mysql.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunSeekerX/MysqlUtil-For-Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunSeekerX/MysqlUtil-For-Node.js/issues"
+  },
+  "homepage": "https://github.com/SunSeekerX/MysqlUtil-For-Node.js#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
+}
