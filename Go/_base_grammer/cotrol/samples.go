@@ -1,0 +1,24 @@
+package cotrol
+
+import "fmt"
+
+// CanBuy 可不可以买
+func CanBuy(hasMoney, productPrice int) {
+	// if 后面不需要括号，if 的执行体无论是否为空 { } 都是必须的
+	if hasMoney >= productPrice {
+		fmt.Printf("you can, will %d left", hasMoney-productPrice)
+	}
+}
+
+// CheckPrice 判断价格
+func CheckPrice(amount int) {
+	if amount > 50 {
+		if amount > 100 {
+			fmt.Println("太贵了")
+		} else {
+			fmt.Println("还行")
+		}
+	} else {
+		fmt.Println("真便宜啊")
+	}
+}

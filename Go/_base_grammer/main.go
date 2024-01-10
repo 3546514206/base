@@ -1,6 +1,6 @@
 package main
 
-import "_base_grammer/function"
+import "_base_grammer/cotrol"
 
 func main() {
 	// hello.SayHelloInChinese()
@@ -13,5 +13,8 @@ func main() {
 	// _type.NumberOverflow()
 	// _type.PrintBool()
 
-	function.DoSomething()
+	// function.DoSomething()
+
+	cotrol.CanBuy(6, 3)
+
 }
