@@ -1,0 +1,7 @@
+recent: 最近新增的特性
+recent_addition: 这是一个最近添加到 JavaScript 的特性。
+browser:
+  value: "示例可以在最近的 #{browser} 工作。"
+  none: "JavaScript 引擎不支持（或部分支持），需要 polyfills。"
+  new: 旧式浏览器可能需要 polyfills.
+caniuse: "你能在 <a href=\"https://caniuse.com/#feat=#{feat}\">https://caniuse.com/#feat=#{feat}</a> 找到当前支持状态。"

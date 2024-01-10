@@ -1,0 +1,221 @@
+.sidebar
+  width sidebar_width - 1
+  background var(--backgroundAlt)
+  border-right 1px solid var(--borderPrimary)
+  display flex
+  flex-direction column
+  flex-grow 1
+
+  &__ads-link
+    display flex
+    flex-direction column
+    background #fff
+    border 1px solid #E9E6E4
+    padding 12px 8px
+    cursor pointer
+    text-decoration none
+
+  &__ads-img
+    margin 0 13px
+    max-width 100%
+
+  &__ads-title
+    font-family 'SF Pro Text', sans-serif
+    font-style normal
+    font-weight 500
+    font-size 16px
+    line-height 24px
+    text-align center
+    margin 8px 0
+    color #313130
+
+    & > span
+      color #145CB4
+
+  &__ads-btn
+    font-family 'SF Pro Text', sans-serif
+    font-style normal
+    font-weight 500
+    font-size 16px
+    line-height 24px
+    display flex
+    align-items center
+    justify-content center
+    text-align center
+    margin 0 13px
+    padding 4 12
+    height 32px
+    border 2px solid #748DCD
+    box-sizing border-box
+    border-radius 16px
+    color #145CB4
+
+  &__inner
+    overflow auto
+    max-height 100%
+    flex-grow 1
+
+  &__content
+    padding 23px 25px
+    height 100%
+    position relative
+    box-sizing border-box
+    display flex
+    flex-direction column
+
+  &_profile
+    background var(--backgroundAlt)
+    border-right 0
+    transform translateX(0)
+
+    // & ^[0]__content
+    // margin-top 30px
+
+    & ^[0]__link
+      color var(--foregroundDefault)
+
+    & ^[0]__navigation-link
+      &_active
+        color var(--foregroundAccent)
+
+  &_profile-empty
+    display none
+
+  & &__toggle
+    @extend $button-reset
+
+  & &__toggle,
+  & .map
+    position absolute
+    top 12px
+    left 100%
+    margin-left 19px
+    width 44px
+    height 44px
+    border-radius 50%
+    cursor pointer
+
+  & .map
+    text-align center
+    line-height 44px
+    top 64px
+    transition transform animation_duration animation_duration
+
+  & &__toggle:active
+    position absolute
+
+  &__toggle:focus,
+  & .map:focus
+    outline 0
+
+  //- класс вместо псевдокласса для мобильных
+
+  &__toggle:hover,
+  & .map:hover
+    background var(--backgroundAlt)
+
+  &__toggle::before
+    font-size 22px
+    color var(--foregroundAlt)
+
+  &__toggle::before
+    @extend $font-burger
+
+  &__section
+    margin 22px 0 0
+    padding 0 2px
+    position relative
+
+  //- Move sponsorBar to the bottom
+  //- &#sponsorBar
+  //-   margin-top auto
+  //-   padding-top 22px
+
+  &__section_separator_before
+    margin-top 29px
+
+  &__section_separator_before::before
+    content ""
+    position absolute
+    top -12px
+    width 35px
+    border-top 1px solid var(--borderPrimary)
+
+  &__section_share
+    margin-top 18px
+
+  &__section-title
+    color var(--foregroundSubtle)
+    font-weight 400
+    margin 0 0 12px
+
+  &__link
+    color var(--foregroundSidebarLink)
+
+  &__link:hover
+    text-decoration none
+
+  &__navigation-link
+    line-height 1.25
+
+    & + &
+      margin-top 12px
+
+    &_active
+      color var(--foregroundAccent)
+
+  &__share
+    margin 8px 20px 0 0
+
+  &_compact &__section
+    margin 15px 0 0
+
+  // в компактном виде сохраняем у футера отступы по умолчанию
+  // для более удобного выравнивания с нижними хлебными крошками
+
+  &_compact&_sticky-footer &__section:last-child
+    margin 22px 0
+
+  &_compact &__section_separator_before
+    margin-top 24px
+
+  &_compact &__section-title
+    margin 0 0 6px 0
+
+  &_compact &__navigation-link
+    line-height 1.1
+    margin 0 0 6px 0
+
+    if isRTL
+      margin 0 0 14px
+
+  &_compact #sponsorBarTitle
+    display none
+
+  @media tablet
+    &__toggle
+      display none
+
+    &_profile
+      & ^[0]__content
+        margin 24px 16px
+
+      & ^[0]__navigation-links
+        display flex
+        flex-wrap wrap
+        justify-content center
+        margin 0 -10px
+
+      & ^[0]__navigation-link
+        padding 0 10px
+        margin 0 0 5px 0
+
+      & ^[0]__navigation-link:last-child
+        margin-right 0
+
+      & ^[0]__navigation
+        display none
+
+  @media short_window
+    &_compact&_sticky-footer &__section:last-child
+      margin 10px 0

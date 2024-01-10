@@ -1,0 +1,60 @@
+extends /layouts/main
+
+block append variables
+  - let layout_page_class = 'page_inner_padding'
+  - let layout_main_class = "main_width-limit"
+  - let show_banner = true
+  - let share = true
+
+block sidebar
+  include ~engine/sidebar/templates/sidebar
+
+block sidebar-buttons
+  if moduleExists('tutorialMap')
+    +b("a").map(href="/tutorial/map", data-action="tutorial-map", data-tooltip=t('tutorial.tutorial_map'))
+
+block append head
+  meta(property="og:title", content=title || headTitle)
+  meta(property="og:type", content="article")
+  !=js("tutorial", {defer: true})
+
+block append over-title
+  if translateNotification
+    +b.notification._message._warning._article
+      +e.content!= translateNotification
+
+block content
+  if archive
+    +b.notification._message._warning
+      +e.content
+        p Материал на этой странице устарел, поэтому скрыт из оглавления сайта.
+        if archive.ref
+          p Более новая информация по этой теме находится на странице <a href="/#{archive.ref}">https://learn.javascript.ru/#{archive.ref.replace(/#.*/, '')}</a>.
+
+  article.formatted(itemscope itemtype="http://schema.org/TechArticle")
+    meta(itemprop="name", content=title)
+    div(itemprop="author", itemscope, itemtype="http://schema.org/Person")
+      meta(itemprop="email", content="iliakan@gmail.com")
+      meta(itemprop="name" content="Ilya Kantor")
+    div(itemprop="articleBody")
+      != content
+
+  if tasks.length
+
+    +b.tasks.formatted
+      +e('h2').title#tasks
+        +e('a').title-anchor.main__anchor.main__anchor_noicon(href="#tasks")= t('tutorial.article.tasks')
+
+      each task, i in tasks
+        +b.task.__task(class={task_answer_open: task.taskAnswerOpen})
+          +e.header
+            +e.title-wrap
+              +e('h3').title
+                a.main__anchor(href=("#"+task.anchor) name=task.anchor)= task.title
+              +e('a').open-link(href=task.url, target="_blank")
+
+            +e.header-note
+              if task.importance
+                +e('span').importance(title=t("tutorial.task.importance_help")) #{t('tutorial.task.importance')}: #{task.importance}
+
+            include _task_content

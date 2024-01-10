@@ -1,0 +1,29 @@
+if sidebar.sections
+  each section in sidebar.sections
+    +e.section
+      if section.title
+        +e('h4').section-title!= section.title
+      +e('nav').navigation
+        +e('ul').navigation-links
+          each link in section.links
+            +e('li').navigation-link
+              +e('a').link(href=link.url)!= link.title
+
+
+if share
+  +e.section
+    +e.section-title= t('site.share')
+    +b('a').share._tw.sidebar__share(href="https://twitter.com/share?url="+encodeURIComponent(url.href) rel="nofollow")
+    //- [] encoded as %5B %5D to make validator happy
+    +b('a').share._fb.sidebar__share(href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]="+encodeURIComponent(url.href) rel="nofollow")
+
+if githubLink
+  +e.section
+    +e('a').link(href=githubLink rel="nofollow")= t('site.edit_on_github')
+
+if lang === 'en' && currentSection == 'tutorial'
+  //- && env == 'production'
+  +e.section#sponsorBar
+    +e.section-title#sponsorBarTitle
+    +e#sponsorBarContent
+  script window.initSponsorBar()

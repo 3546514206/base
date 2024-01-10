@@ -1,0 +1,18 @@
+extends /layouts/main
+
+block append variables
+  - let headTitle = error.title || t('error.503.title')
+  - let layout_header_class = "main__header_center"
+  - var themeEnabled = true
+
+block content
+  +b.error
+    +e('h1').type= headTitle
+    +e.code 503
+
+    if error.info
+      +e.text
+        != error.info
+    else
+      - let subject = encodeURIComponent(t('error.503.subject', {href: url.href}))
+      +e.text!= t('error.503.description', { email: supportEmail, subject })
