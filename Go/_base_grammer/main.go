@@ -1,6 +1,6 @@
 package main
 
-import _type "_base_grammer/type"
+import "_base_grammer/function"
 
 func main() {
 	// hello.SayHelloInChinese()
@@ -11,5 +11,7 @@ func main() {
 	// _type.PrintSpace()
 	// _type.PrintChinese()
 	// _type.NumberOverflow()
-	_type.PrintBool()
+	// _type.PrintBool()
+
+	function.DoSomething()
 }
