@@ -18,4 +18,5 @@ func main() {
 	cotrol.CanBuy(6, 3)
 	cotrol.CheckPrice(98)
 	cotrol.FullFor()
+	cotrol.ConditionFor()
 }

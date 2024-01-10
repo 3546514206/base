@@ -33,3 +33,14 @@ func FullFor() {
 
 	fmt.Println(sum)
 }
+
+// ConditionFor 只有循环条件，初始值和增减量是可以没有，这时候两边的分号也可以不写了。
+func ConditionFor() {
+	sum := 1
+
+	for sum < 10 {
+		sum += sum
+	}
+
+	fmt.Println(sum)
+}
