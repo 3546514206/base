@@ -1,6 +1,6 @@
 package main
 
-import "_base_grammer/cotrol"
+import "_base_grammer/variable"
 
 func main() {
 	// hello world
@@ -24,5 +24,7 @@ func main() {
 	// cotrol.FullFor()
 	// cotrol.ConditionFor()
 	// cotrol.BreakContinueFor()
-	cotrol.ForRange()
+	// cotrol.ForRange()
+
+	variable.CompileSizedof()
 }
