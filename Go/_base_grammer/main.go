@@ -23,6 +23,6 @@ func main() {
 	// cotrol.CheckPrice(98)
 	// cotrol.FullFor()
 	// cotrol.ConditionFor()
-	cotrol.BreakContinueFor()
-
+	// cotrol.BreakContinueFor()
+	cotrol.ForRange()
 }
