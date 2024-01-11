@@ -42,3 +42,13 @@ func PrintAddr() {
 	sore := 10
 	fmt.Printf("%p", &sore)
 }
+
+// HoldVarAddr 持有变量地址的指针变量可以通过 * 操作符读取它地址里存放的值，并且修改它。
+func HoldVarAddr() {
+	score := 10
+	addr := &score
+	// 相当于C语言里面的解引用
+	*addr = 20
+	// 打印 20
+	fmt.Println(score)
+}
