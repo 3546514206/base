@@ -26,5 +26,7 @@ func main() {
 	// cotrol.BreakContinueFor()
 	// cotrol.ForRange()
 
-	variable.CompileSizedof()
+	// 变量与常量
+	// variable.CompileSizedof()
+	variable.PrintAddr()
 }
