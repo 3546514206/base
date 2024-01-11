@@ -1,6 +1,6 @@
 package main
 
-import "_base_grammer/variable"
+import "_base_grammer/datastruct"
 
 func main() {
 	// hello world
@@ -30,5 +30,8 @@ func main() {
 	// variable.CompileSizedof()
 	// variable.PrintAddr()
 	// variable.HoldVarAddr()
-	variable.IncScoreFailed()
+	// variable.IncScoreFailed()
+
+	// 数据结构
+	datastruct.DefineArray()
 }
