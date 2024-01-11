@@ -52,3 +52,45 @@ func HoldVarAddr() {
 	// 打印 20
 	fmt.Println(score)
 }
+
+// 不能修改入参 score 参数值
+// 函数调用的时候参数被拷贝
+func cannotUpdateScore(score int) {
+	// 0xc00001c138
+	fmt.Println(&score)
+	score++
+	// 11
+	fmt.Println(score)
+}
+
+// IncScoreFailed 调高分数
+// 函数调用的时候，默认参数是按照值传递的，对于普通的变量类型，传递的参数会被拷贝一份压入堆栈，这种情况下函数体内的代码不会影
+// 响到传入的参数本身，因为他们的内存地址并不是同一个位置。所以下面的代码无法修改 score 的值。
+func IncScoreFailed() {
+	score := 10
+	// 0xc00001c130
+	fmt.Println(&score)
+	cannotUpdateScore(score)
+	// 10
+	fmt.Println(score)
+}
+
+// 可以修改入参 score 参数值
+// 函数调用的时候参数被拷贝
+func canUpdateScore(ptrScore *int) {
+	// 已经是地址了 0xc00001c140
+	fmt.Println(ptrScore)
+	*ptrScore++
+	// 11
+	fmt.Println(*ptrScore)
+}
+
+// IncScoreSucceeded 调高分数
+func IncScoreSucceeded() {
+	score := 10
+	// 0xc00001c140
+	fmt.Println(&score)
+	canUpdateScore(&score)
+	// 11
+	fmt.Println(score)
+}

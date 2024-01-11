@@ -29,5 +29,6 @@ func main() {
 	// 变量与常量
 	// variable.CompileSizedof()
 	// variable.PrintAddr()
-	variable.HoldVarAddr()
+	// variable.HoldVarAddr()
+	variable.IncScoreFailed()
 }
