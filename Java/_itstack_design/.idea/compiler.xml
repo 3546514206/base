@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itstack-demo-design-11-01" />
+        <module name="itstack-demo-design-11-02" />
+        <module name="itstack-demo-design-9-02" />
+        <module name="itstack-demo-design-9-01" />
+        <module name="itstack-demo-design-9-00" />
+        <module name="itstack-demo-design-19-01" />
+        <module name="itstack-demo-design-5-00" />
+        <module name="itstack-demo-design-19-00" />
+        <module name="itstack-demo-design-19-02" />
+        <module name="itstack-demo-design-15-00" />
+        <module name="itstack-demo-design-20-02" />
+        <module name="itstack-demo-design-20-01" />
+        <module name="itstack-demo-design-10-00" />
+        <module name="itstack-demo-design-10-02" />
+        <module name="itstack-demo-design-10-01" />
+        <module name="itstack-demo-design-6-02" />
+        <module name="itstack-demo-design-1-02" />
+        <module name="itstack-demo-design-14-02" />
+        <module name="itstack-demo-design-18-00" />
+        <module name="itstack-demo-design-14-01" />
+        <module name="itstack-demo-design-1-01" />
+        <module name="itstack-demo-design-14-00" />
+        <module name="itstack-demo-design-18-02" />
+        <module name="itstack-demo-design-6-00" />
+        <module name="itstack-demo-design-1-00" />
+        <module name="itstack-demo-design-18-01" />
+        <module name="itstack-demo-design-6-01" />
+        <module name="itstack-demo-design-2-00" />
+        <module name="itstack-demo-design-2-01" />
+        <module name="itstack-demo-design-2-02" />
+        <module name="itstack-demo-design-21-00" />
+        <module name="itstack-demo-design-13-02" />
+        <module name="itstack-demo-design-13-00" />
+        <module name="itstack-demo-design-13-01" />
+        <module name="itstack-demo-design-7-01" />
+        <module name="itstack-demo-design-17-00" />
+        <module name="itstack-demo-design-7-02" />
+        <module name="itstack-demo-design-3-00" />
+        <module name="itstack-demo-design-22-00" />
+        <module name="itstack-demo-design-3-01" />
+        <module name="itstack-demo-design-3-02" />
+        <module name="itstack-demo-design-16-01" />
+        <module name="itstack-demo-design-16-02" />
+        <module name="itstack-demo-design-8-01" />
+        <module name="itstack-demo-design-12-00" />
+        <module name="itstack-demo-design-8-02" />
+        <module name="itstack-demo-design-4-01" />
+        <module name="itstack-demo-design-4-00" />
+        <module name="itstack-demo-design-4-02" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="itstack-demo-design-10-00" options="-parameters" />
+      <module name="itstack-demo-design-10-02" options="-parameters" />
+    </option>
+  </component>
+</project>

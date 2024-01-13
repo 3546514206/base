@@ -1,6 +1,9 @@
 package datastruct
 
-import "fmt"
+import (
+	"fmt"
+	"unsafe"
+)
 
 func DefineArray() {
 	// 申明
@@ -20,4 +23,11 @@ func DefineArray() {
 	// 数组的大小是5，第 2 个元素的值是 2，第 3 个元素的值是 3，没有指定的就是 int 零值(0)可以
 	arr5 := [5]int{1: 2, 2: 3}
 	fmt.Println(arr5)
+}
+
+func sliceSize() {
+	// 构造空的切片
+	var s1 []int
+	// 24
+	fmt.Println(unsafe.Sizeof(s1))
 }

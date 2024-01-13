@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/abstract-factory/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/abstract-factory/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/adapter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/adapter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bridge/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bridge/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chain-of-responsibility/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chain-of-responsibility/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/command/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/command/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/composite/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/composite/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/decorator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/decorator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/facade/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/facade/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flyweight/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flyweight/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interpreter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interpreter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iterator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iterator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mediator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mediator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memento/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/memento/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/observer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/observer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prototype/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prototype/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/proxy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/proxy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/singleton/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/singleton/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/state/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/state/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/strategy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/strategy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template-method/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/template-method/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/visitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/visitor/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
