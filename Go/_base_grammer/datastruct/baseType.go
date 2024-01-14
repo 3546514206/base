@@ -31,3 +31,9 @@ func sliceSize() {
 	// 24
 	fmt.Println(unsafe.Sizeof(s1))
 }
+
+func createSliceFromArray() {
+	arr1 := [5]int{1, 2, 3, 4, 5}
+	s1 := arr1[:]
+	fmt.Printf("%T\n%T\n", arr1, s1) // [5]int []int
+}
