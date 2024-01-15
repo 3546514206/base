@@ -2,6 +2,7 @@ package datastruct
 
 import (
 	"fmt"
+	"time"
 	"unsafe"
 )
 
@@ -36,4 +37,15 @@ func createSliceFromArray() {
 	arr1 := [5]int{1, 2, 3, 4, 5}
 	s1 := arr1[:]
 	fmt.Printf("%T\n%T\n", arr1, s1) // [5]int []int
+}
+
+func DefineBook() {
+	book := struct {
+		Name    string
+		Author  string
+		Publish time.Time
+	}{"算法导论", "大神", time.Now()}
+	// struct { Name string; Author string; Publish time.Time }
+	fmt.Printf("%T\n", book)
+	fmt.Println(book)
 }
