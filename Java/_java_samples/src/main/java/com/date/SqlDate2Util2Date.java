@@ -7,7 +7,7 @@ package com.date;
 public class SqlDate2Util2Date {
     public static void main(String[] args) {
         // util.date转换成sql.date
-        java.util.Date utilDate = new java.util.Date(); //获取当前时间
+        java.util.Date utilDate = new java.util.Date(); // 获取当前时间
         System.out.println(utilDate);
         java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
         System.out.println(sqlDate);

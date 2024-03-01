@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\_check_prime.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\_check_prime.dir/objects.a @CMakeFiles\_check_prime.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\_check_prime.dir/objects.a -Wl,--no-whole-archive -o _check_prime.exe -Wl,--out-implib,lib_check_prime.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\_check_prime.dir\linklibs.rsp
