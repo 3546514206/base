@@ -28,4 +28,11 @@ public class StringTest {
         System.out.println("startString String: " + startString);
         System.out.println("endString String: " + endString);
     }
+
+    @Test
+    public void testSecretStr() {
+        String tagStr = "#40";
+        String secret = "#40AAAASSSSSSS";
+        System.out.println(secret.substring(tagStr.length()));
+    }
 }
