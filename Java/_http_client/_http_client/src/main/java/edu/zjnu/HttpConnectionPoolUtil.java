@@ -3,6 +3,7 @@ package edu.zjnu;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Stopwatch;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.*;
 import org.apache.http.client.HttpRequestRetryHandler;
@@ -46,6 +47,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2024-03-21 16:07
  * @description 多线程 http 通讯工具类
  */
+@Slf4j
 public class HttpConnectionPoolUtil {
 
     /**
@@ -157,7 +159,7 @@ public class HttpConnectionPoolUtil {
 
                         //关闭20s空闲的连接
                         manager.closeIdleConnections(CONNECT_TIMEOUT, TimeUnit.MILLISECONDS);
-                        // log.info("close expired and idle for over 20s connection");
+                        log.info("close expired and idle for over 20s connection");
 
                     }, 300, 300, TimeUnit.SECONDS);
                 }
@@ -186,31 +188,31 @@ public class HttpConnectionPoolUtil {
             public boolean retryRequest(IOException e, int i, HttpContext httpContext) {
                 if (i > 1) {
                     //重试超过1次,放弃请求
-                    System.out.println("retry has more than 1 time, give up request");
+                    log.info("retry has more than 1 time, give up request");
                     return false;
                 }
                 if (e instanceof NoHttpResponseException) {
                     //服务器没有响应,可能是服务器断开了连接,应该重试
-                    System.out.println("receive no response from server, retry");
+                    log.info("receive no response from server, retry");
                     return true;
                 }
                 if (e instanceof SSLHandshakeException) {
                     // SSL握手异常
-                    System.out.println("SSL hand shake exception");
+                    log.info("SSL hand shake exception");
                     return false;
                 }
                 if (e instanceof InterruptedIOException) {
                     //超时
-                    System.out.println("InterruptedIOException");
+                    log.info("InterruptedIOException");
                     return false;
                 }
                 if (e instanceof UnknownHostException) {
                     // 服务器不可达
-                    System.out.println("server host unknown");
+                    log.info("server host unknown");
                     return false;
                 }
                 if (e instanceof SSLException) {
-                    System.out.println("SSLException");
+                    log.info("SSLException");
                     return false;
                 }
 
@@ -271,7 +273,7 @@ public class HttpConnectionPoolUtil {
             HttpClientResult result = getHttpClientResult(httpResponse);
 
             stopwatch.stop();
-            // log.info("请求url:{},响应:{},耗时{}", url, result, stopwatch.elapsed(TimeUnit.MILLISECONDS));
+            log.info("请求url:{},响应:{},耗时{}", url, result, stopwatch.elapsed(TimeUnit.MILLISECONDS));
             return result;
         } finally {
             // 释放资源
@@ -313,7 +315,7 @@ public class HttpConnectionPoolUtil {
             HttpClientResult result = getHttpClientResult(httpResponse);
 
             stopwatch.stop();
-            // log.info("请求url:{},响应:{},耗时{}", url, result, stopwatch.elapsed(TimeUnit.MILLISECONDS));
+            log.info("请求url:{},响应:{},耗时{}", url, result, stopwatch.elapsed(TimeUnit.MILLISECONDS));
             return result;
         } finally {
             // 释放资源
@@ -407,7 +409,7 @@ public class HttpConnectionPoolUtil {
                 EntityUtils.consume(httpResponse.getEntity());
                 httpResponse.close();
             } catch (IOException e) {
-                // log.error("释放链接错误");
+                log.error("释放链接错误");
             }
         }
     }
@@ -421,6 +423,7 @@ public class HttpConnectionPoolUtil {
             manager.close();
             monitorExecutor.shutdown();
         } catch (IOException e) {
+            log.error("释放链接错误");
             e.printStackTrace();
         }
     }
