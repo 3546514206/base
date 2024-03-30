@@ -1,0 +1,35 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="JavadocDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ADDITIONAL_TAGS" value="date,description" />
+    </inspection_tool>
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="_http_client" />
+          <option value="_http_client" />
+          <option value="_http_client" />
+          <option value="_http_client" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="com.google.guava:guava:30.1-jre" />
+          <option value="commons-codec:commons-codec:1.11" />
+          <option value="junit:junit:4.13" />
+          <option value="log4j:log4j:1.2.17" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="不可利用" />
+          <option value="不可利用" />
+          <option value="不可利用" />
+          <option value="不可利用" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
