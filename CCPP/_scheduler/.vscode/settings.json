@@ -1,0 +1,21 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "__config": "cpp",
+        "__debug": "cpp",
+        "__locale": "cpp",
+        "__string": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "cstdlib": "cpp",
+        "string": "cpp",
+        "ios": "cpp",
+        "iosfwd": "cpp",
+        "locale": "cpp",
+        "stdexcept": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "typeinfo": "cpp",
+        "version": "cpp"
+    }
+}
