@@ -20,6 +20,6 @@ CMake Deprecation Warning:
 -- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (0.4s)
+-- Configuring done (0.9s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/cmake-build-debug
