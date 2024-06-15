@@ -1,8 +1,8 @@
 [
 {
-  "directory": "/Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/build",
-  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -o CMakeFiles/_check_prime.dir/_check_prime.cpp.o -c /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp",
-  "file": "/Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp",
-  "output": "CMakeFiles/_check_prime.dir/_check_prime.cpp.o"
+  "directory": "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE   -g -o CMakeFiles\\_check_prime.dir\\_check_prime.cpp.obj -c C:\\Users\\SetsunaYang\\Documents\\GitHub\\base\\CCPP\\_check_prime\\_check_prime.cpp",
+  "file": "C:/Users/SetsunaYang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp",
+  "output": "CMakeFiles/_check_prime.dir/_check_prime.cpp.obj"
 }
 ]
