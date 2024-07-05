@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cangjie (CJVM): launch",
+            "program": "${programPath}",
+            "request": "launch",
+            "type": "cangjieDebug",
+            "externalConsole": false,
+            "vmMode": true,
+            "vmPort": 3001
+        }
+    ]
+}

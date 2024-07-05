@@ -13,6 +13,7 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import javax.validation.Valid;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -51,7 +52,7 @@ public class SseDemoApplication {
             } catch (IOException e) {
                 emitter.complete();
                 emitters.remove(emitter);
-                e.printStackTrace();
+                log.info("error trance " + Arrays.toString(e.getStackTrace()));
             }
         });
         return message;

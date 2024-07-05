@@ -73,15 +73,15 @@ CMakeFiles/_check_prime.dir/_check_prime.cpp.o: CMakeFiles/_check_prime.dir/flag
 CMakeFiles/_check_prime.dir/_check_prime.cpp.o: /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp
 CMakeFiles/_check_prime.dir/_check_prime.cpp.o: CMakeFiles/_check_prime.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/_check_prime.dir/_check_prime.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_check_prime.dir/_check_prime.cpp.o -MF CMakeFiles/_check_prime.dir/_check_prime.cpp.o.d -o CMakeFiles/_check_prime.dir/_check_prime.cpp.o -c /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_check_prime.dir/_check_prime.cpp.o -MF CMakeFiles/_check_prime.dir/_check_prime.cpp.o.d -o CMakeFiles/_check_prime.dir/_check_prime.cpp.o -c /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp
 
 CMakeFiles/_check_prime.dir/_check_prime.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/_check_prime.dir/_check_prime.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp > CMakeFiles/_check_prime.dir/_check_prime.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp > CMakeFiles/_check_prime.dir/_check_prime.cpp.i
 
 CMakeFiles/_check_prime.dir/_check_prime.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/_check_prime.dir/_check_prime.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp -o CMakeFiles/_check_prime.dir/_check_prime.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/setsunayang/Documents/GitHub/base/CCPP/_check_prime/_check_prime.cpp -o CMakeFiles/_check_prime.dir/_check_prime.cpp.s
 
 # Object files for target _check_prime
 _check_prime_OBJECTS = \
