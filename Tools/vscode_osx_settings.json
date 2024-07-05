@@ -106,7 +106,7 @@
     "zsh": {
       "path": "zsh",
       "env": {
-        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/JDK21/Contents/Home",
+        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home",
         "ZDOTDIR": "/Users/setsunayang/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk"
       }
     },
@@ -196,5 +196,20 @@
   "maven.view": "hierarchical",
   "editor.fontFamily": "Jetbrains Mono,Menlo, Monaco, 'Courier New', monospace",
   "java.dependency.showMembers": true,
-  "java.debug.logLevel": "info"
+  "java.debug.logLevel": "info",
+  "settingsSync.ignoredSettings": [
+    "-java.configuration.runtimes",
+    "-java.import.gradle.home",
+    "-java.import.gradle.java.home",
+    "-java.jdt.ls.java.home",
+    "-maven.settingsFile",
+    "java.configuration.maven.userSettings",
+    "java.configuration.maven.globalSettings",
+    "terminal.integrated.profiles.osx",
+    "terminal.integrated.defaultProfile.osx",
+    "maven.terminal.customEnv",
+    "-maven.executable.path",
+    "terminal.integrated.defaultProfile.windows",
+    "-jdk.jdkhome"
+  ]
 }
