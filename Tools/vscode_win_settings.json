@@ -43,16 +43,16 @@
     "editor.formatOnSave": true,
     "editor.suggest.snippetsPreventQuickSuggestions": false
   },
-  "java.import.gradle.java.home": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home",
-  "java.jdt.ls.java.home": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home",
+  "java.import.gradle.java.home": "C:\\Program Files\\Java\\JDK17",
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\JDK17",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "maven.settingsFile": "/Library/Java/Extensions/apache-maven-3.5.4/conf/settings-aliyun.xml",
-  "java.configuration.maven.userSettings": "/Library/Java/Extensions/apache-maven-3.5.4/conf/settings-aliyun.xml",
-  "java.configuration.maven.globalSettings": "/Library/Java/Extensions/apache-maven-3.5.4/conf/settings-aliyun.xml",
+  "maven.settingsFile": "C:\\Program Files\\Java\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
+  "java.configuration.maven.userSettings": "C:\\Program Files\\Java\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
+  "java.configuration.maven.globalSettings": "C:\\Program Files\\Java\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
   "java.maven.downloadSources": true,
   "editor.formatOnSave": true,
   "maven.excludedFolders": [
@@ -106,39 +106,39 @@
     "zsh": {
       "path": "zsh",
       "env": {
-        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home",
-        "ZDOTDIR": "/Users/setsunayang/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk"
+        "JAVA_HOME": "C:\\Program Files\\Java\\JDK17",
+        "ZDOTDIR": "C:\\Users\\SetsunaYang\\Documents\\CODE"
       }
     },
     "JavaSE-1.8 LTS": {
       "overrideName": true,
       "env": {
-        "ZDOTDIR": "/Users/setsunayang/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk",
-        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/JDK1.8/Contents/Home"
+        "ZDOTDIR": "C:\\Users\\SetsunaYang\\Documents\\CODE",
+        "JAVA_HOME": "C:\\Program Files\\Java\\JDK1.8"
       },
       "path": "zsh"
     },
     "JavaSE-11 LTS": {
       "overrideName": true,
       "env": {
-        "ZDOTDIR": "/Users/setsunayang/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk",
-        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/JDK11/Contents/Home"
+        "ZDOTDIR": "C:\\Users\\SetsunaYang\\Documents\\CODE",
+        "JAVA_HOME": "C:\\Program Files\\Java\\JDK11"
       },
       "path": "zsh"
     },
     "JavaSE-17 LTS": {
       "overrideName": true,
       "env": {
-        "ZDOTDIR": "/Users/setsunayang/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk",
-        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home"
+        "ZDOTDIR": "C:\\Users\\SetsunaYang\\Documents\\CODE",
+        "JAVA_HOME": "C:\\Program Files\\Java\\JDK17"
       },
       "path": "zsh"
     },
     "JavaSE-21 LTS": {
       "overrideName": true,
       "env": {
-        "ZDOTDIR": "/Users/setsunayang/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk",
-        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/JDK21/Contents/Home"
+        "ZDOTDIR": "C:\\Users\\SetsunaYang\\Documents\\CODE",
+        "JAVA_HOME": "C:\\Program Files\\Java\\JDK21"
       },
       "path": "zsh"
     }
@@ -150,27 +150,27 @@
   "maven.terminal.customEnv": [
     {
       "environmentVariable": "JAVA_HOME",
-      "value": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home"
+      "value": "C:\\Program Files\\Java\\JDK17"
     }
   ],
-  "maven.executable.path": "/Library/Java/Extensions/apache-maven-3.5.4/bin/mvn",
-  "java.import.gradle.home": "/Users/setsunayang/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/gradle/latest",
+  "maven.executable.path": "C:\\Program Files\\Java\tools\\apache-maven-3.5.4\\bin\\mvn",
+  "java.import.gradle.home": "C:\\Users\\SetsunaYang\\Documents\\CODE",
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-1.8",
-      "path": "/Library/Java/JavaVirtualMachines/JDK1.8/Contents/Home"
+      "path": "C:\\Program Files\\Java\\JDK1.8"
     },
     {
       "name": "JavaSE-11",
-      "path": "/Library/Java/JavaVirtualMachines/JDK11/Contents/Home"
+      "path": "C:\\Program Files\\Java\\JDK11"
     },
     {
       "name": "JavaSE-17",
-      "path": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home"
+      "path": "C:\\Program Files\\Java\\JDK17"
     },
     {
       "name": "JavaSE-21",
-      "path": "/Library/Java/JavaVirtualMachines/JDK21/Contents/Home"
+      "path": "C:\\Program Files\\Java\\JDK21"
     }
   ],
   "terminal.integrated.automationProfile.windows": {
@@ -186,10 +186,10 @@
   "[bat]": {
     "files.eol": "\r\n"
   },
-  "terminal.integrated.defaultProfile.windows": "JavaSE-17",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "workbench.iconTheme": "vscode-icons",
   "vsicons.dontShowNewVersionMessage": true,
-  "jdk.jdkhome": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home",
+  "jdk.jdkhome": "C:\\Program Files\\Java\\JDK17",
   "maven.terminal.useJavaHome": true,
   "maven.pomfile.autoUpdateEffectivePOM": true,
   "maven.pomfile.prefetchEffectivePom": true,
