@@ -50,9 +50,9 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "maven.settingsFile": "C:\\Program Files\\Java\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
-  "java.configuration.maven.userSettings": "C:\\Program Files\\Java\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
-  "java.configuration.maven.globalSettings": "C:\\Program Files\\Java\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
+  "maven.settingsFile": "C:\\Program Files\\Java\\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
+  "java.configuration.maven.userSettings": "C:\\Program Files\\Java\\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
+  "java.configuration.maven.globalSettings": "C:\\Program Files\\Java\\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
   "java.maven.downloadSources": true,
   "editor.formatOnSave": true,
   "maven.excludedFolders": [
@@ -153,7 +153,7 @@
       "value": "C:\\Program Files\\Java\\JDK17"
     }
   ],
-  "maven.executable.path": "C:\\Program Files\\Java\tools\\apache-maven-3.5.4\\bin\\mvn",
+  "maven.executable.path": "C:\\Program Files\\Java\\tools\\apache-maven-3.5.4\\bin\\mvn",
   "java.import.gradle.home": "C:\\Users\\SetsunaYang\\Documents\\CODE",
   "java.configuration.runtimes": [
     {
