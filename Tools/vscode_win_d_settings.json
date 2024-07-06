@@ -1,0 +1,215 @@
+{
+  "update.mode": "none",
+  "files.autoSave": "afterDelay",
+  "workbench.startupEditor": "none",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "debug.onTaskErrors": "debugAnyway",
+  "extensions.ignoreRecommendations": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.linkedEditing": true,
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hans": true
+  },
+  "explorer.confirmDelete": false,
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "breadcrumbs.enabled": false,
+  "editor.largeFileOptimizations": false,
+  "git.ignoreLegacyWarning": true,
+  "workbench.editorAssociations": {
+    "*.jar": "default",
+    "*.html": "default"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "window.commandCenter": false,
+  "terminal.integrated.fontFamily": "monospace",
+  "git.openRepositoryInParentFolders": "always",
+  "[java]": {
+    "editor.formatOnSave": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "java.import.gradle.java.home": "D:\\Program Files\\Java\\JDK17",
+  "java.jdt.ls.java.home": "D:\\Program Files\\Java\\JDK17",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "maven.settingsFile": "D:\\Program Files\\Java\\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
+  "java.configuration.maven.userSettings": "D:\\Program Files\\Java\\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
+  "java.configuration.maven.globalSettings": "D:\\Program Files\\Java\\tools\\apache-maven-3.5.4\\conf\\settings-aliyun.xml",
+  "java.maven.downloadSources": true,
+  "editor.formatOnSave": true,
+  "maven.excludedFolders": [
+    "**/.idea",
+    "**/.git",
+    "**/.*",
+    "**/node_modules",
+    "**/target",
+    "**/bin",
+    "**/archetype-resources"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#00FF0010"
+    },
+    {
+      "column": 100,
+      "color": "#BDB76B15"
+    },
+    {
+      "column": 120,
+      "color": "#FA807219"
+    }
+  ],
+  "editor.unicodeHighlight.includeComments": true,
+  "workbench.colorCustomizations": {
+    "[Default Dark Modern]": {
+      "tab.activeBorderTop": "#00FF00",
+      "tab.unfocusedActiveBorderTop": "#00FF0088",
+      "textCodeBlock.background": "#00000055"
+    },
+    "editor.wordHighlightStrongBorder": "#FF6347",
+    "editor.wordHighlightBorder": "#FFD700",
+    "editor.selectionHighlightBorder": "#A9A9A9"
+  },
+  "workbench.editor.revealIfOpen": true,
+  "workbench.tree.indent": 20,
+  "emmet.variables": {
+    "lang": "zh"
+  },
+  "terminal.integrated.tabs.hideCondition": "never",
+  "terminal.integrated.enablePersistentSessions": false,
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.dependency.packagePresentation": "hierarchical",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "zsh",
+      "env": {
+        "JAVA_HOME": "D:\\Program Files\\Java\\JDK17",
+        "ZDOTDIR": "D:\\Users\\SetsunaYang\\Documents\\CODE"
+      }
+    },
+    "JavaSE-1.8 LTS": {
+      "overrideName": true,
+      "env": {
+        "ZDOTDIR": "D:\\Users\\SetsunaYang\\Documents\\CODE",
+        "JAVA_HOME": "D:\\Program Files\\Java\\JDK1.8"
+      },
+      "path": "zsh"
+    },
+    "JavaSE-11 LTS": {
+      "overrideName": true,
+      "env": {
+        "ZDOTDIR": "D:\\Users\\SetsunaYang\\Documents\\CODE",
+        "JAVA_HOME": "D:\\Program Files\\Java\\JDK11"
+      },
+      "path": "zsh"
+    },
+    "JavaSE-17 LTS": {
+      "overrideName": true,
+      "env": {
+        "ZDOTDIR": "D:\\Users\\SetsunaYang\\Documents\\CODE",
+        "JAVA_HOME": "D:\\Program Files\\Java\\JDK17"
+      },
+      "path": "zsh"
+    },
+    "JavaSE-21 LTS": {
+      "overrideName": true,
+      "env": {
+        "ZDOTDIR": "D:\\Users\\SetsunaYang\\Documents\\CODE",
+        "JAVA_HOME": "D:\\Program Files\\Java\\JDK21"
+      },
+      "path": "zsh"
+    }
+  },
+  "java.configuration.detectJdksAtStart": false,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.sources.organizeImports.staticStarThreshold": 1,
+  "terminal.integrated.defaultProfile.osx": "JavaSE-17 LTS",
+  "maven.terminal.customEnv": [
+    {
+      "environmentVariable": "JAVA_HOME",
+      "value": "D:\\Program Files\\Java\\JDK17"
+    }
+  ],
+  "maven.executable.path": "D:\\Program Files\\Java\\tools\\apache-maven-3.5.4\\bin\\mvn",
+  "java.import.gradle.home": "D:\\Users\\SetsunaYang\\Documents\\CODE",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "D:\\Program Files\\Java\\JDK1.8"
+    },
+    {
+      "name": "JavaSE-11",
+      "path": "D:\\Program Files\\Java\\JDK11"
+    },
+    {
+      "name": "JavaSE-17",
+      "path": "D:\\Program Files\\Java\\JDK17"
+    },
+    {
+      "name": "JavaSE-21",
+      "path": "D:\\Program Files\\Java\\JDK21"
+    }
+  ],
+  "terminal.integrated.automationProfile.windows": {
+    "path": "cmd"
+  },
+  "java.test.config": {
+    "vmArgs": [
+      "-Dstdout.encoding=UTF-8",
+      "-Dstderr.encoding=UTF-8"
+    ]
+  },
+  "files.eol": "\n",
+  "[bat]": {
+    "files.eol": "\r\n"
+  },
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "jdk.jdkhome": "D:\\Program Files\\Java\\JDK17",
+  "maven.terminal.useJavaHome": true,
+  "maven.pomfile.autoUpdateEffectivePOM": true,
+  "maven.pomfile.prefetchEffectivePom": true,
+  "maven.view": "hierarchical",
+  "editor.fontFamily": "Jetbrains Mono,Menlo, Monaco, 'Courier New', monospace",
+  "java.dependency.showMembers": true,
+  "java.debug.logLevel": "info",
+  "settingsSync.ignoredSettings": [
+    "-java.configuration.runtimes",
+    "-java.import.gradle.home",
+    "-java.import.gradle.java.home",
+    "-java.jdt.ls.java.home",
+    "-maven.settingsFile",
+    "java.configuration.maven.userSettings",
+    "java.configuration.maven.globalSettings",
+    "terminal.integrated.profiles.osx",
+    "terminal.integrated.defaultProfile.osx",
+    "maven.terminal.customEnv",
+    "-maven.executable.path",
+    "terminal.integrated.defaultProfile.windows",
+    "-jdk.jdkhome"
+  ]
+}
