@@ -209,5 +209,6 @@
     "maven.terminal.customEnv",
     "-maven.executable.path",
     "terminal.integrated.defaultProfile.windows"
-  ]
+  ],
+  "jdk.jdkhome": "/Library/Java/JavaVirtualMachines/JDK1.8/Contents/Home"
 }
