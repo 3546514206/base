@@ -43,7 +43,7 @@
     "editor.formatOnSave": true,
     "editor.suggest.snippetsPreventQuickSuggestions": false
   },
-  "java.import.gradle.java.home": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home",
+  "java.import.gradle.java.home": "/Library/Java/JavaVirtualMachines/JDK1.8/Contents/Home",
   "java.jdt.ls.java.home": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -189,7 +189,6 @@
   "terminal.integrated.defaultProfile.windows": "JavaSE-17",
   "workbench.iconTheme": "vscode-icons",
   "vsicons.dontShowNewVersionMessage": true,
-  "jdk.jdkhome": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home",
   "maven.terminal.useJavaHome": true,
   "maven.pomfile.autoUpdateEffectivePOM": true,
   "maven.pomfile.prefetchEffectivePom": true,
@@ -209,7 +208,6 @@
     "terminal.integrated.defaultProfile.osx",
     "maven.terminal.customEnv",
     "-maven.executable.path",
-    "terminal.integrated.defaultProfile.windows",
-    "-jdk.jdkhome"
+    "terminal.integrated.defaultProfile.windows"
   ]
 }
