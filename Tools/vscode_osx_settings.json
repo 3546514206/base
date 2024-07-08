@@ -210,5 +210,5 @@
     "-maven.executable.path",
     "terminal.integrated.defaultProfile.windows"
   ],
-  "jdk.jdkhome": "/Library/Java/JavaVirtualMachines/JDK11/Contents/Home"
+  "jdk.jdkhome": "/Library/Java/JavaVirtualMachines/JDK17/Contents/Home"
 }
