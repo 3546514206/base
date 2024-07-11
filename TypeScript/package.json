@@ -4,7 +4,7 @@
     "scripts": {
         "clean": "rimraf dist",
         "build": "npm run clean && tsc",
-        "001_helloworld": "npm run build && node dist/001_helloworld.js",
+        "helloworld": "npm run build && node dist/001_helloworld.js",
         "hello": "npm run build && node dist/hello.js",
         "observer": "npm run build && node dist/observer.js"
     },
