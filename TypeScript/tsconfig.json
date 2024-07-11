@@ -20,7 +20,9 @@
     },
     // 包含在编译过程中的文件
     "include": [
-        "_base_grammer/**/*"
+        // "src/_base_grammer/*.ts",
+        // "src/_hello_ts/*.ts"
+        "src/_observer/*.ts"
     ],
     // 排除在编译过程中的文件
     "exclude": [

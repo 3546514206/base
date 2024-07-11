@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "ts-node": "^10.9.2"
-  },
-  "scripts": {
-    "dev": "ts-node 002_test_calss.ts"
-  }
-}
