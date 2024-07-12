@@ -18,7 +18,10 @@ const anotherBlockScoped = "I am also block scoped";
 console.log(anotherBlockScoped); // 输出: "I am also block scoped"
 
 
-let binaryLiteral: number = 0b1010; // 二进制
-let octalLiteral: number = 0o744;    // 八进制
-let decLiteral: number = 6;    // 十进制
-let hexLiteral: number = 0xf00d;    // 十六进制
+let notSure: any = 4;
+notSure = "maybe a string instead";
+console.log(typeof notSure)
+// okay, definitely a boolean
+notSure = false;
+console.log(notSure instanceof Number );
+console.log(typeof notSure)
