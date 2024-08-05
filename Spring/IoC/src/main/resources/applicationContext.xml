@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- Bean definition for GreetingService -->
-    <bean id="greetingService" class="edu.zjnu.GreetingService"/>
+    <!-- Bean definition for HelloService -->
+    <bean id="helloService" class="edu.zjnu.HelloService"/>
 
 </beans>

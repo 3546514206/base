@@ -3,6 +3,7 @@ package edu.zjnu;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /*
  * Main
@@ -13,14 +14,26 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
 
     public static void main(String[] args) {
-        // Load Spring context from XML configuration file
+
+        testFileSystemXmlApplicationContext();
+
+//        testClassPathXmlApplicationContext();
+    }
+
+    private static void testFileSystemXmlApplicationContext() {
+        // 加载基于文件系统的 XML 配置文件
+        ApplicationContext context = new FileSystemXmlApplicationContext("src/main/resources/applicationContext.xml");
+        // 不支持绝对路径
+        // ApplicationContext context = new FileSystemXmlApplicationContext("/Users/setsunayang/Documents/GitHub/base/Spring/IoC/doc/applicationContext.xml");
+        HelloService helloService = (HelloService) context.getBean("greetingService");
+        String greeting = helloService.greet("World");
+        System.out.println(greeting);
+    }
+
+    private static void testClassPathXmlApplicationContext() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-
-        // Retrieve the greetingService bean
-        GreetingService greetingService = (GreetingService) context.getBean("greetingService");
-
-        // Use the greetingService
-        String greeting = greetingService.greet("World");
+        HelloService helloService = (HelloService) context.getBean("greetingService");
+        String greeting = helloService.greet("World");
         System.out.println(greeting);
     }
 }
