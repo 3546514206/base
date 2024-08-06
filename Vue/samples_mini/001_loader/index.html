@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Example</title>
+    <!-- 引入 Vue.js 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.11/dist/vue.global.prod.js"></script>
+</head>
+<body>
+<!-- 创建一个挂载点 -->
+<div id="app"></div>
+
+<script>
+    // 定义一个计数器组件
+    const Counter = {
+        template: `
+          <div>
+            <p>Count: {{ count }}</p>
+            <button @click="increment">Increment</button>
+            <button @click="decrement">Decrement</button>
+          </div>
+        `,
+        data() {
+            return {
+                count: 0
+            };
+        },
+        methods: {
+            increment() {
+                this.count++;
+            },
+            decrement() {
+                this.count--;
+            }
+        }
+    };
+
+    // 初始化 Vue 实例并挂载到 DOM 上
+    const app = Vue.createApp({
+        components: { Counter },
+        template: '<Counter />'
+    });
+
+    app.mount('#app');
+</script>
+</body>
+</html>

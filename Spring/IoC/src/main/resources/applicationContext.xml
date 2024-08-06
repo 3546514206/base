@@ -5,6 +5,9 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Bean definition for HelloService -->
-    <bean id="helloService" class="edu.zjnu.HelloService"/>
+    <bean id="helloService" class="edu.zjnu.HelloService">
+        <property name="name" value="helloService" />
+    </bean>
+
 
 </beans>

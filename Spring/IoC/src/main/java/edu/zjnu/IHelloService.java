@@ -1,7 +1,7 @@
 package edu.zjnu;
 
-/*
- *  GreetingService
+/**
+ * GreetingService
  *
  * @Date 2024-07-26 下午4:00
  * @Author 杨海波
@@ -9,7 +9,6 @@ package edu.zjnu;
 public interface IHelloService {
 
     /**
-     *
      * greet
      *
      * @param name

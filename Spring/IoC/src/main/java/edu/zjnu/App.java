@@ -5,7 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-/*
+/**
  * Main
  *
  * @Date 2024-07-26 下午3:18
@@ -17,7 +17,7 @@ public class App {
 
         testFileSystemXmlApplicationContext();
 
-//        testClassPathXmlApplicationContext();
+        testClassPathXmlApplicationContext();
     }
 
     private static void testFileSystemXmlApplicationContext() {
@@ -25,14 +25,14 @@ public class App {
         ApplicationContext context = new FileSystemXmlApplicationContext("src/main/resources/applicationContext.xml");
         // 不支持绝对路径
         // ApplicationContext context = new FileSystemXmlApplicationContext("/Users/setsunayang/Documents/GitHub/base/Spring/IoC/doc/applicationContext.xml");
-        HelloService helloService = (HelloService) context.getBean("greetingService");
+        HelloService helloService = (HelloService) context.getBean("helloService");
         String greeting = helloService.greet("World");
         System.out.println(greeting);
     }
 
     private static void testClassPathXmlApplicationContext() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        HelloService helloService = (HelloService) context.getBean("greetingService");
+        HelloService helloService = (HelloService) context.getBean("helloService");
         String greeting = helloService.greet("World");
         System.out.println(greeting);
     }
