@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    @RequestMapping(value = "/user/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/user/getUserInfoById", method = RequestMethod.POST)
     public User login(@RequestBody User user) {
-        user.setId("-1");
+        user.setId(user.getId());
         user.setName("setsunayang");
         user.setAge("18");
         return user;
