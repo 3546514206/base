@@ -4,9 +4,9 @@ BIM = b / (a * a)
 print("BIM指数：" + str(BIM))
 if BIM < 18.5:
     print("体重过轻")
-if BIM >= 18.5 and BIM < 24.9:
+if 18.5 <= BIM < 24.9:
     print("体重正常")
-if BIM >= 24.9 and BIM < 29.9:
+if 24.9 <= BIM < 29.9:
     print("体重过重")
 if BIM >= 29.9:
     print("肥胖")
