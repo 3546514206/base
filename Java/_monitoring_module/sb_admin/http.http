@@ -1,0 +1,11 @@
+###  /app/user/login
+POST http://127.0.0.1:8089/app/user/login
+Content-Type: application/json
+
+{
+  "id": "0001",
+  "name": "Lisa",
+  "age": "21"
+}
+
+###
