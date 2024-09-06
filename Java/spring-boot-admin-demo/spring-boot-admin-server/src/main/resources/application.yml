@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: admin-server
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+  mail:
+    host: smtp.qq.com
+    username: 445623551@qq.com
+    password: password
+  boot:
+    admin:
+      notify:
+        mail:
+          to: 445623551@qq.com
+          from: Xxx 应用监控管理平台 <3546514206@qq.com>
+          cc:
+            - 3546514206@qq.com
+            - ifczbo@gmail.com
+          template:
+      ui:
+        title: "Xxx 应用监控管理平台"
+        brand: "<img src='assets/img/icon-spring-boot-admin.svg'><span>Xxx 应用监控管理平台</span>"
+      monitor:
+        read-timeout: 20000
+
+server:
+  port: 7911
+management:
+  health:
+    db:
+      enabled: false
+    redis:
+      enabled: false
+    elasticsearch:
+      enabled: false
+    mail:
+      enabled: false
+  endpoint:
+    shutdown.enabled: true
+    health.show-details: always
+  endpoints.web.exposure.include: '*'

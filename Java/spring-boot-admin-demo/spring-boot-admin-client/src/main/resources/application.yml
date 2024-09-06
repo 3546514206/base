@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: admin-client
+  boot:
+    admin:
+      client:
+        url: http://localhost:7911
+        username: "admin"
+        password: "admin"
+        auto-registration: true
+        auto-deregistration: true
+server:
+  port: 7912
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

@@ -1,46 +1,72 @@
 package org.spring.springboot;
 
-import io.micrometer.core.instrument.Counter;
-import io.micrometer.core.instrument.Timer;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author: 杨海波
  * @date: 2023-02-14 17:18:29
- * @description: 
+ * @description:
  */
 @RestController
 public class UserController {
 
+    @Autowired
+    private MetricsService metricsService;
 
-    // 创建一个 Counter 计数器
-    @Resource
-    private Counter counter;
+    @GetMapping("/user/login")
+    public String login() {
+        String endpoint = "login";
+        long startTime = System.currentTimeMillis();
 
-    @Resource
-    private Timer timer;
+        // 记录并发请求数增加
+        metricsService.incrementConcurrency(endpoint, MetricsService.BizType.WEB);
+        // 记录请求开始
+        metricsService.incrementRequestCount(endpoint, MetricsService.BizType.WEB);
 
+        try {
+            // 模拟处理逻辑
+            Thread.sleep(30); // 模拟耗时操作
+            return "Login Successful";
+        } catch (Exception e) {
+            // 记录异常计数
+            metricsService.incrementExceptionCount(endpoint, MetricsService.BizType.WEB);
+        } finally {
+            long duration = System.currentTimeMillis() - startTime;
+            // 记录请求耗时
+            metricsService.recordRequestTime(endpoint, MetricsService.BizType.WEB, duration);
+            // 记录并发请求数减少
+            metricsService.decrementConcurrency(endpoint, MetricsService.BizType.WEB);
+        }
 
-    @RequestMapping(value = "/user/login", method = RequestMethod.POST)
-    public User login(@RequestBody User user) {
-        counter.increment();
-        // 使用 Timer 计时器测量响应时间
-        return timer.record(() -> {
-            // 每次调用 /api/hello 时递增计数器
-            counter.increment();
-            try {
-                // 模拟处理延迟
-                Thread.sleep(200);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-            return user;
-        });
+        return "login";
+    }
 
+    @GetMapping("/user/getUserInfo")
+    public String getUserInfo() {
+        String endpoint = "getUserInfo";
+        long startTime = System.currentTimeMillis();
+
+        // 记录并发请求数增加
+        metricsService.incrementConcurrency(endpoint, MetricsService.BizType.WEB);
+        // 记录请求开始
+        metricsService.incrementRequestCount(endpoint, MetricsService.BizType.WEB);
+
+        try {
+            // 模拟处理逻辑
+            Thread.sleep(30); // 模拟耗时操作
+            return "User Info";
+        } catch (Exception e) {
+            // 记录异常计数
+            metricsService.incrementExceptionCount(endpoint, MetricsService.BizType.WEB);
+        } finally {
+            long duration = System.currentTimeMillis() - startTime;
+            // 记录请求耗时
+            metricsService.recordRequestTime(endpoint, MetricsService.BizType.WEB, duration);
+            // 记录并发请求数减少
+            metricsService.decrementConcurrency(endpoint, MetricsService.BizType.WEB);
+        }
+
+        return "UserInfo";
     }
 }
