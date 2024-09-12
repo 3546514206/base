@@ -1,72 +1,44 @@
 package org.spring.springboot;
 
+import io.micrometer.core.instrument.Tags;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author: 杨海波
- * @date: 2023-02-14 17:18:29
- * @description:
- */
+
+import javax.annotation.Resource;
+
+
 @RestController
 public class UserController {
 
-    @Autowired
+    @Resource
     private MetricsService metricsService;
 
     @GetMapping("/user/login")
     public String login() {
         String endpoint = "login";
+        Tags tags = Tags.of("endpoint", endpoint);
+
+        metricsService.incrementCounter(MetricConstants.REQUESTS_COUNT, tags);
+        metricsService.incrementGauge(MetricConstants.REQUESTS_CONCURRENT, tags);
+
         long startTime = System.currentTimeMillis();
 
-        // 记录并发请求数增加
-        metricsService.incrementConcurrency(endpoint, MetricsService.BizType.WEB);
-        // 记录请求开始
-        metricsService.incrementRequestCount(endpoint, MetricsService.BizType.WEB);
-
         try {
-            // 模拟处理逻辑
-            Thread.sleep(30); // 模拟耗时操作
+            // 模拟耗时操作
+            Thread.sleep(30);
+            // 记录直方图数据
+            metricsService.recordHistogram(MetricConstants.REQUESTS_HISTOGRAM, tags, 30);
             return "Login Successful";
         } catch (Exception e) {
-            // 记录异常计数
-            metricsService.incrementExceptionCount(endpoint, MetricsService.BizType.WEB);
+            metricsService.incrementCounter(MetricConstants.REQUESTS_EXCEPTIONS_COUNT, tags);
         } finally {
             long duration = System.currentTimeMillis() - startTime;
-            // 记录请求耗时
-            metricsService.recordRequestTime(endpoint, MetricsService.BizType.WEB, duration);
-            // 记录并发请求数减少
-            metricsService.decrementConcurrency(endpoint, MetricsService.BizType.WEB);
+            metricsService.recordTimer(MetricConstants.REQUESTS_TIMER, tags, duration);
+            metricsService.recordSummary(MetricConstants.REQUESTS_SUMMARY, tags, duration);
+            metricsService.decrementGauge(MetricConstants.REQUESTS_CONCURRENT, tags);
         }
 
         return "login";
-    }
-
-    @GetMapping("/user/getUserInfo")
-    public String getUserInfo() {
-        String endpoint = "getUserInfo";
-        long startTime = System.currentTimeMillis();
-
-        // 记录并发请求数增加
-        metricsService.incrementConcurrency(endpoint, MetricsService.BizType.WEB);
-        // 记录请求开始
-        metricsService.incrementRequestCount(endpoint, MetricsService.BizType.WEB);
-
-        try {
-            // 模拟处理逻辑
-            Thread.sleep(30); // 模拟耗时操作
-            return "User Info";
-        } catch (Exception e) {
-            // 记录异常计数
-            metricsService.incrementExceptionCount(endpoint, MetricsService.BizType.WEB);
-        } finally {
-            long duration = System.currentTimeMillis() - startTime;
-            // 记录请求耗时
-            metricsService.recordRequestTime(endpoint, MetricsService.BizType.WEB, duration);
-            // 记录并发请求数减少
-            metricsService.decrementConcurrency(endpoint, MetricsService.BizType.WEB);
-        }
-
-        return "UserInfo";
     }
 }

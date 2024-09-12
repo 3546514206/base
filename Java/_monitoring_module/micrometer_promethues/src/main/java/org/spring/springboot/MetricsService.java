@@ -1,118 +1,68 @@
 package org.spring.springboot;
 
-import io.micrometer.core.instrument.Counter;
+
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Tags;
-import io.micrometer.core.instrument.Timer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * MetricsService
+ * todo 
  *
- * @Date 2024-09-05 09:24
+ * @Date 2024-09-12 14:15
  * @Author 杨海波
  **/
-@Component
+@Service
 public class MetricsService {
 
-    /**
-     * micrometer 中管理所有度量指标的集合
-     */
-    private final MeterRegistry meterRegistry;
-
-    // 使用ConcurrentMap来存储不同类型的指标
-    private final ConcurrentMap<String, Counter> counters = new ConcurrentHashMap<>();
-    private final ConcurrentMap<String, Timer> timers = new ConcurrentHashMap<>();
-    private final ConcurrentMap<String, AtomicInteger> gauges = new ConcurrentHashMap<>();
+    private final MetricFactory metricFactory;
+    private final ConcurrentMap<String, Metric> metricsMap = new ConcurrentHashMap<>();
 
     @Autowired
     public MetricsService(MeterRegistry meterRegistry) {
-        this.meterRegistry = meterRegistry;
+        this.metricFactory = new MetricFactory(meterRegistry);
     }
 
-    // 定义内部枚举来区分调用场景，并定义指标名称
-    public enum BizType {
-        WEB("web"), RPC("rpc");
-
-        private final String prefix;
-
-        BizType(String prefix) {
-            this.prefix = prefix;
-        }
-
-        public String getPrefix() {
-            return prefix;
-        }
+    private Metric getOrCreateMetric(MetricType type, String name, Tags tags) {
+        String key = type.name() + ":" + name + ":" + tags.toString();
+        return metricsMap.computeIfAbsent(key, k -> metricFactory.createMetric(type, name, tags));
     }
 
-    // 获取或创建一个通用计数器
-    public Counter getCounter(String metricName, String transCode, BizType bizType) {
-        String fullMetricName = bizType.getPrefix() + "." + metricName;
-        return counters.computeIfAbsent(fullMetricName + ":" + transCode, key -> createCounter(fullMetricName, transCode));
+    public void incrementCounter(String name, Tags tags) {
+        Metric counter = getOrCreateMetric(MetricType.COUNTER, name, tags);
+        counter.increment();
     }
 
-    // 创建计数器
-    private Counter createCounter(String metricName, String transCode) {
-        return Counter.builder(metricName)
-                .tag("transCode", transCode)
-                .description("Counter for " + transCode)
-                .register(meterRegistry);
+    public void incrementCounterByAmount(String name, Tags tags, double amount) {
+        Metric counter = getOrCreateMetric(MetricType.COUNTER, name, tags);
+        counter.increment(amount);
     }
 
-    // 获取或创建一个通用定时器
-    public Timer getTimer(String metricName, String tag, BizType bizType) {
-        String fullMetricName = bizType.getPrefix() + "_" + metricName;
-        return timers.computeIfAbsent(fullMetricName + "_" + tag, key -> createTimer(fullMetricName, tag));
+    public void recordTimer(String name, Tags tags, long duration) {
+        Metric timer = getOrCreateMetric(MetricType.TIMER, name, tags);
+        timer.record(duration);
     }
 
-    // 创建定时器
-    private Timer createTimer(String metricName, String transCode) {
-        return Timer.builder(metricName)
-                .tag("transCode", transCode)
-                .description("Timer for " + transCode)
-                .register(meterRegistry);
+    public void incrementGauge(String name, Tags tags) {
+        Metric gauge = getOrCreateMetric(MetricType.GAUGE, name, tags);
+        gauge.increment();
     }
 
-    // 获取或创建一个通用Gauge（用于监控并发数等）
-    public AtomicInteger getGauge(String metricName, String transCode, BizType bizType) {
-        String fullMetricName = bizType.getPrefix() + "_" + metricName;
-        return gauges.computeIfAbsent(fullMetricName + "_" + transCode, key -> createGauge(fullMetricName, transCode));
+    public void decrementGauge(String name, Tags tags) {
+        Metric gauge = getOrCreateMetric(MetricType.GAUGE, name, tags);
+        ((GaugeMetric) gauge).decrement();
     }
 
-    // 创建Gauge
-    private AtomicInteger createGauge(String metricName, String tag) {
-        AtomicInteger gauge = new AtomicInteger(0);
-        meterRegistry.gauge(metricName, Tags.of("transCode", tag), gauge);
-        return gauge;
+    public void recordHistogram(String name, Tags tags, double value) {
+        Metric histogram = getOrCreateMetric(MetricType.HISTOGRAM, name, tags);
+        histogram.increment(value);
     }
 
-    // 记录请求计数
-    public void incrementRequestCount(String transCode, BizType bizType) {
-        getCounter("requests_count", transCode, bizType).increment();
-    }
-
-    // 记录异常计数
-    public void incrementExceptionCount(String transCode, BizType bizType) {
-        getCounter("requests_exceptions_count", transCode, bizType).increment();
-    }
-
-    // 记录请求耗时
-    public void recordRequestTime(String transCode, BizType bizType, long durationInMillis) {
-        getTimer("requests_timer", transCode, bizType).record(durationInMillis, java.util.concurrent.TimeUnit.MILLISECONDS);
-    }
-
-    // 增加并发请求数
-    public void incrementConcurrency(String transCode, BizType bizType) {
-        getGauge("requests_concurrent", transCode, bizType).incrementAndGet();
-    }
-
-    // 减少并发请求数
-    public void decrementConcurrency(String transCode, BizType bizType) {
-        getGauge("requests_concurrent", transCode, bizType).decrementAndGet();
+    public void recordSummary(String name, Tags tags, long duration) {
+        Metric summary = getOrCreateMetric(MetricType.SUMMARY, name, tags);
+        summary.record(duration);
     }
 }
