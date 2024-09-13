@@ -1,18 +1,21 @@
-package org.spring.springboot;
+package org.spring.springboot.metrcis.impl;
 
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Tags;
+import org.spring.springboot.metrcis.AbstractMetric;
 
 /**
- * todo
+ * 计数器
+ * <p>
+ * CounterMetric 监控单调递增的值。计数器的值不能重置为较小的值。
  *
  * @Date 2024-09-12 11:39
  * @Author 杨海波
  **/
-// 计数器实现类
-class CounterMetric extends AbstractMetric {
+public class CounterMetric extends AbstractMetric {
+
     private final Counter counter;
 
     public CounterMetric(MeterRegistry meterRegistry, String name, Tags tags) {

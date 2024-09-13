@@ -1,8 +1,8 @@
-package org.spring.springboot;
+package org.spring.springboot.metrcis;
 
 
 /**
- * todo
+ * MetricException
  *
  * @Date 2024-09-12 11:38
  * @Author 杨海波

@@ -12,8 +12,9 @@ import java.util.concurrent.Executors;
 
 public class MyHttpClient {
 
-    private static final String LOGIN_URL = "http://127.0.0.1:8089/app/user/login";
-    // private static final String GET_USER_INFO_URL = "http://127.0.0.1:8089/app/user/getUserInfo";
+    private static final String NORMAL_URL = "http://127.0.0.1:8089/app/user/normal";
+    private static final String SUMMARY_URL = "http://127.0.0.1:8089/app/user/summary";
+
     private static final int THREAD_POOL_SIZE = 8;  // Size of the thread pool
 
     public static void main(String[] args) {
@@ -27,8 +28,8 @@ public class MyHttpClient {
         while (true) {
             try {
                 // Submit tasks to the thread pool
-                executorService.submit(() -> sendRequest(httpClient, LOGIN_URL));
-                // executorService.submit(() -> sendRequest(httpClient, GET_USER_INFO_URL));
+                executorService.submit(() -> sendRequest(httpClient, NORMAL_URL));
+                executorService.submit(() -> sendRequest(httpClient, SUMMARY_URL));
 
                 // Sleep for a while to prevent too fast requests (1 second)
                 Thread.sleep(1000);

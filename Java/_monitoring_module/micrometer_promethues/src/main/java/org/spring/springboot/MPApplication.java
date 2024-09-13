@@ -12,6 +12,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MPApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MPApplication.class,args);
+        SpringApplication.run(MPApplication.class, args);
     }
 }
