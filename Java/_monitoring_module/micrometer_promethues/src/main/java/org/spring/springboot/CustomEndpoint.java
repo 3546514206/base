@@ -17,6 +17,7 @@ public class CustomEndpoint {
 
     @ReadOperation
     public String customEndpoint() {
+
         return "This is a custom endpoint response";
     }
 }
