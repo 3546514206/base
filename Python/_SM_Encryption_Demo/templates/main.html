@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM2/SM4 加解密演示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+        }
+        .main-box {
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        .main-box h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .main-box textarea {
+            width: 100%;
+            height: 100px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: none;
+        }
+        .main-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        .main-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="main-box">
+    <h2>SM2/SM4 加解密演示</h2>
+    <textarea id="inputText" placeholder="输入需要加密的文本"></textarea>
+    <button onclick="sm4Encrypt()">使用SM4加密</button>
+    <textarea id="outputText" placeholder="加密后的文本将显示在此处"></textarea>
+    <button onclick="sm4Decrypt()">使用SM4解密</button>
+</div>
+
+<script>
+    // SM4 加密
+    function sm4Encrypt() {
+        const inputText = document.getElementById('inputText').value;
+        const encrypted = btoa(inputText); // 简单 base64 编码代替
+        document.getElementById('outputText').value = encrypted;
+    }
+
+    // SM4 解密
+    function sm4Decrypt() {
+        const encryptedText = document.getElementById('outputText').value;
+        const decrypted = atob(encryptedText); // 简单 base64 解码代替
+        document.getElementById('inputText').value = decrypted;
+    }
+</script>
+</body>
+</html>
