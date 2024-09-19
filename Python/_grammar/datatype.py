@@ -1,17 +1,21 @@
 # 整数测试
 import math
 
+
 # 整形数测试
 def test_int():
     print(10_000_000_000 == 10000000000)
+
 
 # 测试浮点数
 def test_float():
     print(1.2e-5)
 
+
 # 测试布尔值
 def test_bool():
     print(True or False)
+
 
 # 字符串测试
 def test_str():
@@ -21,6 +25,7 @@ def test_str():
     print('''line1
     ... line2
     ... line3''')
+
 
 # 测试变量
 def test_variable():
@@ -36,9 +41,11 @@ def test_variable():
     # 再次输出变量的值和类型
     print(x, type(x))  # 输出: Hello, World! <class 'str'>
 
+
 # 测试常量
 def test_constant():
     print(math.pi)
+
 
 # 内置类型
 def test_built_in_data_types():
