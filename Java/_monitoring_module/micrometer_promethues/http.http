@@ -5,5 +5,5 @@ GET http://127.0.0.1:8089/app/actuator/prometheus
 Accept: application/openmetrics-text;version=1.0.0;charset=utf-8
 
 ### GET request with a header
-GET http://127.0.0.1:8089/app/user/login
+GET http://127.0.0.1:8089/app/user/normal
 Accept: application/json

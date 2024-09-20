@@ -76,5 +76,26 @@
             <artifactId>spring-boot-admin-starter-client</artifactId>
             <version>2.5.1</version>
         </dependency>
+
+        <!-- JFreeChart 依赖 -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+
+        <!-- Prometheus HTTP 客户端库（可选）-->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.9.3</version>
+        </dependency>
+
+        <!-- JSON 解析库 -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.8</version>
+        </dependency>
     </dependencies>
 </project>
