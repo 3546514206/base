@@ -27,8 +27,6 @@ def main():
     print(t5)
 
 
-"""
-list和tuple是Python内置的有序集合，一个可变，一个不可变。根据需要来选择使用它们。
-"""
 if __name__ == "__main__":
+    """list和tuple是Python内置的有序集合，一个可变，一个不可变。根据需要来选择使用它们。"""
     main()

@@ -34,12 +34,8 @@ def add_end(L=[]):
     return L
 
 
-"""
-默认参数最大的坑
-"""
-
-
 def default_var(L=[]):
+    """默认参数最大的坑"""
     # 没问题
     print(add_end([1, 2, 3]))
     # 还是没问题
@@ -54,13 +50,31 @@ def default_var(L=[]):
     print(add_end())
 
 
+def variadic_arguments(*numbers):
+    """可变参数：定义可变参数仅仅在参数前面加了一个*号。在函数内部，参数numbers接收到的是一个tuple。调用该函数时，可以传入任意个参数，包括0个参数："""
+    sum_of_num = 0
+    for num in numbers:
+        sum_of_num = sum_of_num + num * num
+
+    return sum_of_num
+
+
+def keyword_arguments(name, age, **kw):
+    """关键字参数:可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。而关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict。"""
+    print('name:', name, 'age:', age, 'other:', kw)
+
+
 def main():
     # build_in_def()
     # multi_return()
-    default_var()
+    # default_var()
+    # print(variadic_arguments(100))
 
-"""
-函数
-"""
+    my_list = [1, 3, 5, 8]
+    print(variadic_arguments(*my_list))
+
+    my_tuple = (2, 3)
+    print(variadic_arguments(*my_tuple))
+
 if __name__ == "__main__":
     main()
