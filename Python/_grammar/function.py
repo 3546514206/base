@@ -59,9 +59,44 @@ def variadic_arguments(*numbers):
     return sum_of_num
 
 
+def test_variadic_arguments():
+    """test for function variadic_arguments"""
+    my_list = [1, 3, 5, 8]
+    print(variadic_arguments(*my_list))
+
+    my_tuple = (2, 3)
+    print(variadic_arguments(*my_tuple))
+
+
 def keyword_arguments(name, age, **kw):
     """关键字参数:可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。而关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict。"""
     print('name:', name, 'age:', age, 'other:', kw)
+
+
+def test_keyword_arguments():
+    """test for function keyword_arguments"""
+    print(keyword_arguments('Bob', 35, city='Beijing'))
+    print(keyword_arguments('Bob', 35, city='Beijing', height='64'))
+
+    extra = {'city': 'Beijing', 'job': 'Engineer'}
+    print(keyword_arguments('Bob', 35, **extra))
+
+
+def comprehensive(a, b, *args, c=1, **kwargs):
+    """定义函数参数的综合案例"""
+    print("a={a}, b={b}, c={c}".format(a=a, b=b, c=c))
+
+    print("Additional positional arguments:")
+    for arg in args:
+        print(arg)
+
+    print("Additional keyword arguments:")
+    for key, value in kwargs.items():
+        print("{key}={value}".format(key=key, value=value))
+
+
+def test_comprehensive():
+    comprehensive(1, 2, 3, 4, 5, c=6, d=7, e=8)  # 输出:
 
 
 def main():
@@ -69,12 +104,10 @@ def main():
     # multi_return()
     # default_var()
     # print(variadic_arguments(100))
+    # test_variadic_arguments()
+    # test_keyword_arguments()
+    test_comprehensive()
 
-    my_list = [1, 3, 5, 8]
-    print(variadic_arguments(*my_list))
-
-    my_tuple = (2, 3)
-    print(variadic_arguments(*my_tuple))
 
 if __name__ == "__main__":
     main()
