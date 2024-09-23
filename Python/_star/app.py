@@ -2,6 +2,7 @@ import webview
 import os
 
 
+
 def main():
     # 获取当前文件的路径
     current_dir = os.path.dirname(os.path.abspath(__file__))
