@@ -3,6 +3,7 @@ package org.spring.springboot;
 import io.micrometer.core.instrument.Tags;
 import org.spring.springboot.metrcis.MetricConstants;
 import org.spring.springboot.metrcis.MetricsService;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
