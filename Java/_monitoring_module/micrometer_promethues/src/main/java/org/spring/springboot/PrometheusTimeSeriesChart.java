@@ -1,13 +1,13 @@
 package org.spring.springboot;
 
 
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -68,7 +68,7 @@ public class PrometheusTimeSeriesChart extends JFrame {
     // 从 Prometheus 获取最新数据并更新 TimeSeries
     private void updateData() {
         String queryUrl = "http://localhost:9090/api/v1/query?query=requests_count_total"
-                + "{instance=\"localhost:8089\",job=\"spring-boot-app\",endpoint=\"normal\"}&time=" + (System.currentTimeMillis() / 1000);
+                + "{instance=\"localhost:8089\",job=\"micrometer_prometheus\",endpoint=\"normal\"}&time=" + (System.currentTimeMillis() / 1000);
 
         Request request = new Request.Builder().url(queryUrl).build();
         try (Response response = client.newCall(request).execute()) {
