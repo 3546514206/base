@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+}
