@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="dark_styles.css" id="themeStylesheet" rel="stylesheet"> <!-- 默认使用暗黑主题 -->
+    <title>JavaFX WebView</title>
+</head>
+<body>
+<h1>Welcome to JavaFX WebView</h1>
+<button id="clickMe">Click Me!</button>
+<button id="changeColor">Change Background Color</button>
+<p id="message"></p>
+<label for="userInput"></label><input id="userInput" placeholder="Type something..." type="text">
+<button id="submitInput">Submit</button>
+<ul id="inputList"></ul>
+<script src="script.js"></script>
+
+<script>
+    // 获取 URL 参数以确定主题
+    const urlParams = new URLSearchParams(window.location.search);
+    const theme = urlParams.get('theme');
+
+    if (theme === 'light') {
+        document.getElementById('themeStylesheet').href = 'light_styles.css'; // 亮色主题
+    } else {
+        document.getElementById('themeStylesheet').href = 'dark_styles.css'; // 暗黑主题
+    }
+</script>
+</body>
+</html>

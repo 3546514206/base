@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* 浅色背景 */
+    color: #333; /* 深色字体 */
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #007BFF; /* 蓝色标题 */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* 按钮背景色 */
+    color: white; /* 按钮文字色 */
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 200px;
+    background-color: white; /* 输入框背景色 */
+    color: #333; /* 输入框文字色 */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e0e0e0; /* 列表项背景色 */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333; /* 列表项文字色 */
+}
