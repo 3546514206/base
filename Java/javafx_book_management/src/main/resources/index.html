@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="styles.css" rel="stylesheet">
+    <title>图书管理系统</title>
+</head>
+<body>
+<h1>图书管理系统</h1>
+<div>
+    <h2>添加书籍</h2>
+    <label for="title"></label><input id="title" placeholder="书名" type="text">
+    <label for="author"></label><input id="author" placeholder="作者" type="text">
+    <button onclick="addBook()">添加书籍</button>
+</div>
+<div>
+    <h2>书籍列表</h2>
+    <ul id="bookList"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
