@@ -67,7 +67,7 @@ CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=-L/opt/homebrew/opt/openssl@1.1/lib
+CMAKE_EXE_LINKER_FLAGS:STRING=-L/opt/homebrew/opt/mysql@8.4/lib
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
@@ -101,7 +101,7 @@ CMAKE_MAKE_PROGRAM:UNINITIALIZED=/Users/setsunayang/Applications/CLion.app/Conte
 
 //Flags used by the linker during the creation of modules during
 // all build types.
-CMAKE_MODULE_LINKER_FLAGS:STRING=-L/opt/homebrew/opt/openssl@1.1/lib
+CMAKE_MODULE_LINKER_FLAGS:STRING=-L/opt/homebrew/opt/mysql@8.4/lib
 
 //Flags used by the linker during the creation of modules during
 // DEBUG builds.
@@ -156,7 +156,7 @@ CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=-L/opt/homebrew/opt/openssl@1.1/lib
+CMAKE_SHARED_LINKER_FLAGS:STRING=-L/opt/homebrew/opt/mysql@8.4/lib
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.
@@ -236,9 +236,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/Users/setsunayang/Documents/GitHub/base/CCPP/_test
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=28
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=29
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=6
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/Users/setsunayang/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake
 //Path to cpack program executable.
@@ -327,7 +327,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/Users/setsunayang/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28
+CMAKE_ROOT:INTERNAL=/Users/setsunayang/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
