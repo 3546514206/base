@@ -1,7 +1,7 @@
 package edu.zjnu;
 
 
-import edu.zjnu.biz.MyService;
+import edu.zjnu.biz.RetryService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,13 +13,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  **/
 public class App {
 
-
     public static void main(String[] args) {
         // 加载 Spring 配置文件
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // 获取 Bean 并使用
-        MyService myService = context.getBean(MyService.class);
-        myService.doSomething();
+        RetryService retryService = context.getBean(RetryService.class);
+        retryService.doSomething(2);
     }
 }

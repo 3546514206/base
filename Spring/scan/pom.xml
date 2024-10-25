@@ -15,34 +15,48 @@
     </properties>
 
     <dependencies>
-        <!-- Spring Core -->
+        <!-- Spring Context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>5.3.22</version>
         </dependency>
 
-        <!-- Spring Beans -->
+        <!-- Spring AOP (Spring Retry 使用 AOP 实现切面重试) -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
+            <artifactId>spring-aop</artifactId>
             <version>5.3.22</version>
         </dependency>
 
-        <!-- Spring Context -->
+        <!-- Spring Retry -->
+        <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+
+        <!-- Spring Aspects (为 @Retryable 注解提供支持) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>5.3.22</version>
+        </dependency>
+
+        <!-- 其他可能需要的 Spring 依赖 -->
+        <!-- Spring Core -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>5.3.22</version>
         </dependency>
 
-        <!-- 其他依赖，比如日志 -->
+        <!-- Spring Beans (BeanFactory 支持) -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.36</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.3.22</version>
         </dependency>
     </dependencies>
-
 
 </project>
