@@ -1,7 +1,7 @@
-var uname:string;
+var uname: string;
 
 // @ts-ignore
 console.log(uname);
 
-var notype ;
+var notype;
 console.log(typeof notype)

@@ -7,7 +7,7 @@ interface IPerson {
 var customer: IPerson = {
     firstName: "Tom",
     lastName: "Hanks",
-    sayHi: function (): string  {
+    sayHi: function (): string {
         return this.firstName + this.lastName;
     }
 }

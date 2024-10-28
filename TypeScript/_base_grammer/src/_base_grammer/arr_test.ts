@@ -21,7 +21,7 @@ console.log(gogle)
 
 let tempArr001 = [10, 2, 4, 19, 35, 3, 6]
 
-function isGeTenIndex(element: any, index: number, array:number[]): boolean {
+function isGeTenIndex(element: any, index: number, array: number[]): boolean {
     return element > 10;
 }
 

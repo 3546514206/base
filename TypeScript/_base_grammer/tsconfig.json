@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // 设置编译的目标 ECMAScript 版本
+    "target": "es6",
+    // 设置模块系统
+    "module": "commonjs",
+    // 指定要包含的类型库
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    // 是否生成 source map 文件
+    "sourceMap": true,
+    // 编译后的文件输出目录
+    "outDir": "./dist",
+    // 启用所有严格类型检查选项
+    "strict": true,
+    // 允许从 CommonJS 模块导入默认导出
+    "esModuleInterop": true
+  },
+  // 包含在编译过程中的文件
+  "include": [
+    "src/_base_grammer/*.ts",
+    "src/_hello_ts/*.ts",
+    "src/_observer/*.ts"
+  ],
+  // 排除在编译过程中的文件
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
