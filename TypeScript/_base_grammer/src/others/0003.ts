@@ -38,3 +38,35 @@ console.log(tuple_a);
 console.log(tuple_a[1]);
 // 元组对应位置类型不一样会报错
 // tuple_a = [2, 1, true];
+
+enum Color {
+    RED,
+    GREEN,
+    BLACK
+}
+
+let c_color: Color = Color.GREEN + Color.BLACK;
+
+console.log(c_color);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
