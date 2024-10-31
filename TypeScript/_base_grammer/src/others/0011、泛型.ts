@@ -1,3 +1,5 @@
+// 在泛型中，通常使用一些约定俗成的标识符，比如常见的 T（表示 Type）、U、V 等，但实际上你可以使用任何标识符。
+// T: 代表 "Type"，是最常见的泛型类型参数名。
 function identity<T>(a: T): T {
     return a;
 }
@@ -5,12 +7,14 @@ function identity<T>(a: T): T {
 console.log(identity("sss"));
 
 
+// E: 用于表示数组元素的泛型类型参数。
 function printArray<E>(arr: E[]): void {
     arr.forEach(x => console.log(x));
 }
 
 printArray([1, 2, 3, 4, 5]);
 
+// K, V: 用于表示键（Key）和值（Value）的泛型类型参数。
 interface KeyValuePair<K, V> {
     key: K,
     value: V
@@ -44,3 +48,19 @@ pair1.display();
 
 const pair2 = new KeyValue<number, boolean>(1, true);
 pair2.display();
+
+// R: 用于表示函数返回值的泛型类型参数。
+function getResult<R>(value: R): R {
+    return value;
+}
+
+// U, V: 通常用于表示第二、第三个泛型类型参数。
+function combine<U, V>(first: U, second: V): string {
+    return `${first} ${second}`;
+}
+
+
+
+
+
+
