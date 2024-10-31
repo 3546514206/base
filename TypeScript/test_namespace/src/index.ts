@@ -1,6 +1,8 @@
-function drawAllShapes(shape: Drawing.IShape) {
+import Circle = CircleNS.Circle;
+
+function drawAllShapes(shape: IShapeNS.IShape) {
     shape.draw();
 }
 
-drawAllShapes(new Drawing.Circle());
-drawAllShapes(new Drawing.Triangle());
+drawAllShapes(new Circle());
+drawAllShapes(new TriangleNS.Triangle());
