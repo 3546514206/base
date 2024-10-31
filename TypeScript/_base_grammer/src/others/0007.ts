@@ -8,6 +8,9 @@ interface IPerson {
     // =>：箭头符号，用于表示方法的返回类型。
     // void：表示方法没有返回值，即调用该方法时不会返回任何数据。
     say: () => void;
+
+    // 在接口中定义方法的另一种方式
+    run(): void;
 }
 
 let employ: IPerson = {
@@ -17,7 +20,12 @@ let employ: IPerson = {
 
     say: () => {
         console.log(`my name is ${employ.name},my age is ${employ.age}`);
+    },
+
+    run() {
+        console.log("running");
     }
 }
 
 employ.say();
+employ.run();
