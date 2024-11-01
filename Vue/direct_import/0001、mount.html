@@ -25,11 +25,19 @@
             return {
                 message: 'Hello Vue!!'
             }
+        },
+        methods: {
+            increment() {
+                // `this` 指向该组件实例
+                console.log(this.message);
+                alert(this.message);
+            }
         }
     }
     // createApp 的参数是根组件（HelloVueApp），在挂载应用时，该组件是渲染的起点。
     // 一个应用需要被挂载到一个 DOM 元素中，以上代码使用 mount('#hello-vue') 将
     // Vue 应用 HelloVueApp 挂载到 <div id="hello-vue"></div> 中。
-    Vue.createApp(HelloVueApp).mount('#hello-vue')
+    let app = Vue.createApp(HelloVueApp).mount('#hello-vue');
+    app.increment();
 </script>
 </html>
