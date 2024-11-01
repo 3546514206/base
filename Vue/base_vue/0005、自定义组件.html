@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义组件</title>
+</head>
+<script src="./vue.global.min.js"></script>
+<body>
+<div id="app">
+    <button-counter></button-counter>
+</div>
+</body>
+<script>
+    // {} 是一个根组件，向 createApp 传入一个根组件创建了一个 vue 应用，也就是 app
+    const app = Vue.createApp({
+        // 可以添加根组件的选项，如 data, methods, computed, lifecycle hooks 等
+    });
+
+    // 向 app 注册一个全局组件
+    app.component('button-counter', {
+        data() {
+            return {
+                count: 0
+            }
+        },
+        template: `
+          <button @click="count++">
+            点了 {{ count }} 次！
+          </button>`
+    });
+
+    // 将 vue 应用挂载到 DOM 元素上
+    app.mount('#app');
+</script>
+</html>

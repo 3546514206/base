@@ -17,6 +17,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
         loadPage(webEngine);
@@ -29,6 +30,8 @@ public class Main extends Application {
         primaryStage.setTitle("JavaFX WebView Example");
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        
     }
 
     private void loadPage(WebEngine webEngine) {

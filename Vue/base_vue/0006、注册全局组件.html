@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局组件</title>
+</head>
+<script src="./vue.global.min.js"></script>
+<body>
+<div id="app">
+    <Runoob></Runoob>
+</div>
+</body>
+<script>
+    const {createApp} = Vue;
+
+    const app = createApp({});
+
+    app.component("runoob", {
+        template: `
+        <h1>自定义组件!</h1>
+        `
+    });
+
+    // 将 vue 应用挂载到 DOM 元素上
+    app.mount('#app');
+</script>
+</html>
