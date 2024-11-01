@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mount</title>
+</head>
+<script src="./vue.global.min.js"></script>
+<body>
+<div class="demo" id="hello-vue">
+    <!--    在 Vue.js 中，{{ message }} 是一个模板插值的表达式，它用来绑定数据到 HTML 页面上。这并不是 HTML 的基本语法，而是 Vue 的模-->
+    <!--   板语法，允许开发者将 JavaScript 变量嵌入到 HTML 标记中。下面是这种语法如何在 Vue 应用中生效的详细解释：-->
+    <!--   一、模板编译过程-->
+    <!--    编译模板： 当 Vue 应用通过 Vue.createApp(HelloVueApp).mount('#hello-vue') 挂载时，Vue 会查找指定的 DOM 元素（在这个例-->
+    <!--   子中是 <div id="hello-vue">）。Vue 框架接着解析和编译这个元素内的所有模板代码。-->
+    <!--    解析插值表达式： Vue 编译器会扫描 HTML，并识别出模板语法，如插值表达式 {{ message }}。这个表达式指示 Vue 从与其关联的组件-->
+    <!--   实例的 data 函数中获取 message 属性的值。-->
+    <!--    响应式数据绑定： Vue 使用一个响应式系统来确保当 JavaScript 中的数据更新时，绑定到这些数据的 HTML 元素也会自动更新。在这个例子中-->
+    <!--   ，一旦 data 中的 message 属性的值发生变化，与之绑定的 {{ message }} 在 DOM 中的显示也会立即更新。-->
+    {{ message }}
+</div>
+</body>
+<script>
+    const HelloVueApp = {
+        data() {
+            return {
+                message: 'Hello Vue!!'
+            }
+        }
+    }
+    // createApp 的参数是根组件（HelloVueApp），在挂载应用时，该组件是渲染的起点。
+    // 一个应用需要被挂载到一个 DOM 元素中，以上代码使用 mount('#hello-vue') 将
+    // Vue 应用 HelloVueApp 挂载到 <div id="hello-vue"></div> 中。
+    Vue.createApp(HelloVueApp).mount('#hello-vue')
+</script>
+</html>
