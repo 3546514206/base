@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性</title>
+</head>
+<script src="./vue.global.min.js"></script>
+<body>
+<div id="app">
+    <div> {{message}}</div>
+    <div> {{reversedMessage }}</div>
+</div>
+</body>
+<script>
+    const rootComponent = {
+        data() {
+            return {
+                message: 'RUNOOB!!'
+            }
+        },
+        computed: {
+            // 计算属性的 getter
+            reversedMessage: function () {
+                // `this` 指向 vm 实例
+                return this.message.split('').reverse().join('')
+            }
+        }
+    }
+
+    const app = Vue.createApp(rootComponent);
+    app.mount("#app");
+</script>
+</html>
