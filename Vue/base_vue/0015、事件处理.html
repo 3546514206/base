@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件处理</title>
+</head>
+<script src="vue.global.min.js"></script>
+<body>
+<div id="app">
+    <button @click="sayHi('hi')">Hi</button>
+    <button @click="sayHello('hello')">Hello</button>
+</div>
+</body>
+<script>
+    const rootComponent = {
+        data() {
+
+        },
+        methods: {
+            sayHi: function (hi) {
+                alert(hi)
+            },
+            sayHello: function (hello) {
+                alert(hello)
+            }
+        }
+    }
+
+    const app = Vue.createApp(rootComponent);
+    app.mount("#app");
+
+</script>
+</html>
