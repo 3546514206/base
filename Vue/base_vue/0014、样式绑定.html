@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监听数据的变化</title>
+    <style>
+        .colored-text {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<script src="./vue.global.min.js"></script>
+<body>
+<div id="app">
+    <h1>动态文本颜色示例</h1>
+    <input placeholder="输入文本" type="text" v-model="text"/>
+    <select v-model="color">
+        <option value="red">红色</option>
+        <option value="green">绿色</option>
+        <option value="blue">蓝色</option>
+        <option value="orange">橙色</option>
+    </select>
+    <div :style="{ color: color }" class="colored-text">
+        {{ text }}
+    </div>
+</div>
+</body>
+<script>
+    const {createApp} = Vue;
+
+    createApp({
+        data() {
+            return {
+                text: '',
+                color: 'black' // 默认颜色
+            };
+        }
+    }).mount('#app');
+</script>
+</html>
