@@ -1,4 +1,4 @@
-#include "src/scanner.h"
+#include "src/scanner/scanner.h"
 
 int main() {
     scan_subnet();

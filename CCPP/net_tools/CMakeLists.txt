@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD 11)
 find_package(Boost REQUIRED)
 
 add_executable(net_tools main.cpp
-        src/scanner.cpp
-        src/scanner.h)
+        src/scanner/scanner.cpp
+        src/scanner/scanner.h)
 
 if (Boost_FOUND)
     message("Boost found: ${Boost_VERSION}")
