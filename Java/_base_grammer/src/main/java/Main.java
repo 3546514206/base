@@ -1,3 +1,5 @@
+import java.util.UUID;
+
 /**
  * todo
  *
@@ -11,6 +13,6 @@ public class Main {
         CCCC cccc = new CCCC();
         cccc.enableAAAAA = false;
         System.out.println("111");
-
+        System.out.println(UUID.randomUUID());
     }
 }
