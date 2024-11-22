@@ -8,7 +8,10 @@ find_package(Boost REQUIRED)
 
 add_executable(net_tools main.cpp
         src/scanner/scanner.cpp
-        src/scanner/scanner.h)
+        src/scanner/scanner.h
+        src/traceroute/traceroute.cpp
+        src/traceroute/traceroute.h
+)
 
 if (Boost_FOUND)
     message("Boost found: ${Boost_VERSION}")
