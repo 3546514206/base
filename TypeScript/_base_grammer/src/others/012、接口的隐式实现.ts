@@ -8,8 +8,8 @@ namespace implicit_implementation {
 
     // 隐式实现接口（没有使用 `implements` 关键字）
     class Developer {
-        private readonly name: string;
-        private readonly age: number;
+        readonly name: string;
+        readonly age: number;
 
         constructor(name: string, age: number) {
             this.name = name;
@@ -22,7 +22,7 @@ namespace implicit_implementation {
     }
 
     // 成功，符合 Person 的类型
-    const dev: Person = new Developer("Alice", 30);
+    const dever: Person = new Developer("Alice", 30);
 
-    dev.greet();
+    dever.greet();
 }

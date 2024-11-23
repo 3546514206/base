@@ -1,0 +1,13 @@
+[v-cloak] {display: none}
+
+input[type=text] {
+ width: 400px; 
+}
+
+body {
+ font-family: Arial; 
+}
+
+td {
+	padding-right: 20px;
+}
