@@ -60,6 +60,7 @@ echo "JAVA_HOME 已被写入到 ~/.zshrc 文件中。"
 
 # 重新加载 ~/.zshrc 使改动生效
 source "$ZSHRC_FILE"
+echo "请重新启动终端或命令行窗口以使更改生效。"
 
 # 显示当前的 Java 版本
 java -version

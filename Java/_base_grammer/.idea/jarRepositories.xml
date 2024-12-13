@@ -2,6 +2,16 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="activiti-repos2" />
+      <option name="name" value="Activiti Repository 2" />
+      <option name="url" value="https://app.camunda.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="aliyun" />
+      <option name="name" value="aliyun" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
@@ -10,6 +20,21 @@
       <option name="id" value="central" />
       <option name="name" value="central" />
       <option name="url" value="https://maven.aliyun.com/repository/central" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="pentaho-public" />
+      <option name="name" value="Pentaho Public" />
+      <option name="url" value="https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring-snapshot" />
+      <option name="name" value="spring-snapshot" />
+      <option name="url" value="https://repo.spring.io/snapshot" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="mvnrepository" />
+      <option name="name" value="mvnrepository" />
+      <option name="url" value="http://www.mvnrepository.com" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="google-maven-repo" />
