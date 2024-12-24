@@ -6,11 +6,7 @@
 
     <!--支持注解-->
     <context:annotation-config/>
-
-    <context:property-placeholder location="classpath*:/props/*.properties" ignore-unresolvable="true"/>
-
     <context:component-scan base-package="org.springsession.demo.xml">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
-
 </beans>

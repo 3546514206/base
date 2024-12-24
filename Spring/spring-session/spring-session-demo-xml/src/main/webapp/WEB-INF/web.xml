@@ -3,7 +3,8 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          id="WebApp_ID" version="2.5">
-    <display-name>springsessiondemo</display-name>
+
+    <display-name>spring_session_demo</display-name>
 
     <!-- Spring Listener -->
     <context-param>

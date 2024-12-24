@@ -8,9 +8,6 @@ import org.springsession.demo.xml.commons.ConstString;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Created by xuliugen on 2017/2/25.
- */
 @Controller
 @RequestMapping(value = "/spring/session", produces = {ConstString.APP_JSON_UTF_8})
 public class SpringSessionDemoController {
