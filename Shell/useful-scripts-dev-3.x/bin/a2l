@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+# @Function
+# print each arguments on one line colorfully.
+#
+# @Usage
+#   $ ./a2l arg1 arg2
+#   $ ./a2l *.txt
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/shell.md#-a2l
+# @author Jerry Lee (oldratlee at gmail dot com)
+set -eEuo pipefail
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+
+################################################################################
+# parse options
+################################################################################
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION]... ARG...
+print each arguments on one line colorfully.
+
+Example:
+  $PROG arg1 arg2
+  $PROG */*.py
+
+Options:
+  -h, --help      display this help and exit
+  -V, --version   display version information and exit
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s\n' "$PROG $PROG_VERSION"
+  exit
+}
+
+args=()
+while (($# > 0)); do
+  case "$1" in
+  -h | --help)
+    usage
+    ;;
+  -V | --version)
+    progVersion
+    ;;
+  --)
+    shift
+    args=(${args[@]:+"${args[@]}"} "$@")
+    break
+    ;;
+  -*)
+    # if unrecognized option, treat it and all follow arguments as args
+    args=(${args[@]:+"${args[@]}"} "$@")
+    break
+    ;;
+  *)
+    # if not option, treat it and all follow arguments as args
+    args=(${args[@]:+"${args[@]}"} "$@")
+    break
+    ;;
+  esac
+done
+readonly args
+
+################################################################################
+# biz logic
+################################################################################
+
+readonly -a ROTATE_COLORS=(33 35 36 31 32 37 34)
+COLOR_INDEX=0
+rotateColorPrint() {
+  local content=$*
+  # - if stdout is a terminal, turn on color output.
+  #   '-t' check: is a terminal?
+  #   check isatty in bash https://stackoverflow.com/questions/10022323
+  # - skip color for white space
+  if [[ ! -t 1 || $content =~ ^[[:space:]]*$ ]]; then
+    printf '%s\n' "$content"
+  else
+    local color=${ROTATE_COLORS[COLOR_INDEX++ % ${#ROTATE_COLORS[@]}]}
+    printf '\e[1;%sm%s\e[0m\n' "$color" "$content"
+  fi
+}
+
+for a in ${args[@]:+"${args[@]}"}; do
+  rotateColorPrint "$a"
+done

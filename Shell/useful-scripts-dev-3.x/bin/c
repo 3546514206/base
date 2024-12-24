@@ -1,0 +1,167 @@
+#!/usr/bin/env bash
+# @Function
+# Run command and put output to system clipper.
+#
+# @Usage
+#   $ c ls -l
+#   $ ls -l | c
+#   $ c -q < ~/.ssh/id_rsa.pub
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/shell.md#-c
+# @author Jerry Lee (oldratlee at gmail dot com)
+set -eEuo pipefail
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+
+################################################################################
+# util functions
+################################################################################
+
+redPrint() {
+  # if stdout is a terminal, turn on color output.
+  #   '-t' check: is a terminal?
+  #   check isatty in bash https://stackoverflow.com/questions/10022323
+  if [ -t 1 ]; then
+    printf '\e[1;31m%s\e[0m\n' "$*"
+  else
+    printf '%s\n' "$*"
+  fi
+}
+
+die() {
+  local prompt_help=false exit_status=2
+  while (($# > 0)); do
+    case "$1" in
+    -h)
+      prompt_help=true
+      shift
+      ;;
+    -s)
+      exit_status=$2
+      shift 2
+      ;;
+    *)
+      break
+      ;;
+    esac
+  done
+
+  (($# > 0)) && redPrint "$PROG: $*"
+  $prompt_help && echo "Try '$PROG --help' for more information."
+
+  exit "$exit_status"
+} >&2
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION]... [command [command_args ...]]
+Run command and put output to system clipper.
+If no command is specified, read from stdin(pipe).
+
+Example:
+  $PROG grep -i 'hello world' menu.h main.c
+  set | $PROG
+  $PROG -q < ~/.ssh/id_rsa.pub
+
+Options:
+  -k, --keep-eol  do not trim new line at end of file
+  -q, --quiet     suppress all normal output, default is false
+  -h, --help      display this help and exit
+  -V, --version   display version information and exit
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s\n' "$PROG $PROG_VERSION"
+  exit
+}
+
+################################################################################
+# parse options
+################################################################################
+
+quiet=false
+keep_eol=false
+target_command=()
+while (($# > 0)); do
+  case "$1" in
+  -k | --keep-eol)
+    keep_eol=true
+    shift
+    ;;
+  -q | --quiet)
+    quiet=true
+    shift
+    ;;
+  -h | --help)
+    usage
+    ;;
+  -V | --version)
+    progVersion
+    ;;
+  --)
+    shift
+    target_command=(${target_command[@]:+"${target_command[@]}"} "$@")
+    break
+    ;;
+  -*)
+    die -h "unrecognized option '$1'"
+    ;;
+  *)
+    # if not option, treat all follow arguments as command
+    target_command=(${target_command[@]:+"${target_command[@]}"} "$@")
+    break
+    ;;
+  esac
+done
+
+readonly keep_eol quiet target_command
+
+if ((${#target_command[@]} > 0)) && ! type -P "${target_command[0]}" &>/dev/null; then
+  die "command '${target_command[0]}' not found on PATH"
+fi
+
+################################################################################
+# biz logic
+################################################################################
+
+systemClip() {
+  case "$(uname)" in
+  Darwin*)
+    pbcopy
+    ;;
+  CYGWIN* | MINGW*)
+    clip
+    ;;
+  *)
+    xsel -b
+    ;;
+  esac
+}
+
+bufferCopy() {
+  local content
+  content=$(cat)
+  if $keep_eol; then
+    printf '%s\n' "$content"
+  else
+    printf %s "$content"
+  fi | systemClip
+}
+
+teeAndCopy() {
+  if $quiet; then
+    bufferCopy
+  else
+    tee >(bufferCopy)
+  fi
+}
+
+if ((${#target_command[@]} == 0)); then
+  teeAndCopy
+else
+  command "${target_command[@]}" | teeAndCopy
+fi

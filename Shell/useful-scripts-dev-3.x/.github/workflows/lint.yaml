@@ -1,0 +1,23 @@
+# Quickstart for GitHub Actions
+# https://docs.github.com/en/actions/quickstart
+
+name: Lint
+on: [ push, pull_request, workflow_dispatch ]
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    name: Lint
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - run: test/chore/lint.sh
+      # https://remarkablemark.org/blog/2017/10/12/check-git-dirty/
+      - name: Check git dirty
+        run: |
+          git status --short
+          [ -z "$(git status --short)" ]

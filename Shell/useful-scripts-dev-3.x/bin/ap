@@ -1,0 +1,135 @@
+#!/usr/bin/env bash
+# @Function
+# convert to Absolute Path.
+#
+# @Usage
+#   # print Absolute Path of current directory.
+#   $ ./ap
+#   # print Absolute Path of arguments.
+#   $ ./ap a.txt ../dir1/b.txt
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/shell.md#-ap-and-rp
+# @author Jerry Lee (oldratlee at gmail dot com)
+set -eEuo pipefail
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+
+################################################################################
+# util functions
+################################################################################
+
+errorMsgPrint() {
+  local errorMsg="$PROG: $*"
+  # if stdout is a terminal, turn on color output.
+  #   '-t' check: is a terminal?
+  #   check isatty in bash https://stackoverflow.com/questions/10022323
+  if [ -t 1 ]; then
+    printf '\e[1;31m%s\e[0m\n' "$errorMsg"
+  else
+    printf '%s\n' "$errorMsg"
+  fi
+} >&2
+
+die() {
+  local prompt_help=false exit_status=2
+  while (($# > 0)); do
+    case "$1" in
+    -h)
+      prompt_help=true
+      shift
+      ;;
+    -s)
+      exit_status=$2
+      shift 2
+      ;;
+    *)
+      break
+      ;;
+    esac
+  done
+
+  (($# > 0)) && errorMsgPrint "$*"
+  $prompt_help && echo "Try '$PROG --help' for more information."
+
+  exit "$exit_status"
+} >&2
+
+# `realpath` command exists on Linux and macOS, return resolved physical path
+#   - realpath command on macOS do NOT support option `-e`;
+#     combined `[ -e $file ]` to check file existence first.
+#   - How can I get the behavior of GNU's readlink -f on a Mac?
+#     https://stackoverflow.com/questions/1055671
+realpath() {
+  [ -e "$1" ] && command realpath -- "$1"
+}
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION]... [FILE]...
+convert to Absolute Path.
+
+Example:
+  $PROG arg1 arg2
+  $PROG */*.py
+
+Options:
+  -h, --help      display this help and exit
+  -V, --version   display version information and exit
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s\n' "$PROG $PROG_VERSION"
+  exit
+}
+
+################################################################################
+# parse options
+################################################################################
+
+files=()
+while (($# > 0)); do
+  case "$1" in
+  -h | --help)
+    usage
+    ;;
+  -V | --version)
+    progVersion
+    ;;
+  --)
+    shift
+    files=(${files[@]:+"${files[@]}"} "$@")
+    break
+    ;;
+  -*)
+    die -h "unrecognized option '$1'"
+    ;;
+  *)
+    # if not option, treat all follow files as args
+    files=(${files[@]:+"${files[@]}"} "$@")
+    break
+    ;;
+  esac
+done
+
+# if files is empty, use "."
+readonly files=("${files[@]:-.}")
+
+################################################################################
+# biz logic
+################################################################################
+
+has_error=false
+
+for f in "${files[@]}"; do
+  realpath "$f" || {
+    has_error=true
+    errorMsgPrint "$f: No such file or directory!"
+  }
+done
+
+# set exit status
+! $has_error

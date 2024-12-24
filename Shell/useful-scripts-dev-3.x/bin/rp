@@ -1,0 +1,168 @@
+#!/usr/bin/env bash
+# @Function
+# convert to Relative Path.
+#
+# @Usage
+#   # if 1 argument, print relative path to current dir.
+#   $ ./rp /etc/apache2/httpd.conf
+#   # if more than 1 argument, print relative path to last argument.
+#   $ ./rp a.txt ../b.txt /etc/passwd /etc/apache2
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/shell.md#-ap-and-rp
+# @author Jerry Lee (oldratlee at gmail dot com)
+set -eEuo pipefail
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+
+################################################################################
+# util functions
+################################################################################
+
+redPrint() {
+  # if stdout is a terminal, turn on color output.
+  #   '-t' check: is a terminal?
+  #   check isatty in bash https://stackoverflow.com/questions/10022323
+  if [ -t 1 ]; then
+    printf '\e[1;31m%s\e[0m\n' "$*"
+  else
+    printf '%s\n' "$*"
+  fi
+}
+
+die() {
+  local prompt_help=false exit_status=2
+  while (($# > 0)); do
+    case "$1" in
+    -h)
+      prompt_help=true
+      shift
+      ;;
+    -s)
+      exit_status=$2
+      shift 2
+      ;;
+    *)
+      break
+      ;;
+    esac
+  done
+
+  (($# > 0)) && redPrint "$PROG: $*"
+  $prompt_help && echo "Try '$PROG --help' for more information."
+
+  exit "$exit_status"
+} >&2
+
+portableRelPath() {
+  local file=$1 relTo=$2 uname
+
+  uname=$(uname)
+  case "$uname" in
+  Linux* | CYGWIN* | MINGW*)
+    realpath "$f" --relative-to="$relTo"
+    ;;
+  Darwin*)
+    local py_args=(-c 'import os, sys; print(os.path.relpath(sys.argv[1], sys.argv[2]))' "$file" "$relTo")
+    if type -P grealpath >/dev/null; then
+      grealpath "$f" --relative-to="$relTo"
+    elif type -P python3 >/dev/null; then
+      python3 "${py_args[@]}"
+    elif type -P python >/dev/null; then
+      python "${py_args[@]}"
+    else
+      die "fail to find command(grealpath/python3/python) to get relative path!"
+    fi
+    ;;
+  *)
+    die "uname($uname) NOT support!"
+    ;;
+  esac
+}
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION]... [FILE]...
+convert to Relative Path.
+
+Example:
+  $PROG path    # relative to current dir
+  $PROG path1 relativeToPath
+  $PROG */*.c relativeToPath
+
+Options:
+  -h, --help      display this help and exit
+  -V, --version   display version information and exit
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s\n' "$PROG $PROG_VERSION"
+  exit
+}
+
+################################################################################
+# parse options
+################################################################################
+
+files=()
+while (($# > 0)); do
+  case "$1" in
+  -h | --help)
+    usage
+    ;;
+  -V | --version)
+    progVersion
+    ;;
+  --)
+    shift
+    files=(${files[@]:+"${files[@]}"} "$@")
+    break
+    ;;
+  -*)
+    die -h "unrecognized option '$1'"
+    ;;
+  *)
+    # if not option, treat all follow files as args
+    files=(${files[@]:+"${files[@]}"} "$@")
+    break
+    ;;
+  esac
+done
+
+((${#files[@]} == 0)) && die -h "requires at least one argument!"
+
+if ((${#files[@]} == 1)); then
+  relativeTo=.
+else
+  argc=${#files[@]}
+
+  # Get last argument
+  relativeTo=${files[argc - 1]}
+  files=("${files[@]:0:argc-1}")
+fi
+
+[ -f "$relativeTo" ] && relativeTo=$(dirname -- "$relativeTo")
+[ -e "$relativeTo" ] || die "relativeTo dir($relativeTo): No such file or directory!"
+
+readonly files relativeTo
+
+################################################################################
+# biz logic
+################################################################################
+
+has_error=false
+
+for f in "${files[@]}"; do
+  if [ -e "$f" ]; then
+    portableRelPath "$f" "$relativeTo"
+  else
+    redPrint "$PROG: $f: No such file or directory!" >&2
+    has_error=true
+  fi
+done
+
+# set exit status
+! $has_error

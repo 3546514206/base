@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+# @Function
+# tac lines colorfully. taoc means coat(*CO*lorful c*AT*) in reverse(last line first).
+#
+# @Usage
+#   $ echo -e 'Hello\nWorld' | taoc
+#   $ taoc /path/to/file1
+#   $ taoc /path/to/file1 /path/to/file2
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/shell.md#-coat
+# @author Jerry Lee (oldratlee at gmail dot com)
+set -eEuo pipefail
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+
+################################################################################
+# parse options
+################################################################################
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION]... [FILE]...
+tac lines colorfully.
+
+Support options:
+  --help     display this help and exit
+  --version  output version information and exit
+All other options and arguments are delegated to command tac,
+more info see the help/man of command tac(e.g. tac --help).
+tac executable: $(type -P tac)
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s version: %s\n' "$PROG" "$PROG_VERSION"
+  printf 'tac executable: %s\n' "$(type -P tac)"
+  exit
+}
+
+args=("$@")
+# check arguments in reverse, so last option wins.
+for ((idx = $# - 1; idx >= 0; --idx)); do
+  [ "${args[idx]}" = --help ] && usage
+  [ "${args[idx]}" = --version ] && progVersion
+done
+unset args idx
+
+################################################################################
+# biz logic
+################################################################################
+
+# if stdout is not a terminal, use `tac` directly.
+#   '-t' check: is a terminal?
+#   check isatty in bash https://stackoverflow.com/questions/10022323
+[ -t 1 ] || exec tac "$@"
+
+readonly -a ROTATE_COLORS=(33 35 36 31 32 37 34)
+COLOR_INDEX=0
+# CAUTION: print content WITHOUT new line
+rotateColorPrint() {
+  local content=$*
+  # skip color for white space
+  if [[ $content =~ ^[[:space:]]*$ ]]; then
+    printf %s "$content"
+  else
+    local color=${ROTATE_COLORS[COLOR_INDEX++ % ${#ROTATE_COLORS[@]}]}
+    printf '\e[1;%sm%s\e[0m' "$color" "$content"
+  fi
+}
+
+rotateColorPrintln() {
+  # NOTE: $'foo' is the escape sequence syntax of bash
+  rotateColorPrint "$*"$'\n'
+}
+
+colorLines() {
+  local line
+  # Bash read line does not read leading spaces
+  # https://stackoverflow.com/questions/29689172
+  while IFS= read -r line; do
+    rotateColorPrintln "$line"
+  done
+  # How to use `while read` (Bash) to read the last line in a file
+  #   if there’s no newline at the end of the file?
+  # https://stackoverflow.com/questions/4165135
+  [ -z "$line" ] || rotateColorPrint "$line"
+}
+
+tac "$@" | colorLines

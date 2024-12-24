@@ -1,0 +1,171 @@
+#!/usr/bin/env bash
+# @Function
+# Open file in file explorer.
+#
+# @Usage
+#   $ ./xpf [file [file ...] ]
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/shell.md#-xpl-and-xpf
+# @author Jerry Lee (oldratlee at gmail dot com)
+set -eEuo pipefail
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+
+################################################################################
+# util functions
+################################################################################
+
+redPrint() {
+  # if stdout is a terminal, turn on color output.
+  #   '-t' check: is a terminal?
+  #   check isatty in bash https://stackoverflow.com/questions/10022323
+  if [ -t 1 ]; then
+    printf '\e[1;31m%s\e[0m\n' "$*"
+  else
+    printf '%s\n' "$*"
+  fi
+}
+
+die() {
+  local prompt_help=false exit_status=2
+  while (($# > 0)); do
+    case "$1" in
+    -h)
+      prompt_help=true
+      shift
+      ;;
+    -s)
+      exit_status=$2
+      shift 2
+      ;;
+    *)
+      break
+      ;;
+    esac
+  done
+
+  (($# > 0)) && redPrint "$PROG: $*"
+  $prompt_help && echo "Try '$PROG --help' for more information."
+
+  exit "$exit_status"
+} >&2
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION] [FILE]...
+Open file in file explorer.
+Example: $PROG file.txt
+
+Options:
+    -s, --selected  select the file or dir
+    -h, --help      display this help and exit
+    -V, --version   display version information and exit
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s\n' "$PROG $PROG_VERSION"
+  exit
+}
+
+################################################################################
+# parse options
+################################################################################
+
+files=()
+selected=false
+while (($# > 0)); do
+  case "$1" in
+  -s | --selected)
+    selected=true
+    shift
+    ;;
+  -h | --help)
+    usage
+    ;;
+  -V | --version)
+    progVersion
+    ;;
+  --)
+    shift
+    files=(${files[@]:+"${files[@]}"} "$@")
+    break
+    ;;
+  -*)
+    die -h "unrecognized option '$1'"
+    ;;
+  *)
+    files=(${files[@]:+"${files[@]}"} "$1")
+    shift
+    ;;
+  esac
+done
+
+# if files is empty, use one element "."
+files=("${files[@]:-.}")
+
+# if program name is xpf, set option selected!
+[ "xpf" = "$PROG" ] && selected=true
+
+readonly files selected
+
+################################################################################
+# biz logic
+################################################################################
+
+# open one file
+openOneFile() {
+  local file=$1 slt=$selected
+
+  case "$(uname)" in
+  Darwin*)
+    [ -f "$file" ] && slt=true
+    if $slt; then
+      open -R "$file"
+    else
+      open "$file"
+    fi
+    ;;
+  CYGWIN*)
+    [ -f "$file" ] && slt=true
+    if $slt; then
+      explorer /select, "$(cygpath -w "$file")"
+    else
+      explorer "$(cygpath -w "$file")"
+    fi
+    ;;
+  *)
+    if [ -d "$file" ]; then
+      nautilus "$(dirname -- "$file")"
+    else
+      if $slt; then
+        nautilus "$file"
+      else
+        nautilus "$(dirname -- "$file")"
+      fi
+    fi
+    ;;
+  esac
+
+  local selected_msg
+  $slt && selected_msg='with selection'
+  printf 'open %14s: %s\n' "$selected_msg" "$file"
+}
+
+has_error=false
+
+for file in "${files[@]}"; do
+  [ -e "$file" ] || {
+    has_error=true
+    redPrint "$PROG: $file: No such file or directory!" >&2
+    continue
+  }
+
+  openOneFile "$file" || has_error=true
+done
+
+# set exit status
+! $has_error

@@ -1,0 +1,599 @@
+#!/usr/bin/env bash
+# @Function
+# Find out the highest cpu consumed threads of java processes, and print the stack of these threads.
+#
+# @Usage
+#   $ ./show-busy-java-threads
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/java.md#-show-busy-java-threads
+# @author Jerry Lee (oldratlee at gmail dot com)
+# @author superhj1987 (superhj1987 at 126 dot com)
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+# choosing between $0 and BASH_SOURCE
+# https://stackoverflow.com/a/35006505/922688
+# How can I get the source directory of a Bash script from within the script itself?
+# https://stackoverflow.com/questions/59895
+# Will $0 always include the path to the script?
+# https://unix.stackexchange.com/questions/119929
+readonly -a COMMAND_LINE=("${BASH_SOURCE[0]}" "$@")
+# CAUTION: env var $USER is not reliable!
+#   $USER may be overwritten; if run command by `sudo -u`, may is not `root`.
+#   more info see https://www.baeldung.com/linux/get-current-user
+#
+# DO NOT declare and assign var(as readonly) in ONE line!
+#   more info see https://github.com/koalaman/shellcheck/wiki/SC2155
+WHOAMI=$(whoami)
+UNAME=$(uname)
+readonly WHOAMI UNAME
+
+################################################################################
+# util functions
+################################################################################
+
+# NOTE: $'foo' is the escape sequence syntax of bash
+readonly NL=$'\n' # new line
+
+colorPrint() {
+  local color=$1
+  shift
+
+  # if stdout is a terminal, turn on color output.
+  #   '-t' check: is a terminal?
+  #   check isatty in bash https://stackoverflow.com/questions/10022323
+  if [ -t 1 ]; then
+    printf '\e[1;%sm%s\e[0m\n' "$color" "$*"
+  else
+    printf '%s\n' "$*"
+  fi
+}
+
+__appendToFile() {
+  [[ -n "$append_file" && -w "$append_file" ]] && printf '%s\n' "$*" >>"$append_file"
+  [[ -n "$store_dir" && -w "$store_dir" ]] && printf '%s\n' "$*" >>"$store_file_prefix$PROG"
+}
+
+colorOutput() {
+  local color=$1
+  shift
+
+  colorPrint "$color" "$*"
+  __appendToFile "$*"
+}
+
+# shellcheck disable=SC2120
+normalOutput() {
+  printf '%s\n' "$*"
+  __appendToFile "$*"
+}
+
+redOutput() {
+  colorOutput 31 "$*"
+}
+
+greenOutput() {
+  colorOutput 32 "$*"
+}
+
+yellowOutput() {
+  colorOutput 33 "$*"
+}
+
+blueOutput() {
+  colorOutput 36 "$*"
+}
+
+die() {
+  local prompt_help=false exit_status=2
+  while (($# > 0)); do
+    case "$1" in
+    -h)
+      prompt_help=true
+      shift
+      ;;
+    -s)
+      exit_status=$2
+      shift 2
+      ;;
+    *)
+      break
+      ;;
+    esac
+  done
+
+  (($# > 0)) && colorPrint "1;31" "$PROG: $*"
+  $prompt_help && echo "Try '$PROG --help' for more information."
+
+  exit "$exit_status"
+} >&2
+
+logAndRun() {
+  printf '%s\n' "$*"
+  echo
+  "$@"
+}
+
+logAndCat() {
+  printf '%s\n' "$*"
+  echo
+  cat
+}
+
+# Bash RegEx to check floating point numbers from user input
+# https://stackoverflow.com/questions/13790763
+isNonNegativeFloatNumber() {
+  [[ "$1" =~ ^[+]?[0-9]+\.?[0-9]*$ ]]
+}
+
+isNaturalNumber() {
+  [[ "$1" =~ ^[+]?[0-9]+$ ]]
+}
+
+isNaturalNumberList() {
+  [[ "$1" =~ ^([0-9]+)(,[0-9]+)*$ ]]
+}
+
+# print calling(quoted) command line which is able to copy and paste to rerun safely
+#
+# How to get the complete calling command of a BASH script from inside the script (not just the arguments)
+# https://stackoverflow.com/questions/36625593
+printCallingCommandLine() {
+  local arg isFirst=true
+  for arg in "${COMMAND_LINE[@]}"; do
+    if $isFirst; then
+      isFirst=false
+    else
+      printf ' '
+    fi
+    printf '%q' "$arg"
+  done
+  echo
+}
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION]... [delay [count]]
+Find out the highest cpu consumed threads of java processes,
+and print the stack of these threads.
+
+Example:
+  $PROG       # show busy java threads info
+  $PROG 1     # update every 1 second, (stop by eg: CTRL+C)
+  $PROG 3 10  # update every 3 seconds, update 10 times
+
+Output control:
+  -p, --pid <java pid(s)>   find out the highest cpu consumed threads from
+                            the specified java process.
+                            support pid list(eg: 42,47).
+                            default from all java process.
+  -c, --count <num>         set the thread count to show, default is 5.
+                            set count 0 to show all threads.
+  -a, --append-file <file>  specifies the file to append output as log.
+  -S, --store-dir <dir>     specifies the directory for storing
+                            the intermediate files, and keep files.
+                            default store intermediate files at tmp dir,
+                            and auto remove after run. use this option to keep
+                            files so as to review jstack/top/ps output later.
+  delay                     the delay between updates in seconds.
+  count                     the number of updates.
+                            delay/count arguments imitates the style of
+                            vmstat command.
+
+jstack control:
+  -s, --jstack-path <path>  specifies the path of jstack command.
+  -F, --force               set jstack to force a thread dump.
+                            use when jstack does not respond (process is hung).
+  -m, --mix-native-frames   set jstack to print both java and
+                            native frames (mixed mode).
+  -l, --lock-info           set jstack with long listing.
+                            prints additional information about locks.
+
+CPU usage calculation control:
+  -i, --cpu-sample-interval specifies the delay between cpu samples to get
+                            thread cpu usage percentage during this interval.
+                            default is 0.5 (second).
+                            set interval 0 to get the percentage of time spent
+                            running during the *entire lifetime* of a process.
+
+Miscellaneous:
+  -h, --help                display this help and exit.
+  -V, --version             display version information and exit.
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s\n' "$PROG $PROG_VERSION"
+  exit
+}
+
+################################################################################
+# check os support
+################################################################################
+
+[[ $UNAME = Linux* ]] || die "only support Linux, not support $UNAME yet!"
+
+################################################################################
+# parse options
+################################################################################
+
+# DO NOT declare and assign var ARGS(as readonly) in ONE line!
+ARGS=$(
+  getopt -n "$PROG" -a -o c:p:a:s:S:i:Pd:FmlhV \
+    -l count:,pid:,append-file:,jstack-path:,store-dir:,cpu-sample-interval:,use-ps,top-delay:,force,mix-native-frames,lock-info,help,version \
+    -- "$@"
+) || die -h
+eval set -- "$ARGS"
+unset ARGS
+
+count=5
+cpu_sample_interval=0.5
+
+while true; do
+  case "$1" in
+  -c | --count)
+    count=$2
+    shift 2
+    ;;
+  -p | --pid)
+    pid_list=$2
+    shift 2
+    ;;
+  -a | --append-file)
+    append_file=$2
+    shift 2
+    ;;
+  -s | --jstack-path)
+    jstack_path=$2
+    shift 2
+    ;;
+  -S | --store-dir)
+    store_dir=$2
+    shift 2
+    ;;
+  # support the legacy option name -P,--use-ps for compatibility
+  -P | --use-ps)
+    cpu_sample_interval=0
+    shift
+    ;;
+  # support the legacy option name -d,--top-delay for compatibility
+  -i | --cpu-sample-interval | -d | --top-delay)
+    cpu_sample_interval=$2
+    shift 2
+    ;;
+  -F | --force)
+    force=-F
+    shift
+    ;;
+  -m | --mix-native-frames)
+    mix_native_frames=-m
+    shift
+    ;;
+  -l | --lock-info)
+    lock_info=-l
+    shift
+    ;;
+  -h | --help)
+    usage
+    ;;
+  -V | --version)
+    progVersion
+    ;;
+  --)
+    shift
+    break
+    ;;
+  esac
+done
+
+readonly count cpu_sample_interval force mix_native_frames lock_info
+readonly update_delay=${1:-0}
+isNonNegativeFloatNumber "$update_delay" || die "update delay($update_delay) is not a non-negative float number!"
+
+[ -z "$1" ] && update_count=1 || update_count=${2:-0}
+isNaturalNumber "$update_count" || die "update count($update_count) is not a natural number!"
+readonly update_count
+
+if [ -n "$pid_list" ]; then
+  pid_list=${pid_list//[[:space:]]/} # delete white space
+  isNaturalNumberList "$pid_list" || die "pid(s)($pid_list) is illegal! example: 42 or 42,99,67"
+fi
+readonly pid_list
+
+# check the directory of append-file(-a) mode, create if not existed.
+if [ -n "$append_file" ]; then
+  if [ -e "$append_file" ]; then
+    [ -f "$append_file" ] || die "$append_file(specified by option -a, for storing run output files) exists but is not a file!"
+    [ -w "$append_file" ] || die "file $append_file(specified by option -a, for storing run output files) exists but is not writable!"
+  else
+    append_file_dir=$(dirname -- "$append_file")
+    if [ -e "$append_file_dir" ]; then
+      [ -d "$append_file_dir" ] || die "directory $append_file_dir(specified by option -a, for storing run output files) exists but is not a directory!"
+      [ -w "$append_file_dir" ] || die "directory $append_file_dir(specified by option -a, for storing run output files) exists but is not writable!"
+    else
+      mkdir -p "$append_file_dir" || die "fail to create directory $append_file_dir(specified by option -a, for storing run output files)!"
+    fi
+  fi
+fi
+readonly append_file
+
+# check store directory(-S) mode, create directory if not existed.
+if [ -n "$store_dir" ]; then
+  if [ -e "$store_dir" ]; then
+    [ -d "$store_dir" ] || die "$store_dir(specified by option -S, for storing output files) exists but is not a directory!"
+    [ -w "$store_dir" ] || die "directory $store_dir(specified by option -S, for storing output files) exists but is not writable!"
+  else
+    mkdir -p "$store_dir" || die "fail to create directory $store_dir(specified by option -S, for storing output files)!"
+  fi
+fi
+readonly store_dir
+
+isNonNegativeFloatNumber "$cpu_sample_interval" || die "cpu sample interval($cpu_sample_interval) is not a non-negative float number!"
+
+################################################################################
+# search/check the existence of jstack command
+#
+# search order/priority:
+#    1. from -s option
+#    2. from under env var JAVA_HOME
+#    3. from under env var PATH
+################################################################################
+
+if [ -n "$jstack_path" ]; then
+  # 1. check jstack_path set by -s option
+  [ -f "$jstack_path" ] || die "$jstack_path (set by -s option) is NOT found!"
+  [ -x "$jstack_path" ] || die "$jstack_path (set by -s option) is NOT executable!"
+elif [ -n "$JAVA_HOME" ]; then
+  # 2. search jstack under JAVA_HOME
+  if [ -f "$JAVA_HOME/bin/jstack" ]; then
+    [ -x "$JAVA_HOME/bin/jstack" ] || die -h "found \$JAVA_HOME/bin/jstack($JAVA_HOME/bin/jstack) is NOT executable!${NL}Use -s option set jstack path manually."
+    jstack_path="$JAVA_HOME/bin/jstack"
+  elif [ -f "$JAVA_HOME/../bin/jstack" ]; then
+    [ -x "$JAVA_HOME/../bin/jstack" ] || die -h "found \$JAVA_HOME/../bin/jstack($JAVA_HOME/../bin/jstack) is NOT executable!${NL}Use -s option set jstack path manually."
+    jstack_path="$JAVA_HOME/../bin/jstack"
+  fi
+elif type -P jstack &>/dev/null; then
+  # 3. search jstack under PATH
+  jstack_path=$(type -P jstack)
+  [ -x "$jstack_path" ] || die -h "found $jstack_path from PATH is NOT executable!${NL}Use -s option set jstack path manually."
+else
+  die -h "jstack NOT found by JAVA_HOME(${JAVA_HOME:-not set}) setting and PATH!${NL}Use -s option set jstack path manually."
+fi
+readonly jstack_path
+
+################################################################################
+# biz logic
+################################################################################
+
+# DO NOT declare and assign var run_timestamp(as readonly) in ONE line!
+run_timestamp=$(date "+%Y-%m-%d_%H:%M:%S.%N")
+readonly run_timestamp
+readonly uuid="${PROG}_${run_timestamp}_${$}_${RANDOM}"
+
+readonly tmp_store_dir="/tmp/$uuid"
+if [ -n "$store_dir" ]; then
+  readonly store_file_prefix="$store_dir/${run_timestamp}_"
+else
+  readonly store_file_prefix="$tmp_store_dir/${run_timestamp}_"
+fi
+mkdir -p "$tmp_store_dir"
+
+cleanupWhenExit() {
+  rm -rf "$tmp_store_dir" &>/dev/null
+}
+trap cleanupWhenExit EXIT
+
+headInfo() {
+  local timestamp=$1
+  colorPrint "0;34;42" ================================================================================
+  printf '%s\n' "$timestamp [$((update_round_num + 1))/$update_count]: $(printCallingCommandLine)"
+  colorPrint "0;34;42" ================================================================================
+  echo
+}
+
+if [ -n "$pid_list" ]; then
+  readonly ps_process_select_options="-p $pid_list"
+else
+  readonly ps_process_select_options="-C java -C jsvc"
+fi
+
+__die_when_no_java_process_found() {
+  if [ -n "$pid_list" ]; then
+    die "process($pid_list) is not running, or not java process!"
+  else
+    die 'No java process found!'
+  fi
+}
+
+# output field: pid, thread id(lwp), pcpu, user
+#   order by pcpu(percentage of cpu usage)
+#
+# NOTE:
+# use ps command to find busy thread(cpu usage)
+# cpu usage of ps command is expressed as
+# the percentage of time spent running during the *entire lifetime* of a process,
+# this is not ideal in general.
+findBusyJavaThreadsByPs() {
+  # 1. sort by %cpu by ps option `--sort -pcpu`
+  #    unfortunately, ps from `procps-ng 3.3.12`, `--sort` does not work properly with other options,
+  #    use
+  #       ps <other options>
+  #    combined
+  #       sort -k3,3nr
+  #    instead of
+  #       ps <other options> --sort -pcpu
+  # 2. use wide output(unlimited width) by ps option `-ww`
+  #    avoid trunk user column to username_fo+ or $uid alike
+
+  # shellcheck disable=SC2206
+  local -a ps_cmd_line=(ps $ps_process_select_options -wwLo 'pid,lwp,pcpu,user' --no-headers)
+  # DO NOT combine var ps_out declaration and assignment in ONE line!
+  #   more info see https://github.com/koalaman/shellcheck/wiki/SC2155
+  local ps_out
+  ps_out=$("${ps_cmd_line[@]}" | sort -k3,3nr)
+  [ -n "$ps_out" ] || __die_when_no_java_process_found
+
+  if [ -n "$store_dir" ]; then
+    printf '%s\n' "$ps_out" | logAndCat "${ps_cmd_line[*]} | sort -k3,3nr" >"$store_file_prefix$((update_round_num + 1))_ps"
+  fi
+
+  if ((count > 0)); then
+    printf '%s\n' "$ps_out" | head -n "$count"
+  else
+    printf '%s\n' "$ps_out"
+  fi
+}
+
+# top with output field: thread id, %cpu
+__top_threadId_cpu() {
+  # DO NOT combine var java_pid_list declaration and assignment in ONE line!
+  local java_pid_list
+  # shellcheck disable=SC2086
+  java_pid_list=$(ps $ps_process_select_options -o pid --no-headers)
+  [ -n "$java_pid_list" ] || __die_when_no_java_process_found
+  # shellcheck disable=SC2086
+  java_pid_list=$(echo $java_pid_list | tr ' ' ,) # join with ,
+
+  # 1. sort by %cpu by top option `-o %CPU`
+  #    unfortunately, top version 3.2 does not support -o option(supports from top version 3.3+),
+  #    use
+  #       HOME=$tmp_store_dir top -H -b -n 1
+  #    combined
+  #       sort
+  #    instead of
+  #       HOME=$tmp_store_dir top -H -b -n 1 -o %CPU
+  # 2. change HOME env var when run top,
+  #    so as to prevent top command output format being change by .toprc user config file unexpectedly
+  # 3. use option `-d 0.5`(update interval 0.5 second) and `-n 2`(update 2 times),
+  #    and use second time update data to get cpu percentage of thread in 0.5 second interval
+  # 4. top v3.3, there is 1 black line between 2 update;
+  #    but top v3.2, there is 2 blank lines between 2 update!
+  local -a top_cmd_line=(top -H -b -d "$cpu_sample_interval" -n 2 -p "$java_pid_list")
+  # DO NOT combine var top_out declaration and assignment in ONE line!
+  local top_out
+  top_out=$(HOME=$tmp_store_dir "${top_cmd_line[@]}")
+  if [ -n "$store_dir" ]; then
+    printf '%s\n' "$top_out" | logAndCat "${top_cmd_line[@]}" >"$store_file_prefix$((update_round_num + 1))_top"
+  fi
+
+  # DO NOT combine var result_threads_top_info declaration and assignment in ONE line!
+  local result_threads_top_info
+  result_threads_top_info=$(printf '%s\n' "$top_out" | awk '{
+        # from text line to empty line, increase block index
+        if (previousLine && !$0) blockIndex++
+        # only print 4th text block(blockIndex == 3), aka. process info of second top update
+        if (blockIndex == 3 && $1 ~ /^[0-9]+$/)
+          print $1, $9  # $1 is thread id field, $9 is %cpu field
+        previousLine = $0
+      }')
+  [ -n "$result_threads_top_info" ] || __die_when_no_java_process_found
+
+  printf '%s\n' "$result_threads_top_info" | sort -k2,2nr
+}
+
+__complete_pid_user_by_ps() {
+  # ps output field: pid, thread id(lwp), user
+  # shellcheck disable=SC2206
+  local -a ps_cmd_line=(ps $ps_process_select_options -wwLo 'pid,lwp,user' --no-headers)
+  # DO NOT combine var ps_out declaration and assignment in ONE line!
+  local ps_out
+  ps_out=$("${ps_cmd_line[@]}")
+  if [ -n "$store_dir" ]; then
+    printf '%s\n' "$ps_out" | logAndCat "${ps_cmd_line[@]}" >"$store_file_prefix$((update_round_num + 1))_ps"
+  fi
+
+  local idx=0 threadId pcpu output_fields
+  while read -r threadId pcpu; do
+    ((count <= 0 || idx < count)) || break
+
+    # output field: pid, threadId, pcpu, user
+    output_fields=$(printf '%s\n' "$ps_out" | awk -v "threadId=$threadId" -v "pcpu=$pcpu" '$2==threadId {
+          print $1, threadId, pcpu, $3; exit
+        }')
+    if [ -n "$output_fields" ]; then
+      ((idx++))
+      printf '%s\n' "$output_fields"
+    fi
+  done
+}
+
+# output format is same as function findBusyJavaThreadsByPs
+findBusyJavaThreadsByTop() {
+  __top_threadId_cpu | __complete_pid_user_by_ps
+}
+
+printStackOfThreads() {
+  local idx=0 pid threadId pcpu user threadId0x
+  while read -r pid threadId pcpu user; do
+    printf -v threadId0x '%#x' "$threadId"
+
+    ((idx++ > 0)) && normalOutput
+    local jstackFile="$store_file_prefix$((update_round_num + 1))_jstack_$pid"
+    [ -f "$jstackFile" ] || {
+      # shellcheck disable=SC2206
+      local -a jstack_cmd_line=("$jstack_path" $force $mix_native_frames $lock_info $pid)
+      if [ "$user" = "$WHOAMI" ]; then
+        # run without sudo, when java process user is current user
+        logAndRun "${jstack_cmd_line[@]}" >"$jstackFile"
+      elif ((UID == 0)); then
+        # if java process user is not current user, must run jstack with sudo
+        logAndRun sudo -u "$user" "${jstack_cmd_line[@]}" >"$jstackFile"
+      else
+        # current user is not root user, so can not run with sudo; print error message and rerun suggestion
+        redOutput "[$idx] Fail to jstack busy($pcpu%) thread($threadId/$threadId0x) stack of java process($pid) under user($user)."
+        redOutput "User of java process($user) is not current user($WHOAMI), need sudo to rerun:"
+        yellowOutput "    sudo $(printCallingCommandLine)"
+        continue
+      fi || {
+        redOutput "[$idx] Fail to jstack busy($pcpu%) thread($threadId/$threadId0x) stack of java process($pid) under user($user)."
+        rm "$jstackFile" &>/dev/null
+        continue
+      }
+    }
+
+    blueOutput "[$idx] Busy($pcpu%) thread($threadId/$threadId0x) stack of java process($pid) under user($user):"
+
+    if [ -n "$mix_native_frames" ]; then
+      local sed_script="/--------------- $threadId ---------------/,/^---------------/ {
+          /--------------- $threadId ---------------/b # skip first separator line
+          /^---------------/d # delete second separator line
+          p
+        }"
+    elif [ -n "$force" ]; then
+      local sed_script="/^Thread $threadId:/,/^$/ {
+          /^$/d; p # delete end separator line
+        }"
+    else
+      local sed_script="/ nid=($threadId0x|$threadId) /,/^$/ {
+          /^$/d; p # delete end separator line
+        }"
+    fi
+    sed "$sed_script" -n -r "$jstackFile" | tee ${append_file:+-a "$append_file"} ${store_dir:+-a "$store_file_prefix$PROG"}
+  done
+}
+
+main() {
+  local update_round_num timestamp
+  # if update_count <= 0, infinite loop till user interrupted (eg: CTRL+C)
+  for ((update_round_num = 0; update_count <= 0 || update_round_num < update_count; ++update_round_num)); do
+    ((update_round_num > 0)) && {
+      sleep "$update_delay"
+      normalOutput
+    }
+
+    timestamp=$(date "+%Y-%m-%d %H:%M:%S.%N")
+    [[ -n "$append_file" || -n "$store_dir" ]] && headInfo "$timestamp" |
+      tee ${append_file:+-a "$append_file"} ${store_dir:+-a "$store_file_prefix$PROG"} >/dev/null
+    ((update_count != 1)) && headInfo "$timestamp"
+
+    if [ "$cpu_sample_interval" = 0 ]; then
+      findBusyJavaThreadsByPs
+    else
+      findBusyJavaThreadsByTop
+    fi | printStackOfThreads
+  done
+}
+
+main

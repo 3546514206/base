@@ -1,0 +1,250 @@
+#!/usr/bin/env bash
+# @Function
+# Copy the command into docker container and run the command in container.
+#
+# Example:
+#  cp-into-docker-run -c container_foo command_copied_into_container command_arg1
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/shell.md#-cp-into-docker-run
+# @author Jerry Lee (oldratlee at gmail dot com)
+set -eEuo pipefail
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+
+################################################################################
+# util functions
+################################################################################
+
+redPrint() {
+  # if stdout is a terminal, turn on color output.
+  #   '-t' check: is a terminal?
+  #   check isatty in bash https://stackoverflow.com/questions/10022323
+  if [ -t 1 ]; then
+    printf '\e[1;31m%s\e[0m\n' "$*"
+  else
+    printf '%s\n' "$*"
+  fi
+}
+
+die() {
+  local prompt_help=false exit_staus=2
+  while (($# > 0)); do
+    case "$1" in
+    -h)
+      prompt_help=true
+      shift
+      ;;
+    -s)
+      exit_staus=$2
+      shift 2
+      ;;
+    *)
+      break
+      ;;
+    esac
+  done
+
+  (($# > 0)) && redPrint "$PROG: $*"
+  $prompt_help && echo "Try '$PROG --help' for more information."
+
+  exit "$exit_staus"
+} >&2
+
+isAbsolutePath() {
+  [[ "$1" =~ ^/ ]]
+}
+
+# `realpath` command exists on Linux and macOS, return resolved physical path
+#   - realpath command on macOS do NOT support option `-e`;
+#     combined `[ -e $file ]` to check file existence first.
+#   - How can I get the behavior of GNU's readlink -f on a Mac?
+#     https://stackoverflow.com/questions/1055671
+realpath() {
+  [ -e "$1" ] && command realpath -- "$1"
+}
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION]... command [command-args]...
+
+Copy the command into docker container
+and run the command in container.
+
+Example:
+  $PROG -c container_foo command_copied_into_container command_arg1
+
+docker options:
+  -c, --container    destination docker container
+  -u, --docker-user  docker username or UID to run command
+                     optional, docker default is (maybe) root user
+  -w, --workdir      absolute working directory inside the container
+                     optional, docker default is (maybe) root dir
+  -t, --tmpdir       tmp dir in docker to copy command
+                     optional, default is /tmp
+  -p, --cp-path      destination path in docker of the command(including file name)
+                     if specified, command will be kept when run finished
+                     optional, default is under tmp dir and deleted when run finished
+
+run options:
+  -v, --verbose      show operation step infos
+
+miscellaneous:
+  -h, --help         display this help and exit
+  -V, --version      display version information and exit
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s\n' "$PROG $PROG_VERSION"
+  exit
+}
+
+################################################################################
+# parse options
+################################################################################
+
+container_name=
+docker_user=
+docker_workdir=
+docker_tmpdir=/tmp
+docker_command_cp_path=
+verbose=false
+args=()
+
+while (($# > 0)); do
+  case "$1" in
+  -c | --container)
+    container_name=$2
+    shift 2
+    ;;
+  -u | --docker-user)
+    docker_user=$2
+    shift 2
+    ;;
+  -w | --workdir)
+    docker_workdir=$2
+    shift 2
+    ;;
+  -t | --tmpdir)
+    docker_tmpdir=$2
+    shift 2
+    ;;
+  -p | --cp-path)
+    docker_command_cp_path=$2
+    shift 2
+    ;;
+  -v | --verbose)
+    verbose=true
+    shift
+    ;;
+  -h | --help)
+    usage
+    ;;
+  -V | --version)
+    progVersion
+    ;;
+  --)
+    shift
+    args=(${args[@]:+"${args[@]}"} "$@")
+    break
+    ;;
+  -*)
+    die -h "unrecognized option '$1'"
+    ;;
+  *)
+    # if not option, treat all follow arguments as command
+    args=(${args[@]:+"${args[@]}"} "$@")
+    break
+    ;;
+  esac
+done
+
+readonly container_name docker_user docker_workdir docker_tmpdir docker_command_cp_path verbose args
+
+[ -n "$container_name" ] ||
+  die -h "requires destination docker container name, specified by option -c/--container!"
+
+if [ -n "$docker_workdir" ]; then
+  isAbsolutePath "$docker_workdir" ||
+    die "docker workdir(-w/--workdir) must be absolute path: $docker_workdir"
+elif [ -n "$docker_command_cp_path" ]; then
+  isAbsolutePath "$docker_command_cp_path" ||
+    die "when no docker workdir(-w/--workdir) is specified, the command path in docker to copy(-p/--cp-path) must be absolute path: $docker_command_cp_path"
+fi
+
+################################################################################
+# biz logic
+################################################################################
+
+########################################
+# check docker command existence
+########################################
+
+type -P docker &>/dev/null || die 'docker command not found!'
+
+########################################
+# prepare vars for docker operation
+########################################
+
+readonly specified_run_command=${args[0]}
+run_command=$specified_run_command
+if [ ! -f "$specified_run_command" ]; then
+  type -P "$specified_run_command" &>/dev/null ||
+    die "specified command not exists and not found in PATH: $specified_run_command"
+
+  run_command=$(type -P "$specified_run_command")
+fi
+
+run_command=$(realpath "$run_command")
+readonly run_command run_command_base_name=${run_command##*/}
+
+run_timestamp=$(date "+%Y%m%d_%H%M%S")
+readonly run_timestamp
+readonly uuid="${PROG}_${run_timestamp}_${$}_${RANDOM}"
+
+if [ -n "$docker_command_cp_path" ]; then
+  if isAbsolutePath "$docker_command_cp_path"; then
+    readonly run_command_in_docker=$docker_command_cp_path
+  else
+    readonly run_command_in_docker="${docker_workdir:+"$docker_workdir/"}$docker_command_cp_path"
+  fi
+  run_command_dir_in_docker=$(dirname -- "$run_command_in_docker")
+  readonly run_command_dir_in_docker
+else
+  readonly work_tmp_dir_in_docker=$docker_tmpdir/$uuid
+
+  readonly run_command_in_docker="$work_tmp_dir_in_docker/$run_command_base_name"
+  readonly run_command_dir_in_docker=$work_tmp_dir_in_docker
+fi
+
+cleanupWhenExit() {
+  [ -n "${work_tmp_dir_in_docker:-}" ] || return 0
+
+  # remove tmp dir in docker by root user
+  docker exec "$container_name" rm -rf -- "$work_tmp_dir_in_docker" &>/dev/null
+}
+trap cleanupWhenExit EXIT
+
+########################################
+# docker operations
+########################################
+
+logAndRun() {
+  $verbose && printf '%s\n' "[$PROG] $*" >&2
+  "$@"
+}
+
+logAndRun docker exec ${docker_user:+"--user=$docker_user"} "$container_name" \
+  mkdir -p -- "$run_command_dir_in_docker"
+logAndRun docker cp "$run_command" "$container_name:$run_command_in_docker"
+logAndRun docker exec ${docker_user:+"--user=$docker_user"} "$container_name" \
+  chmod +x "$run_command_in_docker"
+
+logAndRun docker exec -i -t \
+  ${docker_user:+"--user=$docker_user"} \
+  ${docker_workdir:+"--workdir=$docker_workdir"} \
+  "$container_name" \
+  "$run_command_in_docker" "${args[@]:1:${#args[@]}}"

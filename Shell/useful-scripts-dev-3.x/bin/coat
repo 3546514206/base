@@ -1,0 +1,96 @@
+#!/usr/bin/env bash
+# @Function
+# cat lines colorfully. coat means *CO*lorful c*AT*.
+#
+# @Usage
+#   $ echo -e 'Hello\nWorld' | coat
+#   $ coat /path/to/file1
+#   $ coat /path/to/file1 /path/to/file2
+#
+# @online-doc https://github.com/oldratlee/useful-scripts/blob/dev-3.x/docs/shell.md#-coat
+# @author Jerry Lee (oldratlee at gmail dot com)
+set -eEuo pipefail
+
+readonly PROG=${0##*/}
+readonly PROG_VERSION='3.x-dev'
+
+################################################################################
+# parse options
+################################################################################
+
+usage() {
+  cat <<EOF
+Usage: $PROG [OPTION]... [FILE]...
+cat lines colorfully.
+
+Support options:
+  --help     display this help and exit
+  --version  output version information and exit
+All other options and arguments are delegated to command cat,
+more info see the help/man of command cat(e.g. cat --help).
+cat executable: $(type -P cat)
+EOF
+
+  exit
+}
+
+progVersion() {
+  printf '%s version: %s\n' "$PROG" "$PROG_VERSION"
+  printf 'cat executable: %s\n' "$(type -P cat)"
+  exit
+}
+
+args=("$@")
+# check arguments in reverse, so last option wins.
+for ((idx = $# - 1; idx >= 0; --idx)); do
+  [ "${args[idx]}" = --help ] && usage
+  [ "${args[idx]}" = --version ] && progVersion
+done
+unset args idx
+
+################################################################################
+# biz logic
+################################################################################
+
+# if stdout is not a terminal, use `cat` directly.
+#   '-t' check: is a terminal?
+#   check isatty in bash https://stackoverflow.com/questions/10022323
+[ -t 1 ] || exec cat "$@"
+
+readonly -a ROTATE_COLORS=(33 35 36 31 32 37 34)
+COLOR_INDEX=0
+# CAUTION: print content WITHOUT new line
+rotateColorPrint() {
+  local content=$*
+  # skip color for white space
+  if [[ $content =~ ^[[:space:]]*$ ]]; then
+    printf %s "$content"
+  else
+    local color=${ROTATE_COLORS[COLOR_INDEX++ % ${#ROTATE_COLORS[@]}]}
+    printf '\e[1;%sm%s\e[0m' "$color" "$content"
+  fi
+}
+
+rotateColorPrintln() {
+  # NOTE: $'foo' is the escape sequence syntax of bash
+  rotateColorPrint "$*"$'\n'
+}
+
+colorLines() {
+  local line
+  # Bash read line does not read leading spaces
+  # https://stackoverflow.com/questions/29689172
+  while IFS= read -r line; do
+    rotateColorPrintln "$line"
+  done
+  # How to use `while read` (Bash) to read the last line in a file
+  #   if there’s no newline at the end of the file?
+  # https://stackoverflow.com/questions/4165135
+  [ -z "$line" ] || rotateColorPrint "$line"
+}
+
+if (($# == 0)); then
+  colorLines
+else
+  cat "$@" | colorLines
+fi
