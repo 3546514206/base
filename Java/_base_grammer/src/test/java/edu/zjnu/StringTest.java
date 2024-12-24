@@ -3,6 +3,9 @@ package edu.zjnu;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author 杨海波
  * @date 2024/3/4 16:44
@@ -46,5 +49,11 @@ public class StringTest {
         System.out.println(key2.length());
         System.out.println(key1);
         System.out.println(key2);
+    }
+
+    @Test
+    public void test001(){
+        List<String> testList = new ArrayList<>();
+        System.out.println("".equals(testList));
     }
 }
