@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import { player } from './player';
-import { map } from './map';
+import {player} from './player';
+import {map} from './map';
 
 Vue.use(Vuex)
 

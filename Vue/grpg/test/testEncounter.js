@@ -2,7 +2,7 @@
 Ray, run with: node -r esm test.js
 */
 
-import { encounterMaker } from '../src/utils/encounterMaker'
+import {encounterMaker} from '../src/utils/encounterMaker'
 
 console.log('basic player');
 console.log(encounterMaker.select({

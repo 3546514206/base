@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import api from './api/nps';
 
 Vue.use(Vuex)
-
-import api from './api/nps';
 
 export default new Vuex.Store({
   state: {

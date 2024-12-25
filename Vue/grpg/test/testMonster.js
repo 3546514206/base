@@ -2,7 +2,7 @@
 Ray, run with: node -r esm test.js
 */
 
-import { monsterMaker } from '../src/utils/monsterMaker'
+import {monsterMaker} from '../src/utils/monsterMaker'
 
 
 console.log('no scale');

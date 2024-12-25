@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import { dice } from '@/utils/dice';
-import { mapMaker } from '@/utils/mapMaker';
+import {dice} from '@/utils/dice';
+import {mapMaker} from '@/utils/mapMaker';
 
 const MAP_WIDTH = 100;
 const MAP_HEIGHT = 100;

@@ -2,7 +2,7 @@
 Ray, run with: node -r esm test.js
 */
 
-import { mapMaker } from '../src/utils/mapMaker'
+import {mapMaker} from '../src/utils/mapMaker'
 
 
 let map = mapMaker.create(10, 10);

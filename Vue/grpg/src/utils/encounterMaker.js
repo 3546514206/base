@@ -1,5 +1,4 @@
-import { misc } from './misc'
-import { dice } from './dice'
+import {misc} from './misc'
 
 /*
 Each encounter is an object containing:

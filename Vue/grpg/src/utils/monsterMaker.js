@@ -1,5 +1,5 @@
-import { misc } from './misc'
-import { dice } from './dice'
+import {misc} from './misc'
+import {dice} from './dice'
 
 /*
 List of base monsters.

@@ -2,7 +2,7 @@
 Ray, run with: node -r esm test.js
 */
 
-import { dice } from '../src/utils/dice'
+import {dice} from '../src/utils/dice'
 
 // just some random rolls
 for(let i=1;i<4;i++) {

@@ -1,4 +1,4 @@
-import { misc } from './misc'
+import {misc} from './misc'
 
 /*
 Question - should the map have data representing each tile or should it 'draw' the tile. So for example, 

@@ -1,4 +1,4 @@
-import { misc } from './misc'
+import {misc} from './misc'
 
 export const dice = {
 
