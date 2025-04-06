@@ -1,8 +1,3 @@
-import org.reflections.Reflections;
-
-import java.util.Set;
-import java.util.UUID;
-
 /**
  * todo
  *
@@ -12,18 +7,30 @@ import java.util.UUID;
 public class Main {
 
     public static void main(String[] args) {
-        // 指定要扫描的包名
-        String packageName = "com.example.myapp";
+        // String a = "yyy";
+        // System.out.println(a.hashCode());
+        // deil(a);
+        // System.out.println(a.hashCode());
 
-        // 创建Reflections对象
-        Reflections reflections = new Reflections(packageName);
 
-        // // 获取所有被@MyAnnotation注解标记的类
-        // Set<Class<?>> annotatedClasses = reflections.getTypesAnnotatedWith(MyAnnotation.class);
-        //
-        // // 打印被注解标记的类
-        // for (Class<?> clazz : annotatedClasses) {
-        //     System.out.println("Found annotated class: " + clazz.getName());
-        // }
+        User u = new User();
+        System.out.println(u.hashCode());
+        post(u);
+        System.out.println(u.hashCode());
     }
+
+    private static void post(User u) {
+        System.out.println(u.hashCode());
+        u = new User();
+        System.out.println(u.hashCode());
+    }
+
+
+    private static void deil(String a) {
+        System.out.println(a.hashCode());
+        a = "sss";
+        System.out.println(a.hashCode());
+    }
+
+
 }
