@@ -53,7 +53,9 @@ public class Main {
         RuleEngine engine = new RuleEngine(rules, new DefaultRuleHandler());
 
         Map<String, Object> data = new HashMap<>();
-        data.put("day", 61);
+        data.put("session", "30");
+        data.put("minus", "3");
+        data.put("day", "60");
         engine.execute(data);
     }
 }
