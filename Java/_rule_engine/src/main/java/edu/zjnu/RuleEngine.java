@@ -21,7 +21,7 @@ public class RuleEngine {
 
     public RuleEngine(List<Rule> rules, IRuleHandler handler) {
         this.handler = handler;
-        this.loadRules(rules);
+        this.rules = rules;
     }
 
     public void loadRules(List<Rule> rules) {

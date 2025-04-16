@@ -29,19 +29,19 @@ public class Main {
         RuleCondition cond1 = new RuleCondition();
         cond1.setCode("sms227-0001-001");
         cond1.setField("session");
-        cond1.setOperator(Operator.GT);
+        cond1.setOperator(Operator.LT);
         cond1.setCompareValue("30");
         conditions.add(cond1);
 
         RuleCondition cond2 = new RuleCondition();
         cond2.setField("minus");
-        cond2.setOperator(Operator.GT);
+        cond2.setOperator(Operator.LT);
         cond2.setCompareValue("3");
         conditions.add(cond2);
 
         RuleCondition cond3 = new RuleCondition();
         cond3.setField("day");
-        cond3.setOperator(Operator.GT);
+        cond3.setOperator(Operator.LT);
         cond3.setCompareValue("60");
         conditions.add(cond3);
 
