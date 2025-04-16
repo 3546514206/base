@@ -23,7 +23,17 @@ public class RuleCondition {
 
     private Operator operator;
 
+    private Integer priority;
+
     private String compareValue;
+
+    public Integer getPriority() {
+        return priority;
+    }
+
+    public void setPriority(Integer priority) {
+        this.priority = priority;
+    }
 
     public String getDescription() {
         return description;

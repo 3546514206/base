@@ -20,87 +20,124 @@ public class RuleEngine {
     private final IRuleHandler handler;
 
     public RuleEngine(List<Rule> rules, IRuleHandler handler) {
-        this.rules = rules;
         this.handler = handler;
+        this.loadRules(rules);
     }
 
     public void loadRules(List<Rule> rules) {
         this.rules = rules.stream()
                 .sorted(Comparator.comparingInt(Rule::getPriority).reversed())
+                .peek(rule -> rule.getConditions().sort(Comparator.comparing(RuleCondition::getPriority)))
                 .collect(Collectors.toList());
     }
 
-    public void execute(Map<String, Object> inputData) {
-        for (Rule rule : rules) {
-            if (rule.getStatus() != 1) continue;
 
-            boolean result = evaluateRule(rule, inputData);
-            if (result) {
-                triggerAction(rule);
-                break; // 根据优先级执行，匹配后终止
+    public void execute(Map<String, Object> inputData) {
+        for (Rule rule : this.rules) {
+            if (!isRuleActive(rule)) continue;
+
+            boolean rulePassed = evaluateRule(rule, inputData);
+            if (!rulePassed) {
+                triggerHandler(rule, inputData);
+                break; // 优先级最高规则触发后终止
             }
         }
     }
+
+    private boolean isRuleActive(Rule rule) {
+        return rule.getStatus() != null && rule.getStatus() == 1;
+    }
+
 
     private boolean evaluateRule(Rule rule, Map<String, Object> inputData) {
-        List<Boolean> conditionResults = new ArrayList<>();
-        for (RuleCondition cond : rule.getConditions()) {
-            Object actualValue = inputData.get(cond.getField());
-            if (actualValue == null) {
-                conditionResults.add(false);
-                continue;
-            }
-            boolean matched = evaluateCondition(cond, actualValue);
-            conditionResults.add(matched);
+        if (rule.getConditions().isEmpty()) {
+            return true; // 无条件的规则自动通过
         }
 
-        return rule.getCombinationType().equalsIgnoreCase("ALL") ?
-                conditionResults.stream().allMatch(b -> b) :
-                conditionResults.stream().anyMatch(b -> b);
+        List<Boolean> conditionResults = new ArrayList<>();
+        for (RuleCondition condition : rule.getConditions()) {
+            boolean result = evaluateCondition(condition, inputData.get(condition.getField()));
+            conditionResults.add(result);
+        }
+
+        return determineRuleResult(rule.getCombinationType(), conditionResults);
     }
 
-    private boolean evaluateCondition(RuleCondition cond, Object actualValue) {
+    private boolean determineRuleResult(String combinationType, List<Boolean> results) {
+        switch (combinationType.toUpperCase()) {
+            case "ALL":
+                return results.stream().allMatch(Boolean::booleanValue);
+            case "ANY":
+                return results.stream().anyMatch(Boolean::booleanValue);
+            default:
+                // 未知组合类型视为不通过
+                return false;
+        }
+    }
+
+
+    private boolean evaluateCondition(RuleCondition condition, Object actualValue) {
+        if (actualValue == null) {
+            return false;
+        }
+
         try {
-            Operator op = cond.getOperator();
-            String expected = cond.getCompareValue();
+            Operator op = condition.getOperator();
+            boolean result;
             switch (op) {
                 case EQ:
-                    return compareEquals(actualValue, expected);
+                    // 暂时不支持字符串的比较
+                    result = compareEquals(actualValue, condition.getCompareValue());
+                    break;
                 case NE:
-                    return !compareEquals(actualValue, expected);
+                    result = !compareEquals(actualValue, condition.getCompareValue());
+                    break;
                 case GT:
-                    return compareNumber(actualValue, expected) > 0;
+                    result = compareNumber(actualValue, condition.getCompareValue()) > 0;
+                    break;
                 case LT:
-                    return compareNumber(actualValue, expected) < 0;
+                    result = compareNumber(actualValue, condition.getCompareValue()) < 0;
+                    break;
                 case GE:
-                    return compareNumber(actualValue, expected) >= 0;
+                    result = compareNumber(actualValue, condition.getCompareValue()) >= 0;
+                    break;
                 case LE:
-                    return compareNumber(actualValue, expected) <= 0;
+                    result = compareNumber(actualValue, condition.getCompareValue()) <= 0;
+                    break;
                 default:
-                    return false;
+                    throw new IllegalArgumentException("未知的操作符: " + op);
             }
-        } catch (Exception e) {
-            return false; // 类型转换错误视为不匹配
+            return result;
+        } catch (NumberFormatException e) {
+            // 数值转换失败视为不匹配
+            return false;
         }
     }
 
     private boolean compareEquals(Object actual, String expected) {
-        if (actual instanceof Number) {
-            BigDecimal actualNum = new BigDecimal(actual.toString());
-            BigDecimal expectedNum = new BigDecimal(expected);
-            return actualNum.compareTo(expectedNum) == 0;
+        if (actual instanceof Number && isNumeric(expected)) {
+            BigDecimal a = new BigDecimal(actual.toString());
+            BigDecimal b = new BigDecimal(expected);
+            return a.compareTo(b) == 0;
         }
         return actual.toString().equals(expected);
     }
 
     private int compareNumber(Object actual, String expected) {
-        BigDecimal actualNum = new BigDecimal(actual.toString());
-        BigDecimal expectedNum = new BigDecimal(expected);
-        return actualNum.compareTo(expectedNum);
+        BigDecimal a = new BigDecimal(actual.toString());
+        BigDecimal b = new BigDecimal(expected);
+        return a.compareTo(b);
     }
 
-    // 用户自定义动作（需实现 IRuleHandler）
-    private void triggerAction(Rule rule) {
-        handler.handle(rule);
+    private boolean isNumeric(String str) {
+        return str.matches("-?\\d+(\\.\\d+)?");
+    }
+
+    private void triggerHandler(Rule rule, Map<String, Object> context) {
+        try {
+            handler.handle(new RuleTriggerEvent(rule, context));
+        } catch (Exception e) {
+            System.err.println("规则处理器执行失败: " + e.getMessage());
+        }
     }
 }
