@@ -54,7 +54,7 @@ public class Main {
 
         Map<String, Object> data = new HashMap<>();
         data.put("session", "30");
-        data.put("minus", "3");
+        data.put("minute", "3");
         data.put("day", "60");
         engine.execute(data);
     }

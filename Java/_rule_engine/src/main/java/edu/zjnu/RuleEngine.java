@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
  * @Author 杨海波
  **/
 public class RuleEngine {
+
     private List<Rule> rules;
 
     private final IRuleHandler handler;
@@ -39,7 +40,8 @@ public class RuleEngine {
             boolean rulePassed = evaluateRule(rule, inputData);
             if (!rulePassed) {
                 triggerHandler(rule, inputData);
-                break; // 优先级最高规则触发后终止
+                // 优先级最高规则触发后终止
+                break;
             }
         }
     }
@@ -135,7 +137,7 @@ public class RuleEngine {
 
     private void triggerHandler(Rule rule, Map<String, Object> context) {
         try {
-            handler.handle(new RuleTriggerEvent(rule, context));
+            handler.handle(new RuleTriggerRuleEvent(rule, context));
         } catch (Exception e) {
             System.err.println("规则处理器执行失败: " + e.getMessage());
         }

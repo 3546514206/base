@@ -9,9 +9,10 @@ package edu.zjnu;
  **/
 public class DefaultRuleHandler implements IRuleHandler {
     @Override
-    public void handle(RuleTriggerEvent event) {
+    public void handle(IRuleEvent event) {
         System.out.printf("[%s] 触发规则: %s%n",
                 event.getTriggerTime(),
-                event.getRule().getName());
+                event.getEventSource().getName()
+        );
     }
 }

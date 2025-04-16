@@ -6,12 +6,12 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * todo
+ * RuleTriggerRuleEvent
  *
  * @Date 2025-04-16 16:59
  * @Author 杨海波
  **/
-public class RuleTriggerEvent {
+public class RuleTriggerRuleEvent implements IRuleEvent {
 
     private final Rule rule;
 
@@ -19,13 +19,9 @@ public class RuleTriggerEvent {
 
     private final Date triggerTime = new Date();
 
-    public RuleTriggerEvent(Rule rule, Map<String, Object> context) {
+    public RuleTriggerRuleEvent(Rule rule, Map<String, Object> context) {
         this.rule = rule;
         this.context = Collections.unmodifiableMap(context);
-    }
-
-    public Rule getRule() {
-        return rule;
     }
 
     public Map<String, Object> getContext() {
@@ -34,5 +30,10 @@ public class RuleTriggerEvent {
 
     public Date getTriggerTime() {
         return triggerTime;
+    }
+
+    @Override
+    public Rule getEventSource() {
+        return rule;
     }
 }

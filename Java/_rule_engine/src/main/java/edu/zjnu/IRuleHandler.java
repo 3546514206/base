@@ -9,5 +9,5 @@ package edu.zjnu;
  **/
 public interface IRuleHandler {
 
-    void handle(RuleTriggerEvent event);
+    void handle(IRuleEvent event);
 }
