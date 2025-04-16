@@ -30,4 +30,7 @@ public enum Operator {
         throw new IllegalArgumentException("Invalid operator code: " + code);
     }
 
+    public String getDesc() {
+        return desc;
+    }
 }

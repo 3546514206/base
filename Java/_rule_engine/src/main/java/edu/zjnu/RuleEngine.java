@@ -85,8 +85,8 @@ public class RuleEngine {
             Operator op = condition.getOperator();
             boolean result;
             switch (op) {
+                // 暂时没做字符串的比较
                 case EQ:
-                    // 暂时不支持字符串的比较
                     result = compareEquals(actualValue, condition.getCompareValue());
                     break;
                 case NE:
