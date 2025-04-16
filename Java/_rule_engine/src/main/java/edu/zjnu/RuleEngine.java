@@ -35,7 +35,9 @@ public class RuleEngine {
 
     public void execute(Map<String, Object> inputData) {
         for (Rule rule : this.rules) {
-            if (!isRuleActive(rule)) continue;
+            if (!isRuleActive(rule)) {
+                continue;
+            }
 
             boolean rulePassed = evaluateRule(rule, inputData);
             if (!rulePassed) {
