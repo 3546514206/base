@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author 杨海波
@@ -43,8 +44,8 @@ public class StringTest {
     public void testString() {
         String str = "347021a417c78d95d06dd4c4c6158368057296b55d29caff4f741385ea63922c7bb4a62bb1be8240a4e59d779a14d77c678d3ff07e5088c963f1f848c002b9d3";
         System.out.println(str.length());
-        String key1 = str.substring(0, str.length()/2);
-        String key2 = str.substring(str.length()/2 );
+        String key1 = str.substring(0, str.length() / 2);
+        String key2 = str.substring(str.length() / 2);
         System.out.println(key1.length());
         System.out.println(key2.length());
         System.out.println(key1);
@@ -52,8 +53,20 @@ public class StringTest {
     }
 
     @Test
-    public void test001(){
+    public void test001() {
         List<String> testList = new ArrayList<>();
         System.out.println("".equals(testList));
+    }
+
+    @Test
+    public void test002() {
+
+        String inputStr = null;
+        int value = Optional.ofNullable(inputStr)
+                .filter(s -> s.matches("\\d+"))
+                .map(Integer::parseInt)
+                .orElse(0);
+
+        System.out.println(value);
     }
 }
