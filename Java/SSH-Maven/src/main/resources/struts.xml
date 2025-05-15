@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="demo" namespace="/" extends="struts-default">
+		<!-- class属性中不写action的路径，因为在spring已经配置过了，应该写spring中bean的id -->
+		<action name="loginAction" class="loginAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		<action name="registerAction" class="registerAction">
+			<result name="success">/register.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+	</package>
+</struts>

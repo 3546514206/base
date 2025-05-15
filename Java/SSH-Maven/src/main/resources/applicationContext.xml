@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop" 
+    xmlns:tx="http://www.springframework.org/schema/tx" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/tx 
+    http://www.springframework.org/schema/tx/spring-tx.xsd">
+    
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+    	<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+    	<property name="jdbcUrl" value="jdbc:mysql://12.tcp.cpolar.top:13631/ssh-maven"></property>
+    	<property name="user" value="root"></property>
+    	<property name="password" value="jK%,n@SjKL"></property>
+    </bean>
+    
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+    	<property name="dataSource" ref="dataSource"></property>
+    	<!-- hibernate配置 -->
+    	<property name="hibernateProperties">
+    		<props>
+    			<prop key="hibernate.show_sql">true</prop>
+    			<prop key="hibernate.format_sql">true</prop>
+    			<prop key="hibernate.hbm2ddl.auto">update</prop>
+    			<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+    			<!-- <prop key="hibernate.connection.isolation">4</prop>
+    			<prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate5.SpringSessionContext</prop> -->
+    		</props>
+    	</property>
+    	<property name="mappingResources">
+    		<list>
+    			<value>User.hbm.xml</value>
+    		</list>
+    	</property>
+    </bean>
+    
+    <!-- 配置事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <!-- 开启事务注解 -->
+    <tx:annotation-driven transaction-manager="transactionManager" />
+    
+    <bean id="loginAction" class="com.ssh.action.LoginAction" scope="prototype">
+    	<property name="userService" ref="userService"></property>
+    </bean>
+    
+    <bean id="registerAction" class="com.ssh.action.RegisterAction" scope="prototype">
+    	<property name="userService" ref="userService"></property>
+    </bean>
+    
+    <bean id="userService" class="com.ssh.service.UserService">
+    	<property name="userDao" ref="userDao"></property>
+    </bean>
+    
+    <bean id="userDao" class="com.ssh.dao.UserDao">
+    	<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+    </bean>
+    
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+</beans>

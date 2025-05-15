@@ -1,0 +1,140 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ss</groupId>
+  <artifactId>sshProject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+ 
+ <!--  <name>luussh Maven Webapp</name>
+  FIXME change it to the project's website
+  <url>http://www.example.com</url> -->
+ 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <junit.version>4.12</junit.version>
+    <!--JSONObject-->
+    <json-lib.version>2.4</json-lib.version>
+    <commons-lang.version>2.5</commons-lang.version>
+    <commons-collections.version>3.2.1</commons-collections.version>
+    <commons-beanutils.version>1.8.0</commons-beanutils.version>
+    <commons-logging.version>1.2</commons-logging.version>
+    <ezmorph.version>1.0.6</ezmorph.version>
+  </properties>
+ 
+  <dependencies>
+   <!-- junit依赖 -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+   <!-- servlet依赖 -->
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>3.1.0</version>
+	    <scope>provided</scope>
+	</dependency>
+    <!-- 加入hibernate核心库 -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>5.2.10.Final</version>
+	</dependency>
+    <!-- 引入Spring核心库 -->
+	<dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.3.10.RELEASE</version>
+    </dependency>
+	 <!-- MySQL  -->
+    <dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.43</version>
+	</dependency>
+    <!-- c3p0 -->
+    <dependency>
+	    <groupId>com.mchange</groupId>
+	    <artifactId>c3p0</artifactId>
+	    <version>0.9.5.2</version>
+	</dependency>
+    <!-- Spring整合Hibernate依赖 -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-orm</artifactId>
+	    <version>4.3.10.RELEASE</version>
+	</dependency>
+	<!-- spring 的Aspect依赖，解析事务切点 -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-aspects</artifactId>
+	    <version>4.3.10.RELEASE</version>
+	</dependency>
+	<!-- 引入struts2依赖 -->
+	<dependency>
+	    <groupId>org.apache.struts</groupId>
+	    <artifactId>struts2-core</artifactId>
+	    <version>2.3.33</version>
+	</dependency> 
+	<!-- 引入json依赖 -->
+	<dependency>
+       <groupId>net.sf.json-lib</groupId>
+       <artifactId>json-lib</artifactId>
+       <version>2.2.3</version>
+       <classifier>jdk15</classifier>
+    </dependency>
+	<!-- struts2整合Spring的整合包 -->
+	<dependency>
+	    <groupId>org.apache.struts</groupId>
+	    <artifactId>struts2-spring-plugin</artifactId>
+	    <version>2.5.12</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-core</artifactId>
+	    <version>2.8.2</version>
+	</dependency>
+  </dependencies>
+
+  <build>
+    <finalName>luussh</finalName>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+        <plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-resources-plugin</artifactId>
+    		<version>2.6</version>
+		</plugin>
+        <plugin>
+        	<groupId>org.apache.maven.plugins</groupId> 
+          	<artifactId>maven-compiler-plugin</artifactId>
+          	<version>3.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.20.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
