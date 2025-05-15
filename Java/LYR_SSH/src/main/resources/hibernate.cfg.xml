@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql:///LYR_SSH</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">entor</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- 显示sql -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <!-- 配置与线程绑定的session -->
+        <!-- <property name="hibernate.current_session_context_class">thread</property> -->
+        <!-- 自动生成表策略   update:表不存在时自动创建，自动更新数据-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- 配置数据库连接池 -->
+
+        <!-- 引入表对象映射配置文件 mapping-->
+        <mapping resource="com/lyr_ssh/entity/Customer.hbm.xml"/>
+        <mapping resource="com/lyr_ssh/entity/LinkMan.hbm.xml"/>
+        <mapping resource="com/lyr_ssh/entity/User.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>
