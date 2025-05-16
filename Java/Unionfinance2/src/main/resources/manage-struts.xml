@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.configuration.xml.reload" value="true" /><!-- 
+		设置成开发者模式 -->
+
+	<constant name="struts.i18n.encoding" value="utf8"></constant>
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="manage" extends="struts-default,json-default" namespace="/" strict-method-invocation="false">
+		<action name="manager">
+			<result>/WEB-INF/manage/index.jsp</result>
+		</action>
+	
+	<action name="Change_*" method="{1}"
+			class="com.Unionfinance2.action.manage.ChangeAction">
+			<result name="addUser">/WEB-INF/manage/adduser.jsp</result>
+			<result name="managerUser">/WEB-INF/manage/manage-user.jsp</result>
+			<result name="addEntry">/WEB-INF/manage/addentry.jsp</result>
+			<result name="addIncome">/WEB-INF/manage/addincome.jsp</result>
+			<result name="addCost">/WEB-INF/manage/addcost.jsp</result>
+			<result name="getMyself">/WEB-INF/manage/updatemyself.jsp</result>
+			<result name="logOff">/WEB-INF/manage/logoff.jsp</result>
+			<result name="toUpdateMyself">/WEB-INF/manage/updatemyself.jsp</result>
+			<result name="out">/index.jsp</result>
+		</action>
+		
+		<action name="UserManager_*" method="{1}" class="com.Unionfinance2.action.manage.UserManagerAction">			
+			<result name="addUser">/WEB-INF/manage/adduser.jsp</result>
+			<result>/WEB-INF/manage/manage-user.jsp</result>	
+			<result name="toUpdateUser">/WEB-INF/manage/updateuser.jsp</result>
+			<result name="updateUser">/WEB-INF/manage/manage-user.jsp</result>
+			<result name="deleteUser">/WEB-INF/manage/manage-user.jsp</result>
+			<result name="toUpdateMyself">/WEB-INF/manage/updatemyself.jsp</result>
+		</action>
+				
+		<action name="EntryManager_*" method="{1}" class="com.Unionfinance2.action.manage.EntryManageAction">			
+			<result name="addEntry">/WEB-INF/manage/manage-entry.jsp</result>
+			<result>/WEB-INF/manage/manage-entry.jsp</result>
+			<result name="updateEntry">/WEB-INF/manage/manage-entry.jsp</result>
+			<result name="deleteEntry">/WEB-INF/manage/manage-entry.jsp</result>
+		</action>
+		
+		<action name="IncomeManager_*" method="{1}" class="com.Unionfinance2.action.manage.IncomeManageAction">			
+			<result name="addIncome">/WEB-INF/manage/addincome.jsp</result>
+			<result>/WEB-INF/manage/manage-income.jsp</result>	
+			<result name="count">/WEB-INF/manage/manage-income.jsp</result>
+			<result name="toUpdateIncome">/WEB-INF/manage/updateincome.jsp</result>
+			<result name="updateIncome">/WEB-INF/manage/manage-income.jsp</result>
+			<result name="deleteIncome">/WEB-INF/manage/manage-income.jsp</result>
+		</action>
+		
+		<action name="CostManager_*" method="{1}" class="com.Unionfinance2.action.manage.CostManageAction">			
+			<result>/WEB-INF/manage/view-cost.jsp</result>
+		</action>
+		
+		<action name="ViewBalance_*" method="{1}" class="com.Unionfinance2.action.manage.ViewBalanceAction">
+			<result>/WEB-INF/manage/viewbalance.jsp</result>
+		</action>
+		
+	</package>
+</struts>

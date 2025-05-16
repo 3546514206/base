@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+padding:0;
+margin:0;
+}
+body{
+	font-size: 17px;
+	font-family: 微软雅黑;
+	min-width: 1100px;
+}
+.row{
+	width:100%;
+}
+body{
+	background-image:url(../img/dotted.png);
+}
+#body-one{
+border: 1px solid #DEE0E0;
+  margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.row{
+	width:100%;
+}
+.container{
+  width:99%;
+  height:60px;
+  margin-top:20px;
+}
+.container a .btn{
+	background-color: #12A1EC;
+}
+.container .row a{
+  margin-top:12px;
+  display:block;
+}
+.container .row p{
+	 margin-top:20px;
+	 float: right;
+}
+.container .row a:hover{
+  text-decoration: none;
+  color:#FFCA00;
+}
+.table-responsive{
+	width:90%;
+	margin:0 auto;
+	margin-top: 25px;
+}
+.table-responsive th{
+	text-align: center;
+}
+.table-responsive tr{
+	text-align: center;
+}
+.table-responsive .three a{
+	color:#d81e06;
+	padding-left: 10px;
+}
+.table-responsive .four a{
+	color:#12A1EC;
+	padding-left: 10px;
+}
+.table-responsive td img{
+	width:16px;
+	height: 16px;
+}
+.container-two .row  .xixnxi{
+	margin-left:4%;
+	margin-top:8%;
+}
+.container-two .pagination{
+	margin-left:-3%;
+}
+.container-three .btn{
+	background-color: #12A1EC;
+	margin-left:68.5%;
+}
+
+

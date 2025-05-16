@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.configuration.xml.reload" value="true" /><!-- 设置成开发者模式 -->
+	<constant name="struts.multipart.saveDir" value="/temp"/>
+	<constant name="struts.i18n.encoding" value="utf8"></constant>
+	<constant name="struts.objectFactory" value="spring" />
+	
+	
+	<!--引入其他 xml文件 -->
+	<include file="manage-struts.xml"></include>
+	<include file="cost-struts.xml"></include>
+	<include file="ordinary-struts.xml"></include>
+
+	<package name="default" extends="struts-default" namespace="/"  strict-method-invocation="false">
+		<!-- 这里放全局的映射 -->
+		<action name="loginAction" class="com.Unionfinance2.action.LoginAction">
+			<result name="manage">/frames/index.jsp</result>
+			<result name="cost">/frames/index-cost.jsp</result>
+			<result name="ordinary">/frames/index-ordinary.jsp</result>
+			<result name="login">/index.jsp</result>
+		</action>
+        <!-- 验证码 -->  
+        <action name="verifyCode" class="com.Unionfinance2.action.CodeAction">  
+        </action> 
+
+	</package>
+</struts>

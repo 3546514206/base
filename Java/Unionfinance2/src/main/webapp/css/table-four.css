@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+padding:0;
+margin:0;
+}
+
+body{
+	font-size: 17px;
+	font-family: 微软雅黑;
+}
+.row{
+	width:100%;
+}
+.row p{
+	float:right
+}
+body{
+	background-image:url(../img/dotted.png);
+}
+#body-one{
+border: 1px solid #DEE0E0;
+  margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.row{
+	width:100%;
+}
+.container{
+  width:99%;
+  height:60px;
+  margin-top:20px;
+}
+.row .type{
+	float:left;
+	margin-left:7%;
+	margin-top:5px;
+}
+.row .typee{
+	margin-left:3%;
+}
+.form-inline{
+	margin-top:10px
+}
+.row .aa{
+	width:12%;
+	float:left;
+    margin-right:3%;
+}
+.row .bb{
+	width:18%;
+	float:left;
+	margin-right:3%;
+	
+}
+.container a .btn{
+	background-color: #12A1EC;
+}
+.container .row a{
+  margin-top:12px;
+  display:block;
+}
+.container .row p{
+	 margin-top:20px;
+}
+.container .row a:hover{
+  text-decoration: none;
+  color:#FFCA00;
+}
+.container-one .btn{
+	 background-color: #12A1EC; 
+  
+}
+.container-one {
+	margin-top: 30px;
+}
+.container-one .row {
+	margin-top: 30px;
+}
+.table-responsive{
+	width:90%;
+	margin:0 auto;
+	margin-top: 25px;
+}
+.table-responsive th{
+	text-align: center;
+}
+.table-responsive tr{
+	text-align: center;
+}
+.table-responsive .three a{
+	color:#d81e06;
+	padding-left: 10px;
+}
+.table-responsive .four a{
+	color:#12A1EC;
+	padding-left: 10px;
+	text-decoration:none
+}
+.table-responsive td img{
+	width:16px;
+	height: 16px;
+}
+.container-two .row  .xixnxi{
+	margin-left:4%;
+	margin-top:8%;
+}
+.container-two .pagination{
+	margin-left:-3%;
+}
+.container-three .btn{
+	background-color: #12A1EC;
+	margin-left:69.7%;
+}
+.myform,.myaddform{
+	display:none;
+	z-index:999;
+	position:absolute;
+	width:400px;
+	height:200px;
+	border-radius:30px;
+	top:100px;
+	left:40%;
+	 background: url(../img/bg.jpg);
+	/* background:#AEEEEE; */
+	padding:30px;
+	
+}
+.row .btnn{
+	margin:10px 50px 10px 20px 
+}
+.hidd{
+	display:none
+}
+.myform form{
+	margin-top:30px;
+}
+.myform .btn{
+	margin-left:80px;
+}
+

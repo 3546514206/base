@@ -1,0 +1,55 @@
+﻿body {
+	margin:40px 0 0 0;
+	padding:0;
+	font-size:12px;
+	font-family:宋体;
+	background:#fff;
+}
+/*更改jQuery UI主题的对话框header的背景*/
+.ui-widget-header {
+	background:url(../img/ui_header_bg.png);
+}
+/*按钮正常状态的背景*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background:url(../img/ui_header_bg.png);
+}
+/*按钮点击状态的背景*/
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	background:url(../img/ui_white.png);
+}
+/*工具提示的文本颜色*/
+.ui-tooltip {
+	color:#666;
+}
+/*邮箱自动补全的悬停背景色*/
+.ui-menu-item a.ui-state-focus {
+	background:url(../img/ui_header_bg.png);
+}
+.ui-menu-item a {
+	color:#666;
+}
+/*日历UI的今天单元格样式*/
+.ui-datepicker-today .ui-state-highlight {
+	border:1px solid #eee;
+	color:#f60;
+}
+/*日历UI的选定单元格样式*/
+.ui-datepicker-current-day .ui-state-active {
+	border:1px solid #eee;
+	color:#06f;
+}
+#ui-datepicker-div{
+	font-size:15px;
+	width:320px;
+	height:260px;
+}
+
+
+
+
+
+
+
+
+
+

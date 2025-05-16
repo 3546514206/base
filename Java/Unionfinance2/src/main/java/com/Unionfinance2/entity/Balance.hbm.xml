@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-10-23 20:11:10 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="Balance" table="balance" catalog="labour_db">
+        <composite-id name="id" class="BalanceId">
+            <key-property name="inUnion" type="string">
+                <column name="in_union" length="30" />
+            </key-property>
+            <key-property name="income" type="java.lang.Double">
+                <column name="income" precision="18" scale="1" />
+            </key-property>
+            <key-property name="ifnull(zc.cost,0)" type="double">
+                <column name="`IFNULL(zc.cost,0)`" precision="18" scale="1" />
+            </key-property>
+            <key-property name="balance" type="java.lang.Double">
+                <column name="balance" precision="18" scale="1" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

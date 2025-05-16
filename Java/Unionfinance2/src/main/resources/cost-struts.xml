@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.configuration.xml.reload" value="true" /><!-- 
+		设置成开发者模式 -->
+
+	<constant name="struts.i18n.encoding" value="utf8"></constant>
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="cost" extends="struts-default,json-default" namespace="/cost" strict-method-invocation="false">
+		<action name="cost">
+			<result>/WEB-INF/cost/index.jsp</result>
+		</action>
+	
+		<action name="Change_*" method="{1}" class="com.Unionfinance2.action.manage.ChangeAction">
+			<result name="getMyself">/WEB-INF/manage/updatemyself.jsp</result>
+			<result name="logOff">/WEB-INF/manage/logoff.jsp</result>
+			<result name="out">/index.jsp</result>	
+			<result name="addCost">/WEB-INF/cost/addcost.jsp</result>
+		</action>
+	
+		<action name="UserManager_*" method="{1}" class="com.Unionfinance2.action.manage.UserManagerAction">			
+			<result name="updateUser">/WEB-INF/manage/updatemyself.jsp</result>	
+		</action>
+		
+		<action name="Viewincome_*" method="{1}" class="com.Unionfinance2.action.manage.ViewIncomeAction">	
+			<result>/WEB-INF/cost/viewincome.jsp</result>
+			<result name="count">/WEB-INF/cost/viewincome.jsp</result>
+		</action>
+		
+		<action name="Viewcost_*" method="{1}" class="com.Unionfinance2.action.manage.ViewCostAction">	
+			<result>/WEB-INF/cost/viewcost.jsp</result>
+			<result name="count">/WEB-INF/cost/viewcost.jsp</result>
+		</action>
+		
+		<action name="BalanceManage_*" method="{1}" class="com.Unionfinance2.action.manage.ViewBalanceAction">	
+			<result>/WEB-INF/cost/viewbalance.jsp</result>
+		</action>
+		
+		<action name="CostManager_*" method="{1}" class="com.Unionfinance2.action.manage.CostManageAction">			
+			<result name="addCost">/WEB-INF/cost/addcost.jsp</result>
+			<result>/WEB-INF/cost/manage-cost.jsp</result>	
+			<result name="toUpdateCost">/WEB-INF/cost/updatecost.jsp</result>
+			<result name="updateCost">/WEB-INF/cost/manage-cost.jsp</result>
+			<result name="deleteCost">/WEB-INF/cost/manage-cost.jsp</result>
+		</action>
+		
+		<action name="IncomeManager_*" method="{1}" class="com.Unionfinance2.action.manage.IncomeManageAction">			
+			<result>/WEB-INF/cost/view-income.jsp</result>
+		</action>
+	</package>
+</struts>
