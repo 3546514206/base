@@ -1,0 +1,10 @@
+<struts>
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="addUser" class="userAction" method="add">
+            <result name="success" type="redirect">listUsers</result>
+        </action>
+        <action name="listUsers" class="userAction" method="list">
+            <result name="list">/WEB-INF/freemarker/userList.ftl</result>
+        </action>
+    </package>
+</struts>

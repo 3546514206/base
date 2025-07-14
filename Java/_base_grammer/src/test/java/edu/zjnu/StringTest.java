@@ -20,6 +20,23 @@ public class StringTest {
     }
 
     @Test
+    public void testSubStr111() {
+        List<String> list = new ArrayList<>();
+        list.add("aaa");
+        list.add("bbb");
+        list.add("ccc");
+        StringBuilder sb = new StringBuilder();
+        for (String s : list) {
+            sb.append("'" + s + "',");
+        }
+
+        String rs = sb.toString();
+
+        String rss = rs.substring(0, rs.length() - 1);
+        System.out.println(rs);
+    }
+
+    @Test
     public void testSubStr() {
         String originalString = "aaaaasssss";
 

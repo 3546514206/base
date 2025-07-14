@@ -1,0 +1,37 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/ssh-freemarker-sample?useSSL=false&amp;serverTimezone=UTC"/>
+        <property name="username" value="root"/>
+        <property name="password" value="jK%,n@SjKL"/>
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="com.example.model"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="userDao" class="com.example.dao.UserDao">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="userService" class="com.example.service.UserService">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="userAction" class="com.example.action.UserAction" scope="prototype">
+        <property name="userService" ref="userService"/>
+    </bean>
+</beans>
