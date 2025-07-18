@@ -27,10 +27,12 @@ public class Experiment_02_S区之间的复制移动 {
         int loop = 0;
 
         while (true) {
-            double edenMax = JvmMemoryPools.getEdenMaxMB();
             double edenUsed = JvmMemoryPools.getEdenUsedMB();
+            double edenMax = JvmMemoryPools.getEdenMaxMB();
             double sUsed = JvmMemoryPools.getSurvivorUsedMB();
             double sMax = JvmMemoryPools.getSurvivorMaxMB();
+            double oldUsed = JvmMemoryPools.getOldUsedMB();
+            double oldMax = JvmMemoryPools.getOldMaxMB();
 
             // 每次创建 1MB 的对象（短生命周期）
             // 条件断点 edenUsed >= 47
@@ -43,6 +45,12 @@ public class Experiment_02_S区之间的复制移动 {
                 System.out.println("Cleared container at loop " + loop);
             }
 
+            double f_edenUsed = JvmMemoryPools.getEdenUsedMB();
+            double f_edenMax = JvmMemoryPools.getEdenMaxMB();
+            double f_sUsed = JvmMemoryPools.getSurvivorUsedMB();
+            double f_sMax = JvmMemoryPools.getSurvivorMaxMB();
+            double f_oldUsed = JvmMemoryPools.getOldUsedMB();
+            double f_oldMax = JvmMemoryPools.getOldMaxMB();
             Thread.sleep(500); // 稍作等待，模拟真实应用节奏
         }
     }

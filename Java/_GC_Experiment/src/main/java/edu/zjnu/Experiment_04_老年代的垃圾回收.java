@@ -11,21 +11,26 @@ import java.util.List;
  * -XX:SurvivorRatio=6         # Eden:Survivor = 6:1:1，Eden = 48MB，S0/S1 = 8MB
  * -XX:+PrintGCDetails
  * -XX:+PrintGCDateStamps
+ * -XX:PretenureSizeThreshold=3145728  # 这只大对象为3M，4M会直接进入老年代
  * <p>
- * -XX:+UseSerialGC -Xms128m -Xmx128m -Xmn64m -XX:SurvivorRatio=6 -XX:+PrintGCDetails -XX:+PrintGCDateStamps
+ * -XX:+UseSerialGC -Xms128m -Xmx128m -Xmn64m -XX:SurvivorRatio=6 -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:PretenureSizeThreshold=3145728
  * <p>
- * 实验一：观察 MinorGC 的触发
+ * <p>
+ * 实验四：老年代的垃圾回收
  *
- * @Date 2025-07-14 17:57
+ * @Date 2025-07-18 09:14
  * @Author 杨海波
  **/
-@SuppressWarnings("all")
-public class Experiment_01_观察MinorGC的触发 {
+public class Experiment_04_老年代的垃圾回收 {
+
     public static void main(String[] args) throws InterruptedException {
 
+        // 创建用于存活的对象（不断进入 Survivor 区）
         List<byte[]> container = new ArrayList<>();
+        List<byte[]> big_container = new ArrayList<>();
 
         int loop = 0;
+
 
         while (true) {
             double edenUsed = JvmMemoryPools.getEdenUsedMB();
@@ -35,14 +40,14 @@ public class Experiment_01_观察MinorGC的触发 {
             double oldUsed = JvmMemoryPools.getOldUsedMB();
             double oldMax = JvmMemoryPools.getOldMaxMB();
 
-            // 每次创建 1MB 的对象（短生命周期）
-            // 条件断点 edenUsed >= 47
-            byte[] data = new byte[1024 * 1024]; // 1MB
+
+            // 条件断点 oldUsed >= 127
+            byte[] data = new byte[4 * 1024 * 1024]; // 4MB
             container.add(data);
+
 
             // 每 3 次清理一次引用，制造垃圾
             if (++loop % 3 == 0) {
-                //
                 container.clear();
                 System.out.println("Cleared container at loop " + loop);
             }

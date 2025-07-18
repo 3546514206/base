@@ -14,18 +14,20 @@ import java.util.List;
  * <p>
  * -XX:+UseSerialGC -Xms128m -Xmx128m -Xmn64m -XX:SurvivorRatio=6 -XX:+PrintGCDetails -XX:+PrintGCDateStamps
  * <p>
- * 实验一：观察 MinorGC 的触发
+ * 实验三：大对象的直接晋升
  *
- * @Date 2025-07-14 17:57
+ * @Date 2025-07-18 08:32
  * @Author 杨海波
  **/
-@SuppressWarnings("all")
-public class Experiment_01_观察MinorGC的触发 {
+public class Experiment_03_大对象的直接晋升 {
     public static void main(String[] args) throws InterruptedException {
 
+        // 创建用于存活的对象（不断进入 Survivor 区）
         List<byte[]> container = new ArrayList<>();
+        List<byte[]> big_container = new ArrayList<>();
 
         int loop = 0;
+
 
         while (true) {
             double edenUsed = JvmMemoryPools.getEdenUsedMB();
@@ -35,14 +37,21 @@ public class Experiment_01_观察MinorGC的触发 {
             double oldUsed = JvmMemoryPools.getOldUsedMB();
             double oldMax = JvmMemoryPools.getOldMaxMB();
 
-            // 每次创建 1MB 的对象（短生命周期）
-            // 条件断点 edenUsed >= 47
-            byte[] data = new byte[1024 * 1024]; // 1MB
-            container.add(data);
+            // 为了触发直接晋升老年代（allocation in old generation），有以下策略：
+            // 一次性分配较大的对象（大于 Eden 空间的一半），如 32MB、40MB 等
+            // 确保 Eden 空间不足，触发 Minor GC
+            if (loop == 0) {
+                byte[] bigObject = new byte[32 * 1024 * 1024]; // 32MB
+                big_container.add(bigObject);
+            } else {
+                // 条件断点 edenUsed >= 47
+                byte[] data = new byte[1024 * 1024]; // 1MB
+                container.add(data);
+            }
+
 
             // 每 3 次清理一次引用，制造垃圾
             if (++loop % 3 == 0) {
-                //
                 container.clear();
                 System.out.println("Cleared container at loop " + loop);
             }
