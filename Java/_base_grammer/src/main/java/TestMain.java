@@ -1,11 +1,6 @@
-
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -64,8 +59,13 @@ public class TestMain {
         Map<String,String> pa = new HashMap<>();
 
 
+
         String nul = pa.get("a");
         System.out.println(nul);
+
+        System.out.println("xxxx".contains(""));
+
+        System.out.println(Boolean.TRUE.toString());
 
     }
 
