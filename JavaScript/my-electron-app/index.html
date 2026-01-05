@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
             http-equiv="Content-Security-Policy"
             content="default-src 'self'; script-src 'self'"
@@ -11,9 +10,12 @@
             http-equiv="X-Content-Security-Policy"
             content="default-src 'self'; script-src 'self'"
     />
-    <title>肥鸡宝宝</title>
+    <title>来自 Electron 渲染器的问好！</title>
 </head>
 <body>
-<h1>你好，我是肥鸡宝宝，我会翻跟头，会上手，会偷懒，会拉车，还会呼呼大睡！</h1>
+<h1>来自 Electron 渲染器的问好！</h1>
+<p>👋</p>
+<p id="info"></p>
 </body>
+<script src="./renderer.js"></script>
 </html>
