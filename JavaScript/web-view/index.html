@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Electron 记事本</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="toolbar">
+    <span class="title">记事本</span>
+    <span class="status" id="status">未保存</span>
+  </header>
+
+  <textarea
+          id="editor"
+          placeholder="在这里输入内容..."
+          spellcheck="false"
+  ></textarea>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
