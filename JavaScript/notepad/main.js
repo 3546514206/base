@@ -1,5 +1,6 @@
-const { app, BrowserWindow, ipcMain } = require('electron/main');
+const {app, BrowserWindow, ipcMain, dialog} = require('electron/main');
 const path = require('path');
+const fs = require('fs');
 
 let mainWindow = null;
 
@@ -14,7 +15,7 @@ function createMainWindow() {
             preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true,
             nodeIntegration: false,
-            sandbox: false
+            sandbox: true
         }
     });
 
@@ -52,9 +53,60 @@ app.on('window-all-closed', () => {
     }
 });
 
-/* ================= IPC（示例，可按需删） ================= */
+/* ========== IPC：保存文件 ========== */
+ipcMain.handle('file:save',
+    async (event, content) => {
+        // await 用来“暂停当前 async 函数的执行”，
+        // 等一个 Promise 有结果（resolve / reject）之后，再继续往下执行。
+        // 它只影响当前函数，不会阻塞整个线程或事件循环。
+        // await 只能出现在 async 函数内部
+        const {canceled, filePath} = await dialog.showSaveDialog({
+            title: '保存文件',
+            defaultPath: 'note.txt',
+            filters: [{name: 'Text', extensions: ['txt']}]
+        });
 
-// 推荐使用 invoke / handle
-ipcMain.handle('app:get-version', () => {
-    return app.getVersion();
+        if (canceled || !filePath) {
+            return {success: false};
+        }
+
+        await fs.promises.writeFile(filePath, content, 'utf8');
+
+        return {
+            success: true,
+            path: filePath
+        };
+    });
+
+/* ========== IPC：打开文件 ========== */
+ipcMain.handle('file:open', async () => {
+    const result = await dialog.showOpenDialog({
+        title: '打开文件',
+        properties: ['openFile'],
+        filters: [
+            { name: '文本文件', extensions: ['txt', 'md', 'json', 'log'] },
+            { name: '所有文件', extensions: ['*'] }
+        ]
+    });
+
+    if (result.canceled || result.filePaths.length === 0) {
+        return { success: false };
+    }
+
+    const filePath = result.filePaths[0];
+
+    try {
+        const content = fs.readFileSync(filePath, 'utf-8');
+
+        return {
+            success: true,
+            filePath,
+            content
+        };
+    } catch (err) {
+        return {
+            success: false,
+            error: err.message
+        };
+    }
 });

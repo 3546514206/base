@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>记事本</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #toolbar {
+            padding: 6px;
+            border-bottom: 1px solid #ddd;
+            background: #f5f5f5;
+        }
+
+        #editor {
+            flex: 1;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        #status {
+            padding: 4px 8px;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
-<div class="app">
-    <header class="toolbar">
-        <span class="title">记事本</span>
-        <span class="status" id="status">未保存</span>
-    </header>
 
-    <div class="editor">
-        <label for="editor"></label>
-        <textarea id="editor"
-                  placeholder="在这里输入内容..."
-                  spellcheck="false">
-        </textarea>
-    </div>
+<!-- 工具栏 -->
+<div id="toolbar">
+    <button id="openBtn">打开</button>
+    <button id="saveBtn">保存</button>
 </div>
-<script src="index.js"></script>
+
+<!-- 编辑区 -->
+<textarea id="editor"></textarea>
+
+<!-- 状态栏 -->
+<div id="status">未保存</div>
+
+<script src="./index.js"></script>
 </body>
 </html>

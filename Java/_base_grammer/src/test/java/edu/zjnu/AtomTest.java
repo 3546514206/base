@@ -1,5 +1,6 @@
 package edu.zjnu;
 
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -17,6 +18,9 @@ public class AtomTest {
     }
 
     public static void main(String[] args) {
+
+        Objects.equals()
+
         for (int thread = 0; thread < 2; thread++) {
             new Thread(() -> {
                 for (int index = 0; index < 100; index++) {
