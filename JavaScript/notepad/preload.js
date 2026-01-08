@@ -1,10 +1,10 @@
-const {contextBridge, ipcRenderer} = require('electron');
+const {contextBridge, ipcRenderer} = require("electron");
 
-contextBridge.exposeInMainWorld('api', {
+contextBridge.exposeInMainWorld("api", {
     saveFile: (content) => {
-        return ipcRenderer.invoke('file:save', content);
+        return ipcRenderer.invoke("file:save", content);
     },
-    openFile: () => ipcRenderer.invoke('file:open')
+    openFile: () => ipcRenderer.invoke("file:open")
 });
 
 
