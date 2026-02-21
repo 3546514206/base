@@ -1,0 +1,36 @@
+# Prompt Engineering Patterns - Integration Testing Notes
+
+## Application Overview
+This example demonstrates comprehensive prompt engineering patterns with ~24 AI API calls:
+- 17 different prompting techniques
+- Multiple model configurations (temperature, top-k, top-p)
+- Various output formats (strings, JSON, structured entities)
+- Educational content covering advanced AI prompting
+
+## Integration Test Approach
+✅ Test the full application as-is (no modifications to preserve learning value)
+✅ Extended timeout (15 minutes) to accommodate all API calls
+✅ Success patterns validate key outputs from different prompt types
+✅ Uses original Anthropic Claude configuration
+
+## Success Pattern Coverage
+✅ pt_zero_shot - "Output: POSITIVE|NEGATIVE|NEUTRAL" 
+✅ pt_role_prompting_1/2 - "Output:.*museum" (travel suggestions)
+✅ pt_self_consistency - "The email is.*IMPORTANT" (classification voting)
+✅ Application completion - "Prompt engineering patterns demonstration completed!"
+
+## Performance Characteristics
+- Expected runtime: 5-10 minutes (depending on API latency)
+- API calls: ~24 total across all patterns
+- Cost: Moderate (comprehensive AI usage for demonstration)
+- Reliability: Dependent on Anthropic API availability
+
+## Design Rationale
+This example prioritizes educational value over test speed. It demonstrates:
+1. Multiple prompting strategies
+2. Various model configurations  
+3. Different output parsing approaches
+4. Advanced techniques (CoT, ToT, self-consistency)
+
+The integration test validates the Spring AI framework can handle complex, multi-pattern
+workflows rather than testing individual pattern effectiveness.

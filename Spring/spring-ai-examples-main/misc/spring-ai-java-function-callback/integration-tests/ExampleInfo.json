@@ -1,0 +1,11 @@
+{
+  "timeoutSec": 120,
+  "successRegex": [
+    "Response:",
+    "weather conditions.*San Francisco.*Tokyo.*Paris",
+    "Exiting successfully"
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ]
+}

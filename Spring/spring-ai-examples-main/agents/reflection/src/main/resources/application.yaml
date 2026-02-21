@@ -1,0 +1,29 @@
+spring:
+  ai:
+    azure:
+      openai:
+        chat:
+          options:
+            function-callbacks:
+              - name: "functionName1"
+                description: "Description of what function1 does"
+                input-type-schema: |
+                  {
+                    "type": "object",
+                    "properties": {
+                      "param1": {
+                        "type": "string"
+                      }
+                    }
+                  }
+              - name: "functionName2"
+                description: "Description of what function2 does"
+                input-type-schema: |
+                  {
+                    "type": "object",
+                    "properties": {
+                      "param2": {
+                        "type": "integer"
+                      }
+                    }
+                  }

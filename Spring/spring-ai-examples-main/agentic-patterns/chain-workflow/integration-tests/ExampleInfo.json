@@ -1,0 +1,28 @@
+{
+  "timeoutSec": 300,
+  "successRegex": [
+    "Customer Satisfaction",
+    "Employee Satisfaction", 
+    "Product Adoption Rate",
+    "Revenue Growth",
+    "Operating Margin",
+    "Market Share",
+    "Customer Churn"
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ],
+  "aiValidation": {
+    "enabled": true,
+    "validationMode": "primary",
+    "readmeFile": "../README.md",
+    "expectedBehavior": "Process Q3 performance data through 4 sequential transformation steps: extract numerical values, standardize to percentages, sort in descending order, and format as markdown table with proper metric names and values",
+    "promptTemplate": "workflow_validation",
+    "successCriteria": {
+      "expectedSteps": 4,
+      "outputFormat": "markdown_table",
+      "requiresSequentialProcessing": true,
+      "expectedMetrics": ["Customer Satisfaction", "Employee Satisfaction", "Product Adoption", "Revenue Growth", "Operating Margin", "Market Share", "Customer Churn"]
+    }
+  }
+}

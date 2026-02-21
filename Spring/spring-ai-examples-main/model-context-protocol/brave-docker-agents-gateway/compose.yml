@@ -1,0 +1,33 @@
+services:
+  env-setup:
+    image: alpine:latest
+    environment:
+      - BRAVE_API_KEY=${BRAVE_API_KEY}
+    volumes:
+      - secrets-data:/tmp/secrets
+    command: sh -c 'echo "brave.api_key=$${BRAVE_API_KEY}" > /tmp/secrets/mcp_secret'
+
+  mcp-gateway:
+    image: docker/mcp-gateway:latest
+    depends_on:
+      - env-setup
+    ports:
+      - 8811:8811
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - secrets-data:/run/secrets
+    environment:
+      - BRAVE_API_KEY=${BRAVE_API_KEY}
+    command:
+      - --transport=sse
+      - --secrets=/run/secrets/mcp_secret
+      - --servers=brave
+      - --tools=*
+volumes:
+  secrets-data:
+#    secrets:
+#      - mcp_secret
+#
+#secrets:
+#  mcp_secret:
+#    file: .env

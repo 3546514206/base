@@ -1,0 +1,23 @@
+{
+  "timeoutSec": 120,
+  "successRegex": [
+    "Joke:",
+    "Setup:",
+    "Punchline:"  
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ],
+  "aiValidation": {
+    "enabled": true,
+    "validationMode": "primary",
+    "readmeFile": "../README.md",
+    "expectedBehavior": "Fetch a joke from OpenAI API, parse it into structured Joke object with setup and punchline fields, and display them properly formatted",
+    "promptTemplate": "chat_example_validation",
+    "successCriteria": {
+      "requiresStructuredOutput": true,
+      "expectedFields": ["setup", "punchline"],
+      "expectedOutputFormat": "joke_structure"
+    }
+  }
+}

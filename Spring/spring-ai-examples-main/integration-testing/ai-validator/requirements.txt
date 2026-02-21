@@ -1,0 +1,12 @@
+# AI Validator Dependencies
+# These dependencies are needed for the AI-based validation system
+
+# Core Python libraries (usually built-in, but listed for clarity)
+pathlib
+subprocess
+json
+typing
+dataclasses
+
+# External dependencies (if any additional ones are needed)
+# Note: claude_code_wrapper.py may have its own dependencies

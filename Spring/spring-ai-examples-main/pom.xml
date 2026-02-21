@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.example.spring.ai</groupId>
+	<artifactId>spring-ai-examples-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+	<url>https://github.com/spring-projects/spring-ai</url>
+
+	<name>Spring AI</name>
+	<description>Building AI applications with Spring Boot</description>
+
+	<modules>
+		<module>agents/reflection</module>
+		<module>agentic-patterns</module>
+
+		<!-- <module>kotlin/kotlin-hello-world</module>
+		<module>kotlin/kotlin-function-callback</module>
+		<module>kotlin/rag-with-kotlin</module> -->
+
+		<module>misc/spring-ai-java-function-callback</module>
+		<module>misc/openai-streaming-response</module>
+		<module>misc/claude-skills-demo/document-forge</module>
+
+		<module>models/chat/helloworld</module>
+
+		<module>model-context-protocol/sqlite/simple</module>
+		<module>model-context-protocol/sqlite/chatbot</module>
+		<module>model-context-protocol/brave</module>
+		<module>model-context-protocol/brave-docker-agents-gateway</module>
+		<module>model-context-protocol/client-starter/starter-default-client</module>
+		<module>model-context-protocol/client-starter/starter-webflux-client</module>
+		<module>model-context-protocol/filesystem</module>
+		<module>model-context-protocol/weather/manual-webflux-server</module>
+		<module>model-context-protocol/weather/starter-stdio-server</module>
+		<module>model-context-protocol/weather/starter-webflux-server</module>
+		<module>model-context-protocol/weather/starter-webmvc-server</module>
+		<module>model-context-protocol/weather/starter-webmvc-oauth2-server</module>
+		<module>model-context-protocol/web-search/brave-starter</module>
+		<module>model-context-protocol/web-search/brave-chatbot</module>
+		
+		<!-- SAMPLING -->
+		<module>model-context-protocol/sampling/mcp-sampling-server</module>
+		<module>model-context-protocol/sampling/mcp-sampling-client</module>
+		<module>model-context-protocol/sampling/annotations/mcp-sampling-server-annotations</module>
+		<module>model-context-protocol/sampling/annotations/mcp-sampling-client-annotations</module>
+
+		<!-- MCP ANNOTATIONS -->
+		<module>model-context-protocol/mcp-annotations/mcp-annotations-server</module>
+		<module>model-context-protocol/mcp-annotations/mcp-annotations-client</module>
+
+		<!-- DYNAMIC TOOL UPDATE -->
+		<module>model-context-protocol/dynamic-tool-update/client</module>
+		<module>model-context-protocol/dynamic-tool-update/server</module>		
+
+		<module>prompt-engineering/prompt-engineering-patterns</module>
+
+		<!-- ADVISORS -->
+		<module>advisors/recursive-advisor-demo</module>
+		<module>advisors/tool-argument-augmenter-demo</module>
+		<module>advisors/evaluation-recursive-advisor-demo</module>
+		
+	</modules>
+
+</project>

@@ -1,0 +1,14 @@
+{
+  "timeoutSec": 300,
+  "successRegex": [
+    ">>> QUESTION: What tools are available\\?",
+    ">>> ASSISTANT:",
+    "Brave Web Search",
+    "Brave Local Search",
+    "Process terminated with code 143"
+  ],
+  "requiredEnv": [
+    "ANTHROPIC_API_KEY",
+    "BRAVE_API_KEY"
+  ]
+}

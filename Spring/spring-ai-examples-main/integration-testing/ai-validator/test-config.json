@@ -1,0 +1,11 @@
+{
+  "timeoutSec": 120,
+  "successRegex": ["Spring AI Hello World!"],
+  "requiredEnv": ["OPENAI_API_KEY"],
+  "aiValidation": {
+    "enabled": true,
+    "validationMode": "primary",
+    "expectedBehavior": "Accept user input 'tell me a joke' and return a coherent joke response",
+    "promptTemplate": "chat_example_validation"
+  }
+}

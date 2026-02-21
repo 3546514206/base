@@ -1,0 +1,24 @@
+{
+  "timeoutSec": 180,
+  "testMode": "web-server",
+  "successRegex": [
+    "Started McpServerApplication",
+    "Tomcat started on port.*8080",
+    "MCP server initialized"
+  ],
+  "requiredEnv": [],
+  "webServerConfig": {
+    "startupTime": 15,
+    "testEndpoints": [
+      {
+        "url": "http://localhost:8080/mcp/message",
+        "method": "GET",
+        "expectedPattern": "text/event-stream",
+        "headers": {
+          "Accept": "text/event-stream"
+        }
+      }
+    ]
+  },
+  "notes": "MCP weather server with SSE transport. Endpoint returns SSE stream for MCP protocol."
+}

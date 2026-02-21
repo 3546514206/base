@@ -1,0 +1,66 @@
+# TODO: Fix Version Management Gaps
+
+## Problem
+The current `update-spring-ai-version.sh` script only updates 17 pom.xml files that use the `<spring-ai.version>` property. However, we have 24 modules with integration tests, and some use different version management approaches.
+
+## Modules with Integration Tests (24 total)
+### Using spring-ai.version property (17):
+- agentic-patterns/* (5 modules)
+- kotlin/* (3 modules)
+- misc/* (2 modules)
+- model-context-protocol/brave
+- model-context-protocol/brave-docker-agents-gateway
+- model-context-protocol/client-starter/*
+- model-context-protocol/dynamic-tool-update/client
+- model-context-protocol/sampling/mcp-sampling-client
+- prompt-engineering/prompt-engineering-patterns
+
+### Using spring-ai-bom directly (7):
+- agents/reflection
+- models/chat/helloworld
+- model-context-protocol/filesystem
+- model-context-protocol/sqlite/chatbot
+- model-context-protocol/sqlite/simple
+- model-context-protocol/weather/starter-webmvc-server
+- model-context-protocol/web-search/brave-chatbot
+- model-context-protocol/web-search/brave-starter
+- model-context-protocol/dynamic-tool-update/server
+
+## Version Management Approaches Found
+
+### Approach 1: spring-ai.version property
+```xml
+<properties>
+    <spring-ai.version>1.1.0-SNAPSHOT</spring-ai.version>
+</properties>
+```
+
+### Approach 2: Direct BOM version
+```xml
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-bom</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+```
+
+## Solution Needed
+Update `scripts/update-spring-ai-version.sh` to:
+1. Update `<spring-ai.version>` property (already done)
+2. Also update direct BOM versions in dependencyManagement sections
+3. Handle both patterns in a single script
+
+## Impact
+Without fixing this, when we test with Spring AI 1.0.1:
+- 17 modules will use 1.0.1
+- 7 modules will still use 1.1.0-SNAPSHOT
+- This causes inconsistent testing and potential failures
+
+## Priority
+HIGH - Must be fixed before Phase 3a (local testing with 1.0.1) can be completed

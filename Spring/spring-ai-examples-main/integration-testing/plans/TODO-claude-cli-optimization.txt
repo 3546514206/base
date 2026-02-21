@@ -1,0 +1,36 @@
+# TODO: Optimize Claude Code CLI Integration in GitHub Actions
+
+## Current Implementation
+- Installing Claude Code CLI via npm: `npm install -g @anthropic-ai/claude-code`
+- AI validator expects `claude` command to be available in PATH
+- Uses ANTHROPIC_API_KEY environment variable
+
+## Potential Optimizations to Investigate
+
+### 1. Use anthropics/claude-code-action@beta
+- Official GitHub Action from Anthropic
+- May not provide CLI in PATH (needs investigation)
+- Could potentially modify AI validator to work with action directly
+
+### 2. Create Custom GitHub Action
+- Wrapper action that installs CLI and makes it available
+- Could cache installation for performance
+
+### 3. Modify AI Validator
+- Update claude_code_wrapper.py to work with GitHub Action
+- Or create alternate validation path for CI/CD
+
+### 4. Performance Considerations
+- npm global install may be slow
+- Consider caching node_modules or npm cache
+- Investigate if CLI can be installed locally vs globally
+
+## Current Status
+- Working solution with npm install
+- AI validation enabled and functional
+- Can optimize later without breaking changes
+
+## Timeline
+- Revisit after Phase 6 (Full Coverage) is complete
+- Not blocking current progress
+- Document any issues encountered during testing

@@ -1,0 +1,12 @@
+{
+  "timeoutSec": 300,
+  "successRegex": [
+    "=== Running Basic Patterns ===",
+    "Output: (POSITIVE|NEGATIVE|NEUTRAL)", 
+    "Output:.*pizza.*JSON",
+    "Prompt engineering patterns demonstration completed!"
+  ],
+  "requiredEnv": [
+    "SPRING_AI_ANTHROPIC_API_KEY"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "timeoutSec": 300,
+  "successRegex": [
+    ">>> QUESTION: What tools are available\\?",
+    ">>> ASSISTANT:",
+    "Brave.*Search"
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ],
+  "aiValidation": {
+    "enabled": true,
+    "validationMode": "hybrid",
+    "readmeFile": "../README.md",
+    "expectedBehavior": "MCP client should successfully connect to configured MCP servers, discover available tools (like Brave Search), handle user questions, and demonstrate tool usage through AI assistant responses",
+    "promptTemplate": "client_server_validation",
+    "components": ["client", "mcp-servers"],
+    "successCriteria": {
+      "requiresUserInteraction": false,
+      "expectedOutputTypes": ["tool_discovery", "ai_response", "tool_usage"]
+    }
+  }
+}

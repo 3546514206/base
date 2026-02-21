@@ -1,0 +1,15 @@
+{
+  "timeoutSec": 300,
+  "successRegex": [
+    "Ticket 1",
+    "Ticket 2",
+    "Ticket 3",
+    "Available routes:",
+    "Routing Analysis:",
+    "Selected route:",
+    "Support Response:"
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ]
+}

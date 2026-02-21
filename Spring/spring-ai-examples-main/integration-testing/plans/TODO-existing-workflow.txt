@@ -1,0 +1,42 @@
+# TODO: Revisit Existing Integration Tests Workflow
+
+## Context
+There is a pre-existing GitHub Actions workflow at `.github/workflows/integration-tests.yml` that has been disabled.
+
+## Location
+https://github.com/spring-projects/spring-ai-examples/blob/main/.github/workflows/integration-tests.yml
+
+## Tasks to Complete
+- [ ] Review the existing workflow structure and features
+- [ ] Identify what can be migrated/merged from the old workflow
+- [ ] Determine if both workflows should coexist or if they should be merged
+- [ ] Consider the following aspects:
+  - Trigger mechanisms (push, PR, schedule)
+  - Test coverage scope
+  - Performance optimizations
+  - Caching strategies
+  - Matrix strategies
+  - Secret management
+
+## Migration Considerations
+- The new workflow uses the updated `run-integration-tests.sh` script
+- The new workflow includes Spring AI version management
+- The old workflow may have different test selection logic
+- Check for any special environment configurations
+
+## Decision Points
+1. Keep both workflows with different purposes?
+   - Old: Automated on push/PR
+   - New: Manual with version control
+   
+2. Merge into single comprehensive workflow?
+   - Combine triggers
+   - Unify test selection
+   - Consolidate configuration
+
+3. Replace old with new entirely?
+   - Migrate all features to new workflow
+   - Archive old workflow
+
+## Timeline
+Review after Phase 5 (Automated Triggers) is complete, as that phase will add push/PR triggers to the new workflow.

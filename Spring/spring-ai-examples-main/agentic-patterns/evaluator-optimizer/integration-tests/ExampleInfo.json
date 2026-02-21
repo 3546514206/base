@@ -1,0 +1,25 @@
+{
+  "timeoutSec": 600,
+  "successRegex": [
+    "=== GENERATOR OUTPUT ===",
+    "=== EVALUATOR OUTPUT ===",
+    "EVALUATION: PASS",
+    "FINAL OUTPUT:"
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ],
+  "aiValidation": {
+    "enabled": true,
+    "validationMode": "primary",
+    "readmeFile": "../README.md",
+    "expectedBehavior": "Demonstrate evaluator-optimizer pattern with dual-LLM process: generator creates initial response, evaluator assesses quality and provides feedback, iterative refinement until final output meets quality criteria",
+    "promptTemplate": "workflow_validation",
+    "successCriteria": {
+      "requiresIterativeProcess": true,
+      "expectedComponents": ["generator", "evaluator"],
+      "evaluationCriteria": "quality_assessment",
+      "finalResult": "refined_output"
+    }
+  }
+}

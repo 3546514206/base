@@ -1,0 +1,22 @@
+{
+  "timeoutSec": 15,
+  "successRegex": [
+    "Started.*Application",
+    "Let's chat!"
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ],
+  "aiValidation": {
+    "enabled": true,
+    "validationMode": "fallback",
+    "readmeFile": "../README.md",
+    "expectedBehavior": "Interactive reflection agent should start successfully and display the 'Let's chat!' prompt, indicating the dual ChatClient system (generation and critique agents) is ready for user input. The application will wait for interactive input to demonstrate iterative code generation and improvement.",
+    "promptTemplate": "example_validation",
+    "successCriteria": {
+      "requiresUserInteraction": true,
+      "expectedComponents": ["spring_boot_startup", "reflection_agent_ready", "interactive_prompt"],
+      "validationNote": "Tests readiness for interactive AI reflection workflow"
+    }
+  }
+}

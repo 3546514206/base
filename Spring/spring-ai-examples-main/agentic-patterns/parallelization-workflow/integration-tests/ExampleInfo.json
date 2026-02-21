@@ -1,0 +1,12 @@
+{
+  "timeoutSec": 300,
+  "successRegex": [
+    "Started.*Application",
+    "Impact Analysis.*Customer",
+    "Impact Analysis.*Employee", 
+    "Impact Analysis.*Investor"
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ]
+}

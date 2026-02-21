@@ -1,0 +1,12 @@
+# Integration Testing Logs
+logs/
+*.log
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary Files
+*.tmp
+*.temp

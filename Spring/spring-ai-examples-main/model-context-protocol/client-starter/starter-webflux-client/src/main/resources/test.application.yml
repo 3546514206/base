@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: mcp
+  main:
+    web-application-type: none
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+    anthropic:
+      api-key: ${ANTHROPIC_API_KEY}
+
+    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:/mcp-servers-config.json
+
+ai.user.input=Does Srping AI support MCP?

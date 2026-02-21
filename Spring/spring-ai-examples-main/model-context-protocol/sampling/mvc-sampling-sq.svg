@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="478px" preserveAspectRatio="none" style="width:615px;height:478px;background:#FFFFFF;" version="1.1" viewBox="0 0 615 478" width="615px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="29.1328" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="71.5" y="91.5625"/><rect fill="#FFFFFF" height="207.9297" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="71.5" y="210.0938"/><rect fill="#FFFFFF" height="58.2656" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="355.5" y="91.5625"/><rect fill="#FFFFFF" height="207.9297" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="355.5" y="210.0938"/><rect fill="#FFFFFF" height="118.5313" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="360.5" y="263.3594"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="554.5" y="316.625"/><rect fill="none" height="104.5313" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="394.5" x="20" y="53.2969"/><rect fill="none" height="254.1953" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="599.5" x="10" y="171.8281"/><rect fill="none" height="164.7969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="579.5" x="20" y="225.0938"/><rect fill="none" height="75.3984" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="283" x="306.5" y="278.3594"/><line style="stroke:#AAAAAA;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="76" x2="76" y1="36.2969" y2="443.0234"/><line style="stroke:#AAAAAA;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="360.5" x2="360.5" y1="36.2969" y2="443.0234"/><line style="stroke:#AAAAAA;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="559.5" x2="559.5" y1="36.2969" y2="443.0234"/><rect fill="#222222" height="30.2969" rx="5" ry="5" style="stroke:#222222;stroke-width:0.5;" width="93" x="30" y="5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="37" y="24.9951">MCP Server</text><rect fill="#222222" height="30.2969" rx="5" ry="5" style="stroke:#222222;stroke-width:0.5;" width="93" x="30" y="442.0234"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="37" y="462.0186">MCP Server</text><rect fill="#222222" height="30.2969" rx="5" ry="5" style="stroke:#222222;stroke-width:0.5;" width="88" x="316.5" y="5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="323.5" y="24.9951">MCP Client</text><rect fill="#222222" height="30.2969" rx="5" ry="5" style="stroke:#222222;stroke-width:0.5;" width="88" x="316.5" y="442.0234"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="323.5" y="462.0186">MCP Client</text><rect fill="#222222" height="30.2969" rx="5" ry="5" style="stroke:#222222;stroke-width:0.5;" width="40" x="539.5" y="5"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="546.5" y="24.9951">LLM</text><rect fill="#222222" height="30.2969" rx="5" ry="5" style="stroke:#222222;stroke-width:0.5;" width="40" x="539.5" y="442.0234"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="546.5" y="462.0186">LLM</text><rect fill="#FFFFFF" height="29.1328" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="71.5" y="91.5625"/><rect fill="#FFFFFF" height="207.9297" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="71.5" y="210.0938"/><rect fill="#FFFFFF" height="58.2656" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="355.5" y="91.5625"/><rect fill="#FFFFFF" height="207.9297" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="355.5" y="210.0938"/><rect fill="#FFFFFF" height="118.5313" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="360.5" y="263.3594"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#AAAAAA;stroke-width:1.0;" width="10" x="554.5" y="316.625"/><path d="M25,53.2969 L154,53.2969 L154,60.4297 L144,70.4297 L20,70.4297 L20,58.2969 A5,5 0 0 1 25,53.2969 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="104.5313" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="394.5" x="20" y="53.2969"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="89" x="35" y="66.3638">Initialization</text><polygon fill="#181818" points="92.5,87.5625,82.5,91.5625,92.5,95.5625,88.5,91.5625" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;" x1="86.5" x2="354.5" y1="91.5625" y2="91.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="98.5" y="86.4966">Initialization Request</text><polygon fill="#181818" points="343.5,116.6953,353.5,120.6953,343.5,124.6953,347.5,120.6953" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;stroke-dasharray:2.0,2.0;" x1="76.5" x2="349.5" y1="120.6953" y2="120.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="83.5" y="115.6294">Initialization Response</text><polygon fill="#181818" points="87.5,145.8281,77.5,149.8281,87.5,149.8281" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;" x1="76.5" x2="359.5" y1="149.8281" y2="149.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="93.5" y="144.7622">Initializated</text><path d="M15,171.8281 L312,171.8281 L312,178.9609 L302,188.9609 L10,188.9609 L10,176.8281 A5,5 0 0 1 15,171.8281 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="254.1953" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="599.5" x="10" y="171.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="257" x="25" y="184.895">Inside an Existing Client Invocation</text><polygon fill="#181818" points="92.5,206.0938,82.5,210.0938,92.5,214.0938,88.5,210.0938" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;" x1="86.5" x2="354.5" y1="210.0938" y2="210.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="240" x="98.5" y="205.0278">Any Tool/Prompt/Resource ... Request</text><path d="M25,225.0938 L134,225.0938 L134,232.2266 L124,242.2266 L20,242.2266 L20,230.0938 A5,5 0 0 1 25,225.0938 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="164.7969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="579.5" x="20" y="225.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="69" x="35" y="238.1606">Sampling</text><polygon fill="#181818" points="348.5,259.3594,358.5,263.3594,348.5,267.3594,352.5,263.3594" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;" x1="81.5" x2="354.5" y1="263.3594" y2="263.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="88.5" y="258.2935">sampling/createMessage</text><path d="M311.5,278.3594 L480.5,278.3594 L480.5,285.4922 L470.5,295.4922 L306.5,295.4922 L306.5,283.3594 A5,5 0 0 1 311.5,278.3594 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="75.3984" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="283" x="306.5" y="278.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="129" x="321.5" y="291.4263">Model interaction</text><polygon fill="#181818" points="542.5,312.625,552.5,316.625,542.5,320.625,546.5,316.625" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;" x1="370.5" x2="548.5" y1="316.625" y2="316.625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="165" x="377.5" y="311.5591">Forward sampling request</text><polygon fill="#181818" points="381.5,341.7578,371.5,345.7578,381.5,349.7578,377.5,345.7578" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;stroke-dasharray:2.0,2.0;" x1="375.5" x2="558.5" y1="345.7578" y2="345.7578"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="387.5" y="340.6919">Return generation</text><polygon fill="#181818" points="92.5,377.8906,82.5,381.8906,92.5,385.8906,88.5,381.8906" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;stroke-dasharray:2.0,2.0;" x1="86.5" x2="354.5" y1="381.8906" y2="381.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="98.5" y="376.8247">Return generation</text><polygon fill="#181818" points="348.5,414.0234,358.5,418.0234,348.5,422.0234,352.5,418.0234" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:2.0;stroke-dasharray:2.0,2.0;" x1="76.5" x2="354.5" y1="418.0234" y2="418.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="250" x="83.5" y="412.9575">Any Tool/Prompt/Resource ... Response</text><!--MD5=[4e396b4392d7251a9c692eb4e0030b53]
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam sequenceParticipant {
+  BackgroundColor #222222
+  BorderColor #222222
+  FontColor white
+}
+skinparam sequenceLifeLineBorderColor #AAAAAA
+skinparam sequenceGroupFontColor white
+
+participant "MCP Server" as Server
+participant "MCP Client" as Client
+participant "LLM" as LLM
+
+group Initialization
+
+    Client -> Server: Initialization Request
+    activate Client
+    activate Server
+    
+    Server - -> Client: Initialization Response
+    deactivate Server    
+
+    Client -\ Server: Initializated
+    deactivate Client
+end 
+
+group Inside an Existing Client Invocation
+    Client -> Server: Any Tool/Prompt/Resource ... Request
+    activate Client
+    activate Server
+
+    group Sampling
+        Server -> Client: sampling/createMessage
+        activate Client
+
+        group Model interaction
+            Client -> LLM: Forward sampling request
+            activate LLM
+            LLM - -> Client: Return generation
+            deactivate LLM
+        end
+
+        Client - -> Server: Return generation
+        deactivate Client
+    end
+
+    Server - -> Client: Any Tool/Prompt/Resource ... Response
+    deactivate Server
+    deactivate Client
+end
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

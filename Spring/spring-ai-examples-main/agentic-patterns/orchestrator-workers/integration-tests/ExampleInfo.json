@@ -1,0 +1,12 @@
+{
+  "timeoutSec": 300,
+  "successRegex": [
+    "=== ORCHESTRATOR OUTPUT ===",
+    "ANALYSIS:",
+    "TASKS:",
+    "=== WORKER OUTPUT ==="
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ]
+}

@@ -1,0 +1,54 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam sequenceParticipant {
+  BackgroundColor #222222
+  BorderColor #222222
+  FontColor white
+}
+skinparam sequenceLifeLineBorderColor #AAAAAA
+skinparam sequenceGroupFontColor white
+
+participant "MCP Server" as Server
+participant "MCP Client" as Client
+participant "LLM" as LLM
+
+group Initialization
+
+    Client -> Server: Initialization Request
+    activate Client
+    activate Server
+    
+    Server --> Client: Initialization Response
+    deactivate Server    
+
+    Client -\ Server: Initializated
+    deactivate Client
+end 
+
+group Inside an Existing Client Invocation
+    Client -> Server: Tool/Prompt/Resource Request
+    activate Client
+    activate Server
+
+    group Sampling
+        Server -> Client: sampling/createMessage
+        activate Client
+
+        group Model interaction
+            Client -> LLM: Forward sampling request
+            activate LLM
+            LLM --> Client: Return generation
+            deactivate LLM
+        end
+
+        Client --> Server: Return generation
+        deactivate Client
+    end
+
+    Server --> Client: Tool/Prompt/Resource Response
+    deactivate Server
+    deactivate Client
+end
+
+@enduml

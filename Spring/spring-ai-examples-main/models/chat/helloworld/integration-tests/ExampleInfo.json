@@ -1,0 +1,18 @@
+{
+  "timeoutSec": 120,
+  "successRegex": [
+    "Spring AI Hello World!",
+    "USER: Tell me a joke",
+    "ASSISTANT: [A-Za-z]",
+    "Hello World demo completed!"
+  ],
+  "requiredEnv": [
+    "OPENAI_API_KEY"
+  ],
+  "aiValidation": {
+    "enabled": true,
+    "validationMode": "primary",
+    "expectedBehavior": "Accept user input 'tell me a joke' and return a coherent joke response from the AI assistant",
+    "promptTemplate": "chat_example_validation"
+  }
+}

@@ -1,0 +1,528 @@
+# ============================================================================
+# Spring AI Examples - Integration Tests
+# ============================================================================
+#
+# This workflow runs integration tests for Spring AI examples in parallel groups.
+#
+# SCHEDULE: Weekly on Sundays at 6 AM UTC
+#
+# MANUAL TRIGGER OPTIONS:
+#   - test_filter: Run a specific test by name pattern
+#     Examples: "kotlin-hello-world", "chain-workflow", "weather"
+#
+#   - test_group: Run only tests in a specific group
+#     Options: all, mcp-servers, agentic, openai-2, openai-3, anthropic-multi, docker-tests
+#
+# TEST GROUPS:
+#   ┌─────────────────────┬────────────────────────────────────────────────────┐
+#   │ Group               │ Tests                                              │
+#   ├─────────────────────┼────────────────────────────────────────────────────┤
+#   │ mcp-servers         │ weather/starter-webmvc-server                      │
+#   │                     │ weather/starter-webflux-server                     │
+#   │                     │ weather/starter-webmvc-oauth2-server               │
+#   │                     │ weather/starter-stdio-server                       │
+#   ├─────────────────────┼────────────────────────────────────────────────────┤
+#   │ agentic             │ agentic-patterns/chain-workflow                    │
+#   │ (OpenAI+Anthropic)  │ agentic-patterns/evaluator-optimizer               │
+#   │                     │ agentic-patterns/orchestrator-workers              │
+#   │                     │ agentic-patterns/parallelization-workflow          │
+#   │                     │ agentic-patterns/routing-workflow                  │
+#   │                     │ agents/reflection                                  │
+#   ├─────────────────────┼────────────────────────────────────────────────────┤
+#   │ openai-2            │ kotlin/kotlin-hello-world                          │
+#   │ (Kotlin & Misc)     │ kotlin/kotlin-function-callback                    │
+#   │                     │ misc/openai-streaming-response                     │
+#   │                     │ misc/spring-ai-java-function-callback              │
+#   │                     │ models/chat/helloworld                             │
+#   ├─────────────────────┼────────────────────────────────────────────────────┤
+#   │ openai-3            │ advisors/tool-argument-augmenter-demo              │
+#   │ (MCP Clients)       │ model-context-protocol/client-starter/starter-default-client │
+#   │                     │ model-context-protocol/dynamic-tool-update         │
+#   │                     │ model-context-protocol/filesystem                  │
+#   │                     │ model-context-protocol/sqlite/simple               │
+#   │                     │ model-context-protocol/sqlite/chatbot              │
+#   ├─────────────────────┼────────────────────────────────────────────────────┤
+#   │ anthropic-multi     │ advisors/recursive-advisor-demo                    │
+#   │ (Multi-API)         │ misc/claude-skills-demo/document-forge             │
+#   │                     │ prompt-engineering/prompt-engineering-patterns     │
+#   │                     │ model-context-protocol/brave                       │
+#   │                     │ model-context-protocol/client-starter/starter-webflux-client │
+#   │                     │ model-context-protocol/sampling                    │
+#   │                     │ model-context-protocol/web-search/brave-chatbot    │
+#   │                     │ model-context-protocol/web-search/brave-starter    │
+#   ├─────────────────────┼────────────────────────────────────────────────────┤
+#   │ docker-tests        │ kotlin/rag-with-kotlin (requires pgvector)         │
+#   │                     │ advisors/evaluation-recursive-advisor-demo (Ollama)│
+#   └─────────────────────┴────────────────────────────────────────────────────┘
+#
+# SKIPPED TESTS (not in any group):
+#   - mcp-annotations-server: Orphaned directory
+#   - sampling/mcp-weather-webmvc-server: Orphaned directory
+#
+# REQUIRED SECRETS:
+#   - OPENAI_API_KEY
+#   - ANTHROPIC_API_KEY
+#   - BRAVE_API_KEY
+#
+# ============================================================================
+
+name: Integration Tests
+
+on:
+  schedule:
+    - cron: '0 6 * * 0'  # Weekly on Sunday at 6 AM UTC
+  workflow_dispatch:
+    inputs:
+      test_filter:
+        description: 'Run specific test (e.g., kotlin-hello-world, chain-workflow)'
+        required: false
+        default: ''
+        type: string
+      test_group:
+        description: 'Run specific test group only'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - mcp-servers
+          - agentic
+          - openai-2
+          - openai-3
+          - anthropic-multi
+          - docker-tests
+
+jobs:
+  # ============================================================================
+  # Standard Integration Tests (no Docker services required)
+  # ============================================================================
+  integration-tests:
+    name: ${{ matrix.group_name }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Group 1: MCP Servers (no API keys for app, but needs Anthropic for AI validation)
+          - group: mcp-servers
+            group_name: "MCP Servers"
+            tests: |
+              weather/starter-webmvc-server
+              weather/starter-webflux-server
+              weather/starter-webmvc-oauth2-server
+              weather/starter-stdio-server
+            needs_openai: false
+            needs_anthropic: true
+            needs_brave: false
+
+          # Group 2: Agentic Patterns (OpenAI + Anthropic)
+          - group: agentic
+            group_name: "Agentic Patterns"
+            tests: |
+              agentic-patterns/chain-workflow
+              agentic-patterns/evaluator-optimizer
+              agentic-patterns/orchestrator-workers
+              agentic-patterns/parallelization-workflow
+              agentic-patterns/routing-workflow
+              agents/reflection
+            needs_openai: true
+            needs_anthropic: true
+            needs_brave: false
+
+          # Group 3: OpenAI - Kotlin & Misc (needs Anthropic for AI validation)
+          - group: openai-2
+            group_name: "OpenAI - Kotlin & Misc"
+            tests: |
+              kotlin/kotlin-hello-world
+              kotlin/kotlin-function-callback
+              misc/openai-streaming-response
+              misc/spring-ai-java-function-callback
+              models/chat/helloworld
+            needs_openai: true
+            needs_anthropic: true
+            needs_brave: false
+
+          # Group 4: OpenAI - MCP Clients & SQLite (needs Anthropic for AI validation)
+          - group: openai-3
+            group_name: "OpenAI - MCP Clients"
+            tests: |
+              advisors/tool-argument-augmenter-demo
+              model-context-protocol/dynamic-tool-update
+              model-context-protocol/filesystem
+              model-context-protocol/sqlite/simple
+              model-context-protocol/sqlite/chatbot
+            needs_openai: true
+            needs_anthropic: true
+            needs_brave: false
+
+          # Group 5: Anthropic & Multi-API tests
+          - group: anthropic-multi
+            group_name: "Anthropic & Multi-API"
+            tests: |
+              advisors/recursive-advisor-demo
+              misc/claude-skills-demo/document-forge
+              prompt-engineering/prompt-engineering-patterns
+              model-context-protocol/brave
+              model-context-protocol/client-starter/starter-default-client
+              model-context-protocol/client-starter/starter-webflux-client
+              model-context-protocol/sampling
+              model-context-protocol/web-search/brave-chatbot
+              model-context-protocol/web-search/brave-starter
+            needs_openai: true
+            needs_anthropic: true
+            needs_brave: true
+
+    steps:
+      - name: Check if group should run
+        id: check
+        run: |
+          # If test_filter is specified, only run if this group contains the filtered test
+          if [ -n "${{ inputs.test_filter }}" ]; then
+            if echo "${{ matrix.tests }}" | grep -q "${{ inputs.test_filter }}"; then
+              echo "should_run=true" >> $GITHUB_OUTPUT
+            else
+              echo "should_run=false" >> $GITHUB_OUTPUT
+            fi
+          elif [ "${{ inputs.test_group }}" = "all" ] || [ "${{ inputs.test_group }}" = "${{ matrix.group }}" ]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_run=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout repository
+        if: steps.check.outputs.should_run == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        if: steps.check.outputs.should_run == 'true'
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Set up Python 3
+        if: steps.check.outputs.should_run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Node.js
+        if: steps.check.outputs.should_run == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        if: steps.check.outputs.should_run == 'true'
+        run: |
+          npm install -g @anthropic-ai/claude-code --silent
+          echo "✅ Claude Code CLI installed via npm"
+
+      - name: Install JBang
+        if: steps.check.outputs.should_run == 'true'
+        run: |
+          curl -Ls https://sh.jbang.dev | bash -s - app setup
+          echo "$HOME/.jbang/bin" >> "$GITHUB_PATH"
+
+      - name: Verify installations
+        if: steps.check.outputs.should_run == 'true'
+        run: |
+          export PATH="$HOME/.jbang/bin:$PATH"
+          echo "=== Verifying CLI installations ==="
+          if command -v claude >/dev/null 2>&1; then
+            echo "✅ Claude CLI verified: $(claude --version 2>&1)"
+          else
+            echo "❌ Claude CLI not found in PATH"
+            echo "PATH: $PATH"
+            ls -la /usr/local/bin/ | grep claude || echo "No claude in /usr/local/bin/"
+            exit 1
+          fi
+          jbang version
+          java -version
+
+      - name: Install dependencies
+        if: steps.check.outputs.should_run == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y sqlite3
+
+          # Pre-install MCP server packages to avoid download delays during tests
+          echo "📦 Pre-installing MCP server packages..."
+
+          # Install npm-based MCP servers globally
+          npm install -g @modelcontextprotocol/server-brave-search @modelcontextprotocol/server-filesystem
+
+          # Install uv for Python package management (provides uvx)
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          export PATH="$HOME/.local/bin:$PATH"
+
+          # Pre-install Python-based MCP server (used by sqlite tests)
+          uvx --version || echo "uvx not available"
+          uvx mcp-server-sqlite --help 2>/dev/null || echo "Pre-warming mcp-server-sqlite..."
+
+      - name: Cache JBang dependencies
+        if: steps.check.outputs.should_run == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.jbang
+          key: ${{ runner.os }}-jbang-${{ matrix.group }}-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-jbang-${{ matrix.group }}-
+            ${{ runner.os }}-jbang-
+
+      - name: Run integration tests
+        if: steps.check.outputs.should_run == 'true'
+        env:
+          OPENAI_API_KEY: ${{ matrix.needs_openai && secrets.OPENAI_API_KEY || '' }}
+          SPRING_AI_OPENAI_API_KEY: ${{ matrix.needs_openai && secrets.OPENAI_API_KEY || '' }}
+          ANTHROPIC_API_KEY: ${{ matrix.needs_anthropic && secrets.ANTHROPIC_API_KEY || '' }}
+          SPRING_AI_ANTHROPIC_API_KEY: ${{ matrix.needs_anthropic && secrets.ANTHROPIC_API_KEY || '' }}
+          BRAVE_API_KEY: ${{ matrix.needs_brave && secrets.BRAVE_API_KEY || '' }}
+        run: |
+          export PATH="$HOME/.jbang/bin:$PATH"
+
+          # If specific test filter provided, use that
+          if [ -n "${{ inputs.test_filter }}" ]; then
+            echo "Running filtered test: ${{ inputs.test_filter }}"
+            ./integration-testing/scripts/run-integration-tests.sh "${{ inputs.test_filter }}"
+            exit $?
+          fi
+
+          # Otherwise run tests for this group
+          echo "Running tests for group: ${{ matrix.group_name }}"
+          echo "Tests:"
+          echo "${{ matrix.tests }}"
+          echo "---"
+
+          passed=0
+          failed=0
+          failed_tests=""
+
+          while IFS= read -r test; do
+            # Skip empty lines
+            [ -z "$test" ] && continue
+
+            echo ""
+            echo "=========================================="
+            echo "Running: $test"
+            echo "=========================================="
+
+            if ./integration-testing/scripts/run-integration-tests.sh "$test"; then
+              echo "PASSED: $test"
+              passed=$((passed + 1))
+            else
+              echo "FAILED: $test"
+              failed=$((failed + 1))
+              failed_tests="$failed_tests\n  - $test"
+            fi
+
+            # Clean up any hanging processes
+            pkill -f "spring-boot:run" 2>/dev/null || true
+            sleep 2
+          done <<< "${{ matrix.tests }}"
+
+          echo ""
+          echo "=========================================="
+          echo "Group Results: ${{ matrix.group_name }}"
+          echo "  Passed: $passed"
+          echo "  Failed: $failed"
+          if [ $failed -gt 0 ]; then
+            echo -e "  Failed tests:$failed_tests"
+            exit 1
+          fi
+
+      - name: Upload test logs
+        if: always() && steps.check.outputs.should_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ matrix.group }}-${{ github.run_number }}
+          path: |
+            integration-testing/logs/**/*.log
+          retention-days: 7
+
+  # ============================================================================
+  # Docker-based Tests (pgvector, Ollama)
+  # ============================================================================
+  docker-tests:
+    name: "Docker Tests"
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    if: ${{ (inputs.test_filter != '' && (contains(inputs.test_filter, 'rag-with-kotlin') || contains(inputs.test_filter, 'evaluation-recursive'))) || (inputs.test_filter == '' && (inputs.test_group == 'all' || inputs.test_group == 'docker-tests' || inputs.test_group == '')) }}
+
+    services:
+      pgvector:
+        image: pgvector/pgvector:pg16
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        options: >-
+          --health-cmd="pg_isready -U postgres"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+      ollama:
+        image: ghcr.io/${{ github.repository }}/ollama-flow-judge:latest
+        ports:
+          - 11434:11434
+        # Note: Ollama can take several minutes to initialize models
+        # Using simple process check here, then manual wait step below
+        options: >-
+          --health-cmd="pgrep ollama || exit 1"
+          --health-interval=5s
+          --health-timeout=5s
+          --health-retries=10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: |
+          npm install -g @anthropic-ai/claude-code --silent
+          echo "✅ Claude Code CLI installed via npm"
+
+      - name: Install JBang
+        run: |
+          curl -Ls https://sh.jbang.dev | bash -s - app setup
+          echo "$HOME/.jbang/bin" >> "$GITHUB_PATH"
+
+      - name: Verify CLI installations
+        run: |
+          export PATH="$HOME/.jbang/bin:$PATH"
+          echo "=== Verifying CLI installations ==="
+          if command -v claude >/dev/null 2>&1; then
+            echo "✅ Claude CLI verified: $(claude --version 2>&1)"
+          else
+            echo "❌ Claude CLI not found in PATH"
+            echo "PATH: $PATH"
+            ls -la /usr/local/bin/ | grep claude || echo "No claude in /usr/local/bin/"
+            exit 1
+          fi
+          jbang version
+          java -version
+
+      - name: Verify services
+        run: |
+          echo "Checking pgvector..."
+          pg_isready -h localhost -p 5432 -U postgres
+          echo "✅ pgvector is ready"
+
+          echo "Waiting for Ollama API to be ready..."
+          # Ollama can take several minutes to initialize models
+          # Poll with exponential backoff up to 5 minutes
+          max_attempts=30
+          attempt=0
+          while [ $attempt -lt $max_attempts ]; do
+            attempt=$((attempt + 1))
+            if curl -s --max-time 5 http://localhost:11434/api/tags > /dev/null 2>&1; then
+              echo "✅ Ollama API is responding"
+              break
+            fi
+            echo "⏳ Attempt $attempt/$max_attempts - Ollama not ready yet, waiting 10s..."
+            sleep 10
+          done
+
+          if [ $attempt -eq $max_attempts ]; then
+            echo "❌ Ollama failed to become ready after $max_attempts attempts"
+            exit 1
+          fi
+
+          echo "Listing available Ollama models..."
+          curl -s http://localhost:11434/api/tags | jq . || curl -s http://localhost:11434/api/tags
+
+          echo "Warming up Ollama model (this may take a moment)..."
+          # Make a small inference request to ensure the model is fully loaded
+          # Model name must match what was pulled in the Docker image
+          curl -s http://localhost:11434/api/generate \
+            -d '{"model": "avcodes/flowaicom-flow-judge:q4", "prompt": "Hello", "stream": false}' \
+            --max-time 180 | head -c 200
+          echo ""
+          echo "✅ Ollama is ready with model loaded"
+
+      - name: Run rag-with-kotlin test
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SPRING_AI_OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # pgvector connection - override Docker Compose
+          SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/postgres
+          SPRING_DATASOURCE_USERNAME: postgres
+          SPRING_DATASOURCE_PASSWORD: postgres
+          SPRING_DOCKER_COMPOSE_ENABLED: false
+        run: |
+          export PATH="$HOME/.jbang/bin:$PATH"
+          echo "Running: kotlin/rag-with-kotlin"
+          ./integration-testing/scripts/run-integration-tests.sh "rag-with-kotlin"
+
+      - name: Run evaluation-recursive-advisor-demo test
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SPRING_AI_ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SPRING_AI_OLLAMA_BASE_URL: http://localhost:11434
+        run: |
+          export PATH="$HOME/.jbang/bin:$PATH"
+          echo "Running: advisors/evaluation-recursive-advisor-demo"
+          ./integration-testing/scripts/run-integration-tests.sh "evaluation-recursive"
+
+      - name: Upload test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-docker-tests-${{ github.run_number }}
+          path: |
+            integration-testing/logs/**/*.log
+          retention-days: 7
+
+  # ============================================================================
+  # Summary
+  # ============================================================================
+  summary:
+    name: Test Summary
+    runs-on: ubuntu-latest
+    needs: [integration-tests, docker-tests]
+    if: always()
+    steps:
+      - name: Generate Summary
+        run: |
+          echo "## Integration Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Group | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| MCP Servers | ${{ needs.integration-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| OpenAI - Agentic | ${{ needs.integration-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| OpenAI - Kotlin | ${{ needs.integration-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| OpenAI - MCP | ${{ needs.integration-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Anthropic & Multi | ${{ needs.integration-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Docker Tests | ${{ needs.docker-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Skipped Tests" >> $GITHUB_STEP_SUMMARY
+          echo "- \`mcp-annotations-server\` - Orphaned directory" >> $GITHUB_STEP_SUMMARY
+          echo "- \`sampling/mcp-weather-webmvc-server\` - Orphaned directory" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Required Secrets" >> $GITHUB_STEP_SUMMARY
+          echo "- \`OPENAI_API_KEY\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`ANTHROPIC_API_KEY\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`BRAVE_API_KEY\`" >> $GITHUB_STEP_SUMMARY
